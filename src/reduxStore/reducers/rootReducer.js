@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 
-// import {
-//   userChangePasswordReducer,
-//   userForgotPasswordReducer,
-//   userLoginReducer,
-//   userRegisterReducer,
-// } from './userReducers';
+import {
+  userChangePasswordReducer,
+  userForgotPasswordReducer,
+  userLoginReducer,
+  userRegisterReducer,
+} from './userReducers';
 
 // import {
 //   allListsReducer,
@@ -16,8 +16,8 @@ import { combineReducers } from 'redux';
 // } from './setupStoreReducers';
 
 export const rootReducer = combineReducers({
-  //   userRegister: userRegisterReducer,
-  //   userLogin: userLoginReducer,
+  userRegister: userRegisterReducer,
+  userLogin: userLoginReducer,
   //   userForgotPassword: userForgotPasswordReducer,
   //   userChangePassword: userChangePasswordReducer,
   //   countryList: countryListReducer,
