@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 
 const DefaultHeader = () => {
   const [isScrolled, setScroll] = useState(false);
+  const [show, setShow] = useState(false)
   let listener = null;
   useEffect(() => {
     listener = document.addEventListener("scroll", e => {
@@ -18,12 +19,15 @@ const DefaultHeader = () => {
     });
   })
   return (
-    <Navbar variant="light" className={isScrolled ? "default colored p-4" : "default  p-4"} fixed={isScrolled ? "top" : ""}  >
+    <Navbar variant="light" className={isScrolled ? "default colored p-4" : "default  p-4"} fixed={isScrolled ? "top" : ""} expand="lg" >
       <Navbar.Brand href="#home">TechNPart</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link as={Link} to="/" >Our Services</Nav.Link>
+          <span onMouseOver={() => { setShow(true) }} onMouseLeave={() => { setShow(false) }}>
+            <Nav.Link as={Link} to="/" >Our Services</Nav.Link>
+            <ServiceDropDown show={show} />
+          </span>
           <Nav.Link as={Link} to="/">Pricing</Nav.Link>
           <Nav.Link as={Link} to="/">Info Hub</Nav.Link>
           <Nav.Link as={Link} to="/">Members</Nav.Link>
