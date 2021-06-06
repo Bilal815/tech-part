@@ -6,7 +6,7 @@ import {
   userLoginReducer,
   userRegisterReducer,
 } from './userReducers';
-
+import { tvSizesReducer } from "./tvMountingReducers";
 // import {
 //   allListsReducer,
 //   cityListReducer,
@@ -25,4 +25,5 @@ export const rootReducer = combineReducers({
   //   cityList: cityListReducer,
   //   industryList: industryListReducer,
   //   allLists: allListsReducer,
+  tvSizes: tvSizesReducer,
 });
