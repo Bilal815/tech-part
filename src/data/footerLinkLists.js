@@ -13,18 +13,18 @@ export const companyLinkList = [
 ];
 
 export const resourcesLinkList = [
-  { link: '', label: 'TV Mounting' },
-  { link: '', label: 'Garage Doors' },
-  { link: '', label: 'Appliances' },
-  { link: '', label: 'Refrigerators' },
-  { link: '', label: 'Dishwashers' },
-  { link: '', label: 'Ovens & Stoves' },
-  { link: '', label: 'Washing Machines' },
-  { link: '', label: 'Dryers' },
+  { link: '/resource/tv-mounting', label: 'TV Mounting' },
+  { link: '/resource/garage-doors', label: 'Garage Doors' },
+  { link: '/resource/appliances', label: 'Appliances' },
+  { link: '/resource/refrigerators', label: 'Refrigerators' },
+  { link: '/resource/dishwashers', label: 'Dishwashers' },
+  { link: '/resource/ovens-and-stoves', label: 'Ovens & Stoves' },
+  { link: '/resource/washing-machines', label: 'Washing Machines' },
+  { link: '/resource/dryer', label: 'Dryers' },
 ];
 
 export const partnershipsLinkList = [
-  { link: '/tcl', label: 'TV Mounting' },
+  { link: '/tcl', label: 'Tcl' },
   { link: '/simplisafe', label: 'Simplisafe' },
   { link: '/hisense', label: 'Hisense' },
   { link: '/puls-for-business', label: 'Puls for Business' },

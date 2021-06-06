@@ -52,17 +52,30 @@ import Washington_DCScreen from './screens/citiesScreens/Washington_DCScreen';
 import WashingtonDCScreen from './screens/citiesScreens/WashingtonDCScreen';
 
 // Footer Screens Imports
+// copmany imports
 import AboutUsScreen from './screens/footerScreens/company/AboutUsScreen';
 import HowItWorksScreen from './screens/footerScreens/company/HowItWorksScreen';
 import FaqScreen from './screens/footerScreens/company/FaqScreen';
 import CareersScreen from './screens/footerScreens/company/CareersScreen';
 import NewsRoomScreen from './screens/footerScreens/company/NewsRoomScreen';
 
+// resources imports
+import ResourceTvMountingScreen from './screens/footerScreens/resources/TvMountingScreen';
+import ResourceGarageDoorsScreen from './screens/footerScreens/resources/GarageDoorsScreen';
+import ResourceAppliancesScreen from './screens/footerScreens/resources/AppliancesScreen';
+import ResourceRefrigeratorsScreen from './screens/footerScreens/resources/RefrigeratorsScreen';
+import ResourceDishwashersScreen from './screens/footerScreens/resources/DishwashersScreen';
+import ResourceOvensAndStovesScreen from './screens/footerScreens/resources/OvensAndStovesScreen';
+import ResourceWashingMachinesScreen from './screens/footerScreens/resources/WashingMachinesScreen';
+import ResourceDryerScreen from './screens/footerScreens/resources/DryerScreen';
+
+// partnerships imports
 import TclScreen from './screens/footerScreens/partnerships/TclScreen';
 import SimplisafeScreen from './screens/footerScreens/partnerships/SimplisafeScreen';
 import HisenseScreen from './screens/footerScreens/partnerships/HisenseScreen';
 import PulsForBusinessScreen from './screens/footerScreens/partnerships/PulsForBusinessScreen';
 
+// legals imports
 import PrivacyScreen from './screens/footerScreens/legals/PrivacyScreen';
 import TermsAndConditionsScreen from './screens/footerScreens/legals/TermsAndConditionsScreen';
 import PulsPlusTermsScreen from './screens/footerScreens/legals/PulsPlusTermsScreen';
@@ -87,9 +100,7 @@ const App = () => {
         <Route exact path='/members' component={MembersScreen} />
         <Route exact path='/become-a-tech' component={BecomeATechScreen} />
         <Route exact path='/property-manager' component={PropertyManagerScreen} />
-
         <Route exact path='/invite-a-friend' component={InviteAFriendScreen} />
-
         <Route exact path='/book-a-service' component={BookAServiceScreen} />
         <Route exact path='/services/disinfection' component={DisinfectionServicesScreen} />
         <Route exact path='/services/garage-door-repair' component={GarageDoorRepairScreen} />
@@ -104,7 +115,6 @@ const App = () => {
         />
         <Route exact path='/services/tv-mounting' component={TvMountingScreen} />
         <Route exact path='/services/security-system' component={SecuritySystemScreen} />
-
         {/* Cities section routes  */}
         <Route exact path='/cities/az' component={ArizonaScreen} />
         <Route exact path='/cities/az/phoenix' component={PhoenixScreen} />
@@ -125,22 +135,33 @@ const App = () => {
         <Route exact path='/cities/tx/houston' component={HoustonScreen} />
         <Route exact path='/cities/dc' component={WashingtonDCScreen} />
         <Route exact path='/cities/dc/washington-dc' component={Washington_DCScreen} />
-
         {/* Footer section routes */}
+        {/* company imports */}
         <Route exact path='/about-us' component={AboutUsScreen} />
         <Route exact path='/how-it-works' component={HowItWorksScreen} />
         <Route exact path='/faq' component={FaqScreen} />
         <Route exact path='/careers' component={CareersScreen} />
         <Route exact path='/newsroom' component={NewsRoomScreen} />
+        {/* resource imports  */}
+        <Route exact path='/resource/tv-mounting' component={TvMountingScreen} />
+        <Route exact path='/resource/garage-doors' component={ResourceGarageDoorsScreen} />
+        <Route exact path='/resource/appliances' component={ResourceAppliancesScreen} />
+        <Route exact path='/resource/refrigerators' component={ResourceRefrigeratorsScreen} />
+        <Route exact path='/resource/dishwashers' component={ResourceDishwashersScreen} />
+        <Route exact path='/resource/ovens-and-stoves' component={ResourceOvensAndStovesScreen} />
+        <Route exact path='/resource/washing-machines' component={ResourceWashingMachinesScreen} />
+        <Route exact path='/resource/dryer' component={ResourceDryerScreen} />
+
+        {/* partnerships imports  */}
         <Route exact path='/tcl' component={TclScreen} />
         <Route exact path='/simplisafe' component={SimplisafeScreen} />
         <Route exact path='/hisense' component={HisenseScreen} />
         <Route exact path='/puls-for-business' component={PulsForBusinessScreen} />
+        {/* legals impotts  */}
         <Route exact path='/privacy' component={PrivacyScreen} />
         <Route exact path='/terms-and-conditions' component={TermsAndConditionsScreen} />
         <Route exact path='/puls-plus-terms' component={PulsPlusTermsScreen} />
         <Route exact path='/guarantee' component={GuaranteeScreen} />
-
         <Route path='*' component={Error404Screen} />
       </Switch>
       <Footer />
