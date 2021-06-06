@@ -41,8 +41,8 @@ import HoustonScreen from './screens/citiesScreens/HoustonScreen';
 import LosAngelesScreen from './screens/citiesScreens/LosAngelesScreen';
 import MassachusettsScreen from './screens/citiesScreens/MassachusettsScreen';
 import MiamiScreen from './screens/citiesScreens/MiamiScreen';
-import NewYorkCityScreen from './screens/citiesScreens/NewYorkCityScreen';
-import NewYorkScreen from './screens/citiesScreens/NewYorkScreen';
+import NewyorkCityScreen from './screens/citiesScreens/NewyorkCityScreen';
+import NewyorkScreen from './screens/citiesScreens/NewyorkScreen';
 import NorthCarolinaScreen from './screens/citiesScreens/NorthCarolinaScreen';
 import PennsylvaniaScreen from './screens/citiesScreens/PennsylvaniaScreen';
 import PhiladelphiaScreen from './screens/citiesScreens/PhiladelphiaScreen';
@@ -57,7 +57,7 @@ import AboutUsScreen from './screens/footerScreens/company/AboutUsScreen';
 import HowItWorksScreen from './screens/footerScreens/company/HowItWorksScreen';
 import FaqScreen from './screens/footerScreens/company/FaqScreen';
 import CareersScreen from './screens/footerScreens/company/CareersScreen';
-import NewsRoomScreen from './screens/footerScreens/company/NewsRoomScreen';
+import NewsroomScreen from './screens/footerScreens/company/NewsroomScreen';
 
 // resources imports
 import ResourceTvMountingScreen from './screens/footerScreens/resources/TvMountingScreen';
@@ -125,8 +125,8 @@ const App = () => {
         <Route exact path='/cities/ga/atlanta' component={AtlantaScreen} />
         <Route exact path='/cities/ma' component={MassachusettsScreen} />
         <Route exact path='/cities/ma/boston' component={BostonScreen} />
-        <Route exact path='/cities/ny' component={NewYorkScreen} />
-        <Route exact path='/cities/ny/new-york-city' component={NewYorkCityScreen} />
+        <Route exact path='/cities/ny' component={NewyorkScreen} />
+        <Route exact path='/cities/ny/new-york-city' component={NewyorkCityScreen} />
         <Route exact path='/cities/nc' component={NorthCarolinaScreen} />
         <Route exact path='/cities/nc/charlotte' component={CharlotteScreen} />
         <Route exact path='/cities/pa' component={PennsylvaniaScreen} />
@@ -141,9 +141,9 @@ const App = () => {
         <Route exact path='/how-it-works' component={HowItWorksScreen} />
         <Route exact path='/faq' component={FaqScreen} />
         <Route exact path='/careers' component={CareersScreen} />
-        <Route exact path='/newsroom' component={NewsRoomScreen} />
+        <Route exact path='/newsroom' component={NewsroomScreen} />
         {/* resource imports  */}
-        <Route exact path='/resource/tv-mounting' component={TvMountingScreen} />
+        <Route exact path='/resource/tv-mounting' component={ResourceTvMountingScreen} />
         <Route exact path='/resource/garage-doors' component={ResourceGarageDoorsScreen} />
         <Route exact path='/resource/appliances' component={ResourceAppliancesScreen} />
         <Route exact path='/resource/refrigerators' component={ResourceRefrigeratorsScreen} />

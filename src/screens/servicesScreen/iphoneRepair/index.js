@@ -1,7 +1,10 @@
 import React from 'react';
+import '../../../styles/screens/servicesScreens/iphoneRepair/index.scss';
+import { ScrollToTop } from './../../../utilities/index';
 
-const IhponeRepairScreen = () => {
-  return <div className='ihponeRepairScreen'>IhponeRepairScreen</div>;
+const IphoneRepairScreen = () => {
+  ScrollToTop();
+  return <div className='iphoneRepairScreen'>IphoneRepairScreen</div>;
 };
 
-export default IhponeRepairScreen;
+export default IphoneRepairScreen;

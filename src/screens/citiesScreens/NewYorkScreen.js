@@ -1,7 +1,10 @@
 import React from 'react';
+import '../../styles/screens/citiesScreens/newyorkScreen.scss';
+import { ScrollToTop } from './../../utilities/index';
 
-const NewYorkScreen = () => {
-  return <div className='newYorkScreen'>NewYorkScreen</div>;
+const NewyorkScreen = () => {
+  ScrollToTop();
+  return <div className='newyorkScreen'>NewyorkScreen</div>;
 };
 
-export default NewYorkScreen;
+export default NewyorkScreen;

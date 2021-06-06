@@ -1,7 +1,10 @@
 import React from 'react';
+import '../../../styles/screens/footerScreens/company/newsroomScreen.scss';
+import { ScrollToTop } from './../../../utilities/index';
 
-const NewsRoomScreen = () => {
-  return <div className='newsRoomScreen'>NewsRoomScreen</div>;
+const NewsroomScreen = () => {
+  ScrollToTop();
+  return <div className='newsroomScreen'>NewsroomScreen</div>;
 };
 
-export default NewsRoomScreen;
+export default NewsroomScreen;
