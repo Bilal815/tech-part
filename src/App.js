@@ -8,7 +8,7 @@ import axios from 'axios';
 import DefaultHeader from './components/globalComponents/headers/DefaultHeader';
 import Footer from './components/globalComponents/Footer';
 
-// Header Screens Imports
+// Home and Header Screens Imports
 import HomeScreen from './screens/HomeScreen';
 import Error404Screen from './screens/Error404Screen';
 import PricingScreen from './screens/headerScreens/PricingScreen';
@@ -24,6 +24,27 @@ import PlumbingServicesScreen from './screens/headerScreens/services/PlumbingSer
 import SmartHomeInstallationScreen from './screens/headerScreens/services/SmartHomeInstallationScreen';
 import TvMountingScreen from './screens/headerScreens/services/TvMountingScreen';
 import BookAServiceScreen from './screens/headerScreens/services/BookAServiceScreen';
+
+// Cities Screen Imports
+import ArizonaScreen from './screens/citiesScreens/ArizonaScreen';
+import AtlantaScreen from './screens/citiesScreens/AtlantaScreen';
+import BostonScreen from './screens/citiesScreens/BostonScreen';
+import CaliforniaScreen from './screens/citiesScreens/CaliforniaScreen';
+import CharlotteScreen from './screens/citiesScreens/CharlotteScreen';
+import GeorgiaScreen from './screens/citiesScreens/GeorgiaScreen';
+import HoustonScreen from './screens/citiesScreens/HoustonScreen';
+import LosAngelesScreen from './screens/citiesScreens/LosAngelesScreen';
+import MassachusettsScreen from './screens/citiesScreens/MassachusettsScreen';
+import MiamiScreen from './screens/citiesScreens/MiamiScreen';
+import NewYorkCityScreen from './screens/citiesScreens/NewYorkCityScreen';
+import NewYorkScreen from './screens/citiesScreens/NewYorkScreen';
+import NorthCarolinaScreen from './screens/citiesScreens/NorthCarolinaScreen';
+import PennsylvaniaScreen from './screens/citiesScreens/PennsylvaniaScreen';
+import PhiladelphiaScreen from './screens/citiesScreens/PhiladelphiaScreen';
+import PhoenixScreen from './screens/citiesScreens/PhoenixScreen';
+import TexasScreen from './screens/citiesScreens/TexasScreen';
+import Washington_DCScreen from './screens/citiesScreens/Washington_DCScreen';
+import WashingtonDCScreen from './screens/citiesScreens/WashingtonDCScreen';
 
 // Footer Screens Imports
 import AboutUsScreen from './screens/footerScreens/company/AboutUsScreen';
@@ -55,35 +76,58 @@ const App = () => {
     <Router>
       <DefaultHeader />
       <Switch>
-        {/* home and header routes  */}
+        {/* Home and Header section routes  */}
         <Route exact path='/' component={HomeScreen} />
-        <Route exact path='/' component={PricingScreen} />
-        <Route exact path='/' component={MembersScreen} />
-        <Route exact path='/' component={BecomeATechScreen} />
-        <Route exact path='/' component={PropertyManagerScreen} />
-        <Route exact path='/' component={DisinfectionServicesScreen} />
-        <Route exact path='/' component={GarageDoorRepairScreen} />
-        <Route exact path='/' component={HandymanServicesScreen} />
-        <Route exact path='/' component={HomeAppliancesScreen} />
-        <Route exact path='/' component={IhponeRepairScreen} />
-        <Route exact path='/' component={PlumbingServicesScreen} />
-        <Route exact path='/' component={SmartHomeInstallationScreen} />
-        <Route exact path='/' component={TvMountingScreen} />
-        <Route exact path='/' component={BookAServiceScreen} />
+        <Route exact path='/pricing' component={PricingScreen} />
+        <Route exact path='/members' component={MembersScreen} />
+        <Route exact path='/become-a-tech' component={BecomeATechScreen} />
+        <Route exact path='/property-manager' component={PropertyManagerScreen} />
+        <Route exact path='/disinfection' component={DisinfectionServicesScreen} />
+        <Route exact path='/garage-door-repair' component={GarageDoorRepairScreen} />
+        <Route exact path='/handyman' component={HandymanServicesScreen} />
+        <Route exact path='/home-appliances' component={HomeAppliancesScreen} />
+        <Route exact path='/iphone-repair' component={IhponeRepairScreen} />
+        <Route exact path='/plumbing' component={PlumbingServicesScreen} />
+        <Route exact path='/smart-home-installation' component={SmartHomeInstallationScreen} />
+        <Route exact path='/tv-mounting' component={TvMountingScreen} />
+        <Route exact path='/book-a-service' component={BookAServiceScreen} />
 
-        <Route exact path='/' component={AboutUsScreen} />
-        <Route exact path='/' component={HowItWorkScreen} />
-        <Route exact path='/' component={FaqScreen} />
-        <Route exact path='/' component={CareersScreen} />
-        <Route exact path='/' component={NewsRoomScreen} />
-        <Route exact path='/' component={TclScreen} />
-        <Route exact path='/' component={SimplisafeScreen} />
-        <Route exact path='/' component={HisenseScreen} />
-        <Route exact path='/' component={PulsForBusinessScreen} />
-        <Route exact path='/' component={PrivacyScreen} />
-        <Route exact path='/' component={TermsAndConditionsScreen} />
-        <Route exact path='/' component={PulsPlusTermsScreen} />
-        <Route exact path='/' component={GuaranteeScreen} />
+        {/* Cities section routes  */}
+        <Route exact path='/cities/' component={ArizonaScreen} />
+        <Route exact path='/cities/' component={AtlantaScreen} />
+        <Route exact path='/cities/' component={BostonScreen} />
+        <Route exact path='/cities/' component={CaliforniaScreen} />
+        <Route exact path='/cities/' component={CharlotteScreen} />
+        <Route exact path='/cities/' component={GeorgiaScreen} />
+        <Route exact path='/cities/' component={HoustonScreen} />
+        <Route exact path='/cities/' component={LosAngelesScreen} />
+        <Route exact path='/cities/' component={MassachusettsScreen} />
+        <Route exact path='/cities/' component={MiamiScreen} />
+        <Route exact path='/cities/' component={NewYorkCityScreen} />
+        <Route exact path='/cities/' component={NewYorkScreen} />
+        <Route exact path='/cities/' component={NorthCarolinaScreen} />
+        <Route exact path='/cities/' component={NorthCarolinaScreen} />
+        <Route exact path='/cities/' component={PennsylvaniaScreen} />
+        <Route exact path='/cities/' component={PhiladelphiaScreen} />
+        <Route exact path='/cities/' component={PhoenixScreen} />
+        <Route exact path='/cities/' component={TexasScreen} />
+        <Route exact path='/cities/' component={Washington_DCScreen} />
+        <Route exact path='/cities/' component={WashingtonDCScreen} />
+
+        {/* Footer section routes */}
+        <Route exact path='/about-us' component={AboutUsScreen} />
+        <Route exact path='/how-it-work' component={HowItWorkScreen} />
+        <Route exact path='/faq' component={FaqScreen} />
+        <Route exact path='/careers' component={CareersScreen} />
+        <Route exact path='/news-room' component={NewsRoomScreen} />
+        <Route exact path='/tcl' component={TclScreen} />
+        <Route exact path='/simplisafe' component={SimplisafeScreen} />
+        <Route exact path='/hisense' component={HisenseScreen} />
+        <Route exact path='/puls-for-business' component={PulsForBusinessScreen} />
+        <Route exact path='/privacy' component={PrivacyScreen} />
+        <Route exact path='/terms-and-conditions' component={TermsAndConditionsScreen} />
+        <Route exact path='/puls-plus-terms' component={PulsPlusTermsScreen} />
+        <Route exact path='/guarantee' component={GuaranteeScreen} />
 
         <Route path='*' component={Error404Screen} />
       </Switch>
