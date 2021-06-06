@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="87px" height="17px" viewBox="0 0 87 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>special_offer_tag</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Cancellation" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="special_offer_tag">
+            <g id="Group-2">
+                <rect id="Rectangle" fill="#017AFF" x="0" y="0" width="87" height="17" rx="8.5"></rect>
+                <g id="Group-19-Copy" transform="translate(20.000000, 3.000000)" fill="#FFFFFF" font-family="CircularPro-Bold, Circular Pro" font-size="8" font-weight="bold" letter-spacing="-0.1" line-spacing="10">
+                    <text id="Special-offer">
+                        <tspan x="0" y="8">SPECIAL OFFER</tspan>
+                    </text>
+                </g>
+            </g>
+            <g id="Group-9" transform="translate(8.000000, 4.000000)">
+                <path d="M6.82103333,1.7504 C6.82589444,1.5852 6.74228333,1.4302 6.60286667,1.3476 L5.40081111,0.6338 C5.26431111,0.5528 5.09592222,0.5536 4.9602,0.6362 L2.55822778,2.097 C2.50903333,2.1272 2.46489444,2.164 2.42581111,2.2072 C2.37583889,2.2628 2.30856111,2.343 2.26831111,2.4148 L0.155477778,6.179 C0.0353111111,6.393 0.107255556,6.6694 0.315505556,6.793 L3.93100556,8.94 C4.13925556,9.0636 4.40797778,8.9896 4.52814444,8.7756 L6.64078333,5.0116 C6.72400556,4.8634 6.73528333,4.6108 6.73528333,4.6108 L6.82103333,1.7504 Z" id="Stroke-5" fill="#FFFFFF"></path>
+                <path d="M5.04956667,2.01132 C5.42873333,2.01132 5.73595556,2.32732 5.73595556,2.71732 C5.73595556,3.10732 5.42873333,3.42372 5.04956667,3.42372 C4.6704,3.42372 4.36298333,3.10732 4.36298333,2.71732 C4.36298333,2.32732 4.6704,2.01132 5.04956667,2.01132 Z" id="Stroke-1" stroke="#017AFF" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M6.78931944,0.01954 C6.85581944,0.05814 6.87895833,0.14494 6.84143056,0.21314 C6.84123611,0.21374 6.84084722,0.21434 6.84065278,0.21474 L5.37259722,2.50014 C5.33351389,2.56834 5.24815278,2.59134 5.18145833,2.55154 C5.11534722,2.51354 5.09181944,2.42734 5.12876389,2.35934 C5.12934722,2.35834 5.12993056,2.35734 5.13051389,2.35634 L6.598375,0.07234 C6.63648611,0.00354 6.72145833,-0.02026 6.78815278,0.01894 L6.78931944,0.01954 Z" id="Fill-3" fill="#017AFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>
