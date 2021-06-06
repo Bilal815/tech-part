@@ -1,11 +1,6 @@
 import { combineReducers } from 'redux';
 
-import {
-  userChangePasswordReducer,
-  userForgotPasswordReducer,
-  userLoginReducer,
-  userRegisterReducer,
-} from './userReducers';
+import { userLoginReducer, userRegisterReducer } from './userReducers';
 
 // import {
 //   allListsReducer,

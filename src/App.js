@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.scss';
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -130,7 +131,7 @@ const App = () => {
         <Route exact path='/how-it-works' component={HowItWorksScreen} />
         <Route exact path='/faq' component={FaqScreen} />
         <Route exact path='/careers' component={CareersScreen} />
-        <Route exact path='/news-room' component={NewsRoomScreen} />
+        <Route exact path='/newsroom' component={NewsRoomScreen} />
         <Route exact path='/tcl' component={TclScreen} />
         <Route exact path='/simplisafe' component={SimplisafeScreen} />
         <Route exact path='/hisense' component={HisenseScreen} />

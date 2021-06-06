@@ -1,10 +1,39 @@
+@import '../../../scss/variables.scss';
+
 .footer {
   position: absolute;
   left: 0;
   bottom: 0;
   right: 0;
-  padding: 30px 0;
+  padding: 30px 0 0;
+
+  h6 {
+    font-family: $RobotoBold;
+  }
+
+  ul {
+    padding: 0;
+    li {
+      margin: 5px 0;
+    }
+  }
+
+  ul a {
+    color: $light-gray !important;
+    transition: all 0.4s;
+    font-size: 14px;
+    display: block;
+    &:hover {
+      color: $dark-gray !important;
+    }
+  }
+
   .copy-right-container {
-    border-top: 2px solid gray;
+    margin-top: 20px;
+    border-top: 2px solid $lgray;
+    p {
+      color: $light-gray !important;
+      font-size: 12px;
+    }
   }
 }

@@ -7,6 +7,7 @@ export const companyLinkList = [
   { link: '/pricing', label: 'Pricing' },
   { link: '/careers', label: 'Careers' },
   { link: '', label: 'Info Hub' },
+  { link: '/newsroom', label: 'Newsroom' },
   { link: '', label: 'Media Inquiries' },
   { link: '/', label: 'Home' },
 ];
@@ -20,8 +21,6 @@ export const resourcesLinkList = [
   { link: '', label: 'Ovens & Stoves' },
   { link: '', label: 'Washing Machines' },
   { link: '', label: 'Dryers' },
-  { link: '', label: 'Media Inquiries' },
-  { link: '', label: 'Home' },
 ];
 
 export const partnershipsLinkList = [

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../styles/components/globalComponents/footer.scss';
 
 import {
@@ -8,13 +8,19 @@ import {
   legalsLinkList,
 } from '../../data/footerLinkLists';
 import { Button } from '../../styledComponents';
+import androidImage from '../../assets/images/android.png';
+import iosImage from '../../assets/images/ios.png';
+import footer4Icon from '../../assets/google.png';
+
+import {} from 'react-icons';
 
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+  const [showHide, setShowHide] = useState(false);
   return (
-    <div className='footer container-90'>
+    <div className='footer container-75'>
       <Row>
         <Col md={2}>
           <h6>Company</h6>
@@ -22,9 +28,9 @@ const Footer = () => {
             {companyLinkList &&
               companyLinkList.map((c, i) => {
                 return (
-                  <Link key={i} to={c.link === '' ? '' : c.link}>
-                    <li>{c.label && c.label}</li>
-                  </Link>
+                  <li key={i}>
+                    <Link to={c.link === '' ? '' : c.link}>{c.label && c.label}</Link>
+                  </li>
                 );
               })}
           </ul>
@@ -71,8 +77,8 @@ const Footer = () => {
         <Col md={4}>
           <h6>Stay Connected</h6>
           <div className='df'>
-            <input type='text' placeholder='' />
-            <Button>Connected</Button>
+            <input type='text' placeholder='Enter email*' />
+            <Button>Subscribe</Button>
           </div>
           <div className='social-icon-container'>
             <Link>
@@ -91,6 +97,7 @@ const Footer = () => {
               <img src='' alt='' />
             </Link>
           </div>
+          <div>support@puls.com</div>
         </Col>
       </Row>
       <div className='df mt-4 download-app-container'>
