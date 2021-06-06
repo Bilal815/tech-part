@@ -78,6 +78,10 @@ $RobotoThinItalic: 'RobotoThinItalic';
   box-sizing: border-box;
 }
 
+#root {
+  position: relative;
+}
+
 .container-90 {
   width: 90%;
   margin: 0 auto;
@@ -101,6 +105,19 @@ $RobotoThinItalic: 'RobotoThinItalic';
 .container-70 {
   width: 70%;
   margin: 0 auto;
+}
+
+.container-y-100 {
+  margin: 100px 0;
+}
+.container-y-75 {
+  margin: 75px 0;
+}
+.container-y-50 {
+  margin: 50px 0;
+}
+.container-y-25 {
+  margin: 25px 0;
 }
 
 .rbl {
@@ -138,6 +155,38 @@ $RobotoThinItalic: 'RobotoThinItalic';
 }
 .rti {
   font-family: $RobotoThinItalic;
+}
+
+// colors and background colors classes
+.blue {
+  color: $blue;
+}
+.bg-blue {
+  background-color: $blue;
+}
+.l-blue {
+  color: $light-blue;
+}
+.bg-l-blue {
+  background-color: $light-blue;
+}
+.gray {
+  color: $gray;
+}
+.bg-gray {
+  background-color: $gray;
+}
+.d-gray {
+  color: $dark-gray;
+}
+.bg-d-gray {
+  background-color: $dark-gray;
+}
+.black {
+  color: $black;
+}
+.bg-black {
+  background-color: $black;
 }
 
 // margin classes
@@ -377,43 +426,36 @@ $RobotoThinItalic: 'RobotoThinItalic';
 .df {
   display: flex;
 }
-
 .aic {
   display: flex;
   align-items: center;
 }
-
 .center {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-
 .sb {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .sa {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-
 .se {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-
 .fe {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-
 .fs {
   display: flex;
   align-items: center;

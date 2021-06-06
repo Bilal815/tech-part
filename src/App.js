@@ -15,15 +15,15 @@ import PricingScreen from './screens/headerScreens/PricingScreen';
 import MembersScreen from './screens/headerScreens/MembersScreen';
 import BecomeATechScreen from './screens/headerScreens/BecomeATechScreen';
 import PropertyManagerScreen from './screens/headerScreens/PropertyManagerScreen';
-import DisinfectionServicesScreen from './screens/headerScreens/services/DisinfectionServicesScreen';
-import GarageDoorRepairScreen from './screens/headerScreens/services/GarageDoorRepairScreen';
-import HandymanServicesScreen from './screens/headerScreens/services/HandymanServicesScreen';
-import HomeAppliancesScreen from './screens/headerScreens/services/HomeAppliancesScreen';
-import IhponeRepairScreen from './screens/headerScreens/services/IhponeRepairScreen';
-import PlumbingServicesScreen from './screens/headerScreens/services/PlumbingServicesScreen';
-import SmartHomeInstallationScreen from './screens/headerScreens/services/SmartHomeInstallationScreen';
-import TvMountingScreen from './screens/headerScreens/services/TvMountingScreen';
-import BookAServiceScreen from './screens/headerScreens/services/BookAServiceScreen';
+import DisinfectionServicesScreen from './screens/headerScreens/servicesScreen/DisinfectionServicesScreen';
+import GarageDoorRepairScreen from './screens/headerScreens/servicesScreen/GarageDoorRepairScreen';
+import HandymanServicesScreen from './screens/headerScreens/servicesScreen/HandymanServicesScreen';
+import HomeAppliancesScreen from './screens/headerScreens/servicesScreen/HomeAppliancesScreen';
+import IhponeRepairScreen from './screens/headerScreens/servicesScreen/IhponeRepairScreen';
+import PlumbingServicesScreen from './screens/headerScreens/servicesScreen/PlumbingServicesScreen';
+import SmartHomeInstallationScreen from './screens/headerScreens/servicesScreen/SmartHomeInstallationScreen';
+import TvMountingScreen from './screens/headerScreens/servicesScreen/TvMountingScreen';
+import BookAServiceScreen from './screens/headerScreens/servicesScreen/BookAServiceScreen';
 
 // Cities Screen Imports
 import ArizonaScreen from './screens/citiesScreens/ArizonaScreen';
