@@ -1,0 +1,14 @@
+.tech-img{
+    object-fit: cover;
+    width: 130px;
+    height: 130px;
+    transform:scale(0.65);
+    transition: all .2s ease;
+}
+.tech-img-clicked{
+    object-fit: cover;
+    width: 130px;
+    height: 130px;
+    transform:scale(1);
+    transition: all .2s ease;
+}
