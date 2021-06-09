@@ -1,2 +1,24 @@
 @import '../../scss/variables.scss';
 @import '../../scss/fontFamily.scss';
+
+.error404Screen {
+  h1,
+  h4,
+  h5 {
+    color: #666;
+    font-weight: 900;
+  }
+  h1.error404 {
+    font-size: 200px;
+    padding: 0;
+    color: $blue;
+  }
+  h5 {
+    margin: 20px 0;
+    color: $black;
+    font-weight: 900;
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+}

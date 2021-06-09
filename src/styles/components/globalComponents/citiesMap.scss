@@ -1,0 +1,42 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontfamily.scss';
+
+.citiesMap {
+  position: relative;
+  width: 80%;
+  height: 530px;
+  border-radius: 25px;
+  background-position: 50%;
+  background-size: cover;
+  .card {
+    top: 50%;
+    // left: -200px;
+    min-width: 400px;
+    position: absolute;
+    padding: 60px 90px 40px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    transform: translateY(-50%);
+    box-shadow: 3px 6px 15px 0 grey;
+    border: 1px solid #ebedef;
+    background-color: #fff;
+    p.verified {
+      color: $blue;
+    }
+    .star-container {
+      svg {
+        width: 30px;
+        height: 30px;
+        color: $blue;
+      }
+    }
+    a,
+    p {
+      margin-bottom: 20px;
+      color: $light-gray;
+      img {
+        padding-right: 30px;
+      }
+    }
+  }
+}

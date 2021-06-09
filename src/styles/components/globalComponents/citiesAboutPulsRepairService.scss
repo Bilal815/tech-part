@@ -1,0 +1,47 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontfamily.scss';
+
+.citiesAboutPulsRepairService {
+  padding: 80px 0 50px;
+  background-color: #f5faff;
+  p {
+    font-size: 18px;
+    font-family: $RobotoMedium;
+    line-height: 35px;
+  }
+  div.container-75 {
+    .content-wrapper {
+      width: 100%;
+      padding-right: 50px;
+      p {
+        &:first-child {
+          margin-bottom: 100px;
+        }
+      }
+    }
+    .image-wrapper {
+      width: 100%;
+      img {
+        max-height: 450px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+        width: 100%;
+        // margin-bottom: 80px;
+      }
+    }
+  }
+  .center-paragraphs {
+    .book-today {
+      padding: 50px 0 100px;
+      p {
+        color: #696969;
+        font-size: 18px;
+      }
+    }
+    p {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+  }
+}

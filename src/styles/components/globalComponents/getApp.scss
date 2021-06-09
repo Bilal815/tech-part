@@ -2,7 +2,8 @@
 @import '../../../scss/fontfamily.scss';
 
 .getApp {
-  max-width: 1200px;
+  min-width: 1200px;
+  width: 100% !important;
   background-color: #e4f1ff;
   border-bottom-right-radius: 100px;
   margin-bottom: 80px;

@@ -1,0 +1,33 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontfamily.scss';
+
+.servicesOfferedCard {
+  padding: 0;
+  width: 260px;
+  height: 210px;
+  margin: 17px 15px;
+  box-shadow: 0 5px 14px 0 grey;
+  border: 1px solid rgba(218, 220, 228, 0.06);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  transform: scale(1);
+  .services-card-wrapper {
+    margin: 50px 0;
+  }
+  :hover {
+    transform: scale(1);
+  }
+  div.strip {
+    border-radius: 10px 10px 0 0;
+    height: 16px;
+    background: $blue;
+  }
+  img {
+    margin-top: 30px;
+    height: 80px;
+  }
+  .title span {
+    color: black;
+  }
+}

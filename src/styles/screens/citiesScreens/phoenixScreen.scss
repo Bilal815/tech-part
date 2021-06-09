@@ -1,2 +1,16 @@
 @import '../../../scss/variables.scss';
 @import '../../../scss/fontFamily.scss';
+
+.phoenixScreen {
+  .city-map {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  div.container-50 {
+    h2 {
+      color: #46475c;
+      font-size: 24px;
+    }
+  }
+}

@@ -2,6 +2,18 @@
 @import '../../../scss/fontfamily.scss';
 
 .citiesBreadCrumb {
-  padding: 0 20px 35px;
+  margin-bottom: 100px;
+  padding: 35px 20px;
   border-bottom: 1px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div {
+    display: inline-block;
+    font-size: larger;
+  }
+  span,
+  a {
+    margin: 0 15px;
+  }
 }
