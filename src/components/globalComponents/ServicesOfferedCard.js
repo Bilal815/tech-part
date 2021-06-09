@@ -16,6 +16,7 @@ const ServicesOfferedCard = ({ image, title, url }) => {
         transform: `${isHovered ? 'scale(1.125)' : 'scale(1)'}`,
         // transition: '0.3s',
         transition: 'all 0.4s ease-in-out',
+        width: '100%',
       }}
     >
       <div className='servicesOfferedCard'>

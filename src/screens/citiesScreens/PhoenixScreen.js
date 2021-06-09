@@ -3,12 +3,12 @@ import '../../styles/screens/citiesScreens/phoenixScreen.scss';
 
 import { ScrollToTop } from './../../utilities/index';
 import CitiesLandingPage from './../../components/globalComponents/CitiesLandingPage';
-
 import CitiesServicesCardContainer from '../../components/globalComponents/CitiesServicesCardContainer';
 import CitiesBlogCardContainer from '../../components/globalComponents/CitiesBlogCardContainer';
 import CitiesAboutPulsRepairService from '../../components/globalComponents/CitiesAboutPulsRepairService';
 import CitiesMap from '../../components/globalComponents/CitiesMap';
 import CitiesBreadCrumb from '../../components/globalComponents/CitiesBreadCrumb';
+import Review from '../../components/globalComponents/Review';
 
 const PhoenixScreen = () => {
   ScrollToTop();
@@ -36,6 +36,7 @@ const PhoenixScreen = () => {
         <h1 className='heading-1 center my-5'>The Puls Blog</h1>
         <CitiesBlogCardContainer />
       </div>
+      <Review />
     </div>
   );
 };

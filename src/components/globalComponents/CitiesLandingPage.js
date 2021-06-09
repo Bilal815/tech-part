@@ -17,8 +17,10 @@ const CitiesLandingPage = ({}) => {
       <div>
         <div className='content-wrapper'>
           <h1>Phoenix install & repair services</h1>
-          <p>Our local experts in your neighborhood can be there as soon as same-day.</p>
-          <Button>book an appointment</Button>
+          <p>
+            Our local experts in your neighborhood can be <br /> there as soon as same-day.
+          </p>
+          <Button>Book an appointment</Button>
         </div>
         <div className='image-wrapper'>
           <img src={LandingPageImage} alt='LandingPageImage' />
