@@ -1,0 +1,33 @@
+.customer-review-wrapper {
+    position: relative;
+    background-color: #017aff;
+    width: 100%;
+    padding: 200px 0 120px;
+    color: #fff;
+    text-align: center;
+}
+.customer-review-wrapper:after {
+    content: "";
+    border: 0 solid transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    -webkit-transform: rotate(1turn);
+    border-bottom-width: 100px;
+    border-right-width: 100vw;
+    border-right-color: #fff;
+}
+.customer-review-wrapper .review {
+    font-family: Circular-Pro-Medium,sans-serif;
+    font-style: italic;
+    font-size: 22px;
+    letter-spacing: 1px;
+    max-width: 850px;
+    margin: 0 auto;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    overflow: hidden;
+    height: 120px;
+    line-height: 42px;
+}

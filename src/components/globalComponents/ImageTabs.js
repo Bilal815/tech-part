@@ -7,16 +7,15 @@ const Review = (props) => {
     const [active, setActive] = useState(1)
     useEffect(() => {
         setActive(props.data[0].id);
-        props.setReviewText(props.data[0].message)
+        props.setCurrentReview(props.data[0])
     },[])
     return (
         <Tabs defaultActiveKey="1" centered>
             {
                 props.data.map((x, index) => {
-                    return (<TabPane tab={
-                        <img onClick={() => { setActive(x.id); props.setReviewText(x.message) }} className={active === x.id ? "tech-img-clicked rounded-circle" : "tech-img rounded-circle"} src={x.src} ></img>
+                    return (<TabPane style={{borderColor:"brown"}} tab={
+                        <img onClick={() => { setActive(x.id); props.setCurrentReview(x) }} className={active === x.id ? "tech-img-clicked rounded-circle" : "tech-img rounded-circle"} src={x.src} ></img>
                     } key={index + 1}>
-                        Content of Tab Pane 1
                     </TabPane>)
                 })
             }
