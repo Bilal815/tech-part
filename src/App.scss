@@ -406,3 +406,13 @@ button {
   display: flex;
   flex-wrap: wrap;
 }
+.clickable{
+  cursor: pointer;
+}
+.link {
+  color: $black;
+  }
+  
+.link:hover {
+  color: rgb(22, 181, 230)
+}

@@ -8,6 +8,7 @@ import GetApp from './../components/globalComponents/GetApp';
 
 const HomeScreen = () => {
   ScrollToTop();
+<<<<<<< HEAD
   return (
     <div className='homeScreen container-75'>
       HomeScreen
@@ -16,6 +17,11 @@ const HomeScreen = () => {
       <FeaturedIn />
       <CitiesWherePulsAvailable />
       <GetStarted1 />
+=======
+  return(
+    <div >
+      <div className='homeScreen' style={{height:"5000px"}}>HomeScreen</div>
+>>>>>>> 7eb197a01dba79229308e7ea70f71a102579dc6a
     </div>
   );
 };
