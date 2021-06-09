@@ -10,11 +10,11 @@ const ServicesOfferedCard = ({ image, title, url }) => {
   return (
     <Link
       to={`${url && url}`}
-      onMouseOver={() => {
-        console.log('onMouseOver');
-      }}
-      onMouseOut={() => {
-        console.log('onMouseOut');
+      onMouseOver={() => setIsHovered(true)}
+      onMouseOut={() => setIsHovered(false)}
+      style={{
+        transform: `${isHovered ? 'scale(1.125)' : 'scale(1)'}`,
+        transition: '0.3s',
       }}
     >
       <div className='servicesOfferedCard'>
