@@ -2,15 +2,15 @@
 @import '../../../scss/fontFamily.scss';
 
 .featuredIn {
-  width: 100%;
-  div {
-    width: 70px;
-    height: 25px;
-  }
-  img {
-    object-fit: contain;
-    width: 100%;
-    height: 100%;
-    margin-right: 50px;
+  max-width: 1200px;
+  box-sizing: border-box;
+  overflow: hidden;
+  .images-wrapper {
+    margin: 30px 0 75px;
+    img {
+      height: 25px;
+      margin: 0 30px 30px 0;
+      object-fit: contain;
+    }
   }
 }

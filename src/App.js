@@ -50,6 +50,7 @@ import PhoenixScreen from './screens/citiesScreens/PhoenixScreen';
 import TexasScreen from './screens/citiesScreens/TexasScreen';
 import Washington_DCScreen from './screens/citiesScreens/Washington_DCScreen';
 import WashingtonDCScreen from './screens/citiesScreens/WashingtonDCScreen';
+import DallasScreen from './screens/citiesScreens/DallasScreen';
 
 // Footer Screens Imports
 // copmany imports
@@ -126,12 +127,13 @@ const App = () => {
         <Route exact path='/cities/ma' component={MassachusettsScreen} />
         <Route exact path='/cities/ma/boston' component={BostonScreen} />
         <Route exact path='/cities/ny' component={NewyorkScreen} />
-        <Route exact path='/cities/ny/new-york-city' component={NewyorkCityScreen} />
+        <Route exact path='/cities/ny/newyork-city' component={NewyorkCityScreen} />
         <Route exact path='/cities/nc' component={NorthCarolinaScreen} />
         <Route exact path='/cities/nc/charlotte' component={CharlotteScreen} />
         <Route exact path='/cities/pa' component={PennsylvaniaScreen} />
         <Route exact path='/cities/pa/philadelphia' component={PhiladelphiaScreen} />
         <Route exact path='/cities/tx' component={TexasScreen} />
+        <Route exact path='/cities/tx/dallas' component={DallasScreen} />
         <Route exact path='/cities/tx/houston' component={HoustonScreen} />
         <Route exact path='/cities/dc' component={WashingtonDCScreen} />
         <Route exact path='/cities/dc/washington-dc' component={Washington_DCScreen} />

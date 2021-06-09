@@ -8,11 +8,13 @@ import {
   legalsLinkList,
 } from '../../data/footerLinkLists';
 import { Button } from '../../styledComponents';
-import androidImage from '../../assets/images/android.png';
 import iosImage from '../../assets/images/ios.png';
-import footer4Icon from '../../assets/google.png';
-
-import {} from 'react-icons';
+import androidImage from '../../assets/images/android.png';
+import facebookIcon from '../../assets/facebook.png';
+import twitterIcon from '../../assets/twitter.png';
+import youtubeIcon from '../../assets/youtube.png';
+import googleIcon from '../../assets/google.png';
+import instagramIcon from '../../assets/instagram.png';
 
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -77,36 +79,59 @@ const Footer = () => {
         <Col md={4}>
           <h6>Stay Connected</h6>
           <div className='df'>
-            <input type='text' placeholder='Enter email*' />
-            <Button>Subscribe</Button>
+            {showHide ? (
+              <p className='my- 4'>
+                Thank you for subscribing! Be on the lookout for a welcome email from us soon.
+              </p>
+            ) : (
+              <div className='mt-3 df '>
+                <input type='text' placeholder='Enter email*' />
+                <Button onClick={() => setShowHide(!showHide)}>Subscribe</Button>
+              </div>
+            )}
           </div>
-          <div className='social-icon-container'>
-            <Link>
-              <img src='' alt='' />
-            </Link>
-            <Link>
-              <img src='' alt='' />
-            </Link>
-            <Link>
-              <img src='' alt='' />
-            </Link>
-            <Link>
-              <img src='' alt='' />
-            </Link>
-            <Link>
-              <img src='' alt='' />
-            </Link>
+          <div className='social-icon-container my-4'>
+            <ul className='df'>
+              <li>
+                <a href='https://www.facebook.com/pulsdotcom/' target='_blank'>
+                  <img src={facebookIcon} alt='facebookIcon' />
+                </a>
+              </li>
+              <li>
+                <a href='https://twitter.com/pulscom' target='_blank'>
+                  <img src={twitterIcon} alt='twitterIcon' />
+                </a>
+              </li>
+              <li>
+                <a href='https://www.youtube.com/channel/UCpXjcgaFLHsfrYSSFoi0vLw' target='_blank'>
+                  <img src={youtubeIcon} alt='youtubeIcon' />
+                </a>
+              </li>
+              <li>
+                <a
+                  href='https://www.google.com/maps/place/Puls+Appliance+Repair+Dallas/@32.8056347,-97.4869899,9z/data=!3m1!4b1!4m5!3m4!1s0x0:0x323b911c1fe315b!8m2!3d32.806883!4d-96.9265378?hl=en'
+                  target='_blank'
+                >
+                  <img src={googleIcon} alt='googleIcon' />
+                </a>
+              </li>
+              <li>
+                <a href='https://www.instagram.com/pulscom/' target='_blank'>
+                  <img src={instagramIcon} alt='instagramIcon' />
+                </a>
+              </li>
+            </ul>
           </div>
-          <div>support@puls.com</div>
+          <p>support@puls.com</p>
         </Col>
       </Row>
-      <div className='df mt-4 download-app-container'>
-        <Link>
-          <img src='' alt='' />
-        </Link>
-        <Link>
-          <img src='' alt='' />
-        </Link>
+      <div className='my-4 download-app-container'>
+        <a href='https://apps.apple.com/us/app/id1530724750' target='_blank' className='mr-3'>
+          <img src={iosImage} alt='iosImage' />
+        </a>
+        <a href='https://play.google.com/store/apps/details?id=com.puls.consumers' target='_blank'>
+          <img src={androidImage} alt='androidImage' />
+        </a>
       </div>
       <div className='sb copy-right-container'>
         <p>© Puls Technologies Inc 2021</p>

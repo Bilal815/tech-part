@@ -1,2 +1,23 @@
 @import '../../../../scss/variables.scss';
 @import '../../../../scss/fontFamily.scss';
+
+.privacyScreen {
+  width: 38%;
+  margin: 50px auto;
+  h1 {
+    font-family: $RobotoBold;
+    color: $light-black;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .firstParagraph {
+    border-top: 1px solid $whitish-gray;
+    padding: 10px 0;
+  }
+  p {
+    font-family: $RobotoMedium;
+    color: $light-black;
+    margin: 0;
+    padding: 0 0 10px;
+  }
+}

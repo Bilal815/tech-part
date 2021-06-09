@@ -1,2 +1,25 @@
 @import '../../../../scss/variables.scss';
 @import '../../../../scss/fontFamily.scss';
+
+.termsAndConditionsScreen {
+  width: 60%;
+  margin: 50px auto;
+  h1,
+  h3 {
+    font-family: $RobotoBold;
+    color: $light-black;
+    text-transform: uppercase;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    color: $light-black;
+    font-size: 13px;
+    font-family: $RobotoRegular;
+    margin-bottom: 10px;
+  }
+}

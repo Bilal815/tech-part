@@ -1,0 +1,21 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontfamily.scss';
+
+.citiesWherePulsAvailable {
+  ul {
+    margin: 0;
+    padding: 0;
+    hr {
+      margin: 8px 0;
+    }
+    li {
+      font-size: 14px;
+      font-weight: bold;
+      a {
+        font-weight: normal;
+        font-size: 14px;
+        color: $link-gray;
+      }
+    }
+  }
+}
