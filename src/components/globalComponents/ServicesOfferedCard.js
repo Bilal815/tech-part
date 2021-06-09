@@ -22,7 +22,7 @@ const ServicesOfferedCard = ({ image, title, url }) => {
         <div className='center'>
           <img src={image && image} alt='service-card' />
           <p className='title mt-3'>
-            <span className='mr-1'>{title && title}</span>
+            <span className='mr-1 black'>{title && title}</span>
             <BsArrowRight className='blue' size='25' />
           </p>
         </div>
