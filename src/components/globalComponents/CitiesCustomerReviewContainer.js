@@ -4,7 +4,7 @@ import '../../styles/components/globalComponents/review.scss';
 import { Rate } from 'antd';
 import ImageTabs from './ImageTabs';
 
-const Review = (props) => {
+const CitiesCustomerReviewContainer = ({city) => {
   const [currentReview, setCurrentReview] = useState('');
   const [data, setData] = useState([
     {
@@ -46,7 +46,7 @@ const Review = (props) => {
   ]);
   return (
     <div className='w-100 customer-review-wrapper'>
-      <h1 className='text-center text-white'>What customers in {props.city} are saying</h1>
+      <h1 className='text-center text-white'>What customers in {city} are saying</h1>
       <p className='text-center review'>{currentReview.message}</p>
       <div className='d-flex justify-content-center'>
         <Rate disabled value={currentReview.rate} style={{ color: 'rgb(93, 218, 237)' }} />
@@ -55,4 +55,4 @@ const Review = (props) => {
     </div>
   );
 };
-export default Review;
+export default CitiesCustomerReviewContainer;
