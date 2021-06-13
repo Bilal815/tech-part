@@ -5,12 +5,12 @@ import { Col, Row } from 'react-bootstrap';
 
 import ServicesOfferedCard from './ServicesOfferedCard';
 
-import HomeAppliancesImage from '../../assets/icons/hover/home-appliances_hover.svg';
-import TvMountingImage from '../../assets/icons/hover/tv-mounting-hover.svg';
-import HandymanImage from '../../assets/icons/hover/handyman-hover.svg';
-import IphoneRepairImage from '../../assets/icons/hover/phone_hover.svg';
-import PlumbingImage from '../../assets/icons/hover/plumbing-hover.svg';
-import GarageDoorImage from '../../assets/icons/hover/garage-doors-hover.svg';
+import HomeAppliancesImage from '../../assets/icons/services-icons/home-appliances.svg';
+import TvMountingImage from '../../assets/icons/services-icons/tv-mounting.svg';
+import HandymanImage from '../../assets/icons/services-icons/handyman.svg';
+import IphoneRepairImage from '../../assets/icons/services-icons/iphone.svg';
+import PlumbingImage from '../../assets/icons/services-icons/plumbing.svg';
+import GarageDoorImage from '../../assets/icons/services-icons/garage.svg';
 
 const CitiesServicesCardContainer = () => {
   return (
@@ -45,11 +45,7 @@ const CitiesServicesCardContainer = () => {
           />
         </Col>
         <Col sm={12} md={6} lg={4} className='center'>
-          <ServicesOfferedCard
-            image={PlumbingImage}
-            title='Plumbing'
-            url='/services/plumbing'
-          />
+          <ServicesOfferedCard image={PlumbingImage} title='Plumbing' url='/services/plumbing' />
         </Col>
         <Col sm={12} md={6} lg={4} className='center'>
           <ServicesOfferedCard

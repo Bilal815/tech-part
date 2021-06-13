@@ -1,19 +1,19 @@
 import { useState, useEffect } from 'react';
 import { Tabs } from 'antd';
-import '../../styles/components/globalComponents/imageTabs.scss';
+import '../../styles/components/globalComponents/citiesCustomerReviewImageTabs.scss';
 const { TabPane } = Tabs;
 
-const Review = (props) => {
+const CitiesCustomerReviewImageTabs = ({ data, setCurrentReview }) => {
   const [active, setActive] = useState(1);
 
   useEffect(() => {
-    setActive(props.data[0].id);
-    props.setCurrentReview(props.data[0]);
+    setActive(data[0].id);
+    setCurrentReview(data[0]);
   }, []);
 
   return (
-    <Tabs defaultActiveKey='1' centered>
-      {props.data.map((x, index) => {
+    <Tabs defaultActiveKey='1' centered className='citiesCustomerReviewImageTabs'>
+      {data.map((x, index) => {
         return (
           <TabPane
             style={{ borderColor: 'brown' }}
@@ -21,7 +21,7 @@ const Review = (props) => {
               <img
                 onClick={() => {
                   setActive(x.id);
-                  props.setCurrentReview(x);
+                  setCurrentReview(x);
                 }}
                 className={
                   active === x.id ? 'tech-img-clicked rounded-circle' : 'tech-img rounded-circle'
@@ -36,4 +36,4 @@ const Review = (props) => {
     </Tabs>
   );
 };
-export default Review;
+export default CitiesCustomerReviewImageTabs;

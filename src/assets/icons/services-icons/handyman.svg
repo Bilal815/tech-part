@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="47" viewBox="0 0 50 47">
+    <g fill="none" fill-rule="evenodd" transform="translate(1 -3)">
+        <path fill="#FFF" stroke="#017AFF" stroke-linejoin="round" stroke-width="2" d="M28 22l7.269-15.992a3 3 0 0 1 5.462 0L48 22v27H28V22z"/>
+        <path fill="#FFF" stroke="#017AFF" stroke-linejoin="round" stroke-width="2" d="M20 22h28v27H20z"/>
+        <rect width="22" height="21" x="23" y="25" fill="#12FFCD" rx="2"/>
+        <rect width="26" height="3" x="13" y="11" fill="#FFF" stroke="#017AFF" stroke-linejoin="round" stroke-width="2" rx="1.5"/>
+        <path fill="#FFF" stroke="#017AFF" stroke-linejoin="round" stroke-width="2" d="M0 22L7.269 6.008a3 3 0 0 1 5.462 0L20 22v27H0V22z"/>
+    </g>
+</svg>

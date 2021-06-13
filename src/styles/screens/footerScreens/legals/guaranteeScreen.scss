@@ -1,2 +1,26 @@
 @import '../../../../scss/variables.scss';
 @import '../../../../scss/fontFamily.scss';
+
+.guaranteeScreen {
+  h1 {
+    margin: 20px 0 30px;
+    // text-align: center;
+    color: $light-black;
+    font-family: $RobotoBold;
+    // font-size: 30px;
+  }
+  .terms {
+    border-top: 1px solid #eff2f5;
+    padding: 20px 0;
+    p {
+      font-family: $RobotoMedium;
+      font-size: 18px;
+      line-height: 25px;
+      color: $light-black;
+    }
+    ul li {
+      font-size: 16px;
+      list-style: disc;
+    }
+  }
+}

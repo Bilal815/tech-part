@@ -56,6 +56,16 @@ button {
   margin: 0 auto;
 }
 
+.container-45 {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.container-40 {
+  width: 40%;
+  margin: 0 auto;
+}
+
 .container-y-100 {
   margin: 100px auto;
 }
@@ -141,10 +151,15 @@ button {
 //heading classes
 .heading-1 {
   font-family: $RobotoBold;
-  font-size: 35px;
+  font-size: 36px;
   color: $black;
 }
 .heading-2 {
+  font-family: $RobotoBold;
+  font-size: 30px;
+  color: $black;
+}
+.heading-3 {
   font-family: $RobotoBold;
   font-size: 24px;
   color: $black;

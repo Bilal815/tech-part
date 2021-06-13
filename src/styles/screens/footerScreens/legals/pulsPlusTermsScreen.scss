@@ -1,2 +1,12 @@
 @import '../../../../scss/variables.scss';
 @import '../../../../scss/fontFamily.scss';
+
+.pulsPlusTermsScreen {
+  h1 {
+    color: $black-400;
+    sup {
+      color: $blue;
+      font-weight: 900;
+    }
+  }
+}

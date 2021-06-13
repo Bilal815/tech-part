@@ -37,7 +37,7 @@ const DefaultHeader = ({ location: { pathname } }) => {
     // listener = document.addEventListener('scroll', (e) => {
     document.addEventListener('scroll', (e) => {
       let scrolled = document.scrollingElement.scrollTop;
-      if (scrolled >= 100) {
+      if (scrolled >= 10) {
         setScroll(true);
       } else {
         setScroll(false);
@@ -47,7 +47,7 @@ const DefaultHeader = ({ location: { pathname } }) => {
   return defaultHeaderNotShow ? null : (
     <Navbar
       variant='light'
-      className={isScrolled ? 'defaultHeader colored   p-4' : 'defaultHeader p-4'}
+      className={isScrolled ? 'defaultHeader colored p-4' : 'defaultHeader p-4'}
       fixed={isScrolled ? 'top' : ''}
       expand='lg'
     >

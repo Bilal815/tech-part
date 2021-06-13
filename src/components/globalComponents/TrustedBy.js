@@ -8,7 +8,7 @@ import SimplisafeLogo from '../../assets/icons/trusted/simplisafe.svg';
 const TrustedBy = () => {
   return (
     <div className='trustedBy'>
-      <h2 className='heading-2'>Trusted By</h2>
+      <h2 className='heading-3'>Trusted By</h2>
       <div className='images-wrapper'>
         <img src={HisenseLogo} alt='Logo' />
         <img src={TclLogo} alt='Logo' />

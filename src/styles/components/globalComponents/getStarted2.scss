@@ -1,2 +1,24 @@
 @import '../../../scss/variables.scss';
 @import '../../../scss/fontfamily.scss';
+
+.getStarted2 {
+  padding: 125px 0;
+  width: 100%;
+  height: 350px;
+  position: relative;
+  margin: 0 !important;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  .content {
+    h1 {
+      font-size: 46px;
+      line-height: 1.2;
+      color: #595959;
+      font-family: $RobotoBold;
+    }
+    button {
+      margin-left: 150px;
+    }
+  }
+}

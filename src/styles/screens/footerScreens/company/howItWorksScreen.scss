@@ -1,2 +1,67 @@
 @import '../../../../scss/variables.scss';
 @import '../../../../scss/fontFamily.scss';
+
+.howItWorksScreen {
+  div.landing-page {
+    background-image: url(https://d7gh5vrfihrl.cloudfront.net/website/banners/how-it-works.jpg);
+    height: 615px;
+    width: 100%;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    position: relative;
+    box-sizing: border-box;
+    h1 {
+      margin: 0;
+      color: white;
+    }
+    p {
+      margin: 0;
+      font-size: 18px;
+      padding-top: 5px;
+      font-weight: 400;
+      color: white;
+      letter-spacing: 2px;
+    }
+  }
+  div.df {
+    width: 100%;
+    .image {
+      width: 60%;
+      img {
+        width: 100%;
+      }
+    }
+    .content {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 81px;
+      .green-heading {
+        display: flex;
+        align-items: flex-start;
+      }
+      h1 {
+        color: #0161c7;
+        font-size: 24px;
+        font-family: $RobotoBold;
+      }
+      p {
+        margin-left: 81px;
+      }
+    }
+  }
+  .questions-wrapper {
+    margin: 20px auto 0;
+    padding: 70px 0;
+    background-color: #f8f8f8;
+    h1 {
+      font-family: $RobotoBold;
+      margin-bottom: 35px;
+      color: #0161c7;
+      font-size: 26px;
+    }
+  }
+}

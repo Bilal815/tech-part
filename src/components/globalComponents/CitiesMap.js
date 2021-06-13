@@ -3,11 +3,11 @@ import '../../styles/components/globalComponents/citiesMap.scss';
 
 import { AiFillStar } from 'react-icons/ai';
 
-const CitiesMap = ({ left, right }) => {
+const CitiesMap = ({ left, right, city, imageUrl }) => {
   return (
     <div className='citiesMap'>
       <div className='card' style={{ left: left && '-200px', right: right && '-275px' }}>
-        <h1 className='heading-1 mb-4'>Puls Phoenix</h1>
+        <h1 className='heading-1 mb-4'>Puls {city}</h1>
         <div className='star-container'>
           <AiFillStar />
           <AiFillStar />
@@ -29,7 +29,7 @@ const CitiesMap = ({ left, right }) => {
           <span>8:00 am - 10:00 pm</span>
         </p>
       </div>
-      <img src='https://s3.amazonaws.com/static.puls.com/website/SEO/Phoenix.jpg' alt='map-image' />
+      <img src={imageUrl} alt='map-image' />
     </div>
   );
 };

@@ -11,7 +11,7 @@ import VenturebeatLogo from '../../assets/icons/brands-logo/venturebean.svg';
 const FeaturedIn = ({ backgroundColor }) => {
   return (
     <div className='featuredIn' style={{ backgroundColor }}>
-      <h2 className='heading-2'>Featured In:</h2>
+      <h2 className='heading-3'>Featured In:</h2>
       <div className='images-wrapper'>
         <img src={TwsjLogo} alt='TwsjLogo' id='TwsjLogo' />
         <img src={CnbcLogo} alt='CnbcLogo' id='CnbcLogo' />

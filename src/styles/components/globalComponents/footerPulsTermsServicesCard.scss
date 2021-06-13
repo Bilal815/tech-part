@@ -1,0 +1,33 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontFamily.scss';
+
+.footerPulsTermsServicesCard {
+  padding: 0;
+  min-height: 250px;
+  margin: 15px;
+  box-shadow: 0 5px 14px 0 #eaeaf3;
+  border: 1px solid rgba(218, 220, 228, 0.06);
+  border-radius: 10px;
+
+  div.strip {
+    border-radius: 10px 10px 0 0;
+    height: 16px;
+    background: $blue;
+  }
+  div.content-wrapper {
+    padding: 50px 20px;
+    p {
+      height: 50px;
+      text-align: center;
+    }
+  }
+  img {
+    height: 50px;
+  }
+  .icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $blue-400;
+  }
+}

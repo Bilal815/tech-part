@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const CitiesWherePulsAvailable = () => {
   return (
     <div className='citiesWherePulsAvailable mb-5'>
-      <h2 className='heading-2 mb-3'>Cities where Puls is available:</h2>
+      <h2 className='heading-3 mb-3'>Cities where Puls is available:</h2>
 
       <Row>
         <Col sm={4} md={2}>

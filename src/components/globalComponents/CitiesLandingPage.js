@@ -5,9 +5,8 @@ import { Link } from 'react-router-dom';
 
 import PulsWhiteLogo from '../../assets/icons/puls_logo_white.svg';
 import LandingPageImage from '../../assets/images/landing-page-1.jpg';
-import { Button } from './../../styledComponents/index';
 
-const CitiesLandingPage = ({}) => {
+const CitiesLandingPage = ({ city }) => {
   return (
     <div className='citiesLandingPage'>
       <Link to='/'>
@@ -16,11 +15,11 @@ const CitiesLandingPage = ({}) => {
 
       <div>
         <div className='content-wrapper'>
-          <h1>Phoenix install & repair services</h1>
+          <h1>{city} install & repair services</h1>
           <p>
             Our local experts in your neighborhood can be <br /> there as soon as same-day.
           </p>
-          <Button>Book an appointment</Button>
+          <Link to='/book-a-service'>Book an appointment</Link>
         </div>
         <div className='image-wrapper'>
           <img src={LandingPageImage} alt='LandingPageImage' />
