@@ -1,5 +1,5 @@
 @import '../../../scss/variables.scss';
-@import '../../../scss/fontfamily.scss';
+@import '../../../scss/fontFamily.scss';
 
 .citiesCustomerReviewImageTabs {
   .tech-img {
@@ -18,5 +18,13 @@
     border-radius: 50%;
     transform: scale(1);
     transition: all 0.2s ease;
+  }
+}
+
+// ant design tabs styling
+
+.ant-tabs-nav-list {
+  .ant-tabs-tab {
+    margin: 0 30px;
   }
 }

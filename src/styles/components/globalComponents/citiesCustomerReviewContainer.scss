@@ -1,5 +1,5 @@
 @import '../../../scss/variables.scss';
-@import '../../../scss/fontfamily.scss';
+@import '../../../scss/fontFamily.scss';
 
 .citiesCustomerReviewContainer {
   position: relative;
@@ -8,7 +8,6 @@
   padding: 200px 0 120px;
   color: #fff;
   text-align: center;
-  margin-bottom: 75px;
   &:after {
     content: '';
     border: 0 solid transparent;
@@ -16,7 +15,7 @@
     right: 0;
     top: 0;
     z-index: 1;
-    //   -webkit-transform: rotate(1turn);
+    // -webkit-transform: rotate(1turn);
     transform: rotate(1turn);
     border-bottom-width: 100px;
     border-right-width: 100vw;
@@ -25,7 +24,7 @@
   h1 {
     font-size: 35px;
     line-height: 45px;
-    font-family: $RobotoMedium;
+    font-family: $RobotoBold;
     max-width: 455px;
     margin: 0 auto 59px;
   }
@@ -47,16 +46,4 @@
     margin: 30px 0;
     line-height: 30px;
   }
-  .name {
-    font-family: $RobotoRegular;
-    font-size: 18px;
-    line-height: 36px;
-    height: 36px;
-    letter-spacing: 0.45px;
-  }
-}
-
-// ant design tabs styling
-.ant-tabs-nav-list .ant-tabs-tab {
-  margin: 0 40px;
 }
