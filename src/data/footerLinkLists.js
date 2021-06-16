@@ -6,9 +6,9 @@ export const companyLinkList = [
   { link: '/invite-a-friend', label: 'Invite a Friend' },
   { link: '/pricing', label: 'Pricing' },
   { link: '/careers', label: 'Careers' },
-  { link: '', label: 'Info Hub' },
+  { link: 'https://blog.puls.com', label: 'Info Hub' },
   { link: '/newsroom', label: 'Newsroom' },
-  { link: '', label: 'Media Inquiries' },
+  { link: 'mailto:media@puls.com', label: 'Media Inquiries' },
   { link: '/', label: 'Home' },
 ];
 

@@ -28,13 +28,19 @@ const Footer = () => {
           <h6>Company</h6>
           <ul className='m-0'>
             {companyLinkList &&
-              companyLinkList.map((c, i) => {
-                return (
+              companyLinkList.map((c, i) =>
+                c.label === 'Info Hub' || c.label === 'Media Inquiries' ? (
+                  <li>
+                    <a href={c.link} target='_blank'>
+                      {c.label && c.label}
+                    </a>
+                  </li>
+                ) : (
                   <li key={i}>
                     <Link to={c.link === '' ? '' : c.link}>{c.label && c.label}</Link>
                   </li>
-                );
-              })}
+                )
+              )}
           </ul>
         </Col>
         <Col md={2}>
