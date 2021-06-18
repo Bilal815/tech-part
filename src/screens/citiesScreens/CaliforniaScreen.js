@@ -16,36 +16,39 @@ const CaliforniaScreen = () => {
   ];
   return (
     <div className='californiaScreen'>
-      <CitiesLandingPage city='California' />
+      <CitiesLandingPage
+        city='California'
+        citiesLandingPageImage='https://s3.amazonaws.com/static.puls.com/website/SEO/Puls%20Day%201039%202.jpg'
+      />
       <CitiesBreadCrumb breadcrumbList={breadcrumbList} />
       <div className='container-50 container-y-50'>
         <div className='center'>
           <h1 className='heading-1 mb-3'>Services offered</h1>
-          <h2 className='mb-3'>Solutions to all your home maintenance needs</h2>
+          <h2 className='mb-3 paragraph'>Solutions to all your home maintenance needs</h2>
         </div>
       </div>
       <div className='container-60'>
         <CitiesServicesCardContainer />
       </div>
-      <div className='container-70 container-y-50 center'>
+      <div className='container-70 container-y-50'>
         <CitiesMap
-          left
+          mapImageLeft
           city='San Francisco'
-          imageUrl='https://s3.amazonaws.com/static.puls.com/website/SEO/Phoenix.jpg'
+          imageUrl='https://s3.amazonaws.com/static.puls.com/website/SEO/la_map@3x.png'
         />
       </div>
-      <div className='container-70 container-y-50 center'>
+      <div className='container-70 container-y-50'>
         <CitiesMap
-          right
+          mapImageRight
           city='Los Angeles'
-          imageUrl='https://s3.amazonaws.com/static.puls.com/website/SEO/Phoenix.jpg'
+          imageUrl='https://s3.amazonaws.com/static.puls.com/website/SEO/la_map@3x.png'
         />
       </div>
-      <div className='container-70 container-y-50 center'>
+      <div className='container-70 container-y-50'>
         <CitiesMap
-          left
+          mapImageLeft
           city='San Diego'
-          imageUrl='https://s3.amazonaws.com/static.puls.com/website/SEO/Phoenix.jpg'
+          imageUrl='https://s3.amazonaws.com/static.puls.com/website/SEO/la_map@3x.png'
         />
       </div>
 

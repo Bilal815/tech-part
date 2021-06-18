@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import PulsWhiteLogo from '../../assets/icons/puls_logo_white.svg';
 import LandingPageImage from '../../assets/images/landing-page-1.jpg';
 
-const CitiesLandingPage = ({ city }) => {
+const CitiesLandingPage = ({ city, citiesLandingPageImage }) => {
   return (
     <div className='citiesLandingPage'>
       <Link to='/'>
@@ -22,7 +22,10 @@ const CitiesLandingPage = ({ city }) => {
           <Link to='/book-a-service'>Book an appointment</Link>
         </div>
         <div className='image-wrapper'>
-          <img src={LandingPageImage} alt='LandingPageImage' />
+          <img
+            src={citiesLandingPageImage ? citiesLandingPageImage : LandingPageImage}
+            alt='LandingPageImage'
+          />
         </div>
       </div>
     </div>

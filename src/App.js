@@ -137,6 +137,8 @@ const App = () => {
         <Route exact path='/cities/tx/houston' component={HoustonScreen} />
         <Route exact path='/cities/dc' component={WashingtonDCScreen} />
         <Route exact path='/cities/dc/washington-dc' component={Washington_DCScreen} />
+
+        {/* https://s3.amazonaws.com/static.puls.com/website/SEO/NYC.png */}
         {/* Footer section routes */}
         {/* company imports */}
         <Route exact path='/about-us' component={AboutUsScreen} />

@@ -14,24 +14,24 @@ const MiamiScreen = () => {
   ScrollToTop();
   const breadcrumbList = [
     { link: '/', label: 'Puls.com', color: '#a1abb0' },
-    { link: '/cities/az', label: 'Florida', color: '#a1abb0' },
+    { link: '/cities/fl', label: 'Florida', color: '#a1abb0' },
     { link: '/cities/az/phoenix', label: 'Miami', color: '#017aff' },
   ];
   return (
     <div className='miamiScreen'>
       <CitiesLandingPage city='Miami' />
       <CitiesBreadCrumb breadcrumbList={breadcrumbList} />
-      <div className='container-70 container-y-50 city-map'>
+      <div className='container-70 container-y-25'>
         <CitiesMap
-          left
+          mapImageRight
           city='Miami'
-          imageUrl='https://s3.amazonaws.com/static.puls.com/website/SEO/Miami.jpg'
+          imageUrl='https://s3.amazonaws.com/static.puls.com/website/SEO/map_miami.png'
         />
       </div>
-      <div className='container-50 container-y-50'>
+      <div className='container-50'>
         <div className='center'>
           <h1 className='heading-1 mt-5 mb-3'>Services offered</h1>
-          <h2 className='mb-5'>Solutions to all your home maintenance needs</h2>
+          <h2 className='mb-5 paragraph'>Solutions to all your home maintenance needs</h2>
         </div>
       </div>
       <div className='container-60 mb-5'>

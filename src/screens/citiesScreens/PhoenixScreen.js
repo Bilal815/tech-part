@@ -21,17 +21,17 @@ const PhoenixScreen = () => {
     <div className='phoenixScreen'>
       <CitiesLandingPage city='Phoenix' />
       <CitiesBreadCrumb breadcrumbList={breadcrumbList} />
-      <div className='container-70 container-y-50 city-map'>
+      <div className='container-70 container-y-25'>
         <CitiesMap
-          left
+          mapImageRight
           city='Phoenix'
           imageUrl='https://s3.amazonaws.com/static.puls.com/website/SEO/Phoenix.jpg'
         />
       </div>
-      <div className='container-50 container-y-50'>
+      <div className='container-50'>
         <div className='center'>
           <h1 className='heading-1 mt-5 mb-3'>Services offered</h1>
-          <h2 className='mb-5'>Solutions to all your home maintenance needs</h2>
+          <h2 className='mb-5 paragraph'>Solutions to all your home maintenance needs</h2>
         </div>
       </div>
       <div className='container-60 mb-5'>

@@ -147,6 +147,12 @@ button {
 .bg-black {
   background-color: $black;
 }
+.black {
+  color: $black-400;
+}
+.bg-black {
+  background-color: $black-400;
+}
 
 //heading classes
 .heading-1 {
@@ -163,6 +169,13 @@ button {
   font-family: $RobotoBold;
   font-size: 24px;
   color: $black;
+}
+
+// paragraph classes
+.paragraph {
+  font-family: $RobotoRegular;
+  font-size: 24px;
+  color: $black-400;
 }
 
 // margin classes
