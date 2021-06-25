@@ -7,16 +7,27 @@ import CitiesWherePulsAvailable from './../components/globalComponents/CitiesWhe
 import FeaturedIn from './../components/globalComponents/FeaturedIn';
 import TrustedBy from './../components/globalComponents/TrustedBy';
 import GetApp from './../components/globalComponents/GetApp';
+import MainLandingSection from '../components/globalComponents/MainLandingSection';
 
 const HomeScreen = () => {
   ScrollToTop();
   return (
-    <div className='homeScreen container-75'>
-      <GetApp />
-      <TrustedBy />
-      <FeaturedIn />
-      <CitiesWherePulsAvailable />
-      <GetStarted1 />
+    <div className='homeScreen'>
+      <MainLandingSection
+        backgroundImage='https://d7gh5vrfihrl.cloudfront.net/website/banners/home-page-new.jpg'
+        title='Home maintenance,made simple'
+        description='The best technicians in, your neighborhood.'
+        btnTitle='Book a Service'
+        btnLink='/book-a-service'
+      />
+
+      <div className='container-75'>
+        <GetApp />
+        <TrustedBy />
+        <FeaturedIn />
+        <CitiesWherePulsAvailable />
+        <GetStarted1 />
+      </div>
     </div>
   );
 };

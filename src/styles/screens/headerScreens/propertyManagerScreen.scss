@@ -1,2 +1,17 @@
 @import '../../../scss/variables.scss';
 @import '../../../scss/fontFamily.scss';
+
+.propertyManagerScreen {
+  .signup-form {
+    min-height: 390px;
+    max-width: 330px;
+    width: 100%;
+    // margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 8px 17px 3px rgb(39, 75, 113 / 42%);
+    background-color: #ffffff;
+    // display: block;
+  }
+}

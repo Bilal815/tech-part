@@ -72,9 +72,9 @@ const DefaultHeader = ({ location: { pathname } }) => {
             <Nav.Link as={Link} to='/pricing'>
               Pricing
             </Nav.Link>
-            <Nav.Link as={Link} to='/'>
+            <a className='nav-link' href='https://blog.puls.com/' target='_blank'>
               Info Hub
-            </Nav.Link>
+            </a>
             <Nav.Link as={Link} to='/members'>
               Members
             </Nav.Link>

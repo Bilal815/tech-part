@@ -10,6 +10,18 @@
   overflow: hidden;
   position: relative;
   height: 650px;
+  &::after {
+    content: ' ';
+    position: absolute;
+    border: 0 solid transparent;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    transform: rotate(1turn);
+    border-top-width: 100px;
+    border-left-width: 100vw;
+    border-left-color: #fff;
+  }
   a img {
     width: 75px;
     height: 75px;

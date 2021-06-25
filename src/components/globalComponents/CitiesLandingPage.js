@@ -12,7 +12,6 @@ const CitiesLandingPage = ({ city, citiesLandingPageImage }) => {
       <Link to='/'>
         <img src={PulsWhiteLogo} alt='PulsWhiteLogo' />
       </Link>
-
       <div>
         <div className='content-wrapper'>
           <h1>{city} install & repair services</h1>

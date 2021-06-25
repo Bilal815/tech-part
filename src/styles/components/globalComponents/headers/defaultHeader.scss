@@ -2,10 +2,9 @@
 @import '../../../../scss/fontFamily.scss';
 
 .defaultHeader {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   padding: 0 !important;
   background-color: transparent;
   transition: 0.8s;
