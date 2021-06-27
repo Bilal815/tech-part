@@ -1,2 +1,130 @@
 @import '../../../scss/variables.scss';
 @import '../../../scss/fontFamily.scss';
+
+.becomeATechScreen {
+  h1.center-light-heading {
+    font-size: 44px;
+    color: $black;
+    font-family: $RobotoLight;
+  }
+  h1.center-light-heading-margin {
+    font-size: 44px;
+    color: $black;
+    font-family: $RobotoLight;
+    margin: 75px 0 25px;
+  }
+  .apply-today-section {
+    padding: 75px 0;
+    object-fit: contain;
+    background-image: linear-gradient(0deg, hsla(0, 0%, 100%, 0.7), #ebf3ff);
+    width: 100%;
+  }
+  .apply-today-section {
+    .row {
+      margin-bottom: 50px;
+    }
+    .inner-section {
+      width: 100%;
+    }
+    a {
+      color: $gray;
+      img {
+        width: 145px;
+        height: 85px;
+        object-fit: contain;
+        transition: all 0.2s linear;
+        margin: 0 0 11px;
+      }
+    }
+  }
+  .technician-app-section {
+    margin-bottom: 250px;
+    .inner-blue-background-wrapper {
+      //   content: ' ';
+      //   display: block;
+      //   position: absolute;
+      //   width: 100%;
+      //   height: 80%;
+      //   z-index: -1;
+      padding: 100px 0 0;
+      height: 700px;
+      background-image: url(https://d7gh5vrfihrl.cloudfront.net/website/banners/blue-bg.svg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      .content-wrapper {
+        h1 {
+          font-family: $RobotoLight;
+          letter-spacing: 2px;
+          color: white;
+          font-size: 44px;
+          margin-bottom: 20px;
+        }
+        p {
+          color: white;
+          font-family: $RobotoMedium;
+          letter-spacing: 1px;
+          font-size: 20px;
+        }
+      }
+      .image-wrapper {
+        margin: 10px 50px 0 0;
+        img {
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .technicians-enjoy-section {
+    h1 {
+      text-align: center;
+    }
+    .video-player-section {
+      margin: 50px 0;
+    }
+  }
+  .technicians-review-section {
+    // position: relative;
+    margin: 60px 0;
+    width: 100%;
+
+    // slick slider styling start
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 1rem 0;
+      list-style-type: none;
+      li {
+        margin: 0 0.25rem;
+      }
+      button {
+        display: block;
+        width: 1rem;
+        height: 1rem;
+        padding: 0;
+        border: none;
+        border-radius: 100%;
+        background-color: #ebedef;
+        text-indent: -9999px;
+      }
+
+      li.slick-active button {
+        background-color: #017aff;
+      }
+    }
+    // slick slider styling end
+  }
+  .join-us-section {
+    background-color: #f3f8ff;
+    text-align: center;
+    padding: 120px 0;
+    .row {
+      padding: 75px 0;
+    }
+    p {
+      font-size: 18px;
+      font-family: $RobotoMedium;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontFamily.scss';
+
+.widerImageContentCard {
+  margin: 30px 0;
+  box-shadow: 0 10px 30px 0 rgb(218, 208, 208);
+  border: 1px rgba(218, 220, 228, 0.06);
+  border-radius: 5px;
+  margin-top: 40px;
+  //   overflow: hidden;
+
+  .col-md-6 {
+    width: 50%;
+    .image-wrapper {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .content-wrapper {
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between !important;
+
+    h6 {
+      font-family: $RobotoBold;
+    }
+    p {
+      font-family: $RobotoLight;
+    }
+  }
+}

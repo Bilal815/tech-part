@@ -58,14 +58,7 @@ const DefaultHeader = ({ location: { pathname } }) => {
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav>
-            <span
-              onMouseOver={() => {
-                setShow(true);
-              }}
-              onMouseLeave={() => {
-                setShow(false);
-              }}
-            >
+            <span onMouseOver={() => setShow(true)} onMouseLeave={() => setShow(false)}>
               <Nav.Link>Our Services</Nav.Link>
               <ServiceDropDown show={show} />
             </span>

@@ -1,7 +1,0 @@
-import React from 'react';
-
-const MainVideoLandingSection = () => {
-  return <div className='mainVideoLandingSection'>MainVideoLandingSection</div>;
-};
-
-export default MainVideoLandingSection;

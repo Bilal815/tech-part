@@ -25,6 +25,10 @@
   a.nav-link {
     padding: 0;
   }
+  .nav-link.white-nav-link {
+    color: white;
+    font-family: $RobotoBold;
+  }
   a img {
     width: 200px;
     height: 100px;

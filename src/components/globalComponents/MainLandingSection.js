@@ -1,9 +1,8 @@
 import React from 'react';
+import '../../styles/components/globalComponents/mainLandingSection.scss';
 
 import { Col, Row } from 'react-bootstrap';
 import { LinkButton } from '../../styledComponents';
-
-import '../../styles/components/globalComponents/mainLandingSection.scss';
 
 const MainLandingSection = ({
   backgroundImage,
@@ -33,7 +32,7 @@ const MainLandingSection = ({
                   {title.split(',').map((t, i) => (
                     <h1 key={i}>{t}</h1>
                   ))}
-                  {/* <span className='blue-title'>{blueTitle}</span> */}
+                  s{' '}
                 </>
               ) : (
                 title.split(',').map((t, i) => <h1 key={i}>{t}</h1>)

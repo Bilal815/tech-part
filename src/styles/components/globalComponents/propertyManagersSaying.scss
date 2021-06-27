@@ -1,0 +1,15 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontFamily.scss';
+
+.propertyManagersSaying {
+  .black-stars-container {
+    svg {
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .managers-saying {
+    height: 135px;
+    width: 80%;
+  }
+}
