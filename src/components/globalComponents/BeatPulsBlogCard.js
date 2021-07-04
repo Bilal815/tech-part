@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/components/globalComponents/beatPulsBlodCard.scss';
 
-const BeatPulsBlodCard = ({ blog }) => {
+const BeatPulsBlogCard = ({ blog }) => {
   {
     /* <Link to={blog.url} className='beatPulsBlodCard'> */
   }
@@ -20,4 +20,4 @@ const BeatPulsBlodCard = ({ blog }) => {
   );
 };
 
-export default BeatPulsBlodCard;
+export default BeatPulsBlogCard;
