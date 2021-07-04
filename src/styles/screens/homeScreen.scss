@@ -1,2 +1,37 @@
 @import '../../scss/variables.scss';
 @import '../../scss/fontFamily.scss';
+
+.homeScreen {
+  .membership-link {
+    width: 100%;
+    display: block;
+    background-image: linear-gradient(92deg, #fff -12%, #e6ebf1 41%);
+    margin-bottom: 30px;
+    text-decoration: none;
+    overflow: hidden;
+    height: 78px;
+    line-height: 78px;
+    .blue {
+      font-family: $RobotoBold;
+      font-size: 30px;
+      span,
+      b {
+        font-size: 20px;
+      }
+      .arrow {
+        padding: 25px 30px;
+        margin-left: 50px;
+        background-image: linear-gradient(145deg, #fff, #e6ebf1 126%);
+      }
+    }
+  }
+  .top-technician,
+  .beat-puls-blog {
+    h1 {
+      margin-bottom: 30px;
+      font-size: 24px;
+      font-family: $RobotoBold;
+      color: $black;
+    }
+  }
+}

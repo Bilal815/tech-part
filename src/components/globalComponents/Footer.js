@@ -10,11 +10,11 @@ import {
 import { Button } from '../../styledComponents';
 import iosImage from '../../assets/images/ios.png';
 import androidImage from '../../assets/images/android.png';
-import facebookIcon from '../../assets/facebook.png';
-import twitterIcon from '../../assets/twitter.png';
-import youtubeIcon from '../../assets/youtube.png';
-import googleIcon from '../../assets/google.png';
-import instagramIcon from '../../assets/instagram.png';
+import facebookIcon from '../../assets/footer-icons/facebook.png';
+import googleIcon from '../../assets/footer-icons/google.png';
+import instagramIcon from '../../assets/footer-icons/instagram.png';
+import twitterIcon from '../../assets/footer-icons/twitter.png';
+import youtubeIcon from '../../assets/footer-icons/youtube.png';
 
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';

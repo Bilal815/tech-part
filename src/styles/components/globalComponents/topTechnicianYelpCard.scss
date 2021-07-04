@@ -1,0 +1,46 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontFamily.scss';
+
+.topTechnicianYelpCard {
+  border: 1px solid $lgray;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  .profile-container {
+    .profile {
+      display: flex;
+      align-items: center;
+      img {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        margin: 0 12px 0 0;
+      }
+      .name {
+        p {
+          font-size: 14px;
+          margin: 0;
+        }
+      }
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  blockquote {
+    padding: 20px 0;
+    font-size: 14px;
+    color: $light-gray;
+    height: 100px;
+  }
+  .stars-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      font-size: 14px;
+      color: $light-gray;
+      margin: 0;
+    }
+  }
+}

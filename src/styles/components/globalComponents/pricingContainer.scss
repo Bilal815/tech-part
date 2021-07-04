@@ -1,0 +1,40 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontFamily.scss';
+
+.pricingContainer {
+  margin: 50px 0 100px;
+  .headings {
+    text-align: center;
+    margin-bottom: 50px;
+    h1 {
+      font-size: 35px;
+      color: $black;
+      font-family: $RobotoBold;
+    }
+    h4 {
+      font-size: 20px;
+    }
+  }
+  .pricing-button-container {
+    margin-top: 75px;
+    text-align: center;
+    a {
+      margin-top: 50px;
+      background-color: $blue;
+      color: white;
+      padding: 20px 100px;
+      border-radius: 10px;
+      font-family: $RobotoMedium;
+      font-size: 20px;
+    }
+    .terms-condition {
+      margin: 50px 0;
+      font-family: $RobotoBold;
+      font-size: 15px;
+      color: $gray-border;
+      .number {
+        color: $gray;
+      }
+    }
+  }
+}

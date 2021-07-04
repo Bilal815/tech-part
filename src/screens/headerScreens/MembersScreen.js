@@ -1,16 +1,29 @@
 import React, { useState } from 'react';
 import '../../styles/screens/headerScreens/membersScreen.scss';
 
+import { Link } from 'react-router-dom';
+import { Row, Col } from 'react-bootstrap';
+import { BsArrowDown } from 'react-icons/bs';
+
 import { ScrollToTop } from './../../utilities/index';
 import MainLandingSection from './../../components/globalComponents/MainLandingSection';
 import PropertyManagersSaying from './../../components/globalComponents/PropertyManagersSaying';
 import { managerSaying } from '../../data/managerSaying';
 import WiderImageContentCard from './../../components/globalComponents/WiderImageContentCard';
-import { Link } from 'react-router-dom';
+import ServicesHoverCardsGrid from './../../components/globalComponents/ServicesHoverCardsGrid';
+
+import starImg from '../../assets/icons/star.svg';
+import tagImg from '../../assets/icons/tag.svg';
+import diamondImg from '../../assets/icons/diamond.svg';
+import pigiImg from '../../assets/icons/pigi.svg';
+
+import bigPulsImg from '../../assets/icons/big-plus.svg';
+import blueTickIcon from '../../assets/icons/blue-tick.svg';
+import PricingContainer from '../../components/globalComponents/PricingContainer';
 
 const MembersScreen = () => {
-  // ScrollToTop();
-  const [cardData, setCardData] = useState({
+  ScrollToTop();
+  const cardData = {
     image: `https://d7gh5vrfihrl.cloudfront.net/website/membership/puls-info.jpg`,
     options: [
       { title: `Online booking`, description: `Request an appointment in minutes` },
@@ -23,7 +36,75 @@ const MembersScreen = () => {
         description: `You will only be charged after your service is completed`,
       },
     ],
-  });
+  };
+
+  const introducingOptions = [
+    {
+      img: starImg,
+      title: `Extended Guarantee`,
+      description: `Double your guarantee to 180 days, or even extend it up to 1 year`,
+    },
+    {
+      img: tagImg,
+      title: `Save 20% on all service`,
+      description: `No charge until service is completed`,
+    },
+    {
+      img: diamondImg,
+      title: `Puls+ Member Deals`,
+      description: `Exclusive offers only for Puls+ members`,
+    },
+    {
+      img: pigiImg,
+      title: `Priority Booking`,
+      description: `Our highest-rated technicians will prioritize your service`,
+    },
+  ];
+
+  const serviceTructOptions = [
+    `No claims, no monthly premiums`,
+    `Our own technicians will be there as early as the same or next day`,
+    `Our technicians receive thorough background checks`,
+    `No more waiting for your home warranty to respond to your service request`,
+  ];
+
+  const membershipBenefitsPoints = [
+    { title: `Exclusive Discounts`, description: `Save 20% on all Puls services and offers` },
+    {
+      title: `Priority Booking`,
+      description: `We will prioritize your repair & assign the best available tech`,
+    },
+    {
+      title: `Personal Puls Concierge`,
+      description: `Questions? Need advice? You have a direct line to our expert support team`,
+    },
+    {
+      title: `Ultimate Home Service`,
+      description: `White-glove care for your home by our elite technicians`,
+    },
+    {
+      title: `Double the Guarantee`,
+      description: `Extend your service guarantee from 90 to 180 days`,
+    },
+    {
+      title: `Special Promotions`,
+      description: `Save even more with special deals designed for members`,
+    },
+    {
+      title: `Access to Elite Techs`,
+      description: `Access to the highest-rated and best-trained technicians`,
+    },
+    {
+      title: `Access to Puls DIY platform`,
+      description: `Learn useful home improvement tips from our expert guides`,
+    },
+    { title: `Preventative Home check-up`, description: `2 Annual Home check-up Visits` },
+    {
+      title: `First Look at New Services`,
+      description: `Puls+ members receive exclusive access to our newest services`,
+    },
+  ];
+
   return (
     <div className='membersScreen'>
       <MainLandingSection
@@ -40,6 +121,106 @@ const MembersScreen = () => {
         btnLink='/create-sale/zip-code'
         number='(858) 225-8352'
       />
+      <div className='container-75'>
+        <div className='services-calls center'>
+          <p className='mt-5 mb-3'>
+            See why 50,000+ service calls <br /> have been made with Puls
+          </p>
+          <BsArrowDown className='arrow-down' size={30} />
+        </div>
+        <div className='introducing-puls'>
+          <div className='my-5 center'>
+            <h1 className='center-bold-heading'>
+              Introducing <span className='blue'>puls+</span>
+            </h1>
+            <h4>
+              Solutions to <b>all</b> your home maintenance needs
+            </h4>
+          </div>
+          <Row className='introducing-puls-options'>
+            {introducingOptions &&
+              introducingOptions.map((item, i) => (
+                <Col key={i} sm={12} md={6} lg={3}>
+                  <div className='introducing-container'>
+                    <div className='blue-circle'>
+                      <img src={item.img} alt='image' />
+                    </div>
+                    <p className='title'>{item.title}</p>
+                    <p className='description'>{item.description}</p>
+                  </div>
+                </Col>
+              ))}
+          </Row>
+        </div>
+        <div className='service-trust'>
+          <img className='big-puls-image' src={bigPulsImg} alt='bigPulsImage' />
+          <div className='my-5 center'>
+            <h1 className='center-bold-heading'>Service you can trust. On Time.</h1>
+            <h4>
+              Join <span className='blue'>puls+</span> and your on-time service is always guaranteed
+            </h4>
+          </div>
+          <Row>
+            <Col sm={12} md={6} lg={6}>
+              <div className='image-container center ml-5'>
+                <img
+                  src='https://d7gh5vrfihrl.cloudfront.net/website/membership/techs.png'
+                  alt='image'
+                />
+              </div>
+            </Col>
+            <Col sm={12} md={6} lg={6}>
+              <div className='content-container'>
+                {serviceTructOptions &&
+                  serviceTructOptions.map((item, i) => (
+                    <div key={i} className='point'>
+                      <img className='mr-2' src={blueTickIcon} alt='blueTickIconImage' />
+                      <p>{item}</p>
+                    </div>
+                  ))}
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </div>
+      <div className='container-65'>
+        <div className='membership-program'>
+          <PricingContainer />
+        </div>
+      </div>
+      <div className='container-75'>
+        <div className='explore-puls'>
+          <div className='my-5 center'>
+            <h1 className='center-bold-heading'>
+              Explore My <span className='blue'>puls+</span>
+            </h1>
+            <h4>
+              Solutions to <b>all</b> your home maintenance needs
+            </h4>
+          </div>
+          <ServicesHoverCardsGrid />
+        </div>
+        <div className='membership-benefits'>
+          <img src='https://d7gh5vrfihrl.cloudfront.net/website/membership/big-plus.svg' />
+          <div className='content-center center'>
+            <h1 className='center-bold-heading'>
+              <span className='blue'>puls</span> Membership Benefits
+            </h1>
+            <h4>Get access to exclusive discounts and services</h4>
+          </div>
+          <Row className='membership-benefits-points'>
+            {membershipBenefitsPoints &&
+              membershipBenefitsPoints.map((item, i) => (
+                <Col sm={12} md={6} lg={3}>
+                  <div key={i} className='mb-5'>
+                    {item.title && <h6>{item.title}</h6>}
+                    {item.description && <p>{item.description}</p>}
+                  </div>
+                </Col>
+              ))}
+          </Row>
+        </div>
+      </div>
       <div className='container-60 center treat-yourself-section'>
         <h1 className='center-bold-heading'>Treat your home. Treat yourself. Reliably.</h1>
         <WiderImageContentCard cardData={cardData} />

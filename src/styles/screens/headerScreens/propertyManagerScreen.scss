@@ -2,16 +2,83 @@
 @import '../../../scss/fontFamily.scss';
 
 .propertyManagerScreen {
-  .signup-form {
-    min-height: 390px;
-    max-width: 330px;
-    width: 100%;
-    padding: 20px;
+  .signupFormLandingPage {
+    background-repeat: no-repeat;
+    background-size: cover;
     box-sizing: border-box;
-    border-radius: 5px;
-    box-shadow: 0 8px 17px 3px rgb(39, 75, 113 / 42%);
-    background-color: #ffffff;
+    height: 625px;
+
+    .row {
+      width: 100%;
+      padding: 175px 0 0;
+      .content-wrapper {
+        h1 {
+          font-size: 48px;
+          color: #505168;
+          font-family: $RobotoBold;
+        }
+        h4 {
+          margin: 30px 0;
+          font-family: $RobotoMedium;
+          color: #505168;
+        }
+        .number {
+          font-family: $RobotoMedium;
+          font-size: 20px;
+          color: #505168;
+        }
+      }
+      .form-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .signup-form {
+          min-height: 390px;
+          max-width: 330px;
+          width: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+          border-radius: 5px;
+          box-shadow: 0 8px 17px 1px #cacaca;
+          background-color: #ffffff;
+          .title {
+            h4 {
+              color: $blue;
+              font-family: $RobotoBold;
+            }
+            h5 {
+              color: $blue;
+              font-family: $RobotoRegular;
+              font-size: 16px;
+            }
+          }
+          .input-fields {
+            margin: 15px 0;
+            width: 100%;
+            input {
+              margin: 15px 0;
+              width: 100%;
+              padding: 7px 15px;
+              border-radius: 12px;
+              border: 1px solid #cacaca;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+          button {
+            background-color: $blue;
+            color: white;
+            padding: 15px 100px;
+            border-radius: 10px;
+            font-family: $RobotoMedium;
+            width: 100%;
+          }
+        }
+      }
+    }
   }
+
   .one-stop {
     margin: 75px auto;
   }

@@ -1,0 +1,47 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontFamily.scss';
+
+.servicesHoverCardsGrid {
+  .col {
+    border-right: 1px solid $gray-border;
+    &:last-child {
+      border-right: none;
+    }
+  }
+  .service-card {
+    a {
+      display: block;
+    }
+    img {
+      margin-bottom: 20px;
+    }
+    p {
+      color: $black;
+      margin: 0;
+      text-align: center;
+    }
+    // .service-name p {
+    //   &:hover {
+    //     color: $blue;
+    //   }
+    // }
+  }
+}
+
+// antd tooltip styling
+.ant-tooltip .ant-tooltip-content .ant-tooltip-inner {
+  color: black !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .servicesHoverCardsGrid {
+    .col {
+      border: none;
+      .service-card {
+        padding: 25px;
+        margin-bottom: 15px;
+        border: 1px solid $gray-border;
+      }
+    }
+  }
+}

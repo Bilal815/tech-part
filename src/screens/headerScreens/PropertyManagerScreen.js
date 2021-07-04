@@ -3,14 +3,14 @@ import '../../styles/screens/headerScreens/propertyManagerScreen.scss';
 
 import { ScrollToTop } from './../../utilities/index';
 import MainLandingSection from './../../components/globalComponents/MainLandingSection';
-import { Form } from 'react-bootstrap';
+import { Form, Row, Col } from 'react-bootstrap';
 import CitiesServicesCardContainer from './../../components/globalComponents/CitiesServicesCardContainer';
 import PropertyManagersSaying from './../../components/globalComponents/PropertyManagersSaying';
 import { managerSaying } from '../../data/managerSaying';
 import WiderImageContentCard from './../../components/globalComponents/WiderImageContentCard';
 
 const PropertyManagerScreen = () => {
-  // ScrollToTop();
+  ScrollToTop();
   const [cardData, setCardData] = useState({
     image: `https://d7gh5vrfihrl.cloudfront.net/website/membership/puls-info.jpg`,
     options: [
@@ -36,17 +36,97 @@ const PropertyManagerScreen = () => {
     `24/7 phone support with designated account manager`,
     `Seamless scheduling via the Puls App`,
   ]);
+
+  const [signupFormFields, setSignupFormFields] = useState({
+    fullName: '',
+    email: '',
+    phone: '',
+  });
+
+  const { fullName, email, phone } = signupFormFields;
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setSignupFormFields({
+      ...signupFormFields,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Form data  : ', e, fullName, email, phone);
+  };
+
+  const SignupFormLandingPage = ({ backgroundImage }) => {
+    return (
+      <div
+        className='signupFormLandingPage'
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+        }}
+      >
+        <div className='container-75'>
+          <Row className=''>
+            <Col sm={12} md={6} lg={6}>
+              <div className='content-wrapper'>
+                <h1>
+                  In-home service <br />
+                  solutions for <br />
+                  property managers
+                </h1>
+                <h4>Your tenants satisfaction, guaranteed!</h4>
+                <div className='number'>
+                  <span>Questions? </span>
+                  <span className='blue'>Call (858) 225-8352</span>
+                </div>
+              </div>
+            </Col>
+            <Col sm={12} md={6} lg={6}>
+              <div className='form-wrapper'>
+                <form className='signup-form' onSubmit={handleSubmit}>
+                  <div className='title center'>
+                    <h4>Sign up for a quick demo</h4>
+                    <h5>and get started right away</h5>
+                  </div>
+                  <div className='input-fields'>
+                    <input
+                      type='text'
+                      name='fullName'
+                      value={fullName}
+                      onChange={handleInputChange}
+                      placeholder='Full name'
+                    />
+                    <input
+                      type='email'
+                      name='email'
+                      value={email}
+                      onChange={handleInputChange}
+                      placeholder='Email'
+                    />
+                    <input
+                      type='text'
+                      name='phone'
+                      value={phone}
+                      onChange={handleInputChange}
+                      placeholder='Phone'
+                    />
+                  </div>
+                  <button disabled={!fullName || !email || !phone} type='submit'>
+                    Submit{' '}
+                  </button>
+                </form>
+              </div>
+            </Col>
+          </Row>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className='propertyManagerScreen'>
-      <MainLandingSection
-        backgroundImage='https://d7gh5vrfihrl.cloudfront.net/website/banners/property-banner-desktop.jpg'
-        title='In-home service, solutions for, property managers'
-        boldDescription='Your tenants satisfaction, guaranteed!'
-        // number
-      >
-        <Form className='signup-form'></Form>
-      </MainLandingSection>
-
+      <SignupFormLandingPage backgroundImage='https://d7gh5vrfihrl.cloudfront.net/website/banners/property-banner-desktop.jpg' />
       <div className='container-60 one-stop'>
         <h1 className='one-stop-bold-heading'>
           Your one-stop shop for all in-home service solutions

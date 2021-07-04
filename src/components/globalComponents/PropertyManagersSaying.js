@@ -1,5 +1,5 @@
 import React from 'react';
-import '../..//styles/components/globalComponents/propertyManagersSaying.scss';
+import '../../styles/components/globalComponents/propertyManagersSaying.scss';
 
 import { Row, Col } from 'react-bootstrap';
 import { AiFillStar } from 'react-icons/ai';

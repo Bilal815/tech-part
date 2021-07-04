@@ -32,7 +32,6 @@ const MainLandingSection = ({
                   {title.split(',').map((t, i) => (
                     <h1 key={i}>{t}</h1>
                   ))}
-                  s{' '}
                 </>
               ) : (
                 title.split(',').map((t, i) => <h1 key={i}>{t}</h1>)
