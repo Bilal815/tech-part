@@ -1,13 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import '../../styles/components/globalComponents/beatPulsBlodCard.scss';
+import '../../styles/components/globalComponents/beatPulsBlogCard.scss';
 
-const BeatPulsBlodCard = ({ blog }) => {
+import { Link } from 'react-router-dom';
+
+const BeatPulsBlogCard = ({ blog }) => {
   {
     /* <Link to={blog.url} className='beatPulsBlodCard'> */
   }
   return (
-    <div className='beatPulsBlodCard'>
+    <div className='beatPulsBlogCard'>
       <div className='image-container'>
         <img src={blog.imageUrl} alt='' />
       </div>
@@ -20,4 +21,4 @@ const BeatPulsBlodCard = ({ blog }) => {
   );
 };
 
-export default BeatPulsBlodCard;
+export default BeatPulsBlogCard;

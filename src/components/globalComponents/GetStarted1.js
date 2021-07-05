@@ -1,25 +1,24 @@
 import React from 'react';
 import '../../styles/components/globalComponents/getStarted1.scss';
 
-import { Button } from '../../styledComponents';
+import { LinkButton } from '../../styledComponents';
 import Image from '../../assets/images/tv-mounting-new.jpg';
-import { withRouter } from 'react-router';
 
-const GetStarted1 = ({ history, title, discription, btnLink, btnTitle }) => {
+const GetStarted1 = ({ imageUrl, title, description, btnLink, btnTitle }) => {
   return (
     <div className='getStarted1'>
       <div className='center get-started-content'>
         <div>
-          <h2 className='rb'>Ready to get started?</h2>
-          <p>Repair or install a device today.</p>
-          <Button onClick={() => history.push('/book-a-service')}>Book a Service</Button>
+          <h2 className='rb'>{title}</h2>
+          <p>{description}</p>
+          <LinkButton link={btnLink} name={btnTitle} className='' />
         </div>
       </div>
       <div className='get-started-image'>
-        <img src={Image} alt='image' />
+        <img src={imageUrl} alt='image' />
       </div>
     </div>
   );
 };
 
-export default withRouter(GetStarted1);
+export default GetStarted1;
