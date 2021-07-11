@@ -2,7 +2,7 @@ import React from 'react';
 import '../../styles/components/globalComponents/beatPulsBlodCardsSlider.scss';
 
 import { Row, Col } from 'react-bootstrap';
-import BeatPulsBlogCard from './BeatPulsBlogCard';
+import { Link } from 'react-router-dom';
 
 const BeatPulsBlogCardsSlider = () => {
   const beatPulsBlogOptions = [
@@ -32,6 +32,22 @@ const BeatPulsBlogCardsSlider = () => {
       date: `April 2021`,
     },
   ];
+  const BeatPulsBlogCard = ({ blog }) => {
+    const { imageUrl, title, description, date } = blog;
+    return (
+      <div className='beatPulsBlogCard'>
+        <div className='image-container'>
+          <img src={imageUrl} alt='' />
+        </div>
+        <div className='content-container'>
+          <h6>{title}</h6>
+          <p>{description}</p>
+          <p className='date'>{date}</p>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className='beatPulsBlodCardsSlider my-5'>
       <h1>The beat - the Puls blog</h1>

@@ -1,2 +1,105 @@
 @import '../../../../scss/variables.scss';
 @import '../../../../scss/fontFamily.scss';
+
+.smartHomeInstallationScreen {
+  .center-section-heading,
+  .why-should-use-puls .bulletPoints h2 {
+    text-align: center;
+    margin: 20px 0 10px;
+    font-size: 36px;
+    font-family: $RobotoBold;
+    color: #46475c;
+  }
+  .needs-to-install,
+  .whats-include,
+  .why-should-use-puls,
+  .supported-brands,
+  .faq {
+    margin: 75px 0;
+  }
+  .whats-include {
+    margin: 75px 0 150px;
+  }
+  .supported-brands {
+    .logos-container {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        box-sizing: border-box;
+        object-fit: contain;
+        width: 20%;
+        height: 100px;
+        padding: 15px;
+      }
+    }
+  }
+}
+
+// ant collpase styling
+.smartHomeInstallationScreen {
+  .faq {
+    .ant-collapse {
+      border: none;
+      background-color: transparent;
+      .ant-collapse-item {
+        .ant-collapse-content-active {
+          border-top: none;
+          .ant-collapse-content-box .ant-collapse .ant-collapse-item-active,
+          .ant-collapse-content-box
+            .ant-collapse
+            .ant-collapse-item-active
+            .ant-collapse-content-active {
+            background-color: #f6f6f6;
+          }
+          .ant-collapse-content-box {
+            padding-top: 0;
+            p {
+              font-size: 18px;
+              margin: 0;
+              font-family: $RobotoRegular;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-collapse .ant-collapse-item-active .ant-collapse-header .outerAccordianHeader svg {
+  transform: rotate(180deg);
+}
+
+.innerAccordianHeader {
+  span {
+    color: $blue;
+    font-size: 18px;
+  }
+  .plus-icon,
+  .minus-icon {
+    color: $blue;
+  }
+  .minus-icon {
+    display: none;
+  }
+}
+
+.ant-collapse
+  .ant-collapse-item
+  .ant-collapse-content
+  .ant-collapse-content-box
+  .ant-collapse
+  .ant-collapse-item
+  .ant-collapse-header
+  .innerAccordianHeader
+  .icon {
+  margin: 0;
+  .plus-icon {
+    display: block;
+  }
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header {
+  padding: 15px 40px 15px 15px !important;
+}

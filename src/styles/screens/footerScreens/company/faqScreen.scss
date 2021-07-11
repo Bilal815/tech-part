@@ -2,6 +2,7 @@
 @import '../../../../scss/fontFamily.scss';
 
 .faqScreen {
+  margin-top: 150px;
   h1 {
     font-size: 42px;
     font-family: $RobotoBold;
@@ -77,9 +78,7 @@
   .minus-icon {
     color: $blue;
   }
-  //   .plus-icon {
-  //     display: block;
-  //   }
+
   .minus-icon {
     display: none;
   }
@@ -99,10 +98,6 @@
   .plus-icon {
     display: block;
   }
-
-  //   .minus-icon {
-  //     display: block;
-  //   }
 }
 
 .ant-collapse > .ant-collapse-item > .ant-collapse-header {

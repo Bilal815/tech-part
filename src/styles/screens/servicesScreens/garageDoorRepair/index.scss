@@ -1,2 +1,76 @@
 @import '../../../../scss/variables.scss';
 @import '../../../../scss/fontFamily.scss';
+
+.garageDoorRepairScreen {
+  .servicesSection .cards-container .card img {
+    width: 85px;
+    height: 50px;
+  }
+  a.blue-design-link {
+    display: block;
+    text-decoration: none;
+    height: 80px;
+    width: 100%;
+    background: url('https://d7gh5vrfihrl.cloudfront.net/website/campaigns/apr-promo-pattern.png')
+        no-repeat 50%,
+      linear-gradient(90deg, #1852f3 50%, #182ec4);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 22px 0;
+    span {
+      .off-20 {
+        font-size: 32px;
+        font-weight: 900;
+        color: #12ffcd;
+      }
+      .save-20 {
+        margin-left: 10px;
+        font-family: $RobotoBold;
+        font-size: 22px;
+        font-weight: 500;
+        color: #fff;
+      }
+    }
+  }
+  .popularServiceCardsContainer {
+    .row .col-lg-4 {
+      .popularServiceCard {
+        display: flex;
+        // min-width: 380px;
+        // max-width: 380px;
+        width: 100%;
+        height: 210px;
+        box-sizing: border-box;
+        border: 1px solid #dedede;
+        border-radius: 5px;
+        overflow: hidden;
+        &:hover {
+          p {
+            color: $blue;
+          }
+        }
+      }
+      .image-container {
+        width: 50%;
+        background-color: #f2fbff;
+      }
+      .content-container {
+        width: 50%;
+        p {
+          font-size: 16px;
+          color: $black;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .popular-services {
+    margin: 0 0 50px;
+    h3 {
+      font-size: 24px;
+      font-family: $RobotoBold;
+      color: $black;
+      margin-bottom: 20px;
+    }
+  }
+}

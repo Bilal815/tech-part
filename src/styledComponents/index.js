@@ -18,7 +18,6 @@ LS.LinkButton = styled.div`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
   a {
     background-color: #017aff;
     padding: 18px 30px;

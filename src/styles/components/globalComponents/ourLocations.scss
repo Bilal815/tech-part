@@ -1,0 +1,21 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontFamily.scss';
+
+.ourLocations {
+  h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-family: $RobotoBold;
+    color: $black;
+  }
+  .row {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    p {
+      font-size: 16px;
+      color: $black;
+      font-family: $RobotoLight;
+    }
+  }
+}

@@ -1,2 +1,12 @@
 @import '../../../../scss/variables.scss';
 @import '../../../../scss/fontFamily.scss';
+
+.plumbingServicesScreen {
+  .servicesSection .cards-container .card {
+    padding: 0 30px;
+  }
+  .servicesSection .cards-container .card img {
+    width: 50px;
+    height: 45px;
+  }
+}

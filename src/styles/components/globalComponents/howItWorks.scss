@@ -1,0 +1,70 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontFamily.scss';
+
+.howItWorks {
+  margin: 100px 0;
+  height: 630px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+  background-position: center center;
+  padding: 100px 0;
+  .row {
+    margin: 0 auto;
+    max-width: 75rem;
+    padding: 0 30px;
+    width: 100%;
+  }
+  .points-wrapper {
+    padding: 50px 0 50px 100px;
+    h1 {
+      color: #12ffcd;
+      font-family: $RobotoMedium;
+      margin-bottom: 40px;
+    }
+    .greenGradient {
+      &::before {
+        content: '';
+        display: block;
+        background-color: #12ffcd;
+        width: 16px;
+        height: 16px;
+        border-radius: 100px;
+        position: absolute;
+        margin-left: -35px;
+        margin-top: 8px;
+      }
+      &::after {
+        content: '';
+        display: block;
+        background: linear-gradient(270deg, rgba(18, 255, 205, 0.7), rgba(18, 255, 205, 0));
+        width: 66px;
+        height: 16px;
+        position: absolute;
+        margin-left: -95px;
+        top: 8px;
+      }
+    }
+    .points {
+      .point {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        margin: 0 0 45px 0;
+        p,
+        h4 {
+          margin: 0;
+          color: white;
+        }
+        h4 {
+          font-family: $RobotoBold;
+          margin-bottom: 7px;
+        }
+        p {
+          font-family: $RobotoRegular;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

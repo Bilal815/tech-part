@@ -20,6 +20,7 @@ import pigiImg from '../../assets/icons/pigi.svg';
 import bigPulsImg from '../../assets/icons/big-plus.svg';
 import blueTickIcon from '../../assets/icons/blue-tick.svg';
 import PricingContainer from '../../components/globalComponents/PricingContainer';
+import BackgroundPulsImageSection from '../../components/globalComponents/BackgroundPulsImageSection';
 
 const MembersScreen = () => {
   ScrollToTop();
@@ -61,13 +62,6 @@ const MembersScreen = () => {
     },
   ];
 
-  const serviceTructOptions = [
-    `No claims, no monthly premiums`,
-    `Our own technicians will be there as early as the same or next day`,
-    `Our technicians receive thorough background checks`,
-    `No more waiting for your home warranty to respond to your service request`,
-  ];
-
   const membershipBenefitsPoints = [
     { title: `Exclusive Discounts`, description: `Save 20% on all Puls services and offers` },
     {
@@ -103,6 +97,13 @@ const MembersScreen = () => {
       title: `First Look at New Services`,
       description: `Puls+ members receive exclusive access to our newest services`,
     },
+  ];
+
+  const backgroundPulsImageOptions = [
+    `No claims, no monthly premiums`,
+    `Our own technicians will be there as early as the same or next day`,
+    `Our technicians receive thorough background checks`,
+    `No more waiting for your home warranty to respond to your service request`,
   ];
 
   return (
@@ -152,36 +153,11 @@ const MembersScreen = () => {
               ))}
           </Row>
         </div>
-        <div className='service-trust'>
-          <img className='big-puls-image' src={bigPulsImg} alt='bigPulsImage' />
-          <div className='my-5 center'>
-            <h1 className='center-bold-heading'>Service you can trust. On Time.</h1>
-            <h4>
-              Join <span className='blue'>puls+</span> and your on-time service is always guaranteed
-            </h4>
-          </div>
-          <Row>
-            <Col sm={12} md={6} lg={6}>
-              <div className='image-container center ml-5'>
-                <img
-                  src='https://d7gh5vrfihrl.cloudfront.net/website/membership/techs.png'
-                  alt='image'
-                />
-              </div>
-            </Col>
-            <Col sm={12} md={6} lg={6}>
-              <div className='content-container'>
-                {serviceTructOptions &&
-                  serviceTructOptions.map((item, i) => (
-                    <div key={i} className='point'>
-                      <img className='mr-2' src={blueTickIcon} alt='blueTickIconImage' />
-                      <p>{item}</p>
-                    </div>
-                  ))}
-              </div>
-            </Col>
-          </Row>
-        </div>
+        <BackgroundPulsImageSection
+          heading='Service you can trust. On Time.'
+          subHeading=''
+          backgroundPulsImageOptions={backgroundPulsImageOptions}
+        />
       </div>
       <div className='container-65'>
         <div className='membership-program'>

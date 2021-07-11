@@ -1,0 +1,39 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontFamily.scss';
+
+.imageAndGreenCheckPoints {
+  margin: 50px 0 100px;
+  .image-container {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  .content-container {
+    padding: 50px 50px 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 125px;
+    .point-container {
+      img {
+        margin-right: 10px;
+      }
+      margin: 10px 0;
+      display: flex;
+      align-items: flex-start;
+      p,
+      h6 {
+        margin: 0;
+      }
+
+      h6 {
+        font-family: $RobotoBold;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

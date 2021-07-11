@@ -1,0 +1,28 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontFamily.scss';
+
+.bulletPoints {
+  margin: 30px 0 75px;
+  h2 {
+    font-family: $RobotoMedium;
+    color: $black;
+  }
+  .bullet-point {
+    img {
+      height: 80px;
+      margin-bottom: 15px;
+    }
+    h5 {
+      font-family: $RobotoBold;
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: $black;
+    }
+    p {
+      text-align: center;
+      padding: 0 60px;
+      font-size: 14px;
+      color: $black;
+    }
+  }
+}

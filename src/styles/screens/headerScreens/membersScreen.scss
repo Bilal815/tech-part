@@ -38,30 +38,6 @@
       }
     }
   }
-  .service-trust {
-    position: relative;
-    .big-puls-image {
-      position: absolute;
-      right: 0;
-      z-index: -1;
-    }
-    .content-container {
-      padding: 40px 250px 40px 0;
-      .point {
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 35px;
-        img {
-          margin-top: 5px;
-        }
-        p {
-          margin: 0;
-          font-family: $RobotoBold;
-        }
-      }
-    }
-  }
-
   .center-bold-heading {
     font-size: 35px;
     color: $black;

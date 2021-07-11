@@ -1,2 +1,49 @@
 @import '../../../../scss/variables.scss';
 @import '../../../../scss/fontFamily.scss';
+
+.iphoneRepairScreen {
+  .mainLandingSection {
+    .content-wrapper {
+      .content {
+        h1,
+        p {
+          color: white;
+        }
+        p {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+  .gray-center-section-heading {
+    font-family: $RobotoMedium;
+    text-align: center;
+    margin: 0 0 30px;
+    color: #666;
+    font-size: 34px;
+    font-weight: 400;
+  }
+  .why-puls {
+    margin-top: 50px;
+    .row {
+      margin-top: 30px;
+    }
+    .point-container {
+      text-align: center;
+      h5 {
+        color: #666;
+        font-size: 18px;
+        font-family: $RobotoMedium;
+      }
+      p {
+        margin: 0 60px;
+        color: #666;
+        font-size: 14px;
+        font-family: $RobotoRegular;
+      }
+    }
+  }
+  .top-technicians-neighborhood {
+    margin: 50px 0 0;
+  }
+}

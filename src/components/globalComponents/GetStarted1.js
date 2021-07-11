@@ -2,15 +2,23 @@ import React from 'react';
 import '../../styles/components/globalComponents/getStarted1.scss';
 
 import { LinkButton } from '../../styledComponents';
-import Image from '../../assets/images/tv-mounting-new.jpg';
 
 const GetStarted1 = ({ imageUrl, title, description, btnLink, btnTitle }) => {
   return (
     <div className='getStarted1'>
-      <div className='center get-started-content'>
+      <div className='get-started-content'>
         <div>
-          <h2 className='rb'>{title}</h2>
-          <p>{description}</p>
+          {title && title.split(',').map((t, i) => <h2 key={i}>{t}</h2>)}
+          {/* <h2>{title}</h2> */}
+          {description && (
+            <div className='my-4'>
+              {description.split(',').map((d, i) => (
+                <p className='m-0' key={i}>
+                  {d}
+                </p>
+              ))}
+            </div>
+          )}
           <LinkButton link={btnLink} name={btnTitle} className='' />
         </div>
       </div>

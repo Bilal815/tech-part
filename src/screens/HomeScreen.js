@@ -10,34 +10,13 @@ import GetApp from './../components/globalComponents/GetApp';
 import MainLandingSection from '../components/globalComponents/MainLandingSection';
 import ServicesHoverCardsGrid from './../components/globalComponents/ServicesHoverCardsGrid';
 import { Link } from 'react-router-dom';
-import TopTechnicianYelpCard from '../components/globalComponents/TopTechnicianYelpCard';
-import { Row, Col } from 'react-bootstrap';
+import TopTechnicianYelpCardsSlider from '../components/globalComponents/TopTechnicianYelpCardsSlider';
 import BeatPulsBlogCardsSlider from './../components/globalComponents/BeatPulsBlogCardsSlider';
 
 import Image from '../assets/images/tv-mounting-new.jpg';
 
 const HomeScreen = () => {
-  // ScrollToTop();
-  const topTechnicianOptions = [
-    {
-      imageUrl: `https://d7gh5vrfihrl.cloudfront.net/website/technicians/roshan.jpg`,
-      name: `Roshan`,
-      quote: `Puls was quick, affordable, and extremely convenient! Roshan was my tech and he was great. Would 100% use Puls again!`,
-      reviewer: `Adrienne | Los Angeles, CA`,
-    },
-    {
-      imageUrl: `https://d7gh5vrfihrl.cloudfront.net/website/technicians/kevin.jpg`,
-      name: `Kevin`,
-      quote: `This is one of the best services around. Kevin, my tech, was punctual, courteous and efficient. Will definitely use Puls again.`,
-      reviewer: `Donnie | Colton, CA`,
-    },
-    {
-      imageUrl: `https://d7gh5vrfihrl.cloudfront.net/website/technicians/sam.jpeg`,
-      name: `Sam`,
-      quote: `I'm impressed at the efficiency of this company. Sam was a real MVP, super professional and friendly.`,
-      reviewer: `Sriram | Houston, TX`,
-    },
-  ];
+  ScrollToTop();
 
   return (
     <div className='homeScreen'>
@@ -74,17 +53,7 @@ const HomeScreen = () => {
         <div className='my-5'>
           <ServicesHoverCardsGrid />
         </div>
-        <div className='top-technician my-5'>
-          <h1>Our top technicians are in your neighborhood and beyond</h1>
-          <Row>
-            {topTechnicianOptions &&
-              topTechnicianOptions.map((tech, i) => (
-                <Col key={i} sm={12} md={6} lg={4}>
-                  <TopTechnicianYelpCard tech={tech} />
-                </Col>
-              ))}
-          </Row>
-        </div>
+        <TopTechnicianYelpCardsSlider title='Our top technicians are in your neighborhood and beyond' />
         <div className='beat-puls-blog'>
           <BeatPulsBlogCardsSlider />
         </div>

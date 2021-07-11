@@ -8,7 +8,6 @@ const CitiesWherePulsAvailable = () => {
   return (
     <div className='citiesWherePulsAvailable mb-5'>
       <h2 className='heading-3 mb-3'>Cities where Puls is available:</h2>
-
       <Row>
         <Col sm={4} md={2}>
           <ul>

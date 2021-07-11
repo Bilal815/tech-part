@@ -13,7 +13,6 @@
     max-width: 1200px;
     height: 100%;
     .content {
-      width: 50%;
       height: 100%;
       h1 {
         color: $black;
@@ -66,7 +65,9 @@
           text-decoration: underline !important;
         }
       }
-
+      .children-container {
+        margin-top: 75px;
+      }
       a.number {
         display: block;
         font-family: $RobotoBold;
@@ -76,14 +77,12 @@
         }
       }
     }
-
-    .form {
-      width: 50%;
-      height: 100%;
-      // margin: auto 0;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
+    // .form {
+    //   width: 50%;
+    //   height: 100%;
+    //   display: flex;
+    //   justify-content: flex-end;
+    //   align-items: center;
+    // }
   }
 }
