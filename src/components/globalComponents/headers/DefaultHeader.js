@@ -32,7 +32,8 @@ const DefaultHeader = ({ location: { pathname } }) => {
     pathname === '/cities/tx/dallas' ||
     pathname === '/cities/tx/houston' ||
     pathname === '/cities/dc' ||
-    pathname === '/cities/dc/washington-dc';
+    pathname === '/cities/dc/washington-dc' ||
+    pathname === '/tcl';
   useEffect(() => {
     // listener = document.addEventListener('scroll', (e) => {
     document.addEventListener('scroll', (e) => {

@@ -1,2 +1,70 @@
 @import '../../../../scss/variables.scss';
 @import '../../../../scss/fontFamily.scss';
+
+.tclScreen {
+  padding: 45px 0 50px 50px;
+  .row {
+    width: 100%;
+    margin: 0;
+    .content-wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      .home-logos-container {
+        display: inline-flex;
+        img.tcl {
+          height: 60px;
+        }
+        div {
+          border-left: 1px solid $lgray;
+          margin: 0 30px;
+        }
+      }
+      .content-container {
+        h2 {
+          font-size: 46px;
+          font-family: $RobotoBold;
+          color: $black;
+          margin: 0;
+        }
+        p {
+          margin: 30px 0;
+          font-size: 18px;
+        }
+        div {
+          margin-bottom: 25px;
+        }
+        .contact-us {
+          display: flex;
+          align-items: center;
+          margin: 0;
+          .gray-dot {
+            font-size: 14px;
+            color: $black;
+            &::before {
+              content: '';
+              display: inline-block;
+              border-radius: 50%;
+              background: #929292;
+              width: 4px;
+              height: 4px;
+              vertical-align: middle;
+              margin: 0 10px 0 12px;
+            }
+          }
+        }
+      }
+    }
+    .image-container {
+      width: 100%;
+      min-height: 600px;
+      height: calc(100% - 80px);
+      box-sizing: border-box;
+      background: url('https://d7gh5vrfihrl.cloudfront.net/website/backgrounds/tv-mounts-SEM-TCL-new.jpg')
+        70% 0;
+      background-size: cover;
+    }
+  }
+}
