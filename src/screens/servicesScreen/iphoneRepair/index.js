@@ -4,18 +4,15 @@ import { ScrollToTop } from './../../../utilities/index';
 import MainLandingSection from './../../../components/globalComponents/MainLandingSection';
 import GetStarted2 from '../../../components/globalComponents/GetStarted2';
 
-import CnbcLogo from '../../../assets/icons/brands-logo/cnbc.svg';
-import TcLogo from '../../../assets/icons/brands-logo/tc.svg';
-import TwsjLogo from '../../../assets/icons/brands-logo/twsj.svg';
-import FortuneLogo from '../../../assets/icons/brands-logo/fortune.svg';
-import FeaturedIn from '../../../components/globalComponents/FeaturedIn';
+import BlackFeaturedIn from '../../../components/globalComponents/BlackFeaturedIn';
 import HowItWorks from '../../../components/globalComponents/HowItWorks';
 import { Row, Col } from 'react-bootstrap';
 import TopTechnicianNeighborhoodCardsSection from './../../../components/globalComponents/TopTechnicianNeighborhoodCardsSection';
+import OnHoverZoomLearnMoreCardSection from '../../../components/globalComponents/OnHoverZoomLearnMoreCardSection';
+import OnHoverZoomReadMoreCardSection from './../../../components/globalComponents/OnHoverZoomReadMoreCardSection';
 
 const IphoneRepairScreen = () => {
   ScrollToTop();
-  const logos = [CnbcLogo, TcLogo, TwsjLogo, FortuneLogo];
 
   const howItWorksPoints = [
     {
@@ -31,6 +28,40 @@ const IphoneRepairScreen = () => {
       description: `We supply the parts and skills. No need to ship your device, drive to a store or wait in line`,
     },
   ];
+
+  const learnMoreInfo = [
+    {
+      bgImage: `https://d7gh5vrfihrl.cloudfront.net/website/other-services/tv-mounting-new.jpg`,
+      url: `/services/tv-mounting`,
+      title: `TV mounting`,
+      subTitle: `Starts at $89`,
+      descriptionPoints: ['Let us do the heavy lifting', 'Same-day mounting for big screen TVs'],
+    },
+    {
+      bgImage: `https://d7gh5vrfihrl.cloudfront.net/website/other-services/smart-home.jpg`,
+      url: `/services/smart-home-installation`,
+      title: `Smart Home`,
+      subTitle: `FREE in-home demo`,
+      descriptionPoints: [
+        'Get your smart home devices up and running',
+        'Voice activation, video, security, home automation',
+      ],
+    },
+  ];
+
+  const readMoreInfo = [
+    {
+      bgImage: `https://d7gh5vrfihrl.cloudfront.net/website/blog-posts/phone-repair/iphone8.jpg`,
+      title: `Common iPhone 8 problems & solutions`,
+      blogUrl: `https://blog.puls.com/common-iphone-8-problems-and-solutions`,
+    },
+    {
+      bgImage: `https://d7gh5vrfihrl.cloudfront.net/website/blog-posts/phone-repair/black-iphone-7.jpg`,
+      title: `iPhone 7 troubleshooting: common problems & how to fix them`,
+      blogUrl: `https://blog.puls.com/iphone-7-troubleshooting`,
+    },
+  ];
+
   return (
     <div className='iphoneRepairScreen'>
       <MainLandingSection
@@ -77,15 +108,29 @@ const IphoneRepairScreen = () => {
             </Col>
           </Row>
         </div>
+      </div>
+
+      <HowItWorks howItWorksPoints={howItWorksPoints} />
+
+      <div className='container-75'>
         <div className='top-technicians-neighborhood'>
           <h3 className='gray-center-section-heading'>The best technicians in your neighborhood</h3>
           <TopTechnicianNeighborhoodCardsSection />
         </div>
       </div>
 
-      <HowItWorks howItWorksPoints={howItWorksPoints} />
       <div className='mt-5'>
-        <FeaturedIn backgroundColor='black' logos={logos} />
+        <BlackFeaturedIn />
+      </div>
+      <div className='container-75'>
+        <div className='more-services'>
+          <h1 className='gray-center-section-heading'>More services at your door</h1>
+          <OnHoverZoomLearnMoreCardSection learnMoreInfo={learnMoreInfo} />
+        </div>
+        <div className='beat-puls-blog'>
+          <h1 className='gray-center-section-heading'>The beat - the Puls blog</h1>
+          <OnHoverZoomReadMoreCardSection readMoreInfo={readMoreInfo} />
+        </div>
       </div>
       <GetStarted2
         bgImage='https://d7gh5vrfihrl.cloudfront.net/website/backgrounds/background-getstarted-old.jpg'

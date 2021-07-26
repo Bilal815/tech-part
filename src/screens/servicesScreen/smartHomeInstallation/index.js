@@ -8,7 +8,6 @@ import { ScrollToTop } from './../../../utilities/index';
 import MainLandingSection from './../../../components/globalComponents/MainLandingSection';
 import BackgroundPulsImageSection from '../../../components/globalComponents/BackgroundPulsImageSection';
 import BulletPoints from './../../../components/globalComponents/BulletPoints';
-import FeaturedIn from './../../../components/globalComponents/FeaturedIn';
 
 const { Panel } = Collapse;
 

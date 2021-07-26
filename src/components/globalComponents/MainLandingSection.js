@@ -7,8 +7,8 @@ import { LinkButton } from '../../styledComponents';
 const MainLandingSection = ({
   backgroundImage,
   title,
-  blueTitle,
   description,
+  blueTitle,
   boldDescription,
   points,
   btnTitle,

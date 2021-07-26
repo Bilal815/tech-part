@@ -11,16 +11,17 @@
   background-position: 50%;
   background-size: cover;
   .content {
+    width: 425px;
+    text-align: center;
     h1 {
-      font-size: 46px;
+      font-size: 44px;
       line-height: 1.2;
       color: #595959;
       font-family: $RobotoRegular;
       margin-bottom: 25px;
     }
-
-    button {
-      margin-left: 150px;
-    }
+    // button {
+    //   margin-left: 150px;
+    // }
   }
 }

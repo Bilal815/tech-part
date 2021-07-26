@@ -16,11 +16,11 @@
     }
   }
   .gray-center-section-heading {
-    font-family: $RobotoMedium;
+    font-family: $RobotoRegular;
     text-align: center;
-    margin: 0 0 30px;
+    margin: 0 0 50px;
     color: #666;
-    font-size: 34px;
+    font-size: 30px;
     font-weight: 400;
   }
   .why-puls {
@@ -45,5 +45,10 @@
   }
   .top-technicians-neighborhood {
     margin: 50px 0 0;
+  }
+
+  .more-services,
+  .beat-puls-blog {
+    margin: 100px 0;
   }
 }

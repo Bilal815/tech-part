@@ -1,0 +1,56 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontFamily.scss';
+
+.onHoverZoomReadMoreCardSection {
+  .row {
+    width: 100%;
+    margin: 0;
+  }
+  .onHoverZoomReadMoreCard {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    &:hover .bg-hover-image {
+      transform: scale(1.1);
+    }
+    .bg-hover-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-position: 50%;
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.5s ease;
+      //   transition: all 0.5s ease-in;
+    }
+    .gradient {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.88), hsla(0, 0%, 85%, 0));
+      width: 100%;
+      height: 100%;
+    }
+    .content {
+      z-index: 100;
+      padding: 0 35px;
+      h4 {
+        font-family: $RobotoBold;
+        font-size: 26px;
+        padding: 0 50% 0 0;
+        margin: 0 0 26px;
+        color: #595959;
+      }
+      .readmore {
+        color: #0161c7;
+        font-size: 16px;
+        font-family: $RobotoBold;
+      }
+    }
+  }
+}

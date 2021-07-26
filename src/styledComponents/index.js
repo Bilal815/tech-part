@@ -15,7 +15,7 @@ export const Button = styled.button`
 
 const LS = {};
 LS.LinkButton = styled.div`
-  display: inline-flex;
+  /* display: inline-flex; */
   justify-content: center;
   align-items: center;
   a {
@@ -23,7 +23,6 @@ LS.LinkButton = styled.div`
     padding: 18px 30px;
     text-align: center;
     color: white;
-    border-radius: 3px;
     transition: all 0.4s;
     line-height: 25px;
     &:hover {

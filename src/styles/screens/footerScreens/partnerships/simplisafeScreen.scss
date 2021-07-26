@@ -1,2 +1,86 @@
 @import '../../../../scss/variables.scss';
 @import '../../../../scss/fontFamily.scss';
+
+.simplisafeScreen {
+  .mainLandingSection {
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    box-sizing: border-box;
+    margin: 0;
+    .content-wrapper {
+      .content {
+        padding: 160px 0 0 !important;
+        h1 {
+          color: white;
+        }
+      }
+      p {
+        color: white;
+        font-size: 30px;
+      }
+    }
+    .content-wrapper .content .children-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 120px 0 0;
+    }
+  }
+  .simplisafe-logo {
+    object-fit: contain;
+  }
+  .simplisafe-logo1 {
+    height: 50px;
+  }
+  .simplisafe-logo2 {
+    height: 70px;
+  }
+  .why-simplisafe {
+    margin: 75px auto;
+  }
+  .howItWorks .container-75 {
+    justify-content: flex-start;
+    .points-wrapper {
+      padding: 50px 0 50px 150px;
+    }
+  }
+
+  .simplisafe-section-heading,
+  .why-simplisafe .bulletPoints h2 {
+    text-align: center;
+    margin: 0 0 30px;
+    font-size: 30px;
+    font-family: $RobotoRegular;
+    color: #666666;
+  }
+  .trusted-technicians {
+    p {
+      color: #666;
+      font-size: 14px;
+      text-align: center;
+      margin: 0 0 40px;
+    }
+  }
+  .other-services,
+  .beat-puls-blog {
+    margin: 70px auto;
+  }
+  .locations-section {
+    margin: 100px 0 75px;
+  }
+  .getStarted2 {
+    .container-75 {
+      .content {
+        h1 {
+          color: white;
+        }
+        .sc-bdnxRM.fbSzgY {
+          padding: 12px 30px;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}

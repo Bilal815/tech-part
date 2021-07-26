@@ -45,6 +45,12 @@ const DefaultHeader = ({ location: { pathname } }) => {
       }
     });
   });
+
+  const whiteColor = pathname === '/simplisafe' ? '#ffffff' : '#0000008c';
+  const whiteColorStyle = {
+    color: isScrolled ? '#0000008c' : whiteColor,
+  };
+
   return defaultHeaderNotShow ? null : (
     <Navbar
       variant='light'
@@ -60,22 +66,27 @@ const DefaultHeader = ({ location: { pathname } }) => {
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav>
             <span onMouseOver={() => setShow(true)} onMouseLeave={() => setShow(false)}>
-              <Nav.Link>Our Services</Nav.Link>
+              <Nav.Link style={whiteColorStyle}>Our Services</Nav.Link>
               <ServiceDropDown show={show} />
             </span>
-            <Nav.Link as={Link} to='/pricing'>
+            <Nav.Link style={whiteColorStyle} as={Link} to='/pricing'>
               Pricing
             </Nav.Link>
-            <a className='nav-link' href='https://blog.puls.com/' target='_blank'>
+            <a
+              style={whiteColorStyle}
+              className='nav-link'
+              href='https://blog.puls.com/'
+              target='_blank'
+            >
               Info Hub
             </a>
-            <Nav.Link as={Link} to='/members'>
+            <Nav.Link style={whiteColorStyle} as={Link} to='/members'>
               Members
             </Nav.Link>
-            <Nav.Link as={Link} to='/become-a-tech'>
+            <Nav.Link style={whiteColorStyle} as={Link} to='/become-a-tech'>
               Become a Tech
             </Nav.Link>
-            <Nav.Link as={Link} to='/property-manager'>
+            <Nav.Link style={whiteColorStyle} as={Link} to='/property-manager'>
               Property Managers
             </Nav.Link>
           </Nav>

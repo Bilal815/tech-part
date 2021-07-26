@@ -8,7 +8,7 @@ const Error404Screen = () => {
   ScrollToTop();
 
   return (
-    <div className='error404Screen container-50 container-y-50 center'>
+    <div className='error404Screen container-50 container-y-100 center'>
       <h1>We're sorry!</h1>
       <h4>We can't seem to find the page you are looking for</h4>
       <h1 className='error404'>404</h1>

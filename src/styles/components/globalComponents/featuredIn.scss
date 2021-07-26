@@ -15,3 +15,26 @@
     }
   }
 }
+
+.blackFeaturedIn {
+  background-color: $black;
+  height: 145px;
+  .container-75 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    h3 {
+      color: #12ffcd;
+      font-size: 30px;
+    }
+    .images-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        height: 25px;
+        margin-left: 50px;
+      }
+    }
+  }
+}
