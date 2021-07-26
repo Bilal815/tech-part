@@ -77,6 +77,7 @@ const ServicesHoverCardsGrid = () => {
       id: 1,
       tooltipTitle: `Let us do the heavy lifting for your new TV`,
       image: tvMountingSrc,
+      imageHover: tvMountingHover,
       title: `TV, Mounting`,
       path: ``,
     },
@@ -84,6 +85,7 @@ const ServicesHoverCardsGrid = () => {
       id: 2,
       tooltipTitle: `Repairs for your dishwasher, fridge, oven, washer and more`,
       image: homeAppliancesSrc,
+      imageHover: homeAppliancesHover,
       title: `Home, Appliances`,
       path: ``,
     },
@@ -91,6 +93,7 @@ const ServicesHoverCardsGrid = () => {
       id: 3,
       tooltipTitle: `Handyman services made simple`,
       image: handymanServicesSrc,
+      imageHover: handymanServicesHover,
       title: `Handyman, Services`,
       path: ``,
     },
@@ -98,6 +101,7 @@ const ServicesHoverCardsGrid = () => {
       id: 4,
       tooltipTitle: `Minimize viruses and bacteria by surface disinfection`,
       image: disinfectionSrc,
+      imageHover: disinfectionHover,
       title: `Disinfection, Services`,
       path: ``,
     },
@@ -105,6 +109,7 @@ const ServicesHoverCardsGrid = () => {
       id: 5,
       tooltipTitle: `Fix your phone at your home, office, or wherever you prefer`,
       image: iPhoneSrc,
+      imageHover: iPhoneHover,
       title: `iPhone, Repair`,
       path: ``,
     },
@@ -112,6 +117,7 @@ const ServicesHoverCardsGrid = () => {
       id: 6,
       tooltipTitle: `Customize your connected home with expert setup and integration`,
       image: smartHomeSrc,
+      imageHover: smartHomeHover,
       title: `Smart Home, Installation`,
       path: ``,
     },
@@ -119,6 +125,7 @@ const ServicesHoverCardsGrid = () => {
       id: 7,
       tooltipTitle: `Repair or replace your garage door.`,
       image: garageDoorsSrc,
+      imageHover: garageDoorsHover,
       title: `Garage Door, Repair`,
       path: ``,
     },
@@ -126,6 +133,7 @@ const ServicesHoverCardsGrid = () => {
       id: 8,
       tooltipTitle: `Plumbing solutions for your faucets, sinks, drains and more`,
       image: plumbingSrc,
+      imageHover: plumbingHover,
       title: `Plumbing, Services`,
       path: ``,
     },
@@ -135,26 +143,38 @@ const ServicesHoverCardsGrid = () => {
     <div className='servicesHoverCardsGrid'>
       <Row>
         {servicesCardOptions &&
-          servicesCardOptions.map((item, i) => (
-            <Col key={i} className='center'>
-              <Link
-                to=''
-                onMouseOver={() => mouseHover(item.id)}
-                onMouseOut={() => mouseOut(item.id)}
-              >
-                <Tooltip color='white' placement='top' title={item.tooltipTitle}>
-                  <div className='service-card'>
-                    {item.image && <img src={item.image} alt='service-image' />}
-                    <div className='service-name'>
-                      {item.title.split(',').map((p, i) => (
-                        <p key={i}>{p}</p>
-                      ))}
+          servicesCardOptions.map((item, i) => {
+            console.log(`image${i + 1} : http://localhost:3000${item.image}`);
+            console.log(`hoverimage${i + 1} : http://localhost:3000${item.imageHover}`);
+            return (
+              <Col key={i} className='center'>
+                <Link
+                  to=''
+                  onMouseOver={(e) => {
+                    console.log('mouseHover e : ', e.currentTarget);
+                    // mouseHover(item.id);
+                    mouseHover(`http://localhost:3000${item.image}`);
+                  }}
+                  onMouseOut={(e) => {
+                    console.log('onMouseOut e : ', e.currentTarget);
+                    // mouseOut(item.id);
+                    mouseOut(`http://localhost:3000${item.imageHover}`);
+                  }}
+                >
+                  <Tooltip color='white' placement='top' title={item.tooltipTitle}>
+                    <div className='service-card'>
+                      {item.image && <img src={item.image} alt='service-image' />}
+                      <div className='service-name'>
+                        {item.title.split(',').map((p, i) => (
+                          <p key={i}>{p}</p>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                </Tooltip>
-              </Link>
-            </Col>
-          ))}
+                  </Tooltip>
+                </Link>
+              </Col>
+            );
+          })}
       </Row>
     </div>
   );
