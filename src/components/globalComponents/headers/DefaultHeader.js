@@ -46,7 +46,10 @@ const DefaultHeader = ({ location: { pathname } }) => {
     });
   });
 
-  const whiteColor = pathname === '/simplisafe' ? '#ffffff' : '#0000008c';
+  const whiteColor =
+    pathname === '/simplisafe' || pathname === '/hisense' || pathname === '/puls-for-business'
+      ? '#ffffff'
+      : '#0000008c';
   const whiteColorStyle = {
     color: isScrolled ? '#0000008c' : whiteColor,
   };

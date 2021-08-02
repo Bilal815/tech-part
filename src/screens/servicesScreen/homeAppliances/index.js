@@ -8,6 +8,7 @@ import GetStarted1 from './../../../components/globalComponents/GetStarted1';
 import ServicesSection from './../../../components/globalComponents/ServicesSection';
 import TopTechnicianYelpCardsSlider from './../../../components/globalComponents/TopTechnicianYelpCardsSlider';
 import ImageAndGreenCheckPoints from './../../../components/globalComponents/ImageAndGreenCheckPoints';
+import CitiesWherePulsAvailable from '../../../components/globalComponents/CitiesWherePulsAvailable';
 
 const HomeAppliancesScreen = () => {
   ScrollToTop();
@@ -89,6 +90,10 @@ const HomeAppliancesScreen = () => {
       <div className='container-75'>
         <ServicesSection cardsInfo={cardsInfo} title='What needs to be repaired?' />
         <ImageAndGreenCheckPoints sectionInfo={sectionInfo} />
+        <div className='cities-where-puls-available'>
+          {/* <h3>Cities where Puls is available:</h3> */}
+          <CitiesWherePulsAvailable screen='home-appliances' />
+        </div>
         <TopTechnicianYelpCardsSlider title='Meet a few of our five-star technicians' />
         <GetStarted1
           imageUrl='https://d7gh5vrfihrl.cloudfront.net/website/get-started/appliances.jpg'

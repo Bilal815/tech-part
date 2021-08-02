@@ -10,6 +10,7 @@ import { Row, Col } from 'react-bootstrap';
 import TopTechnicianNeighborhoodCardsSection from './../../../components/globalComponents/TopTechnicianNeighborhoodCardsSection';
 import OnHoverZoomLearnMoreCardSection from '../../../components/globalComponents/OnHoverZoomLearnMoreCardSection';
 import OnHoverZoomReadMoreCardSection from './../../../components/globalComponents/OnHoverZoomReadMoreCardSection';
+import SupportedDevicesTable from '../../../components/globalComponents/SupportedDevicesTable';
 
 const IphoneRepairScreen = () => {
   ScrollToTop();
@@ -62,6 +63,22 @@ const IphoneRepairScreen = () => {
     },
   ];
 
+  const supportedDevicesInfo = {
+    info: [
+      `Screen repair`,
+      `Battery replacement`,
+      `Camera replacement`,
+      `Charging port`,
+      `Power button`,
+      `Side buttons`,
+      `Headphone jack`,
+      `Home button`,
+      `WiFi / Bluetooth`,
+      `Water damage`,
+    ],
+    bgImage: `https://d7gh5vrfihrl.cloudfront.net/website/banners/what-we-can-fix-iphone.jpg`,
+  };
+
   return (
     <div className='iphoneRepairScreen'>
       <MainLandingSection
@@ -113,6 +130,10 @@ const IphoneRepairScreen = () => {
       <HowItWorks howItWorksPoints={howItWorksPoints} />
 
       <div className='container-75'>
+        <div className='supported-devices'>
+          <h3 className='gray-center-section-heading'>Supported devices</h3>
+          <SupportedDevicesTable supportedDevicesInfo={supportedDevicesInfo} />
+        </div>
         <div className='top-technicians-neighborhood'>
           <h3 className='gray-center-section-heading'>The best technicians in your neighborhood</h3>
           <TopTechnicianNeighborhoodCardsSection />

@@ -8,6 +8,7 @@ import { ScrollToTop } from './../../../utilities/index';
 import MainLandingSection from './../../../components/globalComponents/MainLandingSection';
 import BackgroundPulsImageSection from '../../../components/globalComponents/BackgroundPulsImageSection';
 import BulletPoints from './../../../components/globalComponents/BulletPoints';
+import ServicesHoverCardsGrid from './../../../components/globalComponents/ServicesHoverCardsGrid';
 
 const { Panel } = Collapse;
 
@@ -115,6 +116,7 @@ const SmartHomeInstallationScreen = () => {
       <div className='container-75'>
         <div className='needs-to-install'>
           <h1 className='center-section-heading'>What needs to be installed</h1>
+          <ServicesHoverCardsGrid screen={'smartHome'} />
         </div>
         <div className='whats-include'>
           <h1 className='center-section-heading'>What’s included</h1>

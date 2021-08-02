@@ -10,14 +10,7 @@
     box-sizing: border-box;
     margin: 0;
     .content-wrapper {
-      .content {
-        padding: 160px 0 0 !important;
-        h1 {
-          color: white;
-        }
-      }
       p {
-        color: white;
         font-size: 30px;
       }
     }
@@ -46,7 +39,13 @@
       padding: 50px 0 50px 150px;
     }
   }
-
+  .why-simplisafe .bulletPoints .bullet-point {
+    text-align: left;
+    p {
+      padding: 0 50px 0 0;
+      text-align: left;
+    }
+  }
   .simplisafe-section-heading,
   .why-simplisafe .bulletPoints h2 {
     text-align: center;
@@ -55,12 +54,18 @@
     font-family: $RobotoRegular;
     color: #666666;
   }
+  .get-to-know-simplisafe p.sub-heading {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 300px 50px;
+  }
   .trusted-technicians {
     p {
       color: #666;
       font-size: 14px;
       text-align: center;
-      margin: 0 0 40px;
+      margin: 0 300px 50px;
     }
   }
   .other-services,

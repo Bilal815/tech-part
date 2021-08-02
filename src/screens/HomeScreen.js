@@ -51,7 +51,7 @@ const HomeScreen = () => {
       </Link>
       <div className='container-75'>
         <div className='my-5'>
-          <ServicesHoverCardsGrid />
+          <ServicesHoverCardsGrid screen={'home'} />
         </div>
         <TopTechnicianYelpCardsSlider title='Our top technicians are in your neighborhood and beyond' />
         <div className='beat-puls-blog'>
@@ -59,7 +59,9 @@ const HomeScreen = () => {
         </div>
         <GetApp />
         <TrustedBy />
-        <FeaturedIn />
+      </div>
+      <FeaturedIn />
+      <div className='container-75'>
         <CitiesWherePulsAvailable />
         <GetStarted1
           btnLink='/book-a-service'

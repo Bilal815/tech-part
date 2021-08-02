@@ -8,15 +8,19 @@
     color: $black;
   }
   .bullet-point {
+    text-align: center;
     img {
-      height: 80px;
+      // height: 80px;
       margin-bottom: 15px;
     }
     h5 {
       font-family: $RobotoBold;
       font-size: 18px;
-      margin-bottom: 15px;
       color: $black;
+      margin: 0;
+      &:nth-last-child(2) {
+        margin-bottom: 15px;
+      }
     }
     p {
       text-align: center;

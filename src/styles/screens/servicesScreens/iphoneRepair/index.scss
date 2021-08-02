@@ -43,6 +43,19 @@
       }
     }
   }
+  .supported-devices {
+    .supportedDevicesTable {
+      background-position: center;
+      object-fit: contain;
+      background-size: cover;
+      .table-container .item-container .item {
+        padding: 20px 0;
+        .number {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
   .top-technicians-neighborhood {
     margin: 50px 0 0;
   }

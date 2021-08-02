@@ -12,6 +12,8 @@ import BeatPulsBlogCardsSlider from './../../../components/globalComponents/Beat
 import FeaturedIn from '../../../components/globalComponents/FeaturedIn';
 import OurLocations from './../../../components/globalComponents/OurLocations';
 import { Row, Col } from 'react-bootstrap';
+import BulletPoints from '../../../components/globalComponents/BulletPoints';
+import ServicesHoverCardsGrid from './../../../components/globalComponents/ServicesHoverCardsGrid';
 
 const GarageDoorRepairScreen = () => {
   // ScrollToTop();
@@ -99,6 +101,29 @@ const GarageDoorRepairScreen = () => {
     },
   ];
 
+  const bulletPoints = [
+    {
+      image: `https://d7gh5vrfihrl.cloudfront.net/website/bullets/booking.svg`,
+      title: `Simple booking`,
+      description: `Request an appointment in minutes`,
+    },
+    {
+      image: `https://d7gh5vrfihrl.cloudfront.net/website/bullets/time_new.svg`,
+      title: `Easy scheduling`,
+      description: `One-hour arrival windows`,
+    },
+    {
+      image: `https://d7gh5vrfihrl.cloudfront.net/website/bullets/risk-free.svg`,
+      title: `Reliable Vetted`,
+      description: `Background checked technicians`,
+    },
+    {
+      image: `https://d7gh5vrfihrl.cloudfront.net/website/bullets/25-points.svg`,
+      title: `Comprehensive`,
+      description: `All repairs include a 25-point inspection`,
+    },
+  ];
+
   const PopularServiceCard = ({ card }) => {
     const { link, image, title } = card;
     return (
@@ -155,6 +180,13 @@ const GarageDoorRepairScreen = () => {
           title='Book an appointment today'
           description='We take the work out of finding a trusted technician'
         />
+        <BulletPoints bulletPoints={bulletPoints} />
+        <div className='more-services-pulse'>
+          <h3>More services by Puls</h3>
+          <div className='more-services-pulse-border'>
+            <ServicesHoverCardsGrid screen='garage-door' />
+          </div>
+        </div>
         <TopTechnicianYelpCardsSlider title='Our top technicians are in your neighborhood and beyond' />
         <TrustedBy />
       </div>

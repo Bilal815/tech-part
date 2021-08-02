@@ -26,7 +26,7 @@ const Footer = ({ location: { pathname } }) => {
 
   return (
     <>
-      {pathname === '/tcl' ? (
+      {pathname === '/tcl' || pathname === '/puls-for-business' ? (
         ''
       ) : (
         <div className='footer container-75'>

@@ -10,6 +10,21 @@
     font-family: $RobotoBold;
     color: #46475c;
   }
+  .needs-to-install {
+    .servicesHoverCardsGrid {
+      padding-top: 25px;
+      .service-card {
+        .image-container {
+          height: 60px;
+          img {
+            max-height: 45px;
+            height: 70px;
+            max-width: 50px;
+          }
+        }
+      }
+    }
+  }
   .needs-to-install,
   .whats-include,
   .why-should-use-puls,

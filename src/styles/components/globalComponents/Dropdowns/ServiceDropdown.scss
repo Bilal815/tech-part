@@ -3,6 +3,13 @@
   position: absolute;
   top: 70%;
   z-index: 100;
+  .list-group-item {
+    display: flex;
+    align-items: center;
+    .dropdown-link {
+      font-size: 15px;
+    }
+  }
 }
 .icon {
   margin-top: -8px;

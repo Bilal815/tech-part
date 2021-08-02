@@ -1,8 +1,6 @@
 import React from 'react';
 import '../../styles/components/globalComponents/howItWorks.scss';
 
-import { Row, Col } from 'react-bootstrap';
-
 const HowItWorks = ({ bgImage, title, howItWorksPoints }) => {
   const GreenGradient = () => {
     return <div className='greenGradient'></div>;
@@ -18,7 +16,8 @@ const HowItWorks = ({ bgImage, title, howItWorksPoints }) => {
     >
       <div className='container-75'>
         <div className='points-wrapper'>
-          <h1>{title ? title : 'How it works'}</h1>
+          {title && title.split(',').map((t, i) => <h1 key={i}>{t ? t : 'How it works'}</h1>)}
+
           <div className='points'>
             {howItWorksPoints &&
               howItWorksPoints.map((p, i) => (

@@ -52,7 +52,7 @@ const ServicesDropDown = (props) => {
             <span>
               <img src={tvMountingSrc} width='45' className='icon'></img>
             </span>
-            <span>Tv Mounting</span>
+            <span className='dropdown-link'>Tv Mounting</span>
           </ListGroup.Item>
           <ListGroup.Item
             className='link clickable p-3'
@@ -69,7 +69,7 @@ const ServicesDropDown = (props) => {
             <span>
               <img src={homeAppliancesSrc} width='50' className='icon'></img>
             </span>
-            <span>Home Appliances</span>
+            <span className='dropdown-link'>Home Appliances</span>
           </ListGroup.Item>
 
           <ListGroup.Item
@@ -87,7 +87,7 @@ const ServicesDropDown = (props) => {
             <span>
               <img src={handymanServicesSrc} width='45' className='icon'></img>
             </span>
-            <span>Handyman Services</span>
+            <span className='dropdown-link'>Handyman Services</span>
           </ListGroup.Item>
 
           <ListGroup.Item
@@ -105,7 +105,7 @@ const ServicesDropDown = (props) => {
             <span>
               <img src={disinfectionSrc} width='45' className='icon'></img>
             </span>
-            <span>Disinfection Services</span>
+            <span className='dropdown-link'>Disinfection Services</span>
           </ListGroup.Item>
 
           <ListGroup.Item
@@ -123,7 +123,7 @@ const ServicesDropDown = (props) => {
             <span>
               <img src={phoneSrc} width='45' className='icon'></img>
             </span>
-            <span>Iphone Repair</span>
+            <span className='dropdown-link'>Iphone Repair</span>
           </ListGroup.Item>
 
           <ListGroup.Item
@@ -141,7 +141,7 @@ const ServicesDropDown = (props) => {
             <span>
               <img src={smartHomeSrc} width='45' className='icon'></img>
             </span>
-            <span>Smart Home Installation</span>
+            <span className='dropdown-link'>Smart Home Installation</span>
           </ListGroup.Item>
           <ListGroup.Item
             className='link clickable p-3'
@@ -158,7 +158,7 @@ const ServicesDropDown = (props) => {
             <span>
               <img src={garageDoorsSrc} width='45' className='icon'></img>
             </span>
-            <span>Garage door repair</span>
+            <span className='dropdown-link'>Garage door repair</span>
           </ListGroup.Item>
           <ListGroup.Item
             className='link clickable p-3'
@@ -175,7 +175,7 @@ const ServicesDropDown = (props) => {
             <span>
               <img src={plumbingSrc} width='45' className='icon'></img>
             </span>
-            <span>Plumbing Services</span>
+            <span className='dropdown-link'>Plumbing Services</span>
           </ListGroup.Item>
         </ListGroup>
       </div>

@@ -10,9 +10,10 @@ import OnHoverZoomReadMoreCardSection from './../../../components/globalComponen
 import Locations from './../../../components/globalComponents/Locations';
 import HowItWorks from '../../../components/globalComponents/HowItWorks';
 import GetStarted2 from '../../../components/globalComponents/GetStarted2';
+import SupportedDevicesTable from '../../../components/globalComponents/SupportedDevicesTable';
 
 const SimplisafeScreen = () => {
-  // ScrollToTop();
+  ScrollToTop();
   const bulletPoints = [
     {
       title: `Smart home's no brainer solution`,
@@ -77,9 +78,22 @@ const SimplisafeScreen = () => {
     },
   ];
 
+  const supportedDevicesInfo = {
+    info: [
+      `24/7, Monitoring`,
+      `No annual, contracts`,
+      `Arm and disarm, from anywhere`,
+      `Controlled from, your phone`,
+      `Monitor home, temperature`,
+      `Wireless, protection`,
+    ],
+    bgImage: `https://d7gh5vrfihrl.cloudfront.net/website/banners/supported-devices-simplisafe.png`,
+  };
+
   return (
     <div className='simplisafeScreen'>
       <MainLandingSection
+        color='white'
         backgroundImage='https://d7gh5vrfihrl.cloudfront.net/website/banners/simpli-safe.jpg'
         title='Welcome, SimpliSafe customers!'
         description='Home security pros at your door, in 1 hour 7 days a week'
@@ -104,10 +118,21 @@ const SimplisafeScreen = () => {
         bgImage='https://d7gh5vrfihrl.cloudfront.net/website/whyus/whyus-simplisafe.jpg'
         howItWorksPoints={howItWorksPoints}
       />
-      <div className='container-75 trusted-technicians'>
-        <h1 className='simplisafe-section-heading mb-1'>Trusted technicians, nationwide</h1>
-        <p> We select the best - only 10% meet our screening criteria</p>
-        <TopTechnicianNeighborhoodCardsSection />
+
+      <div className='container-75'>
+        <div className='get-to-know-simplisafe'>
+          <h1 className='simplisafe-section-heading mb-2'>Get to know SimpliSafe</h1>
+          <p className='sub-heading'>
+            Puls is an official SimpliSafe partner, offering white-glove setup support. Contact us
+            for services and in-home demo for all your smart home products
+          </p>
+          <SupportedDevicesTable supportedDevicesInfo={supportedDevicesInfo} />
+        </div>
+        <div className='trusted-technicians'>
+          <h1 className='simplisafe-section-heading mb-2'>Trusted technicians, nationwide</h1>
+          <p> We select the best - only 10% meet our screening criteria</p>
+          <TopTechnicianNeighborhoodCardsSection />
+        </div>
       </div>
       <BlackFeaturedIn />
       <div className='container-75'>

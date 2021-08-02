@@ -9,22 +9,26 @@
     }
   }
   .service-card {
+    text-align: center;
+    &:hover p {
+      color: $blue;
+    }
     a {
       display: block;
     }
-    img {
-      margin-bottom: 20px;
+    .image-container {
+      height: 70px;
+      img {
+        margin-bottom: 20px;
+      }
     }
+
     p {
-      color: $black;
+      color: $gray;
       margin: 0;
+      font-size: 14px;
       text-align: center;
     }
-    // .service-name p {
-    //   &:hover {
-    //     color: $blue;
-    //   }
-    // }
   }
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import '../../styles/components/globalComponents/topTechnicianNeighborhoodCardsSection.scss';
 import { Row, Col } from 'react-bootstrap';
 
-const TopTechnicianNeighborhoodCardsSection = ({ topTechnicianNeighborhoodCardDetails }) => {
+const TopTechnicianNeighborhoodCardsSection = ({ topTechnicianNeighborhoodCardsSectionInfo }) => {
   const topTechnicianNeighborhoodCardInfo = [
     {
       image: `https://d7gh5vrfihrl.cloudfront.net/website/technicians/ben.jpeg`,
@@ -60,13 +60,19 @@ const TopTechnicianNeighborhoodCardsSection = ({ topTechnicianNeighborhoodCardDe
   };
   return (
     <div className='topTechnicianNeighborhoodCardsSection'>
+      {}
       <Row>
-        {topTechnicianNeighborhoodCardInfo &&
-          topTechnicianNeighborhoodCardInfo.map((cardInfo, i) => (
-            <Col key={i} sm={12} md={4}>
-              <TopTechnicianNeighborhoodCard cardInfo={cardInfo} />
-            </Col>
-          ))}
+        {topTechnicianNeighborhoodCardInfo
+          ? topTechnicianNeighborhoodCardInfo.map((cardInfo, i) => (
+              <Col key={i} sm={12} md={4}>
+                <TopTechnicianNeighborhoodCard cardInfo={cardInfo} />
+              </Col>
+            ))
+          : topTechnicianNeighborhoodCardsSectionInfo.map((cardInfo, i) => (
+              <Col key={i} sm={12} md={4}>
+                <TopTechnicianNeighborhoodCard cardInfo={cardInfo} />
+              </Col>
+            ))}
       </Row>
     </div>
   );
