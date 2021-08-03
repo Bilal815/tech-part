@@ -82,6 +82,7 @@ const IphoneRepairScreen = () => {
   return (
     <div className='iphoneRepairScreen'>
       <MainLandingSection
+        color='white'
         backgroundImage='https://d7gh5vrfihrl.cloudfront.net/website/banners/city-banner.jpg'
         title='Trusted phone repairs at, your location'
         description='Phone repair made simple'

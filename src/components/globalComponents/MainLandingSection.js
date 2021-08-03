@@ -22,9 +22,10 @@ const MainLandingSection = ({
   return (
     <div className='mainLandingSection' style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className='content-wrapper'>
-        {/* <Row>
-          <Col sm={12} md={6}> */}{' '}
-        <div className='content' style={{ padding: points ? '180px 0 200px' : '220px 0 160px' }}>
+        <div
+          className='content'
+          style={{ padding: color === 'white' ? '180px 0 200px' : '220px 0 160px' }}
+        >
           {title.split(',').map((t, i) => (
             <h1 style={whiteColor} key={i}>
               {t}
@@ -71,9 +72,6 @@ const MainLandingSection = ({
             </a>
           )}
         </div>
-        {/* </Col>
-          <Col sm={12} md={6}></Col>
-        </Row> */}
       </div>
     </div>
   );

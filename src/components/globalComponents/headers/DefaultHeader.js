@@ -34,6 +34,7 @@ const DefaultHeader = ({ location: { pathname } }) => {
     pathname === '/cities/dc' ||
     pathname === '/cities/dc/washington-dc' ||
     pathname === '/tcl';
+
   useEffect(() => {
     // listener = document.addEventListener('scroll', (e) => {
     document.addEventListener('scroll', (e) => {
@@ -54,6 +55,22 @@ const DefaultHeader = ({ location: { pathname } }) => {
     color: isScrolled ? '#0000008c' : whiteColor,
   };
 
+  const HisenseScreenHeader = () => (
+    <div className='hisenseScreenHeader'>
+      <a style={whiteColorStyle} className='nav-link' href='https://blog.puls.com/' target='_blank'>
+        Info Hub
+      </a>
+      <a style={whiteColorStyle} href='tel:+18605960177'>
+        <img
+          src='https://d7gh5vrfihrl.cloudfront.net/website/icons/phone.png'
+          className='phone-icon'
+          alt='(860) 596-0177'
+        />
+        (860) 596-0177
+      </a>
+    </div>
+  );
+
   return defaultHeaderNotShow ? null : (
     <Navbar
       variant='light'
@@ -66,34 +83,38 @@ const DefaultHeader = ({ location: { pathname } }) => {
           <img src={TechPartLogo} alt='TechPartLogo' />
         </Nav.Link>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
-        <Navbar.Collapse id='basic-navbar-nav'>
-          <Nav>
-            <span onMouseOver={() => setShow(true)} onMouseLeave={() => setShow(false)}>
-              <Nav.Link style={whiteColorStyle}>Our Services</Nav.Link>
-              <ServiceDropDown show={show} />
-            </span>
-            <Nav.Link style={whiteColorStyle} as={Link} to='/pricing'>
-              Pricing
-            </Nav.Link>
-            <a
-              style={whiteColorStyle}
-              className='nav-link'
-              href='https://blog.puls.com/'
-              target='_blank'
-            >
-              Info Hub
-            </a>
-            <Nav.Link style={whiteColorStyle} as={Link} to='/members'>
-              Members
-            </Nav.Link>
-            <Nav.Link style={whiteColorStyle} as={Link} to='/become-a-tech'>
-              Become a Tech
-            </Nav.Link>
-            <Nav.Link style={whiteColorStyle} as={Link} to='/property-manager'>
-              Property Managers
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+        {pathname === '/hisense' ? (
+          <HisenseScreenHeader />
+        ) : (
+          <Navbar.Collapse id='basic-navbar-nav'>
+            <Nav>
+              <span onMouseOver={() => setShow(true)} onMouseLeave={() => setShow(false)}>
+                <Nav.Link style={whiteColorStyle}>Our Services</Nav.Link>
+                <ServiceDropDown show={show} />
+              </span>
+              <Nav.Link style={whiteColorStyle} as={Link} to='/pricing'>
+                Pricing
+              </Nav.Link>
+              <a
+                style={whiteColorStyle}
+                className='nav-link'
+                href='https://blog.puls.com/'
+                target='_blank'
+              >
+                Info Hub
+              </a>
+              <Nav.Link style={whiteColorStyle} as={Link} to='/members'>
+                Members
+              </Nav.Link>
+              <Nav.Link style={whiteColorStyle} as={Link} to='/become-a-tech'>
+                Become a Tech
+              </Nav.Link>
+              <Nav.Link style={whiteColorStyle} as={Link} to='/property-manager'>
+                Property Managers
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        )}
       </div>
     </Navbar>
   );

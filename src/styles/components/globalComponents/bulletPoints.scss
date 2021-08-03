@@ -3,30 +3,50 @@
 
 .bulletPoints {
   margin: 30px 0 75px;
-  h2 {
-    font-family: $RobotoMedium;
-    color: $black;
-  }
-  .bullet-point {
-    text-align: center;
-    img {
-      // height: 80px;
-      margin-bottom: 15px;
-    }
-    h5 {
-      font-family: $RobotoBold;
-      font-size: 18px;
-      color: $black;
-      margin: 0;
-      &:nth-last-child(2) {
-        margin-bottom: 15px;
+  .row {
+    .col-md-6 {
+      position: relative;
+      &:last-child {
+        .gray-arrow {
+          display: none;
+        }
       }
-    }
-    p {
-      text-align: center;
-      padding: 0 60px;
-      font-size: 14px;
-      color: $black;
+      h2 {
+        font-family: $RobotoMedium;
+        color: $black;
+      }
+      .bullet-point {
+        // text-align: center;
+        img {
+          // height: 80px;
+          margin-bottom: 15px;
+        }
+        h5 {
+          font-family: $RobotoBold;
+          // font-size: 18px;
+          // color: $black;
+          margin: 0;
+          &:nth-last-child(2) {
+            margin-bottom: 15px;
+          }
+        }
+        p {
+          // text-align: center;
+          padding: 0 60px;
+          font-size: 14px;
+          color: $black;
+        }
+      }
+      .gray-arrow {
+        height: 34px;
+        width: 19px;
+        position: absolute;
+        right: 40px;
+        top: 65px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100%;
+      }
     }
   }
 }
