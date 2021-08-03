@@ -4,7 +4,7 @@ import '../../styles/components/globalComponents/bulletPoints.scss';
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-const BulletPoints = ({ bulletPoints, heading, color }) => {
+const BulletPoints = ({ bulletPoints, heading, color, bgColor }) => {
   const columnWidth = bulletPoints && 12 / bulletPoints.length;
 
   const h5Style =
@@ -22,13 +22,29 @@ const BulletPoints = ({ bulletPoints, heading, color }) => {
                 className='bullet-point'
                 style={{ textAlign: `${color === 'blue' ? 'left' : 'center'}` }}
               >
-                {p.image && (
+                {bgColor ? (
+                  <div
+                    className='image-container center'
+                    style={{
+                      backgroundColor: `${bgColor === 'light-blue' ? '#e4f1ff' : '#017aff'}`,
+                    }}
+                  >
+                    {p.image && (
+                      <img
+                        src={p.image}
+                        alt='image'
+                        style={{ height: `${color === 'blue' ? '50px' : '80px'}` }}
+                      />
+                    )}
+                  </div>
+                ) : (
                   <img
                     src={p.image}
                     alt='image'
                     style={{ height: `${color === 'blue' ? '50px' : '80px'}` }}
                   />
                 )}
+
                 {p.title &&
                   p.title.split(',').map((t, i) => (
                     <h5 key={i} style={h5Style}>

@@ -17,7 +17,6 @@ const HowItWorks = ({ bgImage, title, howItWorksPoints }) => {
       <div className='container-75'>
         <div className='points-wrapper'>
           {title && title.split(',').map((t, i) => <h1 key={i}>{t ? t : 'How it works'}</h1>)}
-
           <div className='points'>
             {howItWorksPoints &&
               howItWorksPoints.map((p, i) => (

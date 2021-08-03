@@ -3,10 +3,11 @@ import '../../../styles/screens/servicesScreens/bookAService/index.scss';
 import { ScrollToTop } from './../../../utilities/index';
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
+import BulletPoints from '../../../components/globalComponents/BulletPoints';
 
 const BookAServiceScreen = () => {
+  // ScrollToTop();
   const [deviceYouNeed, setDeviceYouNeed] = useState(``);
-  ScrollToTop();
 
   const nineServiceCardInfo = [
     {
@@ -91,6 +92,28 @@ const BookAServiceScreen = () => {
     },
   ];
 
+  const bulletPoints = [
+    {
+      image: `https://d7gh5vrfihrl.cloudfront.net/website/membership/intro/diamond-light.svg`,
+      title: `Priority Booking`,
+      description: `Our highest-rated technicians will prioritize your service`,
+    },
+    {
+      image: `https://d7gh5vrfihrl.cloudfront.net/website/membership/intro/tag-light.svg`,
+      title: `Save up to 25% on all service`,
+      description: `No charge until service is completed`,
+    },
+    {
+      image: `https://d7gh5vrfihrl.cloudfront.net/website/membership/intro/pigi-light.svg`,
+      title: `Puls+ Member Deals`,
+      description: `Exclusive offers only for Puls+ members`,
+    },
+    {
+      image: `https://d7gh5vrfihrl.cloudfront.net/website/membership/intro/star-light.svg`,
+      title: `Extended Guarantee`,
+      description: `Double your guarantee to 180 days!`,
+    },
+  ];
   const NineServiceCard = ({ service }) => (
     <Link to={service.serviceLink} className='nineServiceCard'>
       <div className='inner'>
@@ -164,8 +187,47 @@ const BookAServiceScreen = () => {
           </div>
           <NineServiceCardGrid />
         </div>
+      </div>
+      <div className='introducing-puls'>
+        <div className='heading-description-container'>
+          <h1 className='section-heading'>
+            Introducing Puls <sup>+</sup>
+          </h1>
+          <p className='section-description'>Solutions to all your home maintenance needs</p>
+        </div>
+        <div className='light-blue-background'>
+          <div className='container-75 bullet-points-container'>
+            <BulletPoints bulletPoints={bulletPoints} bgColor='light-blue' />
+          </div>
+          <div className='container-75 light-free-checkup'>
+            <Row>
+              <Col sm={12} md={6}>
+                <div className='image-container'>
+                  <img
+                    src='https://d7gh5vrfihrl.cloudfront.net/website/benefits/techs.png'
+                    alt=''
+                  />
+                </div>
+              </Col>
+              <Col sm={12} md={6} className='content-container-column'>
+                <div className='content-container'>
+                  <h1>Ready for a free check-up?</h1>
+                  <p className='mt-5 mb-3'>
+                    Schedule your free check-up, and a Puls+ master technician will personally visit
+                    your home and assess all your home-service needs.
+                  </p>
+                  <p>Enjoy 2 free check-up visits per year as a Puls+ member. That is a Plus!</p>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </div>
+      </div>
+      <div className='container-75'>
         <div className='puls-benefits'>
-          <h1 className='section-heading'>Puls+ Membership Benefits</h1>
+          <h1 className='section-heading'>
+            Puls<sup>+</sup> Membership Benefits
+          </h1>
           <p className='section-description'>Get access to exclusive discounts and services</p>
           <MemberBenefitsGrid />
         </div>

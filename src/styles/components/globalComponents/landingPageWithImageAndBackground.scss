@@ -1,0 +1,84 @@
+@import '../../../scss/variables.scss';
+@import '../../../scss/fontFamily.scss';
+
+.landingPageWithImageAndBackground {
+  .section-heading {
+    color: #414141;
+    font-size: 35px;
+    margin: 0 0 22px;
+    font-weight: 300;
+  }
+  z-index: -1;
+  position: relative;
+  height: 760px;
+  width: 100%;
+  background-color: #017aff;
+  margin: 0 auto 90px;
+  overflow: hidden;
+  .background-image-container {
+    height: 100%;
+    width: 58%;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    .background-image {
+      position: absolute;
+      height: 102%;
+      width: 100%;
+      background-size: cover;
+      background-position-x: right;
+      border-radius: 0 30% 30% 0/0 100% 100% 0;
+      top: -10px;
+    }
+  }
+  .blue-text-container {
+    display: inline-block;
+    height: 100%;
+    width: 30%;
+    max-width: 535px;
+    vertical-align: middle;
+    padding: 135px 0 0 145px;
+    box-sizing: border-box;
+    &::after {
+      content: ' ';
+      position: absolute;
+      border: 0 solid transparent;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+      //   -webkit-transform: rotate(3turn);
+      transform: rotate(3turn);
+      border-top-width: 100px;
+      border-right-width: 100vw;
+      border-right-color: #fff;
+    }
+    h2 {
+      color: #fff;
+      margin: 0 auto 15px;
+      font-size: 50px;
+      font-family: $RobotoBold;
+      line-height: 1.04;
+      letter-spacing: 1.39px;
+    }
+    p {
+      color: #fff;
+      font-family: $RobotoLight;
+      font-size: 22px;
+      font-weight: 300;
+      margin-top: 41px;
+      line-height: 1.55;
+      letter-spacing: normal;
+      margin-bottom: 0;
+    }
+    p.signature {
+      color: #fff;
+      width: 150px;
+      font-size: 13px;
+      line-height: 1.54;
+      margin-top: 11px;
+      margin-right: 10px;
+      display: inline-block;
+      font-family: $RobotoRegular;
+    }
+  }
+}

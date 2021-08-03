@@ -13,30 +13,45 @@
     margin-bottom: 100px;
   }
   .introducing-puls {
-    .introducing-puls-options {
-      .introducing-container {
-        padding: 0 23px;
-        .blue-circle {
-          width: 108px;
-          height: 108px;
-          margin: 15px auto;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: #017aff;
-          border-radius: 50%;
-          margin-bottom: 20px;
+    .bulletPoints {
+      h2 {
+        display: none;
+      }
+      .bullet-point {
+        img {
+          width: 60px;
+          margin: 0 !important;
         }
-        .title {
-          text-align: center;
-          margin-bottom: 5px;
-          font-family: $RobotoBold;
-        }
-        .description {
-          text-align: center;
+        h5 {
+          color: #46475c;
+          font-size: 16px !important;
         }
       }
     }
+    // .introducing-puls-options {
+    //   .introducing-container {
+    //     padding: 0 23px;
+    //     .blue-circle {
+    //       width: 108px;
+    //       height: 108px;
+    //       margin: 15px auto;
+    //       display: flex;
+    //       justify-content: center;
+    //       align-items: center;
+    //       background: #017aff;
+    //       border-radius: 50%;
+    //       margin-bottom: 20px;
+    //     }
+    //     .title {
+    //       text-align: center;
+    //       margin-bottom: 5px;
+    //       font-family: $RobotoBold;
+    //     }
+    //     .description {
+    //       text-align: center;
+    //     }
+    //   }
+    // }
   }
   .center-bold-heading {
     font-size: 35px;

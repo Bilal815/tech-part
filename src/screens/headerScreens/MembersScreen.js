@@ -21,6 +21,7 @@ import bigPulsImg from '../../assets/icons/big-plus.svg';
 import blueTickIcon from '../../assets/icons/blue-tick.svg';
 import PricingContainer from '../../components/globalComponents/PricingContainer';
 import BackgroundPulsImageSection from '../../components/globalComponents/BackgroundPulsImageSection';
+import BulletPoints from '../../components/globalComponents/BulletPoints';
 
 const MembersScreen = () => {
   ScrollToTop();
@@ -39,24 +40,28 @@ const MembersScreen = () => {
     ],
   };
 
-  const introducingOptions = [
+  const bulletPoints = [
     {
-      img: starImg,
+      image: starImg,
+      // image: `https://d7gh5vrfihrl.cloudfront.net/website/membership/intro/star.svg`,
       title: `Extended Guarantee`,
       description: `Double your guarantee to 180 days, or even extend it up to 1 year`,
     },
     {
-      img: tagImg,
+      image: tagImg,
+      // image: `https://d7gh5vrfihrl.cloudfront.net/website/membership/intro/tag.svg`,
       title: `Save 20% on all service`,
       description: `No charge until service is completed`,
     },
     {
-      img: diamondImg,
+      image: diamondImg,
+      // image: `https://d7gh5vrfihrl.cloudfront.net/website/membership/intro/diamond.svg`,
       title: `Puls+ Member Deals`,
       description: `Exclusive offers only for Puls+ members`,
     },
     {
-      img: pigiImg,
+      image: pigiImg,
+      // image: `https://d7gh5vrfihrl.cloudfront.net/website/membership/intro/pigi.svg`,
       title: `Priority Booking`,
       description: `Our highest-rated technicians will prioritize your service`,
     },
@@ -138,8 +143,8 @@ const MembersScreen = () => {
               Solutions to <b>all</b> your home maintenance needs
             </h4>
           </div>
-          <Row className='introducing-puls-options'>
-            {introducingOptions &&
+          <BulletPoints bulletPoints={bulletPoints} heading='Introducing' bgColor='dark-blue' />
+          {/* {introducingOptions &&
               introducingOptions.map((item, i) => (
                 <Col key={i} sm={12} md={6} lg={3}>
                   <div className='introducing-container'>
@@ -150,8 +155,7 @@ const MembersScreen = () => {
                     <p className='description'>{item.description}</p>
                   </div>
                 </Col>
-              ))}
-          </Row>
+              ))} */}
         </div>
         <BackgroundPulsImageSection
           heading='Service you can trust. On Time.'

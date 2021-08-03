@@ -17,10 +17,17 @@
       }
       .bullet-point {
         // text-align: center;
-        img {
-          // height: 80px;
-          margin-bottom: 15px;
+        .image-container {
+          width: 108px;
+          height: 108px;
+          margin: 15px auto;
+          border-radius: 50%;
+          img {
+            // height: 80px;
+            margin-bottom: 15px;
+          }
         }
+
         h5 {
           font-family: $RobotoBold;
           // font-size: 18px;
