@@ -2,6 +2,13 @@
 @import '../../../../scss/fontFamily.scss';
 
 .pulsForBusinessScreen {
+  .bulletPoints h2,
+  .section-heading {
+    text-align: center;
+    font-weight: 400;
+    font-size: 34px;
+    color: $link-gray;
+  }
   .mainLandingSection {
     .content-wrapper {
       .content {
@@ -66,6 +73,51 @@
         padding: 0 61px 0 0;
         text-align: left;
       }
+    }
+  }
+  .trusted-technicians {
+    padding: 40px 0 70px;
+    p {
+      font-size: 14px;
+      text-align: center;
+      color: $link-gray;
+      padding: 0 0 30px;
+      margin: 0;
+    }
+    .topTechnicianNeighborhoodCard {
+      .description {
+        height: 150px;
+      }
+    }
+  }
+  .getStarted2 {
+    // margin: 0 0 30px;
+    .content {
+      width: 100%;
+      h1 {
+        color: #fff;
+        font-family: $RobotoBold;
+        font-size: 46px;
+      }
+    }
+  }
+}
+
+.pulsForBusinessFooter {
+  margin: 0 0 30px;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 14px;
+  color: $black;
+  .wrapper {
+    margin: 0 0 15px;
+    .terms,
+    .privacy {
+      color: #a9aeb3;
+      padding: 0 10px;
+    }
+    .copy-right {
+      padding: 0 0 0 30px;
     }
   }
 }

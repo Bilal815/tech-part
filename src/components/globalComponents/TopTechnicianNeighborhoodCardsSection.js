@@ -2,7 +2,7 @@ import React from 'react';
 import '../../styles/components/globalComponents/topTechnicianNeighborhoodCardsSection.scss';
 import { Row, Col } from 'react-bootstrap';
 
-const TopTechnicianNeighborhoodCardsSection = ({ topTechnicianNeighborhoodCardsSectionInfo }) => {
+const TopTechnicianNeighborhoodCardsSection = ({ screen }) => {
   const topTechnicianNeighborhoodCardInfo = [
     {
       image: `https://d7gh5vrfihrl.cloudfront.net/website/technicians/ben.jpeg`,
@@ -32,20 +32,58 @@ const TopTechnicianNeighborhoodCardsSection = ({ topTechnicianNeighborhoodCardsS
       logo: `https://d7gh5vrfihrl.cloudfront.net/website/badges/facebook-water.svg`,
     },
   ];
+  const topTechnicianNeighborhoodCardInfoBusiness = [
+    {
+      image: `https://d7gh5vrfihrl.cloudfront.net/website/technicians/stephen.png`,
+      title: `Great experience`,
+      introduction: `Had a 70" TV mounted and the installer arrived early and had the TV mounted within 30 minutes! Very quick and he knew exactly what he was doing. Great experience.`,
+      location: `Stephen | Los Angeles, CA`,
+      logo: `https://d7gh5vrfihrl.cloudfront.net/website/badges/facebook-water.svg`,
+    },
+    {
+      image: `https://d7gh5vrfihrl.cloudfront.net/website/technicians/jazmyn.png`,
+      title: `Ten minutes and done!`,
+      introduction: `I dropped my iPhone yesterday going to lunch at my new job (can't take off so soon to handle something like this) so I found Puls. They took 10 minutes to fix my phone! I could have [traveled] across town and waited an hour - no thanks.`,
+      location: `Jazmyn | San Francisco`,
+      logo: `https://d7gh5vrfihrl.cloudfront.net/website/badges/yelp.png`,
+    },
+    {
+      image: `https://d7gh5vrfihrl.cloudfront.net/website/technicians/brian.png`,
+      title: `Quick and quiet`,
+      introduction: `I love the convenience of their mobile technicians, they work quietly, quickly, and when they came to my office I didn't even notice they were here.`,
+      location: `Brian | Santa Barbara, CA`,
+      logo: `https://d7gh5vrfihrl.cloudfront.net/website/badges/facebook-water.svg`,
+    },
+  ];
 
   const TopTechnicianNeighborhoodCard = ({ cardInfo }) => {
     const { image, name, job, title, introduction, location, logo } = cardInfo;
     return (
       <div className='topTechnicianNeighborhoodCard'>
-        <div className='image-container'>
-          <img src={image} alt='image' />
-          <div className='image-title'>
-            <h6>{name}</h6>
-            <p>{job}</p>
+        {screen === 'pulsForBusiness' ? (
+          <div
+            className='image-container center'
+            style={{ width: '220px', height: '220px', margin: '0 auto' }}
+          >
+            <img src={image} alt='image' />
           </div>
-        </div>
+        ) : (
+          <div className='image-container'>
+            <img src={image} alt='image' />
+            <div className='image-title'>
+              <h6>{name}</h6>
+              <p>{job}</p>
+            </div>
+          </div>
+        )}
+
         <div className='content-container center'>
-          <h6>{title}</h6>
+          {screen === 'pulsForBusiness' ? (
+            <h6 style={{ fontFamily: 'RobotoBold', color: '#000' }}>"{title}"</h6>
+          ) : (
+            <h6>{title}</h6>
+          )}
+
           <p className='description'>"{introduction}"</p>
           <img
             className='five-stars'
@@ -60,15 +98,14 @@ const TopTechnicianNeighborhoodCardsSection = ({ topTechnicianNeighborhoodCardsS
   };
   return (
     <div className='topTechnicianNeighborhoodCardsSection'>
-      {}
       <Row>
-        {topTechnicianNeighborhoodCardInfo
+        {screen !== 'pulsForBusiness'
           ? topTechnicianNeighborhoodCardInfo.map((cardInfo, i) => (
               <Col key={i} sm={12} md={4}>
                 <TopTechnicianNeighborhoodCard cardInfo={cardInfo} />
               </Col>
             ))
-          : topTechnicianNeighborhoodCardsSectionInfo.map((cardInfo, i) => (
+          : topTechnicianNeighborhoodCardInfoBusiness.map((cardInfo, i) => (
               <Col key={i} sm={12} md={4}>
                 <TopTechnicianNeighborhoodCard cardInfo={cardInfo} />
               </Col>

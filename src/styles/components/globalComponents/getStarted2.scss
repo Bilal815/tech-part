@@ -6,7 +6,7 @@
   width: 100%;
   height: 350px;
   position: relative;
-  margin: 0 !important;
+  margin: 0;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -20,8 +20,5 @@
       font-family: $RobotoRegular;
       margin-bottom: 25px;
     }
-    // button {
-    //   margin-left: 150px;
-    // }
   }
 }
