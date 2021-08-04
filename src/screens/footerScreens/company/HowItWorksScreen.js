@@ -4,6 +4,7 @@ import { ScrollToTop } from './../../../utilities/index';
 
 import { Button } from '../../../styledComponents/index';
 import GetStarted2 from '../../../components/globalComponents/GetStarted2';
+import TopTechnicianNeighborhoodCardsSection from './../../../components/globalComponents/TopTechnicianNeighborhoodCardsSection';
 
 const HowItWorksScreen = ({ history }) => {
   ScrollToTop();
@@ -112,7 +113,15 @@ const HowItWorksScreen = ({ history }) => {
         <h1>Question? We have answers</h1>
         <Button onClick={() => history.push('/faq')}>Visit Our</Button>
       </div>
-
+      <div className='container-75'>
+        <div className='top-technicians-nationwide'>
+          <div className='my-5'>
+            <h1>Trusted technicians, nationwide</h1>
+            <p>We select the best - only 10% meet our screening criteria</p>
+          </div>
+          <TopTechnicianNeighborhoodCardsSection />
+        </div>
+      </div>
       <div className='container-y-100'>
         <GetStarted2
           bgImage='https://d7gh5vrfihrl.cloudfront.net/website/backgrounds/background-getstarted-old.jpg'

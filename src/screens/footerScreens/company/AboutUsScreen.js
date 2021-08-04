@@ -8,7 +8,7 @@ import BeatPulsBlogCardsSlider from '../../../components/globalComponents/BeatPu
 import { Col, Row } from 'react-bootstrap';
 
 const AboutUsScreen = () => {
-  // ScrollToTop();
+  ScrollToTop();
   const executiveTeamInfo = [
     {
       id: 1,

@@ -14,6 +14,7 @@ import TopTechnicianYelpCardsSlider from '../components/globalComponents/TopTech
 import BeatPulsBlogCardsSlider from './../components/globalComponents/BeatPulsBlogCardsSlider';
 
 import Image from '../assets/images/tv-mounting-new.jpg';
+import HomeSimpleWayToTakeCare from './../components/globalComponents/HomeSimpleWayToTakeCare';
 
 const HomeScreen = () => {
   ScrollToTop();
@@ -53,6 +54,7 @@ const HomeScreen = () => {
         <div className='my-5'>
           <ServicesHoverCardsGrid screen={'home'} />
         </div>
+        <HomeSimpleWayToTakeCare />
         <TopTechnicianYelpCardsSlider title='Our top technicians are in your neighborhood and beyond' />
         <div className='beat-puls-blog'>
           <BeatPulsBlogCardsSlider />

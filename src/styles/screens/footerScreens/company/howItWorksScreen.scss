@@ -64,4 +64,21 @@
       font-size: 26px;
     }
   }
+  .top-technicians-nationwide {
+    h1 {
+      text-align: center;
+      color: #666;
+      font-size: 34px;
+      font-weight: 400;
+      margin: 0 0 7px;
+      font-family: $RobotoMedium;
+    }
+    p {
+      font-size: 14px;
+      font-family: $RobotoMedium;
+      color: #666;
+      text-align: center;
+      margin: 0;
+    }
+  }
 }
