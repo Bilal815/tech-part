@@ -89,10 +89,12 @@ const App = () => {
   // setting default headers and base URL
   // const userLogin = useSelector((state) => state.userLogin);
   const token = '';
-  axios.defaults.baseURL = 'base-url-goes-here';
+  axios.defaults.baseURL = 'http://217.160.170.83:8000/';
   axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
   axios.defaults.headers.post['Content-Type'] = 'application/json';
+
+  axios.defaults.withCredentials = true;
 
   return (
     <Router>
