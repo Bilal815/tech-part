@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './App.scss';
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -89,12 +89,25 @@ const App = () => {
   // setting default headers and base URL
   // const userLogin = useSelector((state) => state.userLogin);
   const token = '';
-  axios.defaults.baseURL = 'http://217.160.170.83:8000/';
-  axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
-  axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
-  axios.defaults.headers.post['Content-Type'] = 'application/json';
-
+  axios.defaults.baseURL = 'http://217.160.170.83:8000';
+  //axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+  //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+  //axios.defaults.headers.post['Content-Type'] = 'application/json';
   axios.defaults.withCredentials = true;
+
+  useEffect(() => {
+    axios.get('/sanctum/csrf-cookie').then(res => {
+      console.log('csrf-cookie', res);
+      axios.post('/login', {
+        email: "admin@puls.com",
+        password: "admin@pulse",
+      }).then(res => {
+        console.log('login response', res);
+      });
+    }).catch(err => {
+      console.log('catch response', err);
+    })
+  }, []);
 
   return (
     <Router>
