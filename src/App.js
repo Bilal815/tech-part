@@ -89,23 +89,23 @@ const App = () => {
   // setting default headers and base URL
   // const userLogin = useSelector((state) => state.userLogin);
   const token = '';
-  axios.defaults.baseURL = 'http://217.160.170.83:8000';
+  axios.defaults.withCredentials = true;
+  axios.defaults.baseURL = "http://localhost:8000";
   //axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
   //axios.defaults.headers.post['Content-Type'] = 'application/json';
-  axios.defaults.withCredentials = true;
 
   useEffect(() => {
     axios.get('/sanctum/csrf-cookie').then(res => {
       console.log('csrf-cookie', res);
       axios.post('/login', {
-        email: "admin@puls.com",
-        password: "admin@pulse",
+        email: "askusmanhussain@gmail.com",
+        password: "usman1234",
       }).then(res => {
-        console.log('login response', res);
+        /*console.log('login response', res);*/
       });
     }).catch(err => {
-      console.log('catch response', err);
+      /*console.log('catch response', err);*/
     })
   }, []);
 

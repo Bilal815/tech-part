@@ -21,7 +21,7 @@ const PricingCard = ({ plan, setSelectedCardTitle }) => {
       </div>
       <div className='content-wrapper'>
         <div className='title'>
-          <h5>Puls+ {title}</h5>
+          <h5>{title}</h5>
         </div>
         <span className='price-container'>
           <span className='price-remove'>${removedPrice}</span>

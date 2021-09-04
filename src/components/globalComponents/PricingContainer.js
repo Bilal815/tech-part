@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import '../../styles/components/globalComponents/pricingContainer.scss';
 
 import { RiPhoneLine } from 'react-icons/ri';
@@ -9,6 +9,7 @@ import blueTickImage from '../../assets/icons/check-sign.svg';
 import starImage from '../../assets/icons/pricing-card/star.svg';
 import calendarImage from '../../assets/icons/pricing-card/calendar.svg';
 import phoneImage from '../../assets/icons/pricing-card/phone.svg';
+import axios from "axios";
 
 // https://codesandbox.io/s/mjryv01528?file=/src/UsersList.jsx:1993-2068
 const PricingContainer = () => {
@@ -17,7 +18,7 @@ const PricingContainer = () => {
   const [pricingPlans, setPricingPlans] = useState([
     {
       id: 1,
-      title: 'Essential',
+      title: 'Puls Essential',
       badge: '',
       removedPrice: 99,
       currentPrice: 79,
@@ -142,7 +143,60 @@ const PricingContainer = () => {
     },
   ]);
 
-  const [selectedCardTitle, setSelectedCardTitle] = useState(pricingPlans[1].title);
+  useEffect(() => {
+     getMembershipPlans();
+  }, []);
+
+  function processMembershipPlans(plans) {
+    let plansArray = [];
+    setPricingPlans([]);
+    for (let plan of plans) {
+      let planDetails = JSON.parse(plan.content);
+      let individualPlan = {
+        id:plan.id,
+        title: plan.plan_title,
+        badge: plan.id === 1 ? '' : (plan.id === 2 ? 'BEST VALUE' : 'FOR MULTI-PROPERTIES'),
+        removedPrice: plan.discounted_price,
+        currentPrice: plan.original_price,
+        planOffers: [],
+        icons: [
+          { icon: starImage, name: 'Priority, Booking' },
+          { icon: calendarImage, name: 'Same-day, preference' },
+          { icon: phoneImage, name: 'Priority, Support' },
+        ],
+      };
+
+      for (let planDetail in planDetails) {
+        individualPlan.planOffers.unshift({
+          title:  planDetail < 100 ? blueTick : planDetail.replace('_key',''),
+          detail: planDetails[planDetail],
+        });
+      }
+      if(plan.id === 1) {
+       individualPlan.icons = [
+          { icon: starImage, name: 'Priority, Booking' },
+          { icon: phoneImage, name: 'Priority, Support' },
+        ]
+      }
+      plansArray.push(individualPlan);
+    }
+    setPricingPlans(plansArray);
+    setSelectedCardTitle(pricingPlans[1].title);
+  }
+
+  const getMembershipPlans = () => {
+    axios.post('/api/membership-plans', {
+      zip_code_id: 1,
+    }).then(res => {
+      /*console.log('membership-plans response:', res.data.response.detail);*/
+      processMembershipPlans(res.data.response.detail);
+    }).catch(res => {
+      /*console.log('membership-plans catch:', res);*/
+    });
+  }
+
+  // const [selectedCardTitle, setSelectedCardTitle] = useState(pricingPlans[1].title);
+  const [selectedCardTitle, setSelectedCardTitle] = useState('');
 
   return (
     <div className='pricingContainer'>
@@ -155,7 +209,7 @@ const PricingContainer = () => {
       <Row className='pricing-cards-wrapper'>
         {pricingPlans &&
           pricingPlans.map((plan, i) => (
-            <Col sm={12} md={6} lg={4}>
+            <Col sm={12} md={6} lg={4} key={plan.id}>
               <PricingCard plan={plan} setSelectedCardTitle={setSelectedCardTitle} />
             </Col>
           ))}
