@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useEffect, useState} from 'react';
 import { useHistory } from 'react-router-dom';
 import { ListGroup } from 'react-bootstrap';
 import '../../../styles/components/globalComponents/Dropdowns/ServiceDropdown.scss';
@@ -19,8 +19,32 @@ import smartHome from '../../../assets/icons/regular/smart-home.svg';
 import smartHomeHover from '../../../assets/icons/hover/smart-home-hover.svg';
 import tvMounting from '../../../assets/icons/regular/tv-mounting.svg';
 import tvMountingHover from '../../../assets/icons/hover/tv-mounting-hover.svg';
+import axios from "axios";
 
 const ServicesDropDown = (props) => {
+
+
+  useEffect(() => {
+      getServicesFromServer();
+      getAppliancesFromServer();
+  }, []);
+
+  const getServicesFromServer = () => {
+    axios.post('/api/services', {}).then(res => {
+      console.log('services api response:', res.data.response.detail);
+    }).catch(res => {
+      console.log('services api catch:', res);
+    });
+  }
+
+  const getAppliancesFromServer = () => {
+    axios.post('/api/service-appliances', {service_id:1}).then(res => {
+      console.log('service-appliances api response:', res.data.response.detail);
+    }).catch(res => {
+      console.log('service-appliances api catch:', res);
+    });
+  }
+
   let history = useHistory();
   const [disinfectionSrc, setDisinfectionSrc] = useState(disinfection);
   const [garageDoorsSrc, setGarageDoorsSrc] = useState(garageDoors);
