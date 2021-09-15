@@ -18,8 +18,8 @@ const WiderImageContentCard = ({ cardData }) => {
         <Col sm={12} md={6} lg={6}>
           <div className='content-wrapper'>
             {options &&
-              options.map((item, i) => (
-                <div className='mb-4'>
+              options.map((item, index) => (
+                <div className='mb-4' key={index}>
                   {item.title && <h6 className='m-0'>{item.title}</h6>}
                   {item.description && <p className='m-0'>{item.description}</p>}
                 </div>

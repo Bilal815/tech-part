@@ -32,7 +32,7 @@ const BulletPoints = ({ bulletPoints, heading, color, bgColor }) => {
                     {p.image && (
                       <img
                         src={p.image}
-                        alt='image'
+                        alt="icon"
                         style={{ height: `${color === 'blue' ? '50px' : '80px'}` }}
                       />
                     )}
@@ -40,7 +40,7 @@ const BulletPoints = ({ bulletPoints, heading, color, bgColor }) => {
                 ) : (
                   <img
                     src={p.image}
-                    alt='image'
+                    alt="icon"
                     style={{ height: `${color === 'blue' ? '50px' : '80px'}` }}
                   />
                 )}

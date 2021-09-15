@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const BlogCard = ({ image, title, description, blogUrl }) => {
   return (
     <div className='blogCard'>
-      <div className='header'>{image && <img src={`${image}`} alt='card-image' />}</div>
+      <div className='header'>{image && <img src={`${image}`} alt='card-preview' />}</div>
       <div className='body'>
         {title && <h4 className='heading-3'>{title}</h4>}
         {description && <p>{description}</p>}

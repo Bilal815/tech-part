@@ -13,7 +13,7 @@ import axios from "axios";
 
 // https://codesandbox.io/s/mjryv01528?file=/src/UsersList.jsx:1993-2068
 const PricingContainer = () => {
-  const blueTick = <img src={blueTickImage} />;
+  const blueTick = <img src={blueTickImage} alt="tick" />;
 
   const [pricingPlans, setPricingPlans] = useState([
     {
@@ -185,6 +185,7 @@ const PricingContainer = () => {
   }
 
   const getMembershipPlans = () => {
+    return("")
     axios.post('/api/membership-plans', {
       zip_code_id: 1,
     }).then(res => {

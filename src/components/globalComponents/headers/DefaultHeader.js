@@ -11,8 +11,12 @@ const DefaultHeader = ({ location: { pathname } }) => {
   const [isScrolled, setScroll] = useState(false);
   const [show, setShow] = useState(false);
   // let listener = null;
-
   const defaultHeaderNotShow =
+    pathname === '/application-tv' ||
+    pathname === '/application-appliance' ||
+    pathname === '/application-handy' ||
+    pathname === '/application-phone' ||
+    pathname === '/application-plumbing' ||
     pathname === '/cities/az' ||
     pathname === '/cities/az/phoenix' ||
     pathname === '/cities/ca' ||

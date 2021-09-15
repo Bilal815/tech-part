@@ -25,7 +25,7 @@ const EasyToBook = ({ btnLink, btnTitle, title, description, image }) => {
           </Col>
           <Col sm={12} md={6}>
             <div className='image-container'>
-              <img src={image} alt='mobile-image' />
+              <img src={image} alt='mobile-banner' />
             </div>
           </Col>
         </Row>

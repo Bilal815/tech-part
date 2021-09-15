@@ -22,7 +22,7 @@ const BackgroundPulsImageSection = ({ heading, subHeading, backgroundPulsImageOp
           <div className='image-container center ml-5'>
             <img
               src='https://d7gh5vrfihrl.cloudfront.net/website/membership/techs.png'
-              alt='image'
+              alt='techs-banner'
             />
           </div>
         </Col>

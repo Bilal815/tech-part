@@ -42,7 +42,7 @@ const CitiesAboutPulsRepairService = ({
             <div className='image-wrapper'>
               <img
                 src='https://s3.amazonaws.com/static.puls.com/website/SEO/Ring%20Security%202.JPG'
-                alt='about-puls-image'
+                alt='about-puls'
               />
             </div>
           </Col>

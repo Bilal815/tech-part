@@ -211,6 +211,7 @@ const BecomeATechScreen = () => {
       infinite: true,
       speed: 500,
       fade: true,
+      arrows: false,
       centerPadding: '60px',
       className: 'center',
       slidesToShow: 3,
@@ -301,7 +302,7 @@ const BecomeATechScreen = () => {
         title='Do the work you love'
         description='Let us handle the rest. It’s that easy!'
         btnTitle='Apply Now'
-        btnLink='https://lp.puls.com/join-as-a-tech'
+        btnLink='/join-as-a-tech'
       />
       <div className='container-80'>
         <div className='center'>
@@ -378,7 +379,7 @@ const BecomeATechScreen = () => {
                 ))}
             </Row>
           </div>
-          <LinkButton link='https://lp.puls.com/join-as-a-tech' name='Apply Now' />
+          <LinkButton link='join-as-a-tech' name='Apply Now' />
         </div>
       </div>
     </div>

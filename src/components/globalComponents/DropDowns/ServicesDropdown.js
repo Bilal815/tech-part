@@ -30,6 +30,7 @@ const ServicesDropDown = (props) => {
   }, []);
 
   const getServicesFromServer = () => {
+    return("");
     axios.post('/api/services', {}).then(res => {
       console.log('services api response:', res.data.response.detail);
     }).catch(res => {
@@ -38,6 +39,7 @@ const ServicesDropDown = (props) => {
   }
 
   const getAppliancesFromServer = () => {
+    // return( "" );
     axios.post('/api/service-appliances', {service_id:1}).then(res => {
       console.log('service-appliances api response:', res.data.response.detail);
     }).catch(res => {
@@ -74,7 +76,7 @@ const ServicesDropDown = (props) => {
             }}
           >
             <span>
-              <img src={tvMountingSrc} width='45' className='icon'></img>
+              <img alt="tvMountingSrc" src={tvMountingSrc} width='45' className='icon'></img>
             </span>
             <span className='dropdown-link'>Tv Mounting</span>
           </ListGroup.Item>
@@ -91,7 +93,7 @@ const ServicesDropDown = (props) => {
             }}
           >
             <span>
-              <img src={homeAppliancesSrc} width='50' className='icon'></img>
+              <img alt="homeAppliancesSrc" src={homeAppliancesSrc} width='50' className='icon'></img>
             </span>
             <span className='dropdown-link'>Home Appliances</span>
           </ListGroup.Item>
@@ -109,7 +111,7 @@ const ServicesDropDown = (props) => {
             }}
           >
             <span>
-              <img src={handymanServicesSrc} width='45' className='icon'></img>
+              <img alt="handymanServicesSrc" src={handymanServicesSrc} width='45' className='icon'></img>
             </span>
             <span className='dropdown-link'>Handyman Services</span>
           </ListGroup.Item>
@@ -127,7 +129,7 @@ const ServicesDropDown = (props) => {
             }}
           >
             <span>
-              <img src={disinfectionSrc} width='45' className='icon'></img>
+              <img alt="disinfectionSrc" src={disinfectionSrc} width='45' className='icon'></img>
             </span>
             <span className='dropdown-link'>Disinfection Services</span>
           </ListGroup.Item>
@@ -145,7 +147,7 @@ const ServicesDropDown = (props) => {
             }}
           >
             <span>
-              <img src={phoneSrc} width='45' className='icon'></img>
+              <img alt="phoneSrc" src={phoneSrc} width='45' className='icon'></img>
             </span>
             <span className='dropdown-link'>Iphone Repair</span>
           </ListGroup.Item>
@@ -163,7 +165,7 @@ const ServicesDropDown = (props) => {
             }}
           >
             <span>
-              <img src={smartHomeSrc} width='45' className='icon'></img>
+              <img alt="smartHomeSrc" src={smartHomeSrc} width='45' className='icon'></img>
             </span>
             <span className='dropdown-link'>Smart Home Installation</span>
           </ListGroup.Item>
@@ -180,7 +182,7 @@ const ServicesDropDown = (props) => {
             }}
           >
             <span>
-              <img src={garageDoorsSrc} width='45' className='icon'></img>
+              <img alt="garageDoorsSrc" src={garageDoorsSrc} width='45' className='icon'></img>
             </span>
             <span className='dropdown-link'>Garage door repair</span>
           </ListGroup.Item>
@@ -197,7 +199,7 @@ const ServicesDropDown = (props) => {
             }}
           >
             <span>
-              <img src={plumbingSrc} width='45' className='icon'></img>
+              <img alt="plumbingSrc" src={plumbingSrc} width='45' className='icon'></img>
             </span>
             <span className='dropdown-link'>Plumbing Services</span>
           </ListGroup.Item>

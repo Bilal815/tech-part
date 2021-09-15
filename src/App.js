@@ -18,6 +18,7 @@ import Error404Screen from './screens/Error404Screen';
 import PricingScreen from './screens/headerScreens/PricingScreen';
 import MembersScreen from './screens/headerScreens/MembersScreen';
 import BecomeATechScreen from './screens/headerScreens/BecomeATechScreen';
+import JoinAsATechScreen from './screens/headerScreens/JoinAsATechScreen';
 import PropertyManagerScreen from './screens/headerScreens/PropertyManagerScreen';
 
 import InviteAFriendScreen from './screens/headerScreens/InviteAFriendScreen';
@@ -32,6 +33,9 @@ import PlumbingServicesScreen from './screens/servicesScreen/plumbingServices/in
 import SmartHomeInstallationScreen from './screens/servicesScreen/smartHomeInstallation/index';
 import TvMountingScreen from './screens/servicesScreen/tvMounting/index';
 import SecuritySystemScreen from './screens/servicesScreen/securitySystem/index';
+
+// become a tech application screens
+import TvApplicationScreen from './screens/applicationScreens/TvApplicationScreen';
 
 // Cities Screen Imports
 import ArizonaScreen from './screens/citiesScreens/ArizonaScreen';
@@ -90,17 +94,17 @@ const App = () => {
   // const userLogin = useSelector((state) => state.userLogin);
   const token = '';
   axios.defaults.withCredentials = true;
-  axios.defaults.baseURL = "http://localhost:8000";
+  // axios.defaults.baseURL = "http://localhost:8000";
+  axios.defaults.baseURL = "http://217.160.170.83:8000";
   //axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
   //axios.defaults.headers.post['Content-Type'] = 'application/json';
 
   useEffect(() => {
-    axios.get('/sanctum/csrf-cookie').then(res => {
-      console.log('csrf-cookie', res);
+    axios.get('/sanctum/csrf-cookie').then(res => {      
       axios.post('/login', {
-        email: "askusmanhussain@gmail.com",
-        password: "usman1234",
+        email: "admin@admin.com",
+        password: "password",
       }).then(res => {
         /*console.log('login response', res);*/
       });
@@ -108,9 +112,8 @@ const App = () => {
       /*console.log('catch response', err);*/
     })
   }, []);
-
   return (
-    <Router>
+    <Router >
       <DefaultHeader />
       <Switch>
         {/* Home and Header section routes  */}
@@ -118,6 +121,14 @@ const App = () => {
         <Route exact path='/pricing' component={PricingScreen} />
         <Route exact path='/members' component={MembersScreen} />
         <Route exact path='/become-a-tech' component={BecomeATechScreen} />
+        <Route exact path='/join-as-a-tech' component={JoinAsATechScreen} />
+
+        <Route exact path='/application-tv' component={TvApplicationScreen} />
+        <Route exact path='/application-appliance' component={JoinAsATechScreen} />
+        <Route exact path='/application-handy' component={JoinAsATechScreen} />
+        <Route exact path='/application-phone' component={JoinAsATechScreen} />
+        <Route exact path='/application-plumbing' component={JoinAsATechScreen} />
+
         <Route exact path='/property-manager' component={PropertyManagerScreen} />
         <Route exact path='/invite-a-friend' component={InviteAFriendScreen} />
         <Route exact path='/book-a-service' component={BookAServiceScreen} />
