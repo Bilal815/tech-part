@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../styles/screens/headerScreens/becomeATechScreen.scss';
 
 import { Col, Row } from 'react-bootstrap';
@@ -15,6 +15,12 @@ import TechnicianReviewsCard from '../../components/globalComponents/TechnicianR
 import Video1 from '../../assets/videos/video1.mp4';
 
 const BecomeATechScreen = () => {
+  
+    useEffect(()=>{
+      // const t = require('../../styles/screens/applicationScreens/become-a-tech.css');      
+    },[])
+
+
   ScrollToTop();
 
   const [isHoveredLeft, setIsHoveredLeft] = useState(false);
@@ -129,11 +135,11 @@ const BecomeATechScreen = () => {
             </Col>
             <Col sm={12} md={6} lg={6}>
               <div className='cotent'>
-                <h1 className='center'>
+                <h1 className='center cc'>
                   <p className='m-0'>Apply today.</p>
                   <p className='m-0'>Start earning tomorrow.</p>
                 </h1>
-                <p className='m-0 center'>Click on your area of expertise to get started.</p>
+                <p className='m-0 center cc'>Click on your area of expertise to get started.</p>
               </div>
             </Col>
             <Col sm={12} md={6} lg={3}>

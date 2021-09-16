@@ -1,0 +1,407 @@
+.call-to-us {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #87889e;
+}
+.call-to-us > a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: #87889e;
+}
+
+.call-to-us > .hoverable:hover{
+    cursor: pointer;
+}
+
+.call-to-us .separator{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+@media (max-width: 700px){
+    .call-to-us .separator{
+        height: 10px;
+        overflow: hidden;
+        color: transparent;
+        display: block;
+        margin: 0 ;
+    }
+}
+
+html, body, .app-container, .app-container2{
+    background: #fff !important;
+    padding: 0;
+    margin: 0;
+}
+
+*{
+    -ms-touch-action: manipulation;
+        touch-action: manipulation;
+}
+.app-container{
+    height: 100%;
+    background: #fff;
+}
+
+.app-container2{
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+}
+
+.content-container{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+}
+
+.content-container > div{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.FadeIn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom:0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex:1 1;
+      flex:1 1;
+  width: 100%;
+}
+
+.step-nav-page-wrapper{
+
+}
+
+
+.pac-item {
+	font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+}
+
+.pac-item-query {
+	font-size: 16px;
+    height: 45px;
+    line-height: 45px;
+}
+
+.pac-icon{
+    margin-top: 13px;
+}
+
+@media (max-width: 700px) {
+    .pac-item {
+    	font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .pac-item-query {
+    	font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .pac-icon{
+        margin-top: 10px;
+    }
+}
+
+.loader-position-down{
+    position: relative;
+    top:50px;
+}
+
+.no-match-page{
+    -ms-flex:1 1;
+        flex:1 1;
+}
+
+.no-match-page div{
+    width : 300px;
+    margin: auto;
+    color:#017aff;
+    background-color: #12FFCD;
+    text-align: center;
+    padding : 20px;
+    border-radius: 6px;
+}
+
+.no-match-page h1{
+    margin : 50px 0px;
+    text-align: center;
+}
+
+.funnel-start-loader-wrapper{
+    height: 100px;
+}
+
+.select-time-day-item, .time-content-box, .select-time-continue-button-active,
+.select-address-continue-button-active, .my-cart-small-items-edit, .header-x-icon,
+.my-cart-device-section-remove-button, .promo-code-cancel, .promo-code-validate, .my-cart-small-remove-coupon:hover{
+    cursor: pointer;
+}
+
+
+    /* width */
+#no-scorll-bar::-webkit-scrollbar, #no-scorll-bar-time::-webkit-scrollbar, #no-scorll-bar-time-select::-webkit-scrollbar {
+  width: 0px !important;
+  display: none;
+}
+
+.mobile-height-spacer{
+    height: 50px;
+}
+
+.show-desktop-comp{
+    display: block !important;
+}
+
+.show-mobile-comp{
+    display: none !important;
+}
+
+@media (max-width: 700px) {
+    .show-desktop-comp{
+        display: none !important;
+    }
+
+    .show-mobile-comp{
+        display: block !important;
+    }
+}
+
+.puls-prime-color{
+    color: #017aff;
+}
+.puls-dark-color{
+    color: #46475c;
+}
+
+
+
+.new-input-comp, .react-autosuggest__container{
+    position: relative;
+    max-width: 400px !important;
+    margin: 0 auto;
+}
+
+.new-input-comp input, .new-input-comp textarea, .react-autosuggest__container .react-autosuggest__input{
+    padding: 10px 40px 10px 20px;
+    border: solid 1px #ebebeb;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.44;
+    letter-spacing: -0.1px;
+    color: #46475c;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    width:100% !important;
+    max-width: 400px !important;
+    outline: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    resize: none;
+}
+
+.react-autosuggest__container .react-autosuggest__input{
+    margin: 0 0 15px;
+}
+
+.react-autosuggest__container .react-autosuggest__input:focus{
+    border: solid 2px #017aff;
+}
+
+.react-autosuggest__container .react-autosuggest__suggestions-container {
+}
+
+.react-autosuggest__container .react-autosuggest__suggestions-container--open {
+    margin: -25px 0 0;
+}
+
+.react-autosuggest__container .react-autosuggest__suggestions-container--open .react-autosuggest__suggestions-list {
+    padding: 0;
+}
+
+.react-autosuggest__container .react-autosuggest__suggestions-container--open .react-autosuggest__suggestion{
+    display: block;
+}
+
+.autocomplete-suggestion-item {
+    display: block;
+    padding: 12.5px 40px 12.5px 20px;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    color: #46475c;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    line-height: 1.44;
+    letter-spacing: -0.1px;
+    cursor: pointer;
+    border-radius: 10px;
+    -webkit-transition: all .05s ease-in;
+    -o-transition: all .05s ease-in;
+    transition: all .05s ease-in;
+}
+
+.autocomplete-suggestion-item:hover {
+    background: #017aff;
+    color: white;
+}
+
+.bottom-separator {
+    /*border-bottom-left-radius: 0;*/
+    /*border-bottom-right-radius: 0;*/
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(33%, #cccccc), color-stop(0%, rgba(255,255,255,0)));
+    background-image: -webkit-linear-gradient(left, #cccccc 33%, rgba(255,255,255,0) 0%);
+    background-image: -o-linear-gradient(left, #cccccc 33%, rgba(255,255,255,0) 0%);
+    background-image: linear-gradient(to right, #cccccc 33%, rgba(255,255,255,0) 0%);
+    background-position: bottom;
+    background-size: 19px 1px;
+    background-repeat: repeat-x;
+}
+
+.input-loader-container{
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    z-index: 5;
+}
+
+.new-input-comp .invalid-input{
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.29;
+    letter-spacing: -0.2px;
+    color: #017aff;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.new-input-comp .invalid-input img{
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+/* STATE */
+
+.new-input-comp input:disabled, .new-input-comp textarea:disabled{
+    border: solid 1px #ceced8;
+}
+
+.new-input-comp input:hover, .new-input-comp textarea:hover{
+    border: solid 1px #ceced8;
+}
+
+.new-input-comp input:focus, .new-input-comp textarea:focus{
+    border: solid 2px #017aff;
+}
+
+/* GENERAL */
+
+::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #878c98;
+}
+
+::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #878c98;
+}
+
+::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #878c98;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #878c98;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #878c98;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #878c98;
+}
+
+.new-input-comp input:disabled{
+    opacity: 0.3;
+}
+
+.suggestion-item{
+    padding: 15px 10px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #46515B;
+    font-size: 14px;
+}
+
+.suggestion-item:hover{
+    cursor: pointer;
+}
+.suggestion-item img{
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.suggestion-item span{
+}
+
+.suggestion-item--active{
+    background: rgba(18,255,205, 0.5);
+    color: #017aff;
+}
+
+.autocomplete-dropdown-container{
+    position: absolute;
+    top:70px;
+    width: 100%;
+    z-index: 9;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 3px 20px 0 rgba(131, 134, 163, 0.12);
+            box-shadow: 0 3px 20px 0 rgba(131, 134, 163, 0.12);
+    border: solid 1px #eceef1;
+    background-color: #ffffff;
+}
+
+.autocomplete-select-address-headline{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10px 0;
+    padding-left: 15px;
+    font-size: 18px;
+    color: #46515B;
+}
+
+.email-checker-box {
+    margin: 15px 0 10px;
+}
+.email-checker-box span{
+    color: #017aff;
+}
+

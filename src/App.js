@@ -36,6 +36,7 @@ import SecuritySystemScreen from './screens/servicesScreen/securitySystem/index'
 
 // become a tech application screens
 import TvApplicationScreen from './screens/applicationScreens/TvApplicationScreen';
+import ZipCode from './screens/applicationScreens/ZipCode';
 
 // Cities Screen Imports
 import ArizonaScreen from './screens/citiesScreens/ArizonaScreen';
@@ -124,6 +125,7 @@ const App = () => {
         <Route exact path='/join-as-a-tech' component={JoinAsATechScreen} />
 
         <Route exact path='/application-tv' component={TvApplicationScreen} />
+        <Route exact path='/zip-code' component={ZipCode} />
         <Route exact path='/application-appliance' component={JoinAsATechScreen} />
         <Route exact path='/application-handy' component={JoinAsATechScreen} />
         <Route exact path='/application-phone' component={JoinAsATechScreen} />

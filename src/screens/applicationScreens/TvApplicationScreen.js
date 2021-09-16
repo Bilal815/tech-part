@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import "../../styles/screens/applicationScreens/main.min.css";
-import "../../styles/screens/applicationScreens/second.css";
-// import "../../styles/screens/applicationScreens/TvApplicationScreen.scss";
+import React, { useState, useEffect } from "react";
 import TechPartLogo from '../../assets/tech-app-logo.png';
-
-
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
+
 const TvApplicationScreen = () => {
+  useEffect(()=>{
+    const t = require('../../styles/screens/applicationScreens/main.min.css');
+    const p = require('../../styles/screens/applicationScreens/second.css')
+  },[])
 
   const [errorList, _errorList] 
     = useState(new Set(
