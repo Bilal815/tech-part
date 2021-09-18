@@ -90,7 +90,8 @@ const App = () => {
   // const userLogin = useSelector((state) => state.userLogin);
   const token = '';
   axios.defaults.withCredentials = true;
-  axios.defaults.baseURL = "http://localhost:8000";
+  //axios.defaults.baseURL = "http://localhost:8000";
+  axios.defaults.baseURL = "http://217.160.170.83:8000";
   //axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
   //axios.defaults.headers.post['Content-Type'] = 'application/json';
@@ -99,8 +100,8 @@ const App = () => {
     axios.get('/sanctum/csrf-cookie').then(res => {
       console.log('csrf-cookie', res);
       axios.post('/login', {
-        email: "askusmanhussain@gmail.com",
-        password: "usman1234",
+        email: "super.admin@tech-part.com",
+        password: "password",
       }).then(res => {
         /*console.log('login response', res);*/
       });
