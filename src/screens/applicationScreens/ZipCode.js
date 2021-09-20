@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 
-const ZipCode = () => {
+const ZipCode = (props) => {
   useEffect(()=>{
     const t = require('../../styles/screens/applicationScreens/zip-code-1.css');
     const p = require('../../styles/screens/applicationScreens/zip-code-2.css');
   },[])
+
+  const { servicePrice } = props.location.state;
+  console.log("Service Price: ", servicePrice)
 
   const [zipcode, _zipcode] = useState("");
   const handleZipCode = (e) => {

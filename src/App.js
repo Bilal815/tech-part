@@ -35,8 +35,16 @@ import TvMountingScreen from './screens/servicesScreen/tvMounting/index';
 import SecuritySystemScreen from './screens/servicesScreen/securitySystem/index';
 
 // become a tech application screens
-import TvApplicationScreen from './screens/applicationScreens/TvApplicationScreen';
+import TechForm from './screens/applicationScreens/TechForm';
 import ZipCode from './screens/applicationScreens/ZipCode';
+// Services Options
+import TvSize  from './screens/applicationScreens/TvSize';
+import SelectAppliance  from './screens/applicationScreens/SelectApplicance';
+import HandymanService  from './screens/applicationScreens/HandymanService';
+import DisinfectionService  from './screens/applicationScreens/DisinfectionService';
+import IphoneRepair from './screens/applicationScreens/IphoneRepair';
+import SmartHomeService from './screens/applicationScreens/SmartHomeService';
+import Plumbing from './screens/applicationScreens/Plumbing';
 
 // Cities Screen Imports
 import ArizonaScreen from './screens/citiesScreens/ArizonaScreen';
@@ -107,7 +115,11 @@ const App = () => {
         email: "admin@admin.com",
         password: "password",
       }).then(res => {
-        /*console.log('login response', res);*/
+        // axios.post('/api/membership-plans',{}).then(res => {
+        //   console.log(res)
+        // }).catch(res => {
+        //   console.log('service-appliances api catch:', res);
+        // });
       });
     }).catch(err => {
       /*console.log('catch response', err);*/
@@ -123,23 +135,29 @@ const App = () => {
         <Route exact path='/members' component={MembersScreen} />
         <Route exact path='/become-a-tech' component={BecomeATechScreen} />
         <Route exact path='/join-as-a-tech' component={JoinAsATechScreen} />
-
-        <Route exact path='/application-tv' component={TvApplicationScreen} />
-        <Route exact path='/zip-code' component={ZipCode} />
-        <Route exact path='/application-appliance' component={JoinAsATechScreen} />
-        <Route exact path='/application-handy' component={JoinAsATechScreen} />
-        <Route exact path='/application-phone' component={JoinAsATechScreen} />
-        <Route exact path='/application-plumbing' component={JoinAsATechScreen} />
+        <Route exact path='/application-tv' component={TechForm} />
+        <Route exact path='/application-appliance' component={TechForm} />
+        <Route exact path='/application-handy' component={TechForm} />
+        <Route exact path='/application-phone' component={TechForm} />
+        <Route exact path='/application-plumbing' component={TechForm} />
+        <Route exact path='/zip-code' component={ZipCode} />        
 
         <Route exact path='/property-manager' component={PropertyManagerScreen} />
         <Route exact path='/invite-a-friend' component={InviteAFriendScreen} />
         <Route exact path='/book-a-service' component={BookAServiceScreen} />
-        <Route exact path='/services/disinfection' component={DisinfectionServicesScreen} />
+        <Route exact path='/services/disinfection-services' component={DisinfectionServicesScreen} />
         <Route exact path='/services/garage-door-repair' component={GarageDoorRepairScreen} />
-        <Route exact path='/services/handyman' component={HandymanServicesScreen} />
+        <Route exact path='/services/handyman-services' component={HandymanServicesScreen} />
         <Route exact path='/services/home-appliances' component={HomeAppliancesScreen} />
-        <Route exact path='/services/iphone-repair' component={IhponeRepairScreen} />
-        <Route exact path='/services/plumbing' component={PlumbingServicesScreen} />
+        <Route exact path='/services/phone-repair' component={IhponeRepairScreen} />
+        <Route exact path='/services/plumbing-services' component={PlumbingServicesScreen} />
+        <Route exact path='/book-a-service/service/tv-mounting/:service_id' component={TvSize} />
+        <Route exact path='/book-a-service/service/home-appliances/:service_id' component={SelectAppliance} />
+        <Route exact path='/book-a-service/service/handyman-services/:service_id' component={HandymanService} />
+        <Route exact path='/book-a-service/service/disinfection-services/:service_id' component={DisinfectionService} />
+        <Route exact path='/book-a-service/service/phone-repair/:service_id' component={IphoneRepair} />
+        <Route exact path='/book-a-service/service/smart-home-installation/:service_id' component={SmartHomeService} />
+        <Route exact path='/book-a-service/service/plumbing-services/:service_id' component={Plumbing} />
         <Route
           exact
           path='/services/smart-home-installation'

@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../styles/components/globalComponents/servicesHoverCardsGrid.scss';
 
 import { Tooltip } from 'antd';
 import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import axios from "axios";
+
 
 import tvMounting from '../../assets/icons/services/tv-mounting.svg';
 import homeAppliances from '../../assets/icons/services/home-appliances.svg';
@@ -42,7 +44,7 @@ import theaterHover from '../../assets/smart-home-hover-images/theater.svg';
 import wifiHover from '../../assets/smart-home-hover-images/wifi.svg';
 
 const ServicesHoverCardsGrid = ({ screen }) => {
-  console.log('screen : ', screen);
+  // console.log('screen : ', screen);
 
   const [tvMountingSrc, setTvMountingSrc] = useState(tvMounting);
   const [homeAppliancesSrc, setHomeAppliancesSrc] = useState(homeAppliances);
@@ -52,6 +54,76 @@ const ServicesHoverCardsGrid = ({ screen }) => {
   const [smartHomeSrc, setSmartHomeSrc] = useState(smartHome);
   const [garageDoorsSrc, setGarageDoorsSrc] = useState(garageDoors);
   const [plumbingSrc, setPlumbingSrc] = useState(plumbing);
+  const [services, _services] = useState([]);
+  const [servicesCardOptionsHome, _servicesCardOptionsHome] 
+  = useState(
+    [
+      {
+        id: 1,
+        tooltipTitle: `Let us do the heavy lifting for your new TV`,
+        image: tvMountingSrc,
+        imageHover: tvMountingHover,
+        title: `TV, Mounting`,
+        path: ``,
+      },
+      {
+        id: 2,
+        tooltipTitle: `Repairs for your dishwasher, fridge, oven, washer and more`,
+        image: homeAppliancesSrc,
+        imageHover: homeAppliancesHover,
+        title: `Home, Appliances`,
+        path: ``,
+      },
+      {
+        id: 3,
+        tooltipTitle: `Handyman services made simple`,
+        image: handymanServicesSrc,
+        imageHover: handymanServicesHover,
+        title: `Handyman, Services`,
+        path: ``,
+      },
+      {
+        id: 4,
+        tooltipTitle: `Minimize viruses and bacteria by surface disinfection`,
+        image: disinfectionSrc,
+        imageHover: disinfectionHover,
+        title: `Disinfection, Services`,
+        path: ``,
+      },
+      {
+        id: 5,
+        tooltipTitle: `Fix your phone at your home, office, or wherever you prefer`,
+        image: iPhoneSrc,
+        imageHover: iPhoneHover,
+        title: `Phone, Repair`,
+        path: ``,
+      },
+      {
+        id: 6,
+        tooltipTitle: `Repair or replace your garage door.`,
+        image: garageDoorsSrc,
+        imageHover: garageDoorsHover,
+        title: `Garage Door, Repair`,
+        path: ``,
+      },
+      {
+        id: 7,
+        tooltipTitle: `Customize your connected home with expert setup and integration`,
+        image: smartHomeSrc,
+        imageHover: smartHomeHover,
+        title: `Smart Home, Installation`,
+        path: ``,
+      },
+      {
+        id: 8,
+        tooltipTitle: `Plumbing solutions for your faucets, sinks, drains and more`,
+        image: plumbingSrc,
+        imageHover: plumbingHover,
+        title: `Plumbing, Services`,
+        path: ``,
+      },
+    ]
+  );
 
   const [imageCard1, setImageCard1] = useState(camera);
   const [imageCard2, setImageCard2] = useState(doorbell);
@@ -62,72 +134,42 @@ const ServicesHoverCardsGrid = ({ screen }) => {
   const [imageCard7, setImageCard7] = useState(theater);
   const [imageCard8, setImageCard8] = useState(wifi);
 
-  const servicesCardOptionsHome = [
-    {
-      id: 1,
-      tooltipTitle: `Let us do the heavy lifting for your new TV`,
-      image: tvMountingSrc,
-      imageHover: tvMountingHover,
-      title: `TV, Mounting`,
-      path: ``,
-    },
-    {
-      id: 2,
-      tooltipTitle: `Repairs for your dishwasher, fridge, oven, washer and more`,
-      image: homeAppliancesSrc,
-      imageHover: homeAppliancesHover,
-      title: `Home, Appliances`,
-      path: ``,
-    },
-    {
-      id: 3,
-      tooltipTitle: `Handyman services made simple`,
-      image: handymanServicesSrc,
-      imageHover: handymanServicesHover,
-      title: `Handyman, Services`,
-      path: ``,
-    },
-    {
-      id: 4,
-      tooltipTitle: `Minimize viruses and bacteria by surface disinfection`,
-      image: disinfectionSrc,
-      imageHover: disinfectionHover,
-      title: `Disinfection, Services`,
-      path: ``,
-    },
-    {
-      id: 5,
-      tooltipTitle: `Fix your phone at your home, office, or wherever you prefer`,
-      image: iPhoneSrc,
-      imageHover: iPhoneHover,
-      title: `iPhone, Repair`,
-      path: ``,
-    },
-    {
-      id: 6,
-      tooltipTitle: `Customize your connected home with expert setup and integration`,
-      image: smartHomeSrc,
-      imageHover: smartHomeHover,
-      title: `Smart Home, Installation`,
-      path: ``,
-    },
-    {
-      id: 7,
-      tooltipTitle: `Repair or replace your garage door.`,
-      image: garageDoorsSrc,
-      imageHover: garageDoorsHover,
-      title: `Garage Door, Repair`,
-      path: ``,
-    },
-    {
-      id: 8,
-      tooltipTitle: `Plumbing solutions for your faucets, sinks, drains and more`,
-      image: plumbingSrc,
-      imageHover: plumbingHover,
-      title: `Plumbing, Services`,
-      path: ``,
-    },
-  ];
+  useEffect(() => {
+      getServicesFromServer();
+      // getAppliancesFromServer();
+  }, []);
+
+  const getServicesFromServer = () => {
+    // return("");
+    axios.post('/api/services', {}).then(res => {
+      // console.log('services api response:', res.data.response.detail);
+      let availableService = [...res.data.response.detail]
+      _services(availableService);
+      let cards = [...servicesCardOptionsHome] 
+      .filter((card,index)=>{
+        if(card.id == availableService[index].id){
+          card.path = "/book-a-service/service/" + availableService[index].slug + "/" + availableService[index].id ;
+          return card;
+        } else {
+          return
+        } 
+      })
+
+      _servicesCardOptionsHome(cards);
+      
+    }).catch(res => {
+      console.log('services api catch:', res);
+    });
+  }
+
+  // const getAppliancesFromServer = () => {
+  //   return( "" );
+  //   axios.post('/api/service-appliances', {service_id:2}).then(res => {
+  //     console.log('service-appliances api response:', res.data.response.detail);
+  //   }).catch(res => {
+  //     console.log('service-appliances api catch:', res);
+  //   });
+  // }
 
   const mouseHoverHome = (id) => {
     if (id === 1) {
@@ -296,14 +338,14 @@ const ServicesHoverCardsGrid = ({ screen }) => {
 
   return (
     <div className='servicesHoverCardsGrid'>
-      {screen === 'home' ? (
+      {screen === 'home' && _services.length > 0 ? (
         <Row>
           {servicesCardOptionsHome &&
             servicesCardOptionsHome.map((item, i) => {
               return (
                 <Col key={i} className='center'>
                   <Link
-                    to=''
+                    to={item.path}
                     onMouseOver={(e) => {
                       mouseHoverHome(item.id);
                     }}
@@ -335,7 +377,7 @@ const ServicesHoverCardsGrid = ({ screen }) => {
               return (
                 <Col key={i} className='center'>
                   <Link
-                    to=''
+                    to={item.path}
                     onMouseOver={(e) => {
                       mouseHoverHome(item.id);
                     }}
@@ -367,7 +409,7 @@ const ServicesHoverCardsGrid = ({ screen }) => {
               return (
                 <Col key={i} className='center'>
                   <Link
-                    to=''
+                    to={item.path}
                     onMouseOver={(e) => {
                       mouseHoverSmartHome(item.id);
                     }}

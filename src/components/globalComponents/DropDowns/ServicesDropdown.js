@@ -22,25 +22,25 @@ import tvMountingHover from '../../../assets/icons/hover/tv-mounting-hover.svg';
 import axios from "axios";
 
 const ServicesDropDown = (props) => {
-
-
+  const [services, _services] = useState([]);
   useEffect(() => {
       getServicesFromServer();
       getAppliancesFromServer();
   }, []);
 
   const getServicesFromServer = () => {
-    return("");
+    // return("");
     axios.post('/api/services', {}).then(res => {
-      console.log('services api response:', res.data.response.detail);
+      // console.log('services api response:', res.data.response.detail);
+      _services([...res.data.response.detail]);
     }).catch(res => {
       console.log('services api catch:', res);
     });
   }
 
   const getAppliancesFromServer = () => {
-    // return( "" );
-    axios.post('/api/service-appliances', {service_id:1}).then(res => {
+    return( "" );
+    axios.post('/api/service-appliances', {service_id:2}).then(res => {
       console.log('service-appliances api response:', res.data.response.detail);
     }).catch(res => {
       console.log('service-appliances api catch:', res);
@@ -56,153 +56,47 @@ const ServicesDropDown = (props) => {
   const [plumbingSrc, setPlumbingSrc] = useState(plumbing);
   const [smartHomeSrc, setSmartHomeSrc] = useState(smartHome);
   const [tvMountingSrc, setTvMountingSrc] = useState(tvMounting);
+
+  const ICONS = {
+    "1": { out: tvMounting, over: tvMountingHover, setSrc: setTvMountingSrc, src: tvMountingSrc },
+    "2": { out: homeAppliances, over: homeAppliancesHover, setSrc: setHomeAppliancesSrc, src: homeAppliancesSrc },
+    "3": { out: handymanServices, over: handymanServicesHover, setSrc: setHandymanServicesSrc, src: handymanServicesSrc  },
+    "4": { out: disinfection, over: disinfectionHover, setSrc: setDisinfectionSrc, src: disinfectionSrc  },
+    "5": { out: phone, over: phoneHover, setSrc: setPhoneSrc, src: phoneSrc  },
+    "6": { out: garageDoors, over: garageDoorsHover, setSrc: setGarageDoorsSrc, src: garageDoorsSrc  },
+    "7": { out: smartHome, over: smartHomeHover, setSrc: setSmartHomeSrc, src: smartHomeSrc  },
+    "8": { out: plumbing, over: plumbingHover, setSrc: setPlumbingSrc, src: plumbingSrc  },
+  };
+
   const navigate = (path) => {
     history.push(path);
   };
-  if (props.show && props.show === true) {
+  if (props.show && props.show === true && services.length > 0) {
     return (
       <div className='shadow drp w-25' style={{ backgroundColor: 'white' }}>
         <ListGroup>
-          <ListGroup.Item
-            className='link clickable p-3 p-3'
-            onClick={() => {
-              navigate('/services/tv-mounting');
-            }}
-            onMouseOver={() => {
-              setTvMountingSrc(tvMountingHover);
-            }}
-            onMouseOut={() => {
-              setTvMountingSrc(tvMounting);
-            }}
-          >
-            <span>
-              <img alt="tvMountingSrc" src={tvMountingSrc} width='45' className='icon'></img>
-            </span>
-            <span className='dropdown-link'>Tv Mounting</span>
-          </ListGroup.Item>
-          <ListGroup.Item
-            className='link clickable p-3'
-            onClick={() => {
-              navigate('/services/home-appliances');
-            }}
-            onMouseOver={() => {
-              setHomeAppliancesSrc(homeAppliancesHover);
-            }}
-            onMouseOut={() => {
-              setHomeAppliancesSrc(homeAppliances);
-            }}
-          >
-            <span>
-              <img alt="homeAppliancesSrc" src={homeAppliancesSrc} width='50' className='icon'></img>
-            </span>
-            <span className='dropdown-link'>Home Appliances</span>
-          </ListGroup.Item>
-
-          <ListGroup.Item
-            className='link clickable p-3'
-            onClick={() => {
-              navigate('/services/handyman');
-            }}
-            onMouseOver={() => {
-              setHandymanServicesSrc(handymanServicesHover);
-            }}
-            onMouseOut={() => {
-              setHandymanServicesSrc(handymanServices);
-            }}
-          >
-            <span>
-              <img alt="handymanServicesSrc" src={handymanServicesSrc} width='45' className='icon'></img>
-            </span>
-            <span className='dropdown-link'>Handyman Services</span>
-          </ListGroup.Item>
-
-          <ListGroup.Item
-            className='link clickable p-3'
-            onClick={() => {
-              navigate('/services/disinfection');
-            }}
-            onMouseOver={() => {
-              setDisinfectionSrc(disinfectionHover);
-            }}
-            onMouseOut={() => {
-              setDisinfectionSrc(disinfection);
-            }}
-          >
-            <span>
-              <img alt="disinfectionSrc" src={disinfectionSrc} width='45' className='icon'></img>
-            </span>
-            <span className='dropdown-link'>Disinfection Services</span>
-          </ListGroup.Item>
-
-          <ListGroup.Item
-            className='link clickable p-3'
-            onClick={() => {
-              navigate('/services/iphone-repair');
-            }}
-            onMouseOver={() => {
-              setPhoneSrc(phoneHover);
-            }}
-            onMouseOut={() => {
-              setPhoneSrc(phone);
-            }}
-          >
-            <span>
-              <img alt="phoneSrc" src={phoneSrc} width='45' className='icon'></img>
-            </span>
-            <span className='dropdown-link'>Iphone Repair</span>
-          </ListGroup.Item>
-
-          <ListGroup.Item
-            className='link clickable p-3'
-            onClick={() => {
-              navigate('/services/smart-home-installation');
-            }}
-            onMouseOver={() => {
-              setSmartHomeSrc(smartHomeHover);
-            }}
-            onMouseOut={() => {
-              setSmartHomeSrc(smartHome);
-            }}
-          >
-            <span>
-              <img alt="smartHomeSrc" src={smartHomeSrc} width='45' className='icon'></img>
-            </span>
-            <span className='dropdown-link'>Smart Home Installation</span>
-          </ListGroup.Item>
-          <ListGroup.Item
-            className='link clickable p-3'
-            onClick={() => {
-              navigate('/services/garage-door-repair');
-            }}
-            onMouseOver={() => {
-              setGarageDoorsSrc(garageDoorsHover);
-            }}
-            onMouseOut={() => {
-              setGarageDoorsSrc(garageDoors);
-            }}
-          >
-            <span>
-              <img alt="garageDoorsSrc" src={garageDoorsSrc} width='45' className='icon'></img>
-            </span>
-            <span className='dropdown-link'>Garage door repair</span>
-          </ListGroup.Item>
-          <ListGroup.Item
-            className='link clickable p-3'
-            onClick={() => {
-              navigate('/services/plumbing');
-            }}
-            onMouseOver={() => {
-              setPlumbingSrc(plumbingHover);
-            }}
-            onMouseOut={() => {
-              setPlumbingSrc(plumbing);
-            }}
-          >
-            <span>
-              <img alt="plumbingSrc" src={plumbingSrc} width='45' className='icon'></img>
-            </span>
-            <span className='dropdown-link'>Plumbing Services</span>
-          </ListGroup.Item>
+        {services.map((services, key)=>{
+          return (
+            <ListGroup.Item
+              key={key}
+              className='link clickable p-3'
+              onClick={() => {
+                navigate('/services/'+services.slug);
+              }}
+              onMouseOver={() => {
+                ICONS[services.id + ""].setSrc(ICONS[services.id + ""].over);
+              }}
+              onMouseOut={() => {
+                ICONS[services.id + ""].setSrc(ICONS[services.id + ""].out);
+              }}
+            >
+              <span>
+                <img alt={Object.keys(ICONS)[3]} src={ICONS[services.id + ""].src} width='45' className='icon'></img>
+              </span>
+              <span className='dropdown-link'>{services.name}</span>
+            </ListGroup.Item>
+          );
+        })}
         </ListGroup>
       </div>
     );
