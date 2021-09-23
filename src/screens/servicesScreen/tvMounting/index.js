@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../../styles/screens/servicesScreens/tvMounting/index.scss';
 import { ScrollToTop } from './../../../utilities/index';
 
@@ -12,8 +12,18 @@ import FeaturedIn from '../../../components/globalComponents/FeaturedIn';
 import OurLocations from './../../../components/globalComponents/OurLocations';
 import BulletPoints from './../../../components/globalComponents/BulletPoints';
 
-const TvMountingScreen = () => {
+const TvMountingScreen = ({ services }) => {
   ScrollToTop();
+
+  const [service, _service] = useState({});
+  useEffect(() => {
+    let found = services.find((service)=> {  
+      return service.slug === "tv-mounting"
+    })
+    _service(found)
+  }, [services])
+
+
   const locations = [
     'Atlanta, GA',
     'Boston, MA',
@@ -87,8 +97,8 @@ const TvMountingScreen = () => {
         backgroundImage='https://d7gh5vrfihrl.cloudfront.net/website/banners/home-page-new.jpg'
         title='TV mounting,made simple'
         description='Installations mounts wire hiding, and more!'
-        btnTitle='Schedule Now'
-        btnLink='/'
+        btnTitle={services.length > 0? 'Schedule Now' : undefined} 
+        btnLink={services.length > 0?'/book-a-service/service/tv-mounting/'+service.id: undefined}
       >
         <div className='images-container'>
           <a
@@ -125,9 +135,8 @@ const TvMountingScreen = () => {
           imageUrl='https://d7gh5vrfihrl.cloudfront.net/website/get-started/appliances.jpg'
           title='Ready to get, started?'
           description={`We're only a few clicks or, a phone call away.`}
-          btnTitle='Schedule now'
-          btnLink='/'
-        />
+          btnTitle={services.length > 0? 'Schedule Now' : undefined} 
+          btnLink={services.length > 0? '/book-a-service/service/tv-mounting/'+service.id : undefined} />
       </div>
     </div>
   );

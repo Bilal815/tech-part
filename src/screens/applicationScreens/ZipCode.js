@@ -7,7 +7,7 @@ const ZipCode = (props) => {
     const p = require('../../styles/screens/applicationScreens/zip-code-2.css');
   },[])
 
-  const { servicePrice } = props.location.state;
+  const { servicePrice } = props.location.state?props.location.state:"";
   console.log("Service Price: ", servicePrice)
 
   const [zipcode, _zipcode] = useState("");

@@ -124,7 +124,7 @@ const MembersScreen = () => {
           'Extended service guarantee',
         ]}
         btnTitle='View plans'
-        btnLink='/create-sale/zip-code'
+        btnLink='/pricing-plans'
         number='(858) 225-8352'
       />
       <div className='container-75'>

@@ -2,15 +2,20 @@ import React, { useState, useEffect } from "react";
 import TechPartLogo from '../../assets/tech-app-logo.png';
 import { Col, Row } from "react-bootstrap";
 import { ScrollToTop } from '../../utilities/index';
+import axios from 'axios';
 
 
-const TechForm = () => {
 
+const TechForm = (props) => {   
+  
   ScrollToTop();
   useEffect(()=>{
     const t = require('../../styles/screens/applicationScreens/main.min.css');
-    const p = require('../../styles/screens/applicationScreens/second.css')
+    const p = require('../../styles/screens/applicationScreens/second.css');
+    getServiceAppliances();
   },[])
+
+  const [serviceAppliances, _serviceAppliances] = useState([]);
 
   const [errorList, _errorList] 
     = useState(new Set(
@@ -42,6 +47,17 @@ const TechForm = () => {
   const [employmentHistory, _employmentHistory] = useState("");
   const [doYouHaveAValidBusinessLicenseToPerformServicesInYourStateAndCounty, _doYouHaveAValidBusinessLicenseToPerformServicesInYourStateAndCounty] = useState("Please Select");
   const [howDidYouHearAboutPuls,_howDidYouHearAboutPuls] = useState("Please Select");
+
+  const getServiceAppliances = () => {
+    const { service_id } =  props.match.params; 
+    axios.post('/api/service-appliances', { service_id: service_id }).then(res => {
+      _serviceAppliances(res.data.response.detail.appliances);     
+    }).catch(res => {
+      console.log('service-appliances api catch:', res);
+    });
+  }
+
+
 
   const _inputHandler = (e) => {
     let name = e.target.name;
@@ -729,6 +745,83 @@ const TechForm = () => {
                                             </div>
                                           </div>
                                         </fieldset>
+
+
+
+                                        <fieldset className="form-columns-1" data-reactid=".hbspt-forms-0.1:$4">
+                                          <div
+                                            className="hs_which_appliances_can_you_repair hs-which_appliances_can_you_repair hs-fieldtype-checkbox field hs-form-field"
+                                            data-reactid=".hbspt-forms-0.1:$4.1:$which_appliances_can_you_repair"
+                                          >
+                                            <label
+                                              id="label-which_appliances_can_you_repair-64c04ec9-ce09-411e-9621-8f4435ab863f_7132"                                              
+                                              placeholder="Enter your Which Appliances Can You Repair"
+                                              htmlFor="which_appliances_can_you_repair-64c04ec9-ce09-411e-9621-8f4435ab863f_7132"
+                                              data-reactid=".hbspt-forms-0.1:$4.1:$which_appliances_can_you_repair.0"
+                                            >
+                                              <span data-reactid=".hbspt-forms-0.1:$4.1:$which_appliances_can_you_repair.0.0">
+                                                Which services can you provide
+                                              </span>
+                                              <span
+                                                className="hs-form-required"
+                                                data-reactid=".hbspt-forms-0.1:$4.1:$which_appliances_can_you_repair.0.1"
+                                              >
+                                                *
+                                              </span>
+                                            </label>
+                                            <legend
+                                              className="hs-field-desc"
+                                              style={{ display: "none" }}
+                                              data-reactid=".hbspt-forms-0.1:$4.1:$which_appliances_can_you_repair.1"
+                                            />
+                                            <div
+                                              className="input"
+                                              data-reactid=".hbspt-forms-0.1:$4.1:$which_appliances_can_you_repair.$which_appliances_can_you_repair"
+                                            >
+                                              <ul
+                                                required
+                                                role="checkbox"
+                                                className="inputs-list multi-container"
+                                                data-reactid=".hbspt-forms-0.1:$4.1:$which_appliances_can_you_repair.$which_appliances_can_you_repair.0"
+                                              >                                               
+                                                {serviceAppliances.length ?
+                                                  serviceAppliances.map((appliance,key) => {
+                                                    return (
+                                                      <li
+                                                        key={key}
+                                                        className="hs-form-checkbox"
+                                                        role="checkbox"
+                                                        data-reactid=".hbspt-forms-0.1:$4.1:$which_appliances_can_you_repair.$which_appliances_can_you_repair.0.$Freezer"
+                                                      >
+                                                        <label
+                                                          htmlFor={"which_appliances_can_you_repair_"+key}
+                                                          className="hs-form-checkbox-display"
+                                                          data-reactid=".hbspt-forms-0.1:$4.1:$which_appliances_can_you_repair.$which_appliances_can_you_repair.0.$Freezer.0"
+                                                        >
+                                                          <input
+                                                            id={"which_appliances_can_you_repair_"+key}
+                                                            className="hs-input "
+                                                            type="checkbox"
+                                                            name="which_appliances_can_you_repair"
+                                                            defaultValue={appliance.name}
+                                                            aria-labelledby="label-which_appliances_can_you_repair-64c04ec9-ce09-411e-9621-8f4435ab863f_7132"
+                                                            data-reactid=".hbspt-forms-0.1:$4.1:$which_appliances_can_you_repair.$which_appliances_can_you_repair.0.$Freezer.0.0"
+                                                          />
+                                                          <span data-reactid=".hbspt-forms-0.1:$4.1:$which_appliances_can_you_repair.$which_appliances_can_you_repair.0.$Freezer.0.1">
+                                                            {appliance.name}
+                                                          </span>
+                                                        </label>
+                                                      </li>
+                                                    )
+                                                  })
+                                                  :
+                                                  ""
+                                                }                                                                                       
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </fieldset>
+                                        
                                         <fieldset
                                           className="form-columns-1"
                                           data-reactid=".hbspt-forms-0.1:$4"
@@ -1767,19 +1860,7 @@ const TechForm = () => {
                                               data-reactid=".hbspt-forms-0.5.1.0"
                                             />
                                           </div>
-                                        </div>
-                                        {/* <noscript data-reactid=".hbspt-forms-0.6" />
-                                        <input
-                                          name="hs_context"
-                                          type="hidden"
-                                          defaultValue='{"rumScriptExecuteTime":562.5,"rumServiceResponseTime":1029.5,"rumFormRenderTime":3.700000047683716,"rumTotalRenderTime":1037.4000000953674,"rumTotalRequestTime":464.59999990463257,"lang":"en","disableCookieSubmission":true,"embedAtTimestamp":"1631607674329","formDefinitionUpdatedAt":"1622670755506","pageUrl":"https://info.puls.com/application-tv?hsLang=en","pageTitle":"Tell us your Your Qualifications","source":"FormsNext-static-5.365","timestamp":1631607674334,"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36","referrer":"https://lp.puls.com/join-as-a-tech","originalEmbedContext":{"portalId":"4039866","formId":"231289c5-9fb4-4ebe-83b1-d027a68ed6be","formInstanceId":"8588","pageId":"37039400146","region":"na1","pageName":"Tell us your Your Qualifications","redirectUrl":"https://lp.puls.com/thank-you-tv","target":"#hs_form_target_dnd_area-module-5","contentType":"landing-page","formsBaseUrl":"/_hcms/forms/","formData":{"cssClass":"hs-form stacked hs-custom-form"},"hutk":"6ea5ae2eeeb8dc2591bddb025b83e3fe"},"canonicalUrl":"https://info.puls.com/application-tv","pageId":"37039400146","pageName":"Tell us your Your Qualifications","redirectUrl":"https://lp.puls.com/thank-you-tv","formInstanceId":"8588","urlParams":{"hsLang":"en"},"formTarget":"#hs_form_target_dnd_area-module-5","correlationId":"f83254e3-7d36-463b-9af1-e52ae425f8cf","contentType":"landing-page","hutk":"6ea5ae2eeeb8dc2591bddb025b83e3fe","useRecaptchaEnterprise":true,"isHostedOnHubspot":true}'
-                                          data-reactid=".hbspt-forms-0.7"
-                                        />
-                                        <iframe
-                                          name="target_iframe_231289c5-9fb4-4ebe-83b1-d027a68ed6be_8588"
-                                          style={{ display: "none" }}
-                                          data-reactid=".hbspt-forms-0.8"
-                                        /> */}
+                                        </div>                                
                                       </form>
                                     </div>
                                   </span>

@@ -7,7 +7,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import ServiceDropDown from '../DropDowns/ServicesDropdown';
 import TechPartLogo from '../../../assets/tech-app-logo.png';
 
-const DefaultHeader = ({ location: { pathname } }) => {
+const DefaultHeader = ({ location: { pathname }, services }) => {
   const [isScrolled, setScroll] = useState(false);
   const [show, setShow] = useState(false);
   // let listener = null;
@@ -97,7 +97,7 @@ const DefaultHeader = ({ location: { pathname } }) => {
             <Nav>
               <span onMouseOver={() => setShow(true)} onMouseLeave={() => setShow(false)}>
                 <Nav.Link style={whiteColorStyle}>Our Services</Nav.Link>
-                <ServiceDropDown show={show} />
+                <ServiceDropDown show={show} services={services} />
               </span>
               <Nav.Link style={whiteColorStyle} as={Link} to='/pricing'>
                 Pricing

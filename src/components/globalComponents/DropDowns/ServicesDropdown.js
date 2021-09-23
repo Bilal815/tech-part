@@ -19,33 +19,33 @@ import smartHome from '../../../assets/icons/regular/smart-home.svg';
 import smartHomeHover from '../../../assets/icons/hover/smart-home-hover.svg';
 import tvMounting from '../../../assets/icons/regular/tv-mounting.svg';
 import tvMountingHover from '../../../assets/icons/hover/tv-mounting-hover.svg';
-import axios from "axios";
+// import axios from "axios";
 
 const ServicesDropDown = (props) => {
-  const [services, _services] = useState([]);
-  useEffect(() => {
-      getServicesFromServer();
-      getAppliancesFromServer();
-  }, []);
+  // const [services, _services] = useState([]);
+  // useEffect(() => {
+  //     getServicesFromServer();
+  //     getAppliancesFromServer();
+  // }, []);
 
-  const getServicesFromServer = () => {
-    // return("");
-    axios.post('/api/services', {}).then(res => {
-      // console.log('services api response:', res.data.response.detail);
-      _services([...res.data.response.detail]);
-    }).catch(res => {
-      console.log('services api catch:', res);
-    });
-  }
+  // const getServicesFromServer = () => {
+  //   // return("");
+  //   axios.post('/api/services', {}).then(res => {
+  //     // console.log('services api response:', res.data.response.detail);
+  //     _services([...res.data.response.detail]);
+  //   }).catch(res => {
+  //     console.log('services api catch:', res);
+  //   });
+  // }
 
-  const getAppliancesFromServer = () => {
-    return( "" );
-    axios.post('/api/service-appliances', {service_id:2}).then(res => {
-      console.log('service-appliances api response:', res.data.response.detail);
-    }).catch(res => {
-      console.log('service-appliances api catch:', res);
-    });
-  }
+  // const getAppliancesFromServer = () => {
+  //   return( "" );
+  //   axios.post('/api/service-appliances', {service_id:2}).then(res => {
+  //     console.log('service-appliances api response:', res.data.response.detail);
+  //   }).catch(res => {
+  //     console.log('service-appliances api catch:', res);
+  //   });
+  // }
 
   let history = useHistory();
   const [disinfectionSrc, setDisinfectionSrc] = useState(disinfection);
@@ -71,11 +71,11 @@ const ServicesDropDown = (props) => {
   const navigate = (path) => {
     history.push(path);
   };
-  if (props.show && props.show === true && services.length > 0) {
+  if (props.show && props.show === true && props.services.length > 0) {
     return (
       <div className='shadow drp w-25' style={{ backgroundColor: 'white' }}>
         <ListGroup>
-        {services.map((services, key)=>{
+        {props.services.map((services, key)=>{
           return (
             <ListGroup.Item
               key={key}

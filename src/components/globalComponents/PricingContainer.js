@@ -184,8 +184,7 @@ const PricingContainer = () => {
     setSelectedCardTitle(pricingPlans[1].title);
   }
 
-  const getMembershipPlans = () => {
-    return("")
+  const getMembershipPlans = () => {    
     axios.post('/api/membership-plans', {
       zip_code_id: 1,
     }).then(res => {

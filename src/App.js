@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.scss';
 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -101,6 +101,8 @@ import GuaranteeScreen from './screens/footerScreens/legals/GuaranteeScreen';
 const App = () => {
   // setting default headers and base URL
   // const userLogin = useSelector((state) => state.userLogin);
+  const [services, _services] = useState([]);
+
   const token = '';
   axios.defaults.withCredentials = true;
   // axios.defaults.baseURL = "http://localhost:8000";
@@ -115,56 +117,75 @@ const App = () => {
         email: "admin@admin.com",
         password: "password",
       }).then(res => {
-        // axios.post('/api/membership-plans',{}).then(res => {
-        //   console.log(res)
-        // }).catch(res => {
-        //   console.log('service-appliances api catch:', res);
-        // });
+        getServicesFromServer();
       });
     }).catch(err => {
       /*console.log('catch response', err);*/
     })
   }, []);
+
+  const getServicesFromServer = () => {
+    // return("");
+    axios.post('/api/services', {}).then(res => {
+      // console.log('services api response:', res.data.response.detail);
+      _services([...res.data.response.detail]);
+    }).catch(res => {
+      console.log('services api catch:', res);
+    });
+  }
+
   return (
     <Router >
-      <DefaultHeader />
+      <DefaultHeader services={services} />
       <Switch>
         {/* Home and Header section routes  */}
         <Route exact path='/' component={HomeScreen} />
         <Route exact path='/pricing' component={PricingScreen} />
+        <Route exact path='/pricing-plans' component={PricingScreen} />
         <Route exact path='/members' component={MembersScreen} />
         <Route exact path='/become-a-tech' component={BecomeATechScreen} />
-        <Route exact path='/join-as-a-tech' component={JoinAsATechScreen} />
-        <Route exact path='/application-tv' component={TechForm} />
+        <Route exact path='/join-as-a-tech' 
+            render={()=>(<JoinAsATechScreen services={services} />)}
+         />
+        {/* <Route exact path='/application-tv' component={TechForm} />
         <Route exact path='/application-appliance' component={TechForm} />
         <Route exact path='/application-handy' component={TechForm} />
         <Route exact path='/application-phone' component={TechForm} />
-        <Route exact path='/application-plumbing' component={TechForm} />
+        <Route exact path='/application-plumbing' component={TechForm} /> */}
+        <Route exact path='/tech-form/:service_id' component={TechForm} />
         <Route exact path='/zip-code' component={ZipCode} />        
 
         <Route exact path='/property-manager' component={PropertyManagerScreen} />
         <Route exact path='/invite-a-friend' component={InviteAFriendScreen} />
         <Route exact path='/book-a-service' component={BookAServiceScreen} />
-        <Route exact path='/services/disinfection-services' component={DisinfectionServicesScreen} />
-        <Route exact path='/services/garage-door-repair' component={GarageDoorRepairScreen} />
-        <Route exact path='/services/handyman-services' component={HandymanServicesScreen} />
-        <Route exact path='/services/home-appliances' component={HomeAppliancesScreen} />
-        <Route exact path='/services/phone-repair' component={IhponeRepairScreen} />
-        <Route exact path='/services/plumbing-services' component={PlumbingServicesScreen} />
-        <Route exact path='/book-a-service/service/tv-mounting/:service_id' component={TvSize} />
-        <Route exact path='/book-a-service/service/home-appliances/:service_id' component={SelectAppliance} />
-        <Route exact path='/book-a-service/service/handyman-services/:service_id' component={HandymanService} />
-        <Route exact path='/book-a-service/service/disinfection-services/:service_id' component={DisinfectionService} />
-        <Route exact path='/book-a-service/service/phone-repair/:service_id' component={IphoneRepair} />
-        <Route exact path='/book-a-service/service/smart-home-installation/:service_id' component={SmartHomeService} />
-        <Route exact path='/book-a-service/service/plumbing-services/:service_id' component={Plumbing} />
-        <Route
-          exact
-          path='/services/smart-home-installation'
-          component={SmartHomeInstallationScreen}
-        />
-        <Route exact path='/services/tv-mounting' component={TvMountingScreen} />
-        <Route exact path='/services/security-system' component={SecuritySystemScreen} />
+        
+        {/* {services.length > 0 ?
+          services.map(()=>{
+            return (
+                <> */}
+                  <Route exact path='/services/tv-mounting' component={()=><TvMountingScreen services={services} />} /> 
+                  {/* <Route exact path='/services/tv-mounting' component={()=><TvMountingScreen serviceID={services[0]? services[0].id : "" } />} />  */}
+                  {/* <Route exact path='/services/home-appliances' component={()=><HomeAppliancesScreen serviceID={services[1]? services[1].id : "" } />} /> */}
+                  {/* <Route exact path='/services/handyman-services' component={()=><HandymanServicesScreen serviceID={services[2]? services[2].id : "" } />} /> */}
+                  {/* <Route exact path='/services/disinfection-services' render={()=><DisinfectionServicesScreen serviceID={services[3]? services[3].id : "" } />} /> */}
+                  {/* <Route exact path='/services/phone-repair' component={()=><IhponeRepairScreen serviceID={services[4]? services[4].id : "" } />} /> */}
+                  {/* <Route exact path='/services/garage-door-repair' component={()=><GarageDoorRepairScreen serviceID={services[5]? services[5].id : "" } />} /> */}
+                  {/* <Route exact path='/services/smart-home-installation' component={()=><SmartHomeInstallationScreen serviceID={services[6]? services[6].id : "" } />} /> */}
+                  {/* <Route exact path='/services/plumbing-services' component={()=><PlumbingServicesScreen serviceID={services[7]? services[7].id : "" } />} /> */}
+                  {/* <Route exact path='/services/security-system' component={()=><SecuritySystemScreen serviceID={services[8]? services[8].id : "" } />} /> */}
+                  
+                  <Route exact path='/book-a-service/service/tv-mounting/:service_id' component={TvSize} />
+                  <Route exact path='/book-a-service/service/home-appliances/:service_id' component={SelectAppliance} />
+                  <Route exact path='/book-a-service/service/handyman-services/:service_id' component={HandymanService} />
+                  <Route exact path='/book-a-service/service/disinfection-services/:service_id' component={DisinfectionService} />
+                  <Route exact path='/book-a-service/service/phone-repair/:service_id' component={IphoneRepair} />
+                  <Route exact path='/book-a-service/service/smart-home-installation/:service_id' component={SmartHomeService} />
+                  <Route exact path='/book-a-service/service/plumbing-services/:service_id' component={Plumbing} />
+                {/* </>
+              )
+            })
+          : <Route exact path={['/services/*','/book-a-service/service/*']} render={()=><div style={{height:"30vh"}}></div>} />
+        } */}
         {/* Cities section routes  */}
         <Route exact path='/cities/az' component={ArizonaScreen} />
         <Route exact path='/cities/az/phoenix' component={PhoenixScreen} />

@@ -15,8 +15,11 @@ const CustomWrapper = {
   padding: "0",
 };
 
-function JoinAsATechScreen() {
 
+
+function JoinAsATechScreen(props) {
+  console.log(props)
+  
   const BENEFITS_OF_WORKING_SECTION = () => (
     <div
       id="hs_cos_wrapper_widget_36761593685"
@@ -351,92 +354,31 @@ function JoinAsATechScreen() {
                         data-x={0}
                         data-w={12}
                       >
-                        <div className="install-servicesrow row">
-                          <div className="col-md-3 col-sm-12">
-                            <a href="/application-tv">
-                              <div className="install-icon">
-                                <img
-                                  src="https://lp.puls.com/hs-fs/hubfs/tvi%20copy-1.png?width=775&height=775&name=tvi%20copy-1.png"
-                                  alt="tvi copy-1"
-                                  width={775}
-                                  height={775}
-                                  srcSet="https://lp.puls.com/hs-fs/hubfs/tvi%20copy-1.png?width=388&height=388&name=tvi%20copy-1.png 388w, https://lp.puls.com/hs-fs/hubfs/tvi%20copy-1.png?width=775&height=775&name=tvi%20copy-1.png 775w, https://lp.puls.com/hs-fs/hubfs/tvi%20copy-1.png?width=1163&height=1163&name=tvi%20copy-1.png 1163w, https://lp.puls.com/hs-fs/hubfs/tvi%20copy-1.png?width=1550&height=1550&name=tvi%20copy-1.png 1550w, https://lp.puls.com/hs-fs/hubfs/tvi%20copy-1.png?width=1938&height=1938&name=tvi%20copy-1.png 1938w, https://lp.puls.com/hs-fs/hubfs/tvi%20copy-1.png?width=2325&height=2325&name=tvi%20copy-1.png 2325w"
-                                  sizes="(max-width: 775px) 100vw, 775px"
-                                />
+                        <div className="install-servicesrow row">                                                
+                          {props.services?
+                            props.services.map((service, key)=>{                              
+                              return(
+                                <div key={key} className="col-md-3 col-sm-12">                                 
+                                    <div className="install-icon">
+                                      <img
+                                        src={"services-icons/hover/"+service.image.replace('png','svg')}
+                                        alt={service.image.replace('png','')}
+                                        width={775}
+                                        height={775}
+                                        srcSet={"services-icons/hover/"+service.image.replace('png','svg')+"?width=388&height=388 388w"}                                                                        
+                                        sizes="(max-width: 775px) 100vw, 775px"
+                                        onClick={e => window.location.pathname = "/tech-form/"+service.id }
+                                      />
+                                    </div>
+                                    <div className="install-title">
+                                      {service.name}
+                                    </div>                                 
                               </div>
-                              <div className="install-title">
-                                TV mounting
-                              </div>
-                            </a>
-                          </div>
-                          <div className="col-md-3 col-sm-12">
-                            <a href="/application-appliance">
-                              <div className="install-icon">
-                                <img
-                                  src="https://lp.puls.com/hs-fs/hubfs/apr%20copy-1.png?width=775&height=775&name=apr%20copy-1.png"
-                                  alt="apr copy-1"
-                                  width={775}
-                                  height={775}
-                                  srcSet="https://lp.puls.com/hs-fs/hubfs/apr%20copy-1.png?width=388&height=388&name=apr%20copy-1.png 388w, https://lp.puls.com/hs-fs/hubfs/apr%20copy-1.png?width=775&height=775&name=apr%20copy-1.png 775w, https://lp.puls.com/hs-fs/hubfs/apr%20copy-1.png?width=1163&height=1163&name=apr%20copy-1.png 1163w, https://lp.puls.com/hs-fs/hubfs/apr%20copy-1.png?width=1550&height=1550&name=apr%20copy-1.png 1550w, https://lp.puls.com/hs-fs/hubfs/apr%20copy-1.png?width=1938&height=1938&name=apr%20copy-1.png 1938w, https://lp.puls.com/hs-fs/hubfs/apr%20copy-1.png?width=2325&height=2325&name=apr%20copy-1.png 2325w"
-                                  sizes="(max-width: 775px) 100vw, 775px"
-                                />
-                              </div>
-                              <div className="install-title">
-                                Appliance repair
-                              </div>
-                            </a>
-                          </div>
-                          <div className="col-md-3 col-sm-12">
-                            <a href="/application-handy">
-                              <div className="install-icon">
-                                <img
-                                  src="https://lp.puls.com/hs-fs/hubfs/hdm%20copy-4.png?width=775&height=775&name=hdm%20copy-4.png"
-                                  alt="hdm copy-4"
-                                  width={775}
-                                  height={775}
-                                  srcSet="https://lp.puls.com/hs-fs/hubfs/hdm%20copy-4.png?width=388&height=388&name=hdm%20copy-4.png 388w, https://lp.puls.com/hs-fs/hubfs/hdm%20copy-4.png?width=775&height=775&name=hdm%20copy-4.png 775w, https://lp.puls.com/hs-fs/hubfs/hdm%20copy-4.png?width=1163&height=1163&name=hdm%20copy-4.png 1163w, https://lp.puls.com/hs-fs/hubfs/hdm%20copy-4.png?width=1550&height=1550&name=hdm%20copy-4.png 1550w, https://lp.puls.com/hs-fs/hubfs/hdm%20copy-4.png?width=1938&height=1938&name=hdm%20copy-4.png 1938w, https://lp.puls.com/hs-fs/hubfs/hdm%20copy-4.png?width=2325&height=2325&name=hdm%20copy-4.png 2325w"
-                                  sizes="(max-width: 775px) 100vw, 775px"
-                                />
-                              </div>
-                              <div className="install-title">
-                                Handyman
-                              </div>
-                            </a>
-                          </div>
-                          <div className="col-md-3 col-sm-12">
-                            <a href="/application-phone">
-                              <div className="install-icon">
-                                <img
-                                  src="https://lp.puls.com/hs-fs/hubfs/mdr%20copy-1.png?width=775&height=775&name=mdr%20copy-1.png"
-                                  alt="mdr copy-1"
-                                  width={775}
-                                  height={775}
-                                  srcSet="https://lp.puls.com/hs-fs/hubfs/mdr%20copy-1.png?width=388&height=388&name=mdr%20copy-1.png 388w, https://lp.puls.com/hs-fs/hubfs/mdr%20copy-1.png?width=775&height=775&name=mdr%20copy-1.png 775w, https://lp.puls.com/hs-fs/hubfs/mdr%20copy-1.png?width=1163&height=1163&name=mdr%20copy-1.png 1163w, https://lp.puls.com/hs-fs/hubfs/mdr%20copy-1.png?width=1550&height=1550&name=mdr%20copy-1.png 1550w, https://lp.puls.com/hs-fs/hubfs/mdr%20copy-1.png?width=1938&height=1938&name=mdr%20copy-1.png 1938w, https://lp.puls.com/hs-fs/hubfs/mdr%20copy-1.png?width=2325&height=2325&name=mdr%20copy-1.png 2325w"
-                                  sizes="(max-width: 775px) 100vw, 775px"
-                                />
-                              </div>
-                              <div className="install-title">
-                                iPhone repair
-                              </div>
-                            </a>
-                          </div>
-                          <div className="col-md-3 col-sm-12">
-                            <a href="/application-plumbing">
-                              <div className="install-icon">
-                                <img
-                                  src="https://lp.puls.com/hs-fs/hubfs/plumbing%20copy-1.png?width=775&height=775&name=plumbing%20copy-1.png"
-                                  alt="plumbing copy-1"
-                                  width={775}
-                                  height={775}
-                                  srcSet="https://lp.puls.com/hs-fs/hubfs/plumbing%20copy-1.png?width=388&height=388&name=plumbing%20copy-1.png 388w, https://lp.puls.com/hs-fs/hubfs/plumbing%20copy-1.png?width=775&height=775&name=plumbing%20copy-1.png 775w, https://lp.puls.com/hs-fs/hubfs/plumbing%20copy-1.png?width=1163&height=1163&name=plumbing%20copy-1.png 1163w, https://lp.puls.com/hs-fs/hubfs/plumbing%20copy-1.png?width=1550&height=1550&name=plumbing%20copy-1.png 1550w, https://lp.puls.com/hs-fs/hubfs/plumbing%20copy-1.png?width=1938&height=1938&name=plumbing%20copy-1.png 1938w, https://lp.puls.com/hs-fs/hubfs/plumbing%20copy-1.png?width=2325&height=2325&name=plumbing%20copy-1.png 2325w"
-                                  sizes="(max-width: 775px) 100vw, 775px"
-                                />
-                              </div>
-                              <div className="install-title">
-                                Plumbing
-                              </div>
-                            </a>
-                          </div>
+                              )
+                            })
+                          :""
+                          }
+
                         </div>
                       </div>
                     </div>
