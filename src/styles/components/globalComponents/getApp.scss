@@ -2,13 +2,13 @@
 @import '../../../scss/fontFamily.scss';
 
 .getApp {
-  min-width: 1200px;
+  // min-width: 1200px;
   width: 100% !important;
   background-color: #e4f1ff;
   border-bottom-right-radius: 100px;
   margin-bottom: 80px;
   .content-wrapper {
-    width: 50%;
+    // width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,12 +27,22 @@
     }
   }
   .image-wrapper {
-    width: 50%;
+    // width: 50%;
     height: 100%;
 
     img {
-      width: 100%;
+      // width: 100%;
       height: 100%;
+      object-fit: fill;
     }
   }
+}
+
+// @media only screen and (max-width:700px){
+//   .ITkmt a {
+//     padding: 11px 20px;
+//   }
+// }
+.getApp .content-wrapper h2 {
+  font-size: 29px; 
 }

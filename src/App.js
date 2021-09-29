@@ -97,6 +97,8 @@ import PrivacyScreen from './screens/footerScreens/legals/PrivacyScreen';
 import TermsAndConditionsScreen from './screens/footerScreens/legals/TermsAndConditionsScreen';
 import PulsPlusTermsScreen from './screens/footerScreens/legals/PulsPlusTermsScreen';
 import GuaranteeScreen from './screens/footerScreens/legals/GuaranteeScreen';
+import GarageDoorService from './screens/applicationScreens/GarageDoorSevice';
+import PricingScreenOld from './screens/headerScreens/PricingScreenOld';
 
 const App = () => {
   // setting default headers and base URL
@@ -140,9 +142,10 @@ const App = () => {
       <Switch>
         {/* Home and Header section routes  */}
         <Route exact path='/' component={HomeScreen} />
-        <Route exact path='/pricing' component={PricingScreen} />
+        <Route exact path='/pricing' render={()=>{ return <PricingScreen services={services} />}} />
         <Route exact path='/pricing-plans' component={PricingScreen} />
-        <Route exact path='/members' component={MembersScreen} />
+        {/* <Route exact path='/members' component={MembersScreen} /> */}
+        <Route exact path='/members' component={PricingScreenOld} />
         <Route exact path='/become-a-tech' component={BecomeATechScreen} />
         <Route exact path='/join-as-a-tech' 
             render={()=>(<JoinAsATechScreen services={services} />)}
@@ -157,22 +160,23 @@ const App = () => {
 
         <Route exact path='/property-manager' component={PropertyManagerScreen} />
         <Route exact path='/invite-a-friend' component={InviteAFriendScreen} />
-        <Route exact path='/book-a-service' component={BookAServiceScreen} />
+        <Route exact path='/book-a-service' 
+            render={()=>< BookAServiceScreen services={services}/> }           
+        />
         
         {/* {services.length > 0 ?
           services.map(()=>{
             return (
                 <> */}
                   <Route exact path='/services/tv-mounting' component={()=><TvMountingScreen services={services} />} /> 
-                  {/* <Route exact path='/services/tv-mounting' component={()=><TvMountingScreen serviceID={services[0]? services[0].id : "" } />} />  */}
-                  {/* <Route exact path='/services/home-appliances' component={()=><HomeAppliancesScreen serviceID={services[1]? services[1].id : "" } />} /> */}
-                  {/* <Route exact path='/services/handyman-services' component={()=><HandymanServicesScreen serviceID={services[2]? services[2].id : "" } />} /> */}
-                  {/* <Route exact path='/services/disinfection-services' render={()=><DisinfectionServicesScreen serviceID={services[3]? services[3].id : "" } />} /> */}
-                  {/* <Route exact path='/services/phone-repair' component={()=><IhponeRepairScreen serviceID={services[4]? services[4].id : "" } />} /> */}
-                  {/* <Route exact path='/services/garage-door-repair' component={()=><GarageDoorRepairScreen serviceID={services[5]? services[5].id : "" } />} /> */}
-                  {/* <Route exact path='/services/smart-home-installation' component={()=><SmartHomeInstallationScreen serviceID={services[6]? services[6].id : "" } />} /> */}
-                  {/* <Route exact path='/services/plumbing-services' component={()=><PlumbingServicesScreen serviceID={services[7]? services[7].id : "" } />} /> */}
-                  {/* <Route exact path='/services/security-system' component={()=><SecuritySystemScreen serviceID={services[8]? services[8].id : "" } />} /> */}
+                  <Route exact path='/services/home-appliances' component={()=><HomeAppliancesScreen services={services} />} />
+                  <Route exact path='/services/handyman-services' component={()=><HandymanServicesScreen services={services} />} />
+                  <Route exact path='/services/disinfection-services' render={()=><DisinfectionServicesScreen services={services} />} />
+                  <Route exact path='/services/phone-repair' component={()=><IhponeRepairScreen services={services} />} />
+                  <Route exact path='/services/garage-door-repair' component={()=><GarageDoorRepairScreen services={services}/>} />
+                  <Route exact path='/services/smart-home-installation' component={()=><SmartHomeInstallationScreen services={services}/>} />
+                  <Route exact path='/services/plumbing-services' component={()=><PlumbingServicesScreen services={services}/>} />
+                  {/* <Route exact path='/services/security-system' component={()=><SecuritySystemScreen services={services}/>} /> */}
                   
                   <Route exact path='/book-a-service/service/tv-mounting/:service_id' component={TvSize} />
                   <Route exact path='/book-a-service/service/home-appliances/:service_id' component={SelectAppliance} />
@@ -181,6 +185,7 @@ const App = () => {
                   <Route exact path='/book-a-service/service/phone-repair/:service_id' component={IphoneRepair} />
                   <Route exact path='/book-a-service/service/smart-home-installation/:service_id' component={SmartHomeService} />
                   <Route exact path='/book-a-service/service/plumbing-services/:service_id' component={Plumbing} />
+                  <Route exact path='/book-a-service/service/garage-door-repair/:service_id' component={GarageDoorService} />
                 {/* </>
               )
             })

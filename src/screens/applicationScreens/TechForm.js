@@ -15,8 +15,8 @@ const TechForm = (props) => {
     getServiceAppliances();
   },[])
 
-  const [serviceAppliances, _serviceAppliances] = useState([]);
 
+  const [serviceAppliances, _serviceAppliances] = useState([]);
   const [errorList, _errorList] 
     = useState(new Set(
         [
@@ -29,8 +29,9 @@ const TechForm = (props) => {
           "predicted_days_to_first_job",
           "how_much_work_do_you_want_",
           "confirm_your_closest_city_area",
-          "do_you_have_a_valid_business_license_to_perform_services_in_your_state_and_county_",
+          // "do_you_have_a_valid_business_license_to_perform_services_in_your_state_and_county_",
           "how_did_you_hear_about_puls",
+          "which_appliances_can_you_repair",
         ]
       ));
   const [firstName, _firstName] = useState("");
@@ -47,6 +48,9 @@ const TechForm = (props) => {
   const [employmentHistory, _employmentHistory] = useState("");
   const [doYouHaveAValidBusinessLicenseToPerformServicesInYourStateAndCounty, _doYouHaveAValidBusinessLicenseToPerformServicesInYourStateAndCounty] = useState("Please Select");
   const [howDidYouHearAboutPuls,_howDidYouHearAboutPuls] = useState("Please Select");
+  const [whichAppliancesCanYouRepair, _whichAppliancesCanYouRepair] = useState([]);
+
+  // document.getElementById("techform").elements
 
   const getServiceAppliances = () => {
     const { service_id } =  props.match.params; 
@@ -62,9 +66,11 @@ const TechForm = (props) => {
   const _inputHandler = (e) => {
     let name = e.target.name;
     let value = e.target.value;
+    let checked = e.target.checked;
     let input = document.getElementsByName(name)[0]
     let errorblock = document.getElementsByName("error-"+name)[0]
     let emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g
+    let checkList = new Set([...whichAppliancesCanYouRepair])
     switch (name) {
       case "firstname":
         _firstName(value);
@@ -108,6 +114,15 @@ const TechForm = (props) => {
         
       case "how_did_you_hear_about_puls":
         _howDidYouHearAboutPuls(value);
+        break
+        
+      case "which_appliances_can_you_repair":
+        if(checked){
+          checkList.add(Number(value));
+        } else {
+          checkList.delete(Number(value));
+        }
+        _whichAppliancesCanYouRepair(Array.from(checkList));
         break;
 
       default:
@@ -121,8 +136,9 @@ const TechForm = (props) => {
       (name === "predicted_days_to_first_job" && value === "Please Select") ||
       (name === "how_much_work_do_you_want_" && value === "Please Select") ||
       (name === "confirm_your_closest_city_area" && value === "Please Select") ||
-      (name === "do_you_have_a_valid_business_license_to_perform_services_in_your_state_and_county_" && value === "Please Select") ||
-      (name === "how_did_you_hear_about_puls" && value === "Please Select")
+      // (name === "do_you_have_a_valid_business_license_to_perform_services_in_your_state_and_county_" && value === "Please Select") ||
+      (name === "how_did_you_hear_about_puls" && value === "Please Select") ||
+      (name === "which_appliances_can_you_repair" && checkList.size === 0)
     ){
       input.classList.add(...["invalid","error"]);
       errorblock.style.display = "block";
@@ -145,6 +161,33 @@ const TechForm = (props) => {
         input.classList.add(...["invalid","error"]);
         errorblock.style.display = "block";
       })
+    } else {
+
+      let body = {};
+      const { service_id } =  props.match.params;
+      body = {
+        "first_name": firstName,
+        "last_name": lastName,
+        "email": email,
+        "phone": phone,
+        "experience": technicianExperience,
+        "transportation": doYouHaveReliableTransportation,
+        "city": confirmYourClosestCityArea,
+        "from_when_you_join": predictedDaysToFirstJob,
+        "how_you_know_us": howDidYouHearAboutPuls,
+        "job_type": howMuchWorkDoYouWant,
+        "service_id": service_id,
+        "appliance_id": whichAppliancesCanYouRepair
+    }
+
+      axios.post('/api/technician', body).then(res => {
+        if(res.status === 200){
+          alert(res.data.response.message);
+        }     
+      }).catch(res => {
+        console.log('service-appliances api catch:', res);
+        alert("Failed");
+      });
     }
   }
 
@@ -334,6 +377,7 @@ const TechForm = (props) => {
                                   >
                                     <div id="hs_form_target_dnd_area-module-5">
                                       <form
+                                        id="techform"
                                         noValidate
                                         acceptCharset="UTF-8"
                                         onSubmit={e=>_onSubmit(e)}
@@ -685,8 +729,6 @@ const TechForm = (props) => {
                                                 data-reactid=".hbspt-forms-0.1:$3.1:$technician_experience.$technician_experience.0"
                                                 defaultValue={"Please Select"}
                                                 onChange={(e)=>{_inputHandler(e)}}
-                                                defaultValue={"Please Select"}
-                                                onChange={(e)=>{_inputHandler(e)}}
                                               >
                                                 <option
                                                   value="Please Select"
@@ -803,7 +845,8 @@ const TechForm = (props) => {
                                                             className="hs-input "
                                                             type="checkbox"
                                                             name="which_appliances_can_you_repair"
-                                                            defaultValue={appliance.name}
+                                                            defaultValue={appliance.id}
+                                                            onChange={(e) => {_inputHandler(e)}}
                                                             aria-labelledby="label-which_appliances_can_you_repair-64c04ec9-ce09-411e-9621-8f4435ab863f_7132"
                                                             data-reactid=".hbspt-forms-0.1:$4.1:$which_appliances_can_you_repair.$which_appliances_can_you_repair.0.$Freezer.0.0"
                                                           />
@@ -817,6 +860,22 @@ const TechForm = (props) => {
                                                   :
                                                   ""
                                                 }                                                                                       
+                                              </ul>
+                                              <ul
+                                                name={"error-which_appliances_can_you_repair"}
+                                                className="no-list hs-error-msgs inputs-list"
+                                                style={{ display: "none" }}
+                                                role="alert"
+                                                data-reactid=".hbspt-forms-0.1:$0.1:$firstname.3"
+                                              >
+                                                <li data-reactid=".hbspt-forms-0.1:$0.1:$firstname.3.$0">
+                                                  <label
+                                                    className="hs-error-msg"
+                                                    data-reactid=".hbspt-forms-0.1:$0.1:$firstname.3.$0.0"
+                                                  >
+                                                    Please select an option.
+                                                  </label>
+                                                </li>
                                               </ul>
                                             </div>
                                           </div>
@@ -1238,7 +1297,7 @@ const TechForm = (props) => {
                                                 name="confirm_your_closest_city_area"
                                                 data-reactid=".hbspt-forms-0.1:$8.1:$confirm_your_closest_city_area.$confirm_your_closest_city_area.0"
                                                 defaultValue={"Please Select"}
-                                                onChange={(e)=>{_confirmYourClosestCityArea(e.target.value)}}
+                                                onChange={(e)=>{_inputHandler(e)}}
                                               >
                                                 <option
                                                   value="Please Select"
@@ -1622,12 +1681,12 @@ const TechForm = (props) => {
                                                 license to perform services in
                                                 your state and county?
                                               </span>
-                                              <span
+                                              {/* <span
                                                 className="hs-form-required"
                                                 data-reactid=".hbspt-forms-0.1:$10.1:$do_you_have_a_valid_business_license_to_perform_services_in_your_state_and_county_.0.1"
                                               >
                                                 *
-                                              </span>
+                                              </span> */}
                                             </label>
                                             <legend
                                               className="hs-field-desc"

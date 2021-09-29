@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../../styles/screens/servicesScreens/smartHomeInstallation/index.scss';
 
 import { Collapse } from 'antd';
@@ -12,8 +12,16 @@ import ServicesHoverCardsGrid from './../../../components/globalComponents/Servi
 
 const { Panel } = Collapse;
 
-const SmartHomeInstallationScreen = () => {
+const SmartHomeInstallationScreen = ({ services }) => {
   ScrollToTop();
+
+  const [service, _service] = useState({});
+  useEffect(() => {
+    let found = services.find((service)=> {  
+      return service.slug === "smart-home-installation"
+    })
+    _service(found)
+  }, [services])
 
   const backgroundPulsImageOptions = [
     `Installation and set-up*`,
@@ -110,8 +118,8 @@ const SmartHomeInstallationScreen = () => {
         backgroundImage='https://d7gh5vrfihrl.cloudfront.net/website/backgrounds/new-smart-home-desktop.png'
         title='Smart home, installation & setup'
         description='The convenient and stress-free, solution to upgrade your home'
-        btnTitle='Schedule now'
-        btnLink='/'
+        btnTitle={services.length > 0? 'Schedule Now' : undefined} 
+        btnLink={services.length > 0?'/book-a-service/service/tv-mounting/'+service.id: undefined}
       />
       <div className='container-75'>
         <div className='needs-to-install'>

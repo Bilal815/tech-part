@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../../styles/screens/servicesScreens/handymanServices/index.scss';
 import { ScrollToTop } from './../../../utilities/index';
 import EasyToBook from './../../../components/globalComponents/EasyToBook';
 import BulletPoints from '../../../components/globalComponents/BulletPoints';
 
-const HandymanServicesScreen = () => {
+const HandymanServicesScreen = ({ services }) => {
   ScrollToTop();
+
+  const [service, _service] = useState({});
+  useEffect(() => {
+    let found = services.find((service)=> {  
+      return service.slug === "handyman-services"
+    })
+    _service(found)
+  }, [services])
+
   const bulletPoints = [
     {
       image: `https://d7gh5vrfihrl.cloudfront.net/website/bullets/plant-and-calendar.svg`,
@@ -30,8 +39,8 @@ const HandymanServicesScreen = () => {
         <BulletPoints bulletPoints={bulletPoints} />
       </div>
       <EasyToBook
-        btnLink=''
-        btnTitle='Book now'
+        btnTitle={services.length > 0? 'Book now' : undefined} 
+        btnLink={services.length > 0?'/book-a-service/service/handyman-services/'+service.id: undefined}
         title='Easy to book'
         description={` Easily customize and book any Puls service online and receive a quote in seconds./
                 Just tell us when and where to come and we'll do the rest, leaving you more time to

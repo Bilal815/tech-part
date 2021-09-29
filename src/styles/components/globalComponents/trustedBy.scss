@@ -1,6 +1,9 @@
 @import '../../../scss/variables.scss';
 @import '../../../scss/fontFamily.scss';
 
+.featured-in-section img{
+    margin: 1em 0;
+}
 .trustedBy {
   min-width: 1200px;
   width: 100%;
@@ -22,5 +25,13 @@
       margin: 0 30px 30px 0;
       color: $light-gray;
     }
+  }
+}
+
+
+@media screen and (max-width:700px){
+  .featured-wrapper .featured-content-wrapper img {
+    max-width: 65%;
+    width: auto;
   }
 }

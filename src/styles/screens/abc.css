@@ -678,7 +678,7 @@ a:hover { color:#000; }
 input , button , textarea, select , input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] { outline:none; margin-top: 6px; border:1px solid #ccc; background:#fff; height:50px; padding:0 20px; font-family:'Montserrat', sans-serif; font-size:16px; width:100%; }
 input[type=checkbox] , input[type=radio] { width:auto; height:auto; } 
 textarea { padding:15px 20px; height:100px; }
-input[type=submit] , button { width:auto; border:none; cursor:pointer; background:url("") no-repeat left top #01adf1; font-size:17px; line-height:24px; font-weight:700; padding:8px 20px; color:#fff; display:inline-block; transition:all .6s ease; -webkit-transition:all .6s ease; -moz-transition:all .6s ease; }
+input[type=submit] , button { width:auto; border:none; cursor:pointer; background: no-repeat left top #01adf1; font-size:17px; line-height:24px; font-weight:700; padding:8px 20px; color:#fff; display:inline-block; transition:all .6s ease; -webkit-transition:all .6s ease; -moz-transition:all .6s ease; }
 input[type=submit]:hover , button:hover { background-color:#00658b; }
 
 ul.hs-error-msgs { margin:0; padding:0; list-style:none; float:left; width:100%; }
@@ -1271,7 +1271,7 @@ spna.tname-repor { color: #000; }
 .map-address h2 { font-family: Circular-Pro-Bold; font-size: 36px; line-height: 42px; }
 .starts-p img { max-width: 135px; }
 .starts-p { display: flex; flex-direction: column; padding: 14px 0; }
-.starts-p span { color:; }
+
 .starts-p span { color: #017aff; padding-top: 10px; }
 .time-map h6 { font-size: 16px; line-height: 24px; }
 .map-phone { font-family: Circular-Pro-Bold; color: #283B4F; }

@@ -1,6 +1,34 @@
 @import '../../../../scss/variables.scss';
 @import '../../../../scss/fontFamily.scss';
 
+
+.defaultHeader .container-75{
+  margin: 0 10px;
+}
+
+
+@media only screen and (max-width:360px){
+.defaultHeader .container-75{
+  width: unset;
+  max-width: unset;
+  margin: 0;
+}
+
+}
+
+.collapse.show{
+  background-color: rgba(134, 134, 134, 0.65);  
+}
+.collapse.show a{
+  color:white !important;
+}
+.navbar-toggler{
+  margin: 0 10px;
+  margin-top: 0px;
+  font-size: 17px;
+  padding: 9px;
+  margin-top: -12px;
+}
 .defaultHeader {
   .hisenseScreenHeader {
     display: flex;
@@ -25,6 +53,7 @@
   div.container-75 {
     display: flex !important;
     align-items: center !important;
+    flex-wrap: wrap !important;
   }
   .navbar-collapse {
     padding: 0 0 15px 50px;
