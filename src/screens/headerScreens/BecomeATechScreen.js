@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import '../../styles/screens/headerScreens/becomeATechScreen.scss';
 
 import { Col, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import ReactPlayer from 'react-player';
 
@@ -167,9 +166,9 @@ const BecomeATechScreen = () => {
           <Row>
             {applyTodayOptions &&
               applyTodayOptions.map((item, i) => (
-                <>
+                <React.Fragment key={i}>
                   {item.url && (
-                    <Col key={i} sm={12} md={6} lg={3} className='center'>
+                    <Col  sm={12} md={6} lg={3} className='center'>
                       <div className='inner-section'>
                         <a
                           className='center'
@@ -203,7 +202,7 @@ const BecomeATechScreen = () => {
                       </div>
                     </Col>
                   )}
-                </>
+                </React.Fragment>
               ))}
           </Row>
         </div>
@@ -372,7 +371,7 @@ const BecomeATechScreen = () => {
             <Row>
               {joinUsOptions &&
                 joinUsOptions.map((item, i) => (
-                  <Col sm={12} md={6} lg={6}>
+                  <Col key={i} sm={12} md={6} lg={6}>
                     <div className='aic mb-3'>
                       <img
                         className='mr-1'

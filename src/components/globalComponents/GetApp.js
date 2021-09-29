@@ -7,8 +7,9 @@ import IosAppImage from '../../assets/images/ios.png';
 
 const GetApp = () => {
   return (
-    <div className='df getApp'>
-      <div className='content-wrapper'>
+    <div className='container'>
+    <div className='df getApp row'>
+      <div className='content-wrapper col-md-6 col-sm-12'>
         <div>
           <h2>Get the Puls App</h2>
           <p>
@@ -26,9 +27,10 @@ const GetApp = () => {
           </a>
         </div>
       </div>
-      <div className='image-wrapper'>
+      <div className='image-wrapper col-md-6 col-sm-12'>
         <img src={MobileAppImage} alt='image' />
       </div>
+    </div>
     </div>
   );
 };

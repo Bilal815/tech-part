@@ -102,14 +102,14 @@ const DefaultHeader = ({ location: { pathname }, services }) => {
               <Nav.Link style={whiteColorStyle} as={Link} to='/pricing'>
                 Pricing
               </Nav.Link>
-              <a
+              {/* <a
                 style={whiteColorStyle}
                 className='nav-link'
                 href='https://blog.puls.com/'
                 target='_blank'
               >
                 Info Hub
-              </a>
+              </a> */}
               <Nav.Link style={whiteColorStyle} as={Link} to='/members'>
                 Members
               </Nav.Link>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../../styles/screens/servicesScreens/homeAppliances/index.scss';
 import { ScrollToTop } from './../../../utilities/index';
 import MainLandingSection from './../../../components/globalComponents/MainLandingSection';
@@ -10,8 +10,17 @@ import TopTechnicianYelpCardsSlider from './../../../components/globalComponents
 import ImageAndGreenCheckPoints from './../../../components/globalComponents/ImageAndGreenCheckPoints';
 import CitiesWherePulsAvailable from '../../../components/globalComponents/CitiesWherePulsAvailable';
 
-const HomeAppliancesScreen = () => {
+const HomeAppliancesScreen = ({ services }) => {
   ScrollToTop();
+
+  const [service, _service] = useState({});
+  useEffect(() => {
+    let found = services.find((service)=> {  
+      return service.slug === "home-appliances"
+    })
+    _service(found)
+  }, [services])
+
   const cardsInfo = [
     {
       image: `https://d7gh5vrfihrl.cloudfront.net/website/issues/appliances/dishwaher_icon.svg`,
@@ -61,8 +70,8 @@ const HomeAppliancesScreen = () => {
         backgroundImage='https://d7gh5vrfihrl.cloudfront.net/website/banners/appliances-desktop.jpg'
         title='Appliance repair, made easy'
         description='The best technicians in your, neighborhood. Guaranteed.'
-        btnTitle='Fix my appliance'
-        btnLink='/'
+        btnTitle={services.length > 0? 'Fix my appliance' : undefined} 
+        btnLink={services.length > 0?'/book-a-service/service/home-appliances/'+service.id: undefined}
       >
         <div className='images-container'>
           <a
@@ -99,8 +108,8 @@ const HomeAppliancesScreen = () => {
           imageUrl='https://d7gh5vrfihrl.cloudfront.net/website/get-started/appliances.jpg'
           title='Ready to get, started?'
           description={`We're only a few clicks or, a phone call away.`}
-          btnTitle='Schedule now'
-          btnLink='/'
+          btnTitle={services.length > 0? 'Schedule Now' : undefined} 
+          btnLink={services.length > 0?'/book-a-service/service/home-appliances/'+service.id: undefined}
         />
       </div>
     </div>

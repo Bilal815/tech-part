@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../../styles/screens/servicesScreens/disinfectionServices/index.scss';
 import { ScrollToTop } from './../../../utilities/index';
 import MainLandingSection from './../../../components/globalComponents/MainLandingSection';
@@ -7,8 +7,17 @@ import ImageAndGreenCheckPoints from './../../../components/globalComponents/Ima
 import GetStarted1 from './../../../components/globalComponents/GetStarted1';
 import EasyToBook from './../../../components/globalComponents/EasyToBook';
 
-const DisinfectionServicesScreen = () => {
+const DisinfectionServicesScreen = ({ services }) => {
   ScrollToTop();
+
+  const [service, _service] = useState({});
+  useEffect(() => {
+    let found = services.find((service)=> {  
+      return service.slug === "disinfection-services"
+    })
+    _service(found)
+  }, [services])
+
   const bulletPoints = [
     {
       image: `https://d7gh5vrfihrl.cloudfront.net/website/bullets/plant-and-calendar.svg`,
@@ -49,16 +58,16 @@ const DisinfectionServicesScreen = () => {
         backgroundImage='https://d7gh5vrfihrl.cloudfront.net/website/disinfection/disinfection-desktop-new.jpg'
         title='Household & Commercial, Sanitization'
         description='Minimize viruses and bacteria, by surface disinfection'
-        btnTitle='Book now'
-        btnLink='/'
+        btnTitle={services.length > 0? 'Book now' : undefined} 
+        btnLink={services.length > 0?'/book-a-service/service/disinfection-services/'+service.id: undefined}
       />
       <div className='container-75'>
         <BulletPoints bulletPoints={bulletPoints} />
         <ImageAndGreenCheckPoints sectionInfo={sectionInfo} />
       </div>
       <EasyToBook
-        btnLink=''
-        btnTitle='Book now'
+        btnTitle={services.length > 0? 'Book now' : undefined} 
+        btnLink={services.length > 0?'/book-a-service/service/disinfection-services/'+service.id: undefined}
         title='Easy to book'
         description={` Easily customize and book any Puls service online and receive a quote in seconds./
                 Just tell us when and where to come and we'll do the rest, leaving you more time to

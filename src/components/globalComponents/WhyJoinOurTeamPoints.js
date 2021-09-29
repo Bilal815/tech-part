@@ -9,7 +9,7 @@ const WhyJoinOurTeamPoints = ({ points }) => {
       <Row>
         {points &&
           points.map((p, i) => (
-            <Col sm={12} md={6} lg={4}>
+            <Col key={i} sm={12} md={6} lg={4}>
               <div className='blue-print-bg-wrapper'>
                 <div className='title-with-bg-img'>
                   <img

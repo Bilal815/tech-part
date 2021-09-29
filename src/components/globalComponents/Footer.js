@@ -36,7 +36,7 @@ const Footer = ({ location: { pathname } }) => {
         pathname === '/puls-for-business' ? (
         ''
       ) : (
-        <div className='footer container-75'>
+        <div className='footer container-75 container-fluid'>
           <Row>
             <Col md={2}>
               <h6>Company</h6>

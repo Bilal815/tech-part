@@ -2,7 +2,6 @@ import React from 'react';
 import '../../styles/components/globalComponents/beatPulsBlodCardsSlider.scss';
 
 import { Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 const BeatPulsBlogCardsSlider = () => {
   const beatPulsBlogOptions = [

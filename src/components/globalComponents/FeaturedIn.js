@@ -10,16 +10,34 @@ import VenturebeatLogo from '../../assets/icons/brands-logo/venturebean.svg';
 
 const FeaturedIn = () => {
   return (
-    <div className='featuredIn'>
-      <h2 className='container-75 heading-3'>Featured In</h2>
-      <div className='images-wrapper'>
-        <div className='container-75'>
-          <img src={TwsjLogo} alt='TwsjLogo' id='TwsjLogo' />
-          <img src={CnbcLogo} alt='CnbcLogo' id='CnbcLogo' />
-          <img src={TcLogo} alt='TcLogo' id='TcLogo' />
-          <img src={FortuneLogo} alt='FortuneLogo' id='FortuneLogo' />
-          <img src={TnytLogo} alt='TnytLogo' id='TnytLogo' />
-          <img src={VenturebeatLogo} alt='VenturebeatLogo' id='VenturebeatLogo' />
+
+    <div className="container-75 featured-in-section">
+      <div className="container">
+        <div className="row">
+          <div className='col-md-12 col-12'>
+            <h2 className='heading-3'>Featured In</h2>
+            <div className='images-wrapper row'>
+              <div className='col-md-3 col-sm-12'>
+                <img src={TwsjLogo} alt='TwsjLogo' id='TwsjLogo' />
+              </div>
+              <div className='col-md-3 col-sm-12'>
+                <img src={CnbcLogo} alt='CnbcLogo' id='CnbcLogo' />
+              </div>
+              <div className='col-md-3 col-sm-12'>
+                <img src={TcLogo} alt='TcLogo' id='TcLogo' />
+              </div>
+              <div className='col-md-3 col-sm-12'>
+                <img src={FortuneLogo} alt='FortuneLogo' id='FortuneLogo' />
+              </div>
+              <div className='col-md-3 col-sm-12'>
+                <img src={TnytLogo} alt='TnytLogo' id='TnytLogo' />
+              </div>
+              <div className='col-md-3 col-sm-12'>
+                <img src={VenturebeatLogo} alt='VenturebeatLogo' id='VenturebeatLogo' />
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>

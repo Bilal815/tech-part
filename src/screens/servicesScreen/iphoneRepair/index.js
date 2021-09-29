@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../../styles/screens/servicesScreens/iphoneRepair/index.scss';
 import { ScrollToTop } from './../../../utilities/index';
 import MainLandingSection from './../../../components/globalComponents/MainLandingSection';
@@ -12,8 +12,16 @@ import OnHoverZoomLearnMoreCardSection from '../../../components/globalComponent
 import OnHoverZoomReadMoreCardSection from './../../../components/globalComponents/OnHoverZoomReadMoreCardSection';
 import SupportedDevicesTable from '../../../components/globalComponents/SupportedDevicesTable';
 
-const IphoneRepairScreen = () => {
+const IphoneRepairScreen = ({ services }) => {
   ScrollToTop();
+
+  const [service, _service] = useState({});
+  useEffect(() => {
+    let found = services.find((service)=> {  
+      return service.slug === "phone-repair"
+    })
+    _service(found)
+  }, [services])
 
   const howItWorksPoints = [
     {
@@ -86,8 +94,8 @@ const IphoneRepairScreen = () => {
         backgroundImage='https://d7gh5vrfihrl.cloudfront.net/website/banners/city-banner.jpg'
         title='Trusted phone repairs at, your location'
         description='Phone repair made simple'
-        btnTitle='Repair my Device'
-        btnLink='/'
+        btnTitle={services.length > 0? 'Repair my Device' : undefined} 
+        btnLink={services.length > 0?'/book-a-service/service/phone-repair/'+service.id: undefined}
       >
         <div className='images-container'>
           <img
@@ -157,8 +165,8 @@ const IphoneRepairScreen = () => {
       <GetStarted2
         bgImage='https://d7gh5vrfihrl.cloudfront.net/website/backgrounds/background-getstarted-old.jpg'
         title='Ready to get started?'
-        btnTitle='Book a Service'
-        btnUrl=''
+        btnTitle={services.length > 0? 'Book a Service' : undefined} 
+        btnUrl={services.length > 0?'/book-a-service/service/phone-repair/'+service.id: undefined}
       />
     </div>
   );

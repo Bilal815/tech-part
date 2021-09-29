@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../../styles/screens/servicesScreens/garageDoorRepair/index.scss';
 import { ScrollToTop } from './../../../utilities/index';
 
@@ -14,9 +14,19 @@ import OurLocations from './../../../components/globalComponents/OurLocations';
 import { Row, Col } from 'react-bootstrap';
 import BulletPoints from '../../../components/globalComponents/BulletPoints';
 import ServicesHoverCardsGrid from './../../../components/globalComponents/ServicesHoverCardsGrid';
-
-const GarageDoorRepairScreen = () => {
+import {withRouter} from 'react-router-dom';
+const GarageDoorRepairScreen = (props) => {
+  const { services } = props;
   // ScrollToTop();
+
+  const [service, _service] = useState({});
+  useEffect(() => {
+    let found = services.find((service)=> {  
+      return service.slug === "garage-door-repair"
+    })
+    _service(found)
+  }, [services])
+
   const locations = [
     'Atlanta, GA',
     'Austin, TX',
@@ -157,9 +167,11 @@ const GarageDoorRepairScreen = () => {
       <MainLandingSection
         backgroundImage='https://d7gh5vrfihrl.cloudfront.net/website/banners/garage-banner.jpg'
         title='Garage door, repair made simple'
-        description='Garage door, repair made simple'
-        btnTitle='Schedule your Repair'
-        btnLink='/'
+        description='Garage door, repair made simple'  
+        // newRoutebtn={true}     
+        // newRoutebtnRoute={ ()=>{ props.history.push("/zip-code", { servicePrice: 5 })}}
+        btnTitle={services.length > 0? 'Schedule your Repair' : undefined}     
+        btnLink={services.length > 0?'/book-a-service/service/garage-door-repair/'+service.id: undefined}
       >
         <div className='images-container'>
           <img
@@ -201,12 +213,13 @@ const GarageDoorRepairScreen = () => {
           imageUrl='https://d7gh5vrfihrl.cloudfront.net/website/get-started/garage.jpg'
           title='Ready to get, started?'
           description='We can be there in as, little as an hour.'
-          btnTitle='Fix my garage door'
-          btnLink='/'
+          btnTitle={services.length > 0? 'Fix my garage door' : undefined} 
+          btnLink={services.length > 0?'/book-a-service/service/garage-door-repair/'+service.id: undefined}
         />
       </div>
     </div>
   );
 };
 
-export default GarageDoorRepairScreen;
+export default withRouter(GarageDoorRepairScreen)
+// export default GarageDoorRepairScreen;
