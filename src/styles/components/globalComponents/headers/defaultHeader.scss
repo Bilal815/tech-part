@@ -6,14 +6,25 @@
   margin: 0 10px;
 }
 
-
-@media only screen and (max-width:360px){
-.defaultHeader .container-75{
-  width: unset;
-  max-width: unset;
-  margin: 0;
+.show-book-service-link{
+ display: none;   
 }
 
+
+@media only screen and (max-width:360px){
+  .defaultHeader .container-75{
+    width: unset;
+    max-width: unset;
+    margin: 0;
+  }
+
+  .hide-book-a-service{
+    display: none;
+  }
+
+  .show-book-service-link{
+    display: block;
+  }
 }
 
 .collapse.show{
@@ -50,6 +61,7 @@
   transition: 0.8s;
   width: 100%;
   z-index: 9999;
+  justify-content: space-around;
   div.container-75 {
     display: flex !important;
     align-items: center !important;
@@ -82,3 +94,21 @@
   background-color: #ffffff;
   box-shadow: 0 2px 4px 0 #ded5d5, 0 0 2px 0 #eff1e9;
 }
+
+@media only screen and (max-width:1024px){
+  .defaultHeader .navbar-collapse {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .hide-book-a-service{
+    display: none;
+  }
+
+  .show-book-service-link{
+    display: block;
+  }
+}
+
+

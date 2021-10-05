@@ -6,6 +6,8 @@ import { Navbar, Nav } from 'react-bootstrap';
 
 import ServiceDropDown from '../DropDowns/ServicesDropdown';
 import TechPartLogo from '../../../assets/tech-app-logo.png';
+import { LinkButton } from '../../../styledComponents';
+
 
 const DefaultHeader = ({ location: { pathname }, services }) => {
   const [isScrolled, setScroll] = useState(false);
@@ -119,10 +121,19 @@ const DefaultHeader = ({ location: { pathname }, services }) => {
               <Nav.Link style={whiteColorStyle} as={Link} to='/property-manager'>
                 Property Managers
               </Nav.Link>
+              <Nav.Link className="show-book-service-link" style={whiteColorStyle} as={Link} to='/book-a-service'>
+                Book a Service
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         )}
       </div>
+      <LinkButton
+        link={"/book-a-service"}
+        name={"Book a Service"}
+        // className={`${number ? 'link-button-shadow' : 'link-button'}`}
+        className={'link-button hide-book-a-service'}
+      />
     </Navbar>
   );
 };
