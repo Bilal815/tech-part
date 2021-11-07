@@ -46,6 +46,9 @@ import IphoneRepair from './screens/applicationScreens/IphoneRepair';
 import SmartHomeService from './screens/applicationScreens/SmartHomeService';
 import Plumbing from './screens/applicationScreens/Plumbing';
 
+// Questions Screen Import
+import TvQuestions from './screens/questionScreens/TvQuestions';
+
 // Cities Screen Imports
 import ArizonaScreen from './screens/citiesScreens/ArizonaScreen';
 import AtlantaScreen from './screens/citiesScreens/AtlantaScreen';
@@ -186,6 +189,15 @@ const App = () => {
                   <Route exact path='/book-a-service/service/smart-home-installation/:service_id' component={SmartHomeService} />
                   <Route exact path='/book-a-service/service/plumbing-services/:service_id' component={Plumbing} />
                   <Route exact path='/book-a-service/service/garage-door-repair/:service_id' component={GarageDoorService} />
+
+                  <Route exact path='/book-a-service/service/tv-mounting/:service_id/:question' component={TvQuestions} />
+                  <Route exact path='/book-a-service/service/home-appliances/:service_id/:question' component={TvQuestions} />
+                  <Route exact path='/book-a-service/service/handyman-services/:service_id/:question' component={TvQuestions} />
+                  <Route exact path='/book-a-service/service/disinfection-services/:service_id/:question' component={TvQuestions} />
+                  <Route exact path='/book-a-service/service/phone-repair/:service_id/:question' component={TvQuestions} />
+                  <Route exact path='/book-a-service/service/smart-home-installation/:service_id/:question' component={TvQuestions} />
+                  <Route exact path='/book-a-service/service/plumbing-services/:service_id/:question' component={TvQuestions} />
+                  <Route exact path='/book-a-service/service/garage-door-repair/:service_id/:question' component={TvQuestions} />
                 {/* </>
               )
             })

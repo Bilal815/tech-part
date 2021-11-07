@@ -48,7 +48,7 @@ const HandymanService = (props) => {
                   <div className="single-answer-component-wrapper">
                     <div className="fade-on-mount normal-elemnt-active">
                       <button className="answer-content"
-                        onClick={e => props.history.push("/zip-code", { servicePrice: service.regular_price })}
+                        onClick={e => props.history.push("/zip-code", { servicePrice: service.regular_price, service_id: service_id, slug: "handyman-services" })}
                       >
                         <label> {service.name} </label>
                       </button>
