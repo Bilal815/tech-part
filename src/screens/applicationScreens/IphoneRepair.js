@@ -43,7 +43,7 @@ const IphoneRepair = (props) => {
                   <div className="single-answer-component-wrapper">
                     <div className="fade-on-mount normal-elemnt-active">
                       <button className="answer-content"
-                        onClick={e => props.history.push("/zip-code", { servicePrice: model.regular_price })}
+                        onClick={e => props.history.push("/zip-code", { servicePrice: model.regular_price, service_id: service_id, slug: "phone-repair" })}
                       >
                         <label> {model.name} </label>
                       </button>

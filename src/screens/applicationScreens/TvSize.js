@@ -41,7 +41,7 @@ const TvSize = (props) => {
                     <div className="single-answer-component-wrapper">
                       <div className="fade-on-mount normal-elemnt-active">
                         <button className="answer-content" 
-                          onClick={e=>props.history.push("/zip-code", { servicePrice: appliance.regular_price })}
+                          onClick={e=>props.history.push("/zip-code", { servicePrice: appliance.regular_price, service_id: service_id, slug: "tv-mounting" })}
                         >
                           <label> {appliance.name} </label>
                         </button>
