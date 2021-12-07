@@ -23,7 +23,7 @@ import { Link, withRouter } from 'react-router-dom';
 const Footer = ({ location: { pathname } }) => {
   console.log('pathname : ', pathname);
   const [showHide, setShowHide] = useState(false);
-
+  const [email, setEmail] = useState('');
   return (
     <>
       {
@@ -104,9 +104,9 @@ const Footer = ({ location: { pathname } }) => {
                     Thank you for subscribing! Be on the lookout for a welcome email from us soon.
                   </p>
                 ) : (
-                  <div className='mt-3 df '>
-                    <input type='text' placeholder='Enter email*' />
-                    <Button onClick={() => setShowHide(!showHide)}>Subscribe</Button>
+                  <div className='mt-3 df flex-wrap'>
+                    <input type='text' placeholder='Enter email*' style={{margin:0}}/>
+                    <Button style={{padding:'2px 6px', fontWeight:'normal', marginLeft:'auto'}} onClick={() => setShowHide(!showHide)}>Subscribe</Button>
                   </div>
                 )}
               </div>
@@ -114,12 +114,12 @@ const Footer = ({ location: { pathname } }) => {
                 <ul className='df'>
                   <li>
                     <a href='https://www.facebook.com/pulsdotcom/' target='_blank' rel="noreferrer">
-                      <img src={facebookIcon} alt='facebookIcon' />
+                      <img style={{background:'white'}} src={facebookIcon} alt='facebookIcon' />
                     </a>
                   </li>
                   <li>
                     <a href='https://twitter.com/pulscom' target='_blank' rel="noreferrer">
-                      <img src={twitterIcon} alt='twitterIcon' />
+                      <img style={{background:'white'}} src={twitterIcon} alt='twitterIcon' />
                     </a>
                   </li>
                   <li>
@@ -127,7 +127,7 @@ const Footer = ({ location: { pathname } }) => {
                       href='https://www.youtube.com/channel/UCpXjcgaFLHsfrYSSFoi0vLw'
                       target='_blank' rel="noreferrer"
                     >
-                      <img src={youtubeIcon} alt='youtubeIcon' />
+                      <img style={{background:'white'}} src={youtubeIcon} alt='youtubeIcon' />
                     </a>
                   </li>
                   <li>
@@ -135,7 +135,7 @@ const Footer = ({ location: { pathname } }) => {
                       href='https://www.google.com/maps/place/Puls+Appliance+Repair+Dallas/@32.8056347,-97.4869899,9z/data=!3m1!4b1!4m5!3m4!1s0x0:0x323b911c1fe315b!8m2!3d32.806883!4d-96.9265378?hl=en'
                       target='_blank' rel="noreferrer"
                     >
-                      <img src={googleIcon} alt='googleIcon' />
+                      <img style={{background:'white'}} src={googleIcon} alt='googleIcon' />
                     </a>
                   </li>
                   <li>

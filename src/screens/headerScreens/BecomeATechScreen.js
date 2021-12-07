@@ -133,13 +133,13 @@ const BecomeATechScreen = () => {
               </div>
             </Col>
             <Col sm={12} md={6} lg={6}>
-              <div className='cotent'>
-                <h1 className='center cc'>
+              <div className='cotent' style={{display:"flex", textAlign:'center'}}>
+                <h1 className=''>
                   <p className='m-0'>Apply today.</p>
                   <p className='m-0'>Start earning tomorrow.</p>
-                </h1>
-                <p className='m-0 center cc'>Click on your area of expertise to get started.</p>
+                </h1>               
               </div>
+              <p style={{textAlign:'center'}}>Click on your area of expertise to get started.</p>
             </Col>
             <Col sm={12} md={6} lg={3}>
               <div className='inner-section'>
@@ -217,7 +217,7 @@ const BecomeATechScreen = () => {
       speed: 500,
       fade: true,
       arrows: false,
-      centerPadding: '60px',
+      centerPadding: '10px',
       className: 'center',
       slidesToShow: 3,
       slidesToScroll: 3,
