@@ -27,12 +27,17 @@
   }
 }
 
-.collapse.show{
-  background-color: rgba(134, 134, 134, 0.65);  
+@media only screen and (max-width: 991px) {
+  .collapse.show{
+    background-color: rgba(134, 134, 134, 0.65);  
+  }
+  .collapse.show a{
+    color:white !important;
+  }
 }
-.collapse.show a{
-  color:white !important;
-}
+
+
+
 .navbar-toggler{
   margin: 0 10px;
   margin-top: 0px;

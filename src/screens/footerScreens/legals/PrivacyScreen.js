@@ -10,7 +10,7 @@ const PrivacyScreen = () => {
   return (
     <div className='privacyScreen'>
       <ReactHelmetHeader title='Puls | Puls privacy policy' />
-      <h1>Puls privacy policy</h1>
+      <h1 style={{textAlign:'left'}}>Puls privacy policy</h1>
       <p className='firstParagraph'>
         This Privacy Policy sets out Puls policy with respect to information, including in
         particular information which identifies you personally (known as 'personally identifiable
