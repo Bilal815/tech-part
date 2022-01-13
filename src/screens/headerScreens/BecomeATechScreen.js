@@ -248,7 +248,7 @@ const BecomeATechScreen = () => {
     };
     return (
       <Slider {...settings}>
-        <div className='d-flex mb-5'>
+        <div className='d-flex mb-5 technician_review'>
           <TechnicianReviewsCard
             review=' Working with Puls has always been a fun experience - great pay, the ability to make
                 my own schedule, and plenty of opportunities to grow!'
@@ -262,7 +262,7 @@ const BecomeATechScreen = () => {
             image='https://d7gh5vrfihrl.cloudfront.net/website/technicians/malek.jpg'
           />
         </div>
-        <div className='d-flex mb-5'>
+        <div className='d-flex mb-5 technician_review'>
           <TechnicianReviewsCard
             review={`I ran a garage repair business before joining Puls, and I have nothing but the best to say about the support I've received at Puls. I can't praise Puls enough!`}
             name='Tim'
@@ -275,7 +275,7 @@ const BecomeATechScreen = () => {
             image='https://d7gh5vrfihrl.cloudfront.net/website/technicians/malek.jpg'
           />
         </div>
-        <div className='d-flex mb-5'>
+        <div className='d-flex mb-5 technician_review'>
           <TechnicianReviewsCard
             review={`Becoming a Puls technician gave me the ability to manage a busier schedule with higher earnings. The team always has my back.`}
             name='Daniel'

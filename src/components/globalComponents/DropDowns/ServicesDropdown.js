@@ -41,6 +41,7 @@ const ServicesDropDown = (props) => {
             className='link clickable p-3 p-3'
             onClick={() => {
               navigate('/services/tv-mounting');
+              props.onSelect && props.onSelect();
             }}
             onMouseOver={() => {
               setTvMountingSrc(tvMountingHover);
@@ -76,6 +77,7 @@ const ServicesDropDown = (props) => {
             className='link clickable p-3'
             onClick={() => {
               navigate('/services/handyman');
+              props.onSelect && props.onSelect();
             }}
             onMouseOver={() => {
               setHandymanServicesSrc(handymanServicesHover);
@@ -94,6 +96,7 @@ const ServicesDropDown = (props) => {
             className='link clickable p-3'
             onClick={() => {
               navigate('/services/disinfection');
+              props.onSelect && props.onSelect();
             }}
             onMouseOver={() => {
               setDisinfectionSrc(disinfectionHover);
@@ -112,6 +115,7 @@ const ServicesDropDown = (props) => {
             className='link clickable p-3'
             onClick={() => {
               navigate('/services/iphone-repair');
+              props.onSelect && props.onSelect();
             }}
             onMouseOver={() => {
               setPhoneSrc(phoneHover);
@@ -130,6 +134,7 @@ const ServicesDropDown = (props) => {
             className='link clickable p-3'
             onClick={() => {
               navigate('/services/smart-home-installation');
+              props.onSelect && props.onSelect();
             }}
             onMouseOver={() => {
               setSmartHomeSrc(smartHomeHover);
@@ -147,6 +152,7 @@ const ServicesDropDown = (props) => {
             className='link clickable p-3'
             onClick={() => {
               navigate('/services/garage-door-repair');
+              props.onSelect && props.onSelect();
             }}
             onMouseOver={() => {
               setGarageDoorsSrc(garageDoorsHover);
@@ -164,6 +170,7 @@ const ServicesDropDown = (props) => {
             className='link clickable p-3'
             onClick={() => {
               navigate('/services/plumbing');
+              props.onSelect && props.onSelect();
             }}
             onMouseOver={() => {
               setPlumbingSrc(plumbingHover);

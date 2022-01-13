@@ -1,7 +1,7 @@
 @import '../../../../scss/variables.scss';
 .drp {
   position: absolute;
-  top: 70%;
+  top: 40%;
   z-index: 100;
   .list-group-item {
     display: flex;
@@ -13,4 +13,12 @@
 }
 .icon {
   margin-top: -8px;
+}
+
+@media screen and (min-width: 992px) {
+  .drp {
+    position: absolute;
+    top: 75%;
+    z-index: 100;
+  }
 }
