@@ -37,7 +37,7 @@
   .badge {
     position: absolute;
     padding: 7px 10px;
-    top: -10px;
+    top: 10px;
     border-radius: 20px;
   }
   .badge-white-bg {
@@ -48,7 +48,11 @@
     color: white;
     background-color: $blue;
   }
+  .content-wrapper{
+    padding-top: 30px;
+  }
   .title h5 {
+    padding-top: 8px;
     color: $blue;
     font-family: $RobotoMedium;
   }
@@ -135,5 +139,42 @@
         color: $light-gray;
       }
     }
+  }
+}
+
+@media only screen
+and (min-width : 270px)
+and (max-width : 320px) {
+  .pricingCard {
+    padding: 0;
+    width: 190px;
+    margin: 0px !important;
+   
+  }
+}
+@media only screen
+and (min-width : 321px)
+and (max-width : 409px) {
+  .pricingCard {
+    padding: 0;
+    width: 240px;
+    margin: 0px !important;
+   
+  }
+}
+@media only screen
+and (min-width : 410px)
+and (max-width : 500px) {
+  .pricingCard {
+    padding: 0;
+    width: 260px;
+    margin: 0px !important;
+   
+  }
+}
+@media only screen
+and (max-width : 320px) {
+  .price-remove {
+    left: -35px !important;
   }
 }
