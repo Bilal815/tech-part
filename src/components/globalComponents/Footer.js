@@ -23,7 +23,26 @@ import { Link, withRouter } from 'react-router-dom';
 const Footer = ({ location: { pathname } }) => {
   console.log('pathname : ', pathname);
   const [showHide, setShowHide] = useState(false);
-  const [email, setEmail] = useState('');
+
+    //Form Validation
+    const [email, setEmail] = useState("");
+    const onChangeHandler = (fieldName, value)=>{
+      if(fieldName==="email"){
+        setEmail(value);
+      }
+    }
+    const formSubmit = (e)=>{
+      e.preventDefault();
+      if(email.trim() ==""){
+        alert("required field");
+      }
+      else{
+        console.log("Submitted" + email);
+        setEmail("");
+        setShowHide(!showHide);
+      }
+    }
+
   return (
     <>
       {
@@ -31,8 +50,8 @@ const Footer = ({ location: { pathname } }) => {
         pathname === '/application-appliance' ||
         pathname === '/application-handy' ||
         pathname === '/application-phone' ||
-        pathname === '/application-plumbing' || 
-        pathname === '/tcl' || 
+        pathname === '/application-plumbing' ||
+        pathname === '/tcl' ||
         pathname === '/puls-for-business' ? (
         ''
       ) : (
@@ -104,10 +123,18 @@ const Footer = ({ location: { pathname } }) => {
                     Thank you for subscribing! Be on the lookout for a welcome email from us soon.
                   </p>
                 ) : (
-                  <div className='mt-3 df flex-wrap'>
-                    <input type='text' placeholder='Enter email*' style={{margin:0}}/>
-                    <Button style={{padding:'2px 6px', fontWeight:'normal', marginLeft:'auto'}} onClick={() => setShowHide(!showHide)}>Subscribe</Button>
-                  </div>
+                  // <div className='mt-3 df '>
+                  //   <input type='text' placeholder='Enter email*' />
+                  //   <Button onClick={() => setShowHide(!showHide)}>Subscribe</Button>
+                  // </div>
+
+                  <form onSubmit={(e)=>{formSubmit(e)}} className='mt-3 df '>
+                    <input type='email' value={email} placeholder='Enter email*'
+                    onChange={(e)=>{ onChangeHandler("email",e.target.value)}} />
+                    <Button type="submit" >
+                      Subscribe
+                    </Button>
+                  </form>
                 )}
               </div>
               <div className='social-icon-container my-4'>

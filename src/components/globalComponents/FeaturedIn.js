@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/components/globalComponents/featuredIn.scss';
+import { Row, Col } from 'react-bootstrap';
 
 import TwsjLogo from '../../assets/icons/brands-logo/twsj.svg';
 import CnbcLogo from '../../assets/icons/brands-logo/cnbc.svg';
@@ -10,36 +11,42 @@ import VenturebeatLogo from '../../assets/icons/brands-logo/venturebean.svg';
 
 const FeaturedIn = () => {
   return (
-
-    <div className="container-75 featured-in-section">
-      <div className="container">
-        <div className="row">
-          <div className='col-md-12 col-12'>
-            <h2 className='heading-3'>Featured In</h2>
-            <div className='images-wrapper row'>
-              <div className='col-md-3 col-sm-12'>
-                <img src={TwsjLogo} alt='TwsjLogo' id='TwsjLogo' />
-              </div>
-              <div className='col-md-3 col-sm-12'>
-                <img src={CnbcLogo} alt='CnbcLogo' id='CnbcLogo' />
-              </div>
-              <div className='col-md-3 col-sm-12'>
-                <img src={TcLogo} alt='TcLogo' id='TcLogo' />
-              </div>
-              <div className='col-md-3 col-sm-12'>
-                <img src={FortuneLogo} alt='FortuneLogo' id='FortuneLogo' />
-              </div>
-              <div className='col-md-3 col-sm-12'>
-                <img src={TnytLogo} alt='TnytLogo' id='TnytLogo' />
-              </div>
-              <div className='col-md-3 col-sm-12'>
-                <img src={VenturebeatLogo} alt='VenturebeatLogo' id='VenturebeatLogo' />
-              </div>
-
-            </div>
-          </div>
+    <div className='featuredIn'>
+      <h2 className='container-75 heading-3'>Featured In</h2>
+      <div className='container-75'>
+      <Row className='images-wrapper'>
+          <Col sm={6} md={6} lg={3}>
+            <img src={TwsjLogo} alt='TwsjLogo' id='TwsjLogo' style={{width:"230px"}}/>
+          </Col>
+          <Col sm={6} md={6} lg={3}>
+            <img src={CnbcLogo} alt='CnbcLogo' id='CnbcLogo' />
+          </Col>
+          <Col sm={6} md={6} lg={3}>
+            <img src={TcLogo} alt='TcLogo' id='TcLogo' />
+          </Col>
+          <Col sm={6} md={6} lg={3}>
+            <img src={FortuneLogo} alt='FortuneLogo' id='FortuneLogo' />
+          </Col>
+        </Row>
+        <Row className='images-wrapper'>
+          <Col sm={6} md={6} lg={3}>
+            <img src={TnytLogo} alt='TnytLogo' id='TnytLogo' />
+          </Col>
+          <Col sm={6} md={6} lg={3}>
+            <img src={VenturebeatLogo} alt='VenturebeatLogo' id='VenturebeatLogo' />
+          </Col>
+        </Row>
         </div>
-      </div>
+      {/* <div className='images-wrapper'>
+       <div className='container-75'>
+         <img src={TwsjLogo} alt='TwsjLogo' id='TwsjLogo' />
+         <img src={CnbcLogo} alt='CnbcLogo' id='CnbcLogo' />
+         <img src={TcLogo} alt='TcLogo' id='TcLogo' />
+         <img src={FortuneLogo} alt='FortuneLogo' id='FortuneLogo' />
+         <img src={TnytLogo} alt='TnytLogo' id='TnytLogo' />
+         <img src={VenturebeatLogo} alt='VenturebeatLogo' id='VenturebeatLogo' />
+       </div>
+      </div> */}
     </div>
   );
 };

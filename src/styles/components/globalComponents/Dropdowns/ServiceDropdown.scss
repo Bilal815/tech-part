@@ -15,8 +15,10 @@
   margin-top: -8px;
 }
 
-@media only screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
   .drp {
-    top: 37%;
+    position: absolute;
+    top: 35%;
+    z-index: 100;
   }
 }

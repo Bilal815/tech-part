@@ -214,7 +214,7 @@ const PricingContainer = () => {
             </Col>
           ))}
       </Row>
-      <div className='pricing-button-container'>
+      <div className='container-60 center pricing-button-container'>
         <a href='https://puls.com/create-sale/zip-code' target='_blank'>
           Add Puls+ {selectedCardTitle}
         </a>

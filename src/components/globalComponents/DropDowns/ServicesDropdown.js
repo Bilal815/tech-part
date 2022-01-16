@@ -82,6 +82,7 @@ const ServicesDropDown = (props) => {
               className='link clickable p-3'
               onClick={() => {
                 navigate('/services/'+services.slug);
+                props.onSelect && props.onSelect();
               }}
               onMouseOver={() => {
                 ICONS[services.id + ""].setSrc(ICONS[services.id + ""].over);
