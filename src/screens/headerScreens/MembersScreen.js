@@ -124,7 +124,7 @@ const MembersScreen = () => {
           'Extended service guarantee',
         ]}
         btnTitle='View plans'
-        btnLink='/create-sale/zip-code'
+        btnLink='/pricing-plans'
         number='(858) 225-8352'
       />
       <div className='container-75'>
@@ -191,8 +191,8 @@ const MembersScreen = () => {
           <Row className='membership-benefits-points'>
             {membershipBenefitsPoints &&
               membershipBenefitsPoints.map((item, i) => (
-                <Col sm={12} md={6} lg={3}>
-                  <div key={i} className='mb-5'>
+                <Col sm={12} md={6} lg={3} key={i}>
+                  <div className='mb-5'>
                     {item.title && <h6>{item.title}</h6>}
                     {item.description && <p>{item.description}</p>}
                   </div>

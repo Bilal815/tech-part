@@ -1,6 +1,25 @@
 @import '../../../scss/variables.scss';
 @import '../../../scss/fontFamily.scss';
 
+
+.Get-Started-Section{
+  border: 1px solid #dedede;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.Get-Started-Section .text-wrapper{
+  box-sizing: border-box;
+  float: left;
+  padding: 20px 0px 20px 40px;
+
+}
+
+.Get-Started-Section h2{
+  font-size: 32px;
+  font-weight: bold;
+  word-spacing: -7px;
+}
+
 .getStarted1 {
   display: flex;
   // min-width: 1200px;
@@ -40,5 +59,11 @@
       background-position: 50% 21%;
       background-size: auto;
     }
+  }
+}
+
+@media only screen and (max-width:700px){
+  .ITkmt a {
+    padding: 11px 20px;
   }
 }

@@ -16,6 +16,7 @@ const OnHoverZoomReadMoreCardSection = ({ readMoreInfo }) => {
       >
         <img
           className='bg-hover-image'
+          alt="background"
           style={{
             backgroundImage: `url(${bgImage})`,
           }}

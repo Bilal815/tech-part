@@ -17,6 +17,8 @@ const MainLandingSection = ({
   number,
   logos,
   children,
+  newRoutebtn,
+  newRoutebtnRoute,
 }) => {
   const whiteColor = { color: `${color && color === 'white' ? color : '#33393d'}` };
   return (
@@ -65,6 +67,16 @@ const MainLandingSection = ({
               className={`${number ? 'link-button-shadow' : 'link-button'}`}
             />
           )}
+          {newRoutebtn?
+              <button 
+                  onClick={e=>newRoutebtnRoute()}
+                  className={'btn btn-primary link-button-shadow'}
+               > 
+                  Schedule 
+              </button>
+            :
+            ""
+          }
           {children && <div className='children-container'>{children}</div>}
           {number && (
             <a href='tel:+18582258352' className='my-3 number'>

@@ -6,13 +6,19 @@ import { Navbar, Nav } from 'react-bootstrap';
 
 import ServiceDropDown from '../DropDowns/ServicesDropdown';
 import TechPartLogo from '../../../assets/tech-app-logo.png';
+import { LinkButton } from '../../../styledComponents';
 
-const DefaultHeader = ({ location: { pathname } }) => {
+
+const DefaultHeader = ({ location: { pathname }, services }) => {
   const [isScrolled, setScroll] = useState(false);
   const [show, setShow] = useState(false);
   // let listener = null;
-
   const defaultHeaderNotShow =
+    pathname === '/application-tv' ||
+    pathname === '/application-appliance' ||
+    pathname === '/application-handy' ||
+    pathname === '/application-phone' ||
+    pathname === '/application-plumbing' ||
     pathname === '/cities/az' ||
     pathname === '/cities/az/phoenix' ||
     pathname === '/cities/ca' ||
@@ -93,32 +99,41 @@ const DefaultHeader = ({ location: { pathname } }) => {
             <Nav>
               <span onMouseOver={() => setShow(true)} onMouseLeave={() => setShow(false)}>
                 <Nav.Link style={whiteColorStyle}>Our Services</Nav.Link>
-                <ServiceDropDown show={show} onSelect={() => setShow(false)}/>
+                <ServiceDropDown show={show} services={services} onSelect={() => setShow(false)}/>
               </span>
               <Nav.Link style={whiteColorStyle} as={Link} to='/pricing'>
                 Pricing
               </Nav.Link>
-              <a
+              {/* <a
                 style={whiteColorStyle}
                 className='nav-link'
                 href='https://blog.puls.com/'
                 target='_blank'
               >
                 Info Hub
-              </a>
+              </a> */}
               <Nav.Link style={whiteColorStyle} as={Link} to='/members'>
                 Members
               </Nav.Link>
               <Nav.Link style={whiteColorStyle} as={Link} to='/become-a-tech'>
                 Become a Tech
               </Nav.Link>
-              <Nav.Link style={whiteColorStyle} as={Link} to='/property-manager'>
+              {/* <Nav.Link style={whiteColorStyle} as={Link} to='/property-manager'>
                 Property Managers
+              </Nav.Link> */}
+              <Nav.Link className="show-book-service-link" style={whiteColorStyle} as={Link} to='/book-a-service'>
+                Book a Service
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         )}
       </div>
+      <LinkButton
+        link={"/book-a-service"}
+        name={"Book a Service"}
+        // className={`${number ? 'link-button-shadow' : 'link-button'}`}
+        className={'link-button hide-book-a-service'}
+      />
     </Navbar>
   );
 };

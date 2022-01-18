@@ -12,6 +12,7 @@ const OnHoverZoomLearnMoreCardSection = ({ learnMoreInfo }) => {
         {/* OnHoverZoomLearnMoreCard */}
         <img
           className='bg-hover-image'
+          alt="background"
           style={{
             backgroundImage: `url(${bgImage})`,
           }}

@@ -85,8 +85,8 @@
   }
   .technicians-review-section {
     // position: relative;
-    margin: 60px;
-    width: 90%;
+    margin: 60px 0;
+    /*width: 100%;*/
 
     // slick slider styling start
     .slick-dots {
@@ -129,11 +129,6 @@
   }
 }
 
-@media (max-width: 700px) {
-  .technician_review {
-    display: block !important;
-  }
-  .technicians-review-section {
-    margin: 0 !important;
-  }
+.cc{
+  text-align: center;
 }

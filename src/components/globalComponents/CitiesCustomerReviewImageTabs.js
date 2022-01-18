@@ -26,6 +26,7 @@ const CitiesCustomerReviewImageTabs = ({ data, setCurrentReview }) => {
                 className={
                   active === x.id ? 'tech-img-clicked rounded-circle' : 'tech-img rounded-circle'
                 }
+                alt="tab"
                 src={x.src}
               ></img>
             }

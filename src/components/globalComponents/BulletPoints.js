@@ -32,7 +32,7 @@ const BulletPoints = ({ bulletPoints, heading, color, bgColor }) => {
                     {p.image && (
                       <img
                         src={p.image}
-                        alt='image'
+                        alt="icon"
                         style={{ height: `${color === 'blue' ? '50px' : '80px'}` }}
                       />
                     )}
@@ -40,7 +40,7 @@ const BulletPoints = ({ bulletPoints, heading, color, bgColor }) => {
                 ) : (
                   <img
                     src={p.image}
-                    alt='image'
+                    alt="icon"
                     style={{ height: `${color === 'blue' ? '50px' : '80px'}` }}
                   />
                 )}
@@ -65,7 +65,7 @@ const BulletPoints = ({ bulletPoints, heading, color, bgColor }) => {
                 <img
                   className='gray-arrow'
                   src='https://d7gh5vrfihrl.cloudfront.net/website/triangle.png'
-                  alt='gray-right-angle-image'
+                  alt='gray-right-angle'
                 />
               )}
             </Col>

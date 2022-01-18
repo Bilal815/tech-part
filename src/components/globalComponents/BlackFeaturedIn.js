@@ -14,7 +14,7 @@ const BlackFeaturedIn = () => {
       <div className='container-75'>
         <h3>Featured in</h3>
         <div className='images-wrapper'>
-          {logos && logos.map((logo, i) => <img key={i} src={logo} alt='logo-image' />)}
+          {logos && logos.map((logo, i) => <img key={i} src={logo} alt='logo' />)}
         </div>
       </div>
     </div>

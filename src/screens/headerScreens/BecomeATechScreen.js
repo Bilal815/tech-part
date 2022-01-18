@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../styles/screens/headerScreens/becomeATechScreen.scss';
 
 import { Col, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import ReactPlayer from 'react-player';
 
@@ -15,6 +14,12 @@ import TechnicianReviewsCard from '../../components/globalComponents/TechnicianR
 import Video1 from '../../assets/videos/video1.mp4';
 
 const BecomeATechScreen = () => {
+  
+    useEffect(()=>{
+      // const t = require('../../styles/screens/applicationScreens/become-a-tech.css');      
+    },[])
+
+
   ScrollToTop();
 
   const [isHoveredLeft, setIsHoveredLeft] = useState(false);
@@ -128,13 +133,13 @@ const BecomeATechScreen = () => {
               </div>
             </Col>
             <Col sm={12} md={6} lg={6}>
-              <div className='cotent'>
-                <h1 className='center'>
+              <div className='cotent' style={{display:"flex", textAlign:'center'}}>
+                <h1 className=''>
                   <p className='m-0'>Apply today.</p>
                   <p className='m-0'>Start earning tomorrow.</p>
-                </h1>
-                <p className='m-0 center'>Click on your area of expertise to get started.</p>
+                </h1>               
               </div>
+              <p style={{textAlign:'center'}}>Click on your area of expertise to get started.</p>
             </Col>
             <Col sm={12} md={6} lg={3}>
               <div className='inner-section'>
@@ -161,9 +166,9 @@ const BecomeATechScreen = () => {
           <Row>
             {applyTodayOptions &&
               applyTodayOptions.map((item, i) => (
-                <>
+                <React.Fragment key={i}>
                   {item.url && (
-                    <Col key={i} sm={12} md={6} lg={3} className='center'>
+                    <Col  sm={12} md={6} lg={3} className='center'>
                       <div className='inner-section'>
                         <a
                           className='center'
@@ -197,7 +202,7 @@ const BecomeATechScreen = () => {
                       </div>
                     </Col>
                   )}
-                </>
+                </React.Fragment>
               ))}
           </Row>
         </div>
@@ -211,7 +216,8 @@ const BecomeATechScreen = () => {
       infinite: true,
       speed: 500,
       fade: true,
-      centerPadding: '60px',
+      arrows: false,
+      centerPadding: '10px',
       className: 'center',
       slidesToShow: 3,
       slidesToScroll: 3,
@@ -301,7 +307,7 @@ const BecomeATechScreen = () => {
         title='Do the work you love'
         description='Let us handle the rest. It’s that easy!'
         btnTitle='Apply Now'
-        btnLink='https://lp.puls.com/join-as-a-tech'
+        btnLink='/join-as-a-tech'
       />
       <div className='container-80'>
         <div className='center'>
@@ -365,7 +371,7 @@ const BecomeATechScreen = () => {
             <Row>
               {joinUsOptions &&
                 joinUsOptions.map((item, i) => (
-                  <Col sm={12} md={6} lg={6}>
+                  <Col key={i} sm={12} md={6} lg={6}>
                     <div className='aic mb-3'>
                       <img
                         className='mr-1'
@@ -378,7 +384,7 @@ const BecomeATechScreen = () => {
                 ))}
             </Row>
           </div>
-          <LinkButton link='https://lp.puls.com/join-as-a-tech' name='Apply Now' />
+          <LinkButton link='join-as-a-tech' name='Apply Now' />
         </div>
       </div>
     </div>

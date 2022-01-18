@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../../styles/screens/servicesScreens/plumbingServices/index.scss';
 import { ScrollToTop } from './../../../utilities/index';
 import MainLandingSection from './../../../components/globalComponents/MainLandingSection';
@@ -7,8 +7,17 @@ import ServicesSection from './../../../components/globalComponents/ServicesSect
 import TopTechnicianYelpCardsSlider from './../../../components/globalComponents/TopTechnicianYelpCardsSlider';
 import ImageAndGreenCheckPoints from './../../../components/globalComponents/ImageAndGreenCheckPoints';
 
-const PlumbingServicesScreen = () => {
+const PlumbingServicesScreen = ({ services }) => {
   ScrollToTop();
+
+  const [service, _service] = useState({});
+  useEffect(() => {
+    let found = services.find((service)=> {  
+      return service.slug === "plumbing-services"
+    })
+    _service(found)
+  }, [services])
+  
   const cardsInfo = [
     {
       image: `https://d7gh5vrfihrl.cloudfront.net/website/issues/plumbing/kitchen-black.svg`,
@@ -68,8 +77,8 @@ const PlumbingServicesScreen = () => {
         backgroundImage='https://d7gh5vrfihrl.cloudfront.net/website/banners/plumbing-desktop.jpg'
         title='Plumbing, made simple'
         description='Quality repairs and replacements, done right the first time.'
-        btnTitle='Schedule now'
-        btnLink='/'
+        btnTitle={services.length > 0? 'Schedule Now' : undefined} 
+        btnLink={services.length > 0?'/book-a-service/service/plumbing-services/'+service.id: undefined}
       >
         <div className='images-container'>
           <img
@@ -90,8 +99,8 @@ const PlumbingServicesScreen = () => {
           imageUrl='https://d7gh5vrfihrl.cloudfront.net/website/get-started/plumbing-mobile.jpg'
           title='Ready to get, started?'
           description='We can be there in as, little as an hour.'
-          btnTitle='Schedule now'
-          btnLink='/'
+          btnTitle={services.length > 0? 'Schedule Now' : undefined} 
+          btnLink={services.length > 0?'/book-a-service/service/plumbing-services/'+service.id: undefined}
         />
       </div>
     </div>

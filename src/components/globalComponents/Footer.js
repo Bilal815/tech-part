@@ -45,10 +45,17 @@ const Footer = ({ location: { pathname } }) => {
 
   return (
     <>
-      {pathname === '/tcl' || pathname === '/puls-for-business' ? (
+      {
+        pathname === '/application-tv' ||
+        pathname === '/application-appliance' ||
+        pathname === '/application-handy' ||
+        pathname === '/application-phone' ||
+        pathname === '/application-plumbing' || 
+        pathname === '/tcl' || 
+        pathname === '/puls-for-business' ? (
         ''
       ) : (
-        <div className='footer container-75'>
+        <div className='footer container-75 container-fluid'>
           <Row>
             <Col md={2}>
               <h6>Company</h6>
@@ -56,8 +63,8 @@ const Footer = ({ location: { pathname } }) => {
                 {companyLinkList &&
                   companyLinkList.map((c, i) =>
                     c.label === 'Info Hub' || c.label === 'Media Inquiries' ? (
-                      <li>
-                        <a href={c.link} target='_blank'>
+                      <li key={i}>
+                        <a href={c.link} target='_blank' rel="noreferrer">
                           {c.label && c.label}
                         </a>
                       </li>
@@ -116,15 +123,11 @@ const Footer = ({ location: { pathname } }) => {
                     Thank you for subscribing! Be on the lookout for a welcome email from us soon.
                   </p>
                 ) : (
-                  // <div className='mt-3 df '>
-                  //   <input type='text' placeholder='Enter email*' />
-                  //   <Button onClick={() => setShowHide(!showHide)}>Subscribe</Button>
-                  // </div>
 
-                  <form onSubmit={(e)=>{formSubmit(e)}} className='mt-3 df '>
-                    <input type='email' value={email} placeholder='Enter email*' 
+                  <form onSubmit={(e)=>{formSubmit(e)}} className='mt-3 df flex-wrap'>
+                    <input type='email' value={email} placeholder='Enter email*' style={{margin:0}}
                     onChange={(e)=>{ onChangeHandler("email",e.target.value)}} />
-                    <Button type="submit" >
+                    <Button type="submit" style={{padding:'2px 6px', fontWeight:'normal', marginLeft:'auto'}}>
                       Subscribe
                     </Button>
                   </form>
@@ -133,33 +136,33 @@ const Footer = ({ location: { pathname } }) => {
               <div className='social-icon-container my-4'>
                 <ul className='df'>
                   <li>
-                    <a href='https://www.facebook.com/pulsdotcom/' target='_blank'>
-                      <img src={facebookIcon} alt='facebookIcon' />
+                    <a href='https://www.facebook.com/pulsdotcom/' target='_blank' rel="noreferrer">
+                      <img style={{background:'white'}} src={facebookIcon} alt='facebookIcon' />
                     </a>
                   </li>
                   <li>
-                    <a href='https://twitter.com/pulscom' target='_blank'>
-                      <img src={twitterIcon} alt='twitterIcon' />
+                    <a href='https://twitter.com/pulscom' target='_blank' rel="noreferrer">
+                      <img style={{background:'white'}} src={twitterIcon} alt='twitterIcon' />
                     </a>
                   </li>
                   <li>
                     <a
                       href='https://www.youtube.com/channel/UCpXjcgaFLHsfrYSSFoi0vLw'
-                      target='_blank'
+                      target='_blank' rel="noreferrer"
                     >
-                      <img src={youtubeIcon} alt='youtubeIcon' />
+                      <img style={{background:'white'}} src={youtubeIcon} alt='youtubeIcon' />
                     </a>
                   </li>
                   <li>
                     <a
                       href='https://www.google.com/maps/place/Puls+Appliance+Repair+Dallas/@32.8056347,-97.4869899,9z/data=!3m1!4b1!4m5!3m4!1s0x0:0x323b911c1fe315b!8m2!3d32.806883!4d-96.9265378?hl=en'
-                      target='_blank'
+                      target='_blank' rel="noreferrer"
                     >
-                      <img src={googleIcon} alt='googleIcon' />
+                      <img style={{background:'white'}} src={googleIcon} alt='googleIcon' />
                     </a>
                   </li>
                   <li>
-                    <a href='https://www.instagram.com/pulscom/' target='_blank'>
+                    <a href='https://www.instagram.com/pulscom/' target='_blank' rel="noreferrer">
                       <img src={instagramIcon} alt='instagramIcon' />
                     </a>
                   </li>
@@ -169,12 +172,12 @@ const Footer = ({ location: { pathname } }) => {
             </Col>
           </Row>
           <div className='my-4 download-app-container'>
-            <a href='https://apps.apple.com/us/app/id1530724750' target='_blank' className='mr-3'>
+            <a href='https://apps.apple.com/us/app/id1530724750' target='_blank' rel="noreferrer" className='mr-3'>
               <img src={iosImage} alt='iosImage' />
             </a>
             <a
               href='https://play.google.com/store/apps/details?id=com.puls.consumers'
-              target='_blank'
+              target='_blank' rel="noreferrer"
             >
               <img src={androidImage} alt='androidImage' />
             </a>

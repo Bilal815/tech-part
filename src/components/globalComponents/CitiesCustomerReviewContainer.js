@@ -48,7 +48,8 @@ const CitiesCustomerReviewContainer = ({ city }) => {
     },
   ]);
 
-  const { name, src, message, rate } = currentReview;
+  // const { name, src, message, rate } = currentReview;
+  const { name,  message, rate } = currentReview;
   return (
     <div className='citiesCustomerReviewContainer'>
       <h1 className='text-center text-white'>What customers in {city} are saying</h1>

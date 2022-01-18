@@ -8,33 +8,27 @@ import { Row, Col } from 'react-bootstrap';
 const TrustedBy = () => {
   return (
     
-    <div className='trustedBy'>
+    <div className="container">
+    <div className="row">
+      <div className='col-md-12 col-12'>
       <h2 className='heading-3'>Trusted By</h2>
-      <Row className='images-wrapper'>
-        <Col sm={6} md={6} lg={3}>
+      <Row className='images-wrapper eatured-content-wrapper'>
+        <Col sm={12} md={6} lg={3}>
           <img src={HisenseLogo} alt='Logo' />
         </Col>
-        <Col sm={6} md={6} lg={3}>
+        <Col sm={12} md={6} lg={3}>
           <img src={TclLogo} alt='Logo' />
         </Col>
-        <Col sm={6} md={6} lg={3}>
+        <Col sm={12} md={6} lg={3}>
           <img src={SimplisafeLogo} alt='Logo' />
         </Col>
-        <Col sm={6} md={6} lg={3}>
-          <button>Add any more </button>
+        <Col sm={12} md={6} lg={3}>
+        <button className="btn btn-outline-primary" disabled={true}> Add any more </button>
         </Col>
   </Row>
     </div>
- 
-    // <div className='trustedBy'>
-    //   <h2 className='heading-3'>Trusted By</h2>
-    //   <div className='images-wrapper'>
-    //     <img src={HisenseLogo} alt='Logo' />
-    //     <img src={TclLogo} alt='Logo' />
-    //     <img src={SimplisafeLogo} alt='Logo' />
-    //     <button>Add any more </button>
-    //   </div>
-    // </div>
+    </div>
+    </div>
   );
 };
 

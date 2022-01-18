@@ -1,60 +1,68 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../../styles/screens/servicesScreens/bookAService/index.scss';
 import { ScrollToTop } from './../../../utilities/index';
 import { Link } from 'react-router-dom';
 import { Row, Col } from 'react-bootstrap';
 import BulletPoints from '../../../components/globalComponents/BulletPoints';
 
-const BookAServiceScreen = () => {
-  // ScrollToTop();
+const BookAServiceScreen = (props) => {
+  const {services} = props?props:[{id:"", name:""}];
+  console.log(services);
+
   const [deviceYouNeed, setDeviceYouNeed] = useState(``);
+  const [ourservices, _ourservices] = useState({});
+  
+  const useEffect=(()=>{
+    _ourservices(services);
+  }, [ourservices] )
+
 
   const nineServiceCardInfo = [
     {
-      serviceLink: ``,
+      serviceLink: `/book-a-service/service/home-appliances/2`,
       serviceTitle: `Home Appliances Repair`,
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/apr.svg`,
     },
     {
-      serviceLink: ``,
+      serviceLink: `/book-a-service/service/tv-mounting/1`,
       serviceTitle: `TV Mounting`,
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/tvi.svg`,
     },
     {
-      serviceLink: ``,
+      serviceLink: `/book-a-service/service/handyman-services/3`,
       serviceTitle: `Handyman Services`,
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/hdm.svg`,
     },
     {
-      serviceLink: ``,
+      serviceLink: `/book-a-service/service/disinfection-services/4`,
       serviceTitle: `Disinfection Services`,
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/disinfection/icon.svg`,
     },
     {
-      serviceLink: ``,
+      serviceLink: `/book-a-service/service/disinfection-services/5`,
       serviceTitle: `iPhone Repair`,
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/mdr.svg`,
     },
     {
-      serviceLink: ``,
+      serviceLink: `/book-a-service/service/disinfection-services/7`,
       serviceTitle: `Smart Home Installation`,
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/sh.svg`,
     },
     {
-      serviceLink: ``,
+      serviceLink: `http://localhost:3000/book-a-service/service/plumbing-services/8`,
       serviceTitle: `Plumbing`,
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/plumbing.svg`,
     },
     {
-      serviceLink: ``,
+      serviceLink: `/book-a-service/service/disinfection-services/6`,
       serviceTitle: `Garage Door`,
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/garage.svg`,
     },
-    {
-      serviceLink: ``,
-      serviceTitle: `Security System Setup`,
-      serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/simpli.svg`,
-    },
+    // {
+    //   serviceLink: ``,
+    //   serviceTitle: `Security System Setup`,
+    //   serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/simpli.svg`,
+    // },
   ];
 
   const membersBenefitsInfo = [
@@ -115,13 +123,16 @@ const BookAServiceScreen = () => {
     },
   ];
   const NineServiceCard = ({ service }) => (
-    <Link to={service.serviceLink} className='nineServiceCard'>
+    <Link 
+      to={"/book-a-service/service/"+service.slug+"/"+service.id} 
+      className='nineServiceCard'
+    >
       <div className='inner'>
         <div className='image-conatiner'>
-          <img src={service.serviceImage} alt='service-image' />
+          <img src={"services-icons/hover/"+service.slug+".svg" } alt='service' />
         </div>
         <div className='title'>
-          {service.serviceTitle && <span>{service.serviceTitle}</span>}{' '}
+          <span>{service.name}</span>
           <img
             className='ml-1'
             src='https://d7gh5vrfihrl.cloudfront.net/website/membership/arrow-right.svg'
@@ -134,8 +145,8 @@ const BookAServiceScreen = () => {
   const NineServiceCardGrid = () => (
     <div className='nineServiceCardGrid'>
       <Row>
-        {nineServiceCardInfo &&
-          nineServiceCardInfo.map((service, i) => (
+        {services &&
+          services.map((service, i) => (
             <Col key={i} sm={6} md={4} lg={3}>
               <NineServiceCard service={service} />
             </Col>
@@ -175,6 +186,7 @@ const BookAServiceScreen = () => {
           <h1 className='section-heading'>Book a Puls home maintenance service</h1>
           <div className='input-container'>
             <input
+              className="service-search-field"
               type='text'
               value={deviceYouNeed}
               placeholder='What service do you need?'
