@@ -168,7 +168,7 @@ const Footer = ({ location: { pathname } }) => {
                   </li>
                 </ul>
               </div>
-              <p>support@puls.com</p>
+              <p>support@techpart.com</p>
             </Col>
           </Row>
           <div className='my-4 download-app-container'>
@@ -183,8 +183,8 @@ const Footer = ({ location: { pathname } }) => {
             </a>
           </div>
           <div className='sb copy-right-container'>
-            <p>© Puls Technologies Inc 2021</p>
-            <p>Puls Technologies Inc. is not in any way associated with Puls GmbH of Munchen</p>
+            <p>© Techpart Technologies Inc 2021</p>
+            <p>Techpart Technologies Inc. is not in any way associated with techpart GmbH of Munchen</p>
           </div>
         </div>
       )}

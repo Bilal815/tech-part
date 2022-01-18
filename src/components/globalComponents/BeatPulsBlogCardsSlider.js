@@ -49,7 +49,7 @@ const BeatPulsBlogCardsSlider = () => {
 
   return (
     <div className='beatPulsBlodCardsSlider my-5'>
-      <h1>The beat - the Puls blog</h1>
+      <h1>The beat - the Techpart blog</h1>
       <Row>
         {beatPulsBlogOptions &&
           beatPulsBlogOptions.map((blog, i) => (

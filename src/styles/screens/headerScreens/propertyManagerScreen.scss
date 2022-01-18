@@ -16,11 +16,13 @@
           font-size: 48px;
           color: #505168;
           font-family: $RobotoBold;
+          line-height: 1.2;
         }
         h4 {
           margin: 30px 0;
           font-family: $RobotoMedium;
           color: #505168;
+          line-height: 1.2;
         }
         .number {
           font-family: $RobotoMedium;
@@ -42,6 +44,8 @@
             h4 {
               color: $blue;
               font-family: $RobotoBold;
+              line-height: 1.2;
+              font-size: 20px;
             }
             h5 {
               color: $blue;
@@ -50,7 +54,7 @@
             }
           }
           .input-fields {
-            margin: 15px 0;
+            margin: 10px 0;
             width: 100%;
             input {
               margin: 15px 0;
@@ -170,6 +174,9 @@
       .input-fields {
         margin: 0 !important;
         width: 100%;
+        input {
+          margin: 5px 0 !important;
+        }
       }
       button {
         width: 100% !important;
@@ -186,6 +193,9 @@
       .input-fields {
         margin: 0 !important;
         width: 100%;
+        input {
+          margin: 5px 0 !important;
+        }
       }
       button {
         width: 100% !important;
@@ -221,9 +231,15 @@
     font-size: 16px !important;
   }
 }
-@media screen and (max-width: 800px) and (min-width: 768px) {
+@media screen and (max-width: 995px) and (min-width: 768px) {
   h1 {
     font-size: 40px !important;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .number {
+    font-size: 20px !important;
   }
 }
 }

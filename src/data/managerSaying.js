@@ -1,7 +1,7 @@
 export const managerSaying = [
   {
     saying: `I have a lot of priorities and like having one partner to take care of the majority of
-      my repair needs. Puls delivers the level of service and transparency I need as a busy
+      my repair needs. Techpart delivers the level of service and transparency I need as a busy
       property manager.`,
     name: `Caleb. Avenue West Dallas Manager`,
     image: `https://d7gh5vrfihrl.cloudfront.net/website/membership/social/westavanew.png`,

@@ -256,13 +256,13 @@ const BecomeATechScreen = () => {
       <Slider {...settings}>
         <div className='d-flex mb-5 technician_review'>
           <TechnicianReviewsCard
-            review=' Working with Puls has always been a fun experience - great pay, the ability to make
+            review=' Working with Techpart has always been a fun experience - great pay, the ability to make
                 my own schedule, and plenty of opportunities to grow!'
             name='Malek'
             image='https://d7gh5vrfihrl.cloudfront.net/website/technicians/malek.jpg'
           />
           <TechnicianReviewsCard
-            review=' Working with Puls has always been a fun experience - great pay, the ability to make
+            review=' Working with Techpart has always been a fun experience - great pay, the ability to make
                 my own schedule, and plenty of opportunities to grow!'
             name='Malek'
             image='https://d7gh5vrfihrl.cloudfront.net/website/technicians/malek.jpg'
@@ -270,12 +270,12 @@ const BecomeATechScreen = () => {
         </div>
         <div className='d-flex mb-5 technician_review'>
           <TechnicianReviewsCard
-            review={`I ran a garage repair business before joining Puls, and I have nothing but the best to say about the support I've received at Puls. I can't praise Puls enough!`}
+            review={`I ran a garage repair business before joining Techpart, and I have nothing but the best to say about the support I've received at Techpart. I can't praise Techpart enough!`}
             name='Tim'
             image='https://d7gh5vrfihrl.cloudfront.net/website/technicians/tim.jpg'
           />
           <TechnicianReviewsCard
-            review=' Working with Puls has always been a fun experience - great pay, the ability to make
+            review=' Working with Techpart has always been a fun experience - great pay, the ability to make
                 my own schedule, and plenty of opportunities to grow!'
             name='Malek'
             image='https://d7gh5vrfihrl.cloudfront.net/website/technicians/malek.jpg'
@@ -283,12 +283,12 @@ const BecomeATechScreen = () => {
         </div>
         <div className='d-flex mb-5 technician_review'>
           <TechnicianReviewsCard
-            review={`Becoming a Puls technician gave me the ability to manage a busier schedule with higher earnings. The team always has my back.`}
+            review={`Becoming a Techpart technician gave me the ability to manage a busier schedule with higher earnings. The team always has my back.`}
             name='Daniel'
             image='https://d7gh5vrfihrl.cloudfront.net/website/technicians/daniel.jpg'
           />
           <TechnicianReviewsCard
-            review=' Working with Puls has always been a fun experience - great pay, the ability to make
+            review=' Working with Techpart has always been a fun experience - great pay, the ability to make
                 my own schedule, and plenty of opportunities to grow!'
             name='Malek'
             image='https://d7gh5vrfihrl.cloudfront.net/website/technicians/malek.jpg'
@@ -323,7 +323,7 @@ const BecomeATechScreen = () => {
               <Col sm={12} md={6} lg={6}>
                 <div className='content-wrapper mt-3'>
                   <h1>
-                    The Puls Technician App <br />
+                    The Techpart Technician App <br />
                     makes your job effortless
                   </h1>
                   <p>
@@ -347,7 +347,7 @@ const BecomeATechScreen = () => {
       <div className='technicians-enjoy-section'>
         <div className='container-80 center'>
           <h1 className='center-light-heading m-0'>
-            See why Puls technicians enjoy <br />
+            See why Techpart technicians enjoy <br />
             working with us
           </h1>
           <div className='video-player-section'>
