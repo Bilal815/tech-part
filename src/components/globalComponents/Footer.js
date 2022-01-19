@@ -50,8 +50,8 @@ const Footer = ({ location: { pathname } }) => {
         pathname === '/application-appliance' ||
         pathname === '/application-handy' ||
         pathname === '/application-phone' ||
-        pathname === '/application-plumbing' || 
-        pathname === '/tcl' || 
+        pathname === '/application-plumbing' ||
+        pathname === '/tcl' ||
         pathname === '/puls-for-business' ? (
         ''
       ) : (
