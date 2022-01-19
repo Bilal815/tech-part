@@ -132,3 +132,11 @@
 .cc{
   text-align: center;
 }
+@media (max-width: 700px) {
+  .technician_review {
+    display: block !important;
+  }
+  .technicians-review-section {
+    margin: 0 !important;
+  }
+} 

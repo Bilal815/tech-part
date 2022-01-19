@@ -110,7 +110,7 @@ const PricingScreen = ({ services }) => {
                   </th>
                   <th className="jsx-2290976772 member bold-text">
                     <label className="jsx-2290976772 bold-text logo">
-                      puls<span className="jsx-2290976772 bold-text">+</span>
+                      techpart<span className="jsx-2290976772 bold-text">+</span>
                     </label>{" "}
                     Member
                   </th>
@@ -186,7 +186,7 @@ const PricingScreen = ({ services }) => {
                   </th>
                   <th className="jsx-2290976772 member bold-text">
                     <label className="jsx-2290976772 bold-text logo">
-                      puls<span className="jsx-2290976772 bold-text">+</span>
+                      techpart<span className="jsx-2290976772 bold-text">+</span>
                     </label>{" "}
                     Member
                   </th>
@@ -243,7 +243,7 @@ const PricingScreen = ({ services }) => {
         <div className="jsx-2708165770 pricing-section">
           <h2 className="jsx-2708165770">Handyman Services Prices</h2>
           <h5 className="jsx-2708165770">
-            Book a service in seconds with Puls local techs
+            Book a service in seconds with Techpart local techs
           </h5>
           <div className="jsx-2708165770 img-wrapper">
             <img
@@ -262,7 +262,7 @@ const PricingScreen = ({ services }) => {
                   </th>
                   <th className="jsx-2290976772 member bold-text">
                     <label className="jsx-2290976772 bold-text logo">
-                      puls<span className="jsx-2290976772 bold-text">+</span>
+                      techpart<span className="jsx-2290976772 bold-text">+</span>
                     </label>{" "}
                     Member*
                   </th>
@@ -415,7 +415,7 @@ const PricingScreen = ({ services }) => {
                       </th>
                       <th className="jsx-2290976772 member bold-text">
                         <label className="jsx-2290976772 bold-text logo">
-                          puls
+                          techpart
                           <span className="jsx-2290976772 bold-text">+</span>
                         </label>{" "}
                         Member
@@ -492,7 +492,7 @@ const PricingScreen = ({ services }) => {
   ScrollToTop();
   return (
     <div className="jsx-2838850976 pricing-wrapper">
-      <h1 className="jsx-2838850976">Puls Services Pricing</h1>
+      <h1 className="jsx-2838850976">Techpart Services Pricing</h1>
       <div className="jsx-3752221477 selection-bar">
         <div id="tabs-container" className="jsx-3752221477 bar">
           <div

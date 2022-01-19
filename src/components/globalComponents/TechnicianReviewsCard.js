@@ -8,14 +8,14 @@ const TechnicianReviewsCard = ({ review, image, name }) => {
   return (
     <div className='technicianReviewsCard'>
       <Row>
-        <Col sm={7} md={7} lg={7}>
+        <Col sm={6} md={6} lg={6}>
           <div className='review-wrapper'>
             <FaQuoteRight size='35' />
             {review && <h6 className='review'>{review}</h6>}
             {name && <p className='name'>{name}</p>}
           </div>
         </Col>
-        <Col sm={5} md={5} lg={5}>
+        <Col sm={6} md={6} lg={6}>
           <div className='image-wrapper'>
             {image && <img src={image} alt='teachnician-image' />}
           </div>

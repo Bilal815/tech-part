@@ -23,7 +23,26 @@ import { Link, withRouter } from 'react-router-dom';
 const Footer = ({ location: { pathname } }) => {
   console.log('pathname : ', pathname);
   const [showHide, setShowHide] = useState(false);
-  const [email, setEmail] = useState('');
+
+    //Form Validation
+    const [email, setEmail] = useState("");
+    const onChangeHandler = (fieldName, value)=>{
+      if(fieldName==="email"){
+        setEmail(value);
+      }
+    }
+    const formSubmit = (e)=>{
+      e.preventDefault();
+      if(email.trim() ==""){
+        alert("required field");
+      }
+      else{
+        console.log("Submitted" + email);
+        setEmail("");
+        setShowHide(!showHide);
+      }
+    }
+
   return (
     <>
       {
@@ -104,10 +123,14 @@ const Footer = ({ location: { pathname } }) => {
                     Thank you for subscribing! Be on the lookout for a welcome email from us soon.
                   </p>
                 ) : (
-                  <div className='mt-3 df flex-wrap'>
-                    <input type='text' placeholder='Enter email*' style={{margin:0}}/>
-                    <Button style={{padding:'2px 6px', fontWeight:'normal', marginLeft:'auto'}} onClick={() => setShowHide(!showHide)}>Subscribe</Button>
-                  </div>
+
+                  <form onSubmit={(e)=>{formSubmit(e)}} className='mt-3 df flex-wrap'>
+                    <input type='email' value={email} placeholder='Enter email*' style={{margin:0}}
+                    onChange={(e)=>{ onChangeHandler("email",e.target.value)}} />
+                    <Button type="submit" style={{padding:'2px 6px', fontWeight:'normal', marginLeft:'auto'}}>
+                      Subscribe
+                    </Button>
+                  </form>
                 )}
               </div>
               <div className='social-icon-container my-4'>
@@ -145,7 +168,7 @@ const Footer = ({ location: { pathname } }) => {
                   </li>
                 </ul>
               </div>
-              <p>support@puls.com</p>
+              <p>support@techpart.com</p>
             </Col>
           </Row>
           <div className='my-4 download-app-container'>
@@ -160,8 +183,8 @@ const Footer = ({ location: { pathname } }) => {
             </a>
           </div>
           <div className='sb copy-right-container'>
-            <p>© Puls Technologies Inc 2021</p>
-            <p>Puls Technologies Inc. is not in any way associated with Puls GmbH of Munchen</p>
+            <p>© Techpart Technologies Inc 2021</p>
+            <p>Techpart Technologies Inc. is not in any way associated with techpart GmbH of Munchen</p>
           </div>
         </div>
       )}

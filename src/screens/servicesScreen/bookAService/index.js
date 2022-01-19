@@ -75,7 +75,7 @@ const BookAServiceScreen = (props) => {
       description: `Extend your service guarantee from 90 to 180 days`,
     },
     {
-      title: `Access to Puls DIY platform`,
+      title: `Access to Techpart DIY platform`,
       description: `Learn home improvement skills from our experts`,
     },
     {
@@ -183,7 +183,7 @@ const BookAServiceScreen = (props) => {
     <div className='bookAServiceScreen'>
       <div className='container-75'>
         <div className='home-maintenance-service'>
-          <h1 className='section-heading'>Book a Puls home maintenance service</h1>
+          <h1 className='section-heading'>Book a Techpart home maintenance service</h1>
           <div className='input-container'>
             <input
               className="service-search-field"
@@ -203,7 +203,7 @@ const BookAServiceScreen = (props) => {
       <div className='introducing-puls'>
         <div className='heading-description-container'>
           <h1 className='section-heading'>
-            Introducing Puls <sup>+</sup>
+            Introducing Techpart <sup>+</sup>
           </h1>
           <p className='section-description'>Solutions to all your home maintenance needs</p>
         </div>
@@ -225,10 +225,10 @@ const BookAServiceScreen = (props) => {
                 <div className='content-container'>
                   <h1>Ready for a free check-up?</h1>
                   <p className='mt-5 mb-3'>
-                    Schedule your free check-up, and a Puls+ master technician will personally visit
+                    Schedule your free check-up, and a Techpart master technician will personally visit
                     your home and assess all your home-service needs.
                   </p>
-                  <p>Enjoy 2 free check-up visits per year as a Puls+ member. That is a Plus!</p>
+                  <p>Enjoy 2 free check-up visits per year as a Techpart member. That is a Plus!</p>
                 </div>
               </Col>
             </Row>
@@ -238,7 +238,7 @@ const BookAServiceScreen = (props) => {
       <div className='container-75'>
         <div className='puls-benefits'>
           <h1 className='section-heading'>
-            Puls<sup>+</sup> Membership Benefits
+            Techpart<sup>+</sup> Membership Benefits
           </h1>
           <p className='section-description'>Get access to exclusive discounts and services</p>
           <MemberBenefitsGrid />

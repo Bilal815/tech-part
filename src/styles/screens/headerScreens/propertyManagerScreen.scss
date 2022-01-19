@@ -16,11 +16,13 @@
           font-size: 48px;
           color: #505168;
           font-family: $RobotoBold;
+          line-height: 1.2;
         }
         h4 {
           margin: 30px 0;
           font-family: $RobotoMedium;
           color: #505168;
+          line-height: 1.2;
         }
         .number {
           font-family: $RobotoMedium;
@@ -29,11 +31,8 @@
         }
       }
       .form-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
         .signup-form {
-          min-height: 390px;
+          min-height: 370px;
           max-width: 330px;
           width: 100%;
           padding: 20px;
@@ -45,6 +44,8 @@
             h4 {
               color: $blue;
               font-family: $RobotoBold;
+              line-height: 1.2;
+              font-size: 20px;
             }
             h5 {
               color: $blue;
@@ -53,7 +54,7 @@
             }
           }
           .input-fields {
-            margin: 15px 0;
+            margin: 10px 0;
             width: 100%;
             input {
               margin: 15px 0;
@@ -98,13 +99,10 @@
     padding: 50px 0;
 
     .puls-pro-card {
-      margin: 50px auto;
-      width: 595px;
       border-radius: 9px;
       box-shadow: 0 2px 20px 0 rgb(190, 183, 183);
       overflow: hidden;
       .card-header {
-        padding: 20px 0;
         color: white;
         background-color: #46475c;
         font-family: $RobotoBold;
@@ -144,4 +142,104 @@
       margin: 75px 0;
     }
   }
+}
+
+.propertyManagerScreen {
+  .signupFormLandingPage {
+    .row {
+        @media (max-width: 450px) {
+        width: 100%;
+        padding: 105px 0 0;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+        padding: 100px 0 0;
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  .form-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+  @media (max-width: 450px) {
+  .form-wrapper {
+    .signup-form {
+      height: 200px;
+      max-width: 300px;
+      width: 20%;
+      .input-fields {
+        margin: 0 !important;
+        width: 100%;
+        input {
+          margin: 5px 0 !important;
+        }
+      }
+      button {
+        width: 100% !important;
+        padding: 7px 15px !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 451px) {
+  .form-wrapper {
+    .signup-form {
+      min-height: 340px !important;
+      max-width: 300px !important;
+      .input-fields {
+        margin: 0 !important;
+        width: 100%;
+        input {
+          margin: 5px 0 !important;
+        }
+      }
+      button {
+        width: 100% !important;
+        padding: 7px 15px !important;
+      }
+    }
+  }
+}
+
+
+.content-wrapper {
+@media (max-width: 450px) {
+      h1 {
+        font-size: 20px !important;
+      }
+      h4 {
+        font-size: 14px;
+        margin: 10px 0 !important;
+      }
+      .number {
+        font-size: 14px !important;
+      }
+}
+@media screen and (max-width: 767px) and (min-width: 451px) {
+  h1 {
+    font-size: 30px !important;
+  }
+  h4 {
+    font-size: 16px;
+    margin: 10px 0 !important;
+  }
+  .number {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 995px) and (min-width: 768px) {
+  h1 {
+    font-size: 40px !important;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  .number {
+    font-size: 20px !important;
+  }
+}
 }

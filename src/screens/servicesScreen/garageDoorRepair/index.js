@@ -194,7 +194,7 @@ const GarageDoorRepairScreen = (props) => {
         />
         <BulletPoints bulletPoints={bulletPoints} />
         <div className='more-services-pulse'>
-          <h3>More services by Puls</h3>
+          <h3>More services by Techpart</h3>
           <div className='more-services-pulse-border'>
             <ServicesHoverCardsGrid screen='garage-door' />
           </div>

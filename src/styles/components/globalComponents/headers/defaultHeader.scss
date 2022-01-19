@@ -1,7 +1,13 @@
 @import '../../../../scss/variables.scss';
 @import '../../../../scss/fontFamily.scss';
 
-
+// .nav-link {
+//   display: inline-block;
+//   padding: 0.5rem 1rem;
+//   color: #0d6efd;
+//   text-decoration: none;
+//   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+// }
 .defaultHeader .container-75{
   margin: 0 10px;
 }
@@ -100,6 +106,53 @@
   box-shadow: 0 2px 4px 0 #ded5d5, 0 0 2px 0 #eff1e9;
 }
 
+// @media screen and (min-width: 992px) {
+
+//   .nav-text{
+//       display: flex !important;
+//       align-items: center !important;
+//     }
+
+// }
+// @media only screen
+// and (min-width : 870px)
+// and (max-width : 991px) {
+//   .navbar-light .navbar-toggler {
+//     margin-left: 60% !important;
+// }
+// }
+
+// @media only screen
+// and (min-width : 774px)
+// and (max-width : 871px) {
+//   .navbar-light .navbar-toggler {
+//     margin-left: 55% !important;
+// }
+// }
+
+// @media only screen
+// and (min-width : 638px)
+// and (max-width : 775px) {
+//   .navbar-light .navbar-toggler {
+//     margin-left: 45% !important;
+// }
+// }
+
+// @media only screen
+// and (min-width : 450px)
+// and (max-width : 639px) {
+//   .navbar-light .navbar-toggler {
+//     margin-left: 20% !important;
+// }
+// }
+// @media only screen and (max-width : 449px){
+//   .navbar-light .navbar-toggler {
+//     margin-left: 10% !important;
+//   }
+//   .defaultHeader a img {
+//     width: 150px;
+//   }
+// }
 @media only screen and (max-width:1024px){
   .defaultHeader .navbar-collapse {
     padding: 0;

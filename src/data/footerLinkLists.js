@@ -27,12 +27,12 @@ export const partnershipsLinkList = [
   { link: '/tcl', label: 'Tcl' },
   { link: '/simplisafe', label: 'Simplisafe' },
   { link: '/hisense', label: 'Hisense' },
-  { link: '/puls-for-business', label: 'Puls for Business' },
+  { link: '/puls-for-business', label: 'Techpart for Business' },
 ];
 
 export const legalsLinkList = [
   { link: '/privacy', label: 'Privacy' },
   { link: '/terms-and-conditions', label: 'Terms' },
-  { link: '/puls-plus-terms', label: 'Puls+ Terms' },
+  { link: '/puls-plus-terms', label: 'Techpart+ Terms' },
   { link: '/guarantee', label: 'Guarantee' },
 ];

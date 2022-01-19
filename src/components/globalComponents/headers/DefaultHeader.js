@@ -87,7 +87,7 @@ const DefaultHeader = ({ location: { pathname }, services }) => {
       fixed={isScrolled ? 'top' : ''}
       expand='lg'
     >
-      <div className='container-75'>
+      <div className='container-75 nav-text'>
         <Nav.Link as={Link} to='/'>
           <img src={TechPartLogo} alt='TechPartLogo' />
         </Nav.Link>
@@ -99,7 +99,7 @@ const DefaultHeader = ({ location: { pathname }, services }) => {
             <Nav>
               <span onMouseOver={() => setShow(true)} onMouseLeave={() => setShow(false)}>
                 <Nav.Link style={whiteColorStyle}>Our Services</Nav.Link>
-                <ServiceDropDown show={show} services={services} />
+                <ServiceDropDown show={show} services={services} onSelect={() => setShow(false)}/>
               </span>
               <Nav.Link style={whiteColorStyle} as={Link} to='/pricing'>
                 Pricing
