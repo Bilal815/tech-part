@@ -3,4 +3,10 @@
 
 .pricingScreen {
   margin-top: 150px;
+  margin-bottom: -8%;
+}
+@media (max-width:500px){
+  .pricingScreen {
+    margin-bottom: -25%;
+  } 
 }

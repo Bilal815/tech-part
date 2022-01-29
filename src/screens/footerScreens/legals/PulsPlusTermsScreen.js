@@ -31,17 +31,17 @@ const PulsPlusTermsScreen = () => {
     {
       image: { HandymanImage },
       title: 'Handyman Services',
-      url: '/services/handyman',
+      url: '/services/handyman-services',
     },
     {
       image: { IphoneRepairImage },
       title: 'iPhone Repair',
-      url: '/services/iphone-repair',
+      url: '/services/phone-repair',
     },
     {
       image: { PlumbingImage },
       title: 'Plumbing',
-      url: '/services/plumbing',
+      url: '/services/plumbing-services',
     },
     {
       image: { GarageDoorImage },
@@ -129,21 +129,21 @@ const PulsPlusTermsScreen = () => {
             <FooterPulsTermsServicesCard
               image={HandymanImage}
               title='Handyman Services'
-              url='/services/handyman'
+              url='/services/handyman-services'
             />
           </Col>
           <Col xs={6} sm={4} md={3} lg={2} className='center'>
             <FooterPulsTermsServicesCard
               image={IphoneRepairImage}
               title='iPhone Repair'
-              url='/services/iphone-repair'
+              url='/services/phone-repair'
             />
           </Col>
           <Col xs={6} sm={4} md={3} lg={2} className='center'>
             <FooterPulsTermsServicesCard
               image={PlumbingImage}
               title='Plumbing'
-              url='/services/plumbing'
+              url='/services/plumbing-services'
             />
           </Col>
           <Col xs={6} sm={4} md={3} lg={2} className='center'>
