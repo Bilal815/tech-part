@@ -118,6 +118,9 @@ const DefaultHeader = ({ location: { pathname }, services }) => {
               <Nav.Link style={whiteColorStyle} as={Link} to='/become-a-tech'>
                 Become a Tech
               </Nav.Link>
+              <Nav.Link style={whiteColorStyle} as={Link} to='/checkout'>
+                Checkout
+              </Nav.Link>
               {/* <Nav.Link style={whiteColorStyle} as={Link} to='/property-manager'>
                 Property Managers
               </Nav.Link> */}
