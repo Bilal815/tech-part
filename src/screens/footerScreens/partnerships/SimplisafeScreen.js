@@ -36,7 +36,7 @@ const SimplisafeScreen = () => {
     },
     {
       title: `Professional in-home setup support`,
-      description: `Puls is an official SimpliSafe demo and setup partner`,
+      description: `TechNPart is an official SimpliSafe demo and setup partner`,
     },
     {
       title: `Safe payment`,
