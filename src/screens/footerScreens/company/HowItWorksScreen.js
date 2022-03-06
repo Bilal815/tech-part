@@ -11,7 +11,7 @@ const HowItWorksScreen = ({ history }) => {
   return (
     <div className='howItWorksScreen'>
       <div className='landing-page center'>
-        <h1 className='heading-1'>How Puls works</h1>
+        <h1 className='heading-1'>How TechNPart works</h1>
         <p>Seamless digital services at your door</p>
       </div>
       <div className='container-75 container-y-50'>
