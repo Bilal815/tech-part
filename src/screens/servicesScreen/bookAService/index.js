@@ -84,7 +84,7 @@ const BookAServiceScreen = (props) => {
     },
     {
       title: `Exclusive Discounts`,
-      description: `Save up to 25% on all Puls services and offers`,
+      description: `Save up to 25% on all TechNPart services and offers`,
     },
     {
       title: `Ultimate Home Service`,
@@ -96,7 +96,7 @@ const BookAServiceScreen = (props) => {
     },
     {
       title: `First Look at New Services`,
-      description: `Puls+ members receive exclusive access to our newest services`,
+      description: `TechNPart+ members receive exclusive access to our newest services`,
     },
   ];
 
@@ -113,8 +113,8 @@ const BookAServiceScreen = (props) => {
     },
     {
       image: `https://d7gh5vrfihrl.cloudfront.net/website/membership/intro/pigi-light.svg`,
-      title: `Puls+ Member Deals`,
-      description: `Exclusive offers only for Puls+ members`,
+      title: `TechNPart+ Member Deals`,
+      description: `Exclusive offers only for TechNPart+ members`,
     },
     {
       image: `https://d7gh5vrfihrl.cloudfront.net/website/membership/intro/star-light.svg`,
