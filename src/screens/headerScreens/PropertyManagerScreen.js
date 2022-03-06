@@ -20,7 +20,7 @@ const PropertyManagerScreen = () => {
       },
       {
         title: `Get 25% off the retail price`,
-        description: `Save even more on every service all with Techpart`,
+        description: `Save even more on every service all with TechNPart`,
       },
       {
         title: `Dedicated dispatch manager`,
@@ -34,7 +34,7 @@ const PropertyManagerScreen = () => {
     `25% discount on all services`,
     `Monthly billing to minimize hassle`,
     `24/7 phone support with designated account manager`,
-    `Seamless scheduling via the Techpart App`,
+    `Seamless scheduling via the TechNPart App`,
   ]);
 
   const [signupFormFields, setSignupFormFields] = useState({
@@ -136,13 +136,13 @@ const PropertyManagerScreen = () => {
       <div className='tenants-covered'>
         <div className='container-60'>
           <h1 className='one-stop-bold-heading'>
-            We've got your tenants covered <br /> with Techpart+ Pro
+            We've got your tenants covered <br /> with TechNPart+ Pro
           </h1>
           <h5 className='mt-3'>
             Get access to a wide-range of home <br /> repair & installation services
           </h5>
           <div className='puls-pro-card'>
-            <div className='card-header'>techpart+ Pro</div>
+            <div className='card-header'>TechNPart+ Pro</div>
             <div className='card-body'>
               {plusProPoints &&
                 plusProPoints.map((item, i) => (
@@ -169,7 +169,7 @@ const PropertyManagerScreen = () => {
       <div className='property-managers-section container-75'>
         <h1 className='center-bold-heading center'>
           <p className='one-stop-bold-heading m-0'>See below what property managers</p>
-          <p className='one-stop-bold-heading m-0'>are saying about Techpart+</p>
+          <p className='one-stop-bold-heading m-0'>are saying about TechNPart+</p>
         </h1>
         <div className='property-manager-saying'>
           <PropertyManagersSaying managerSaying={managerSaying} />
