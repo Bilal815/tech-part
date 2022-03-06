@@ -136,12 +136,12 @@ const Footer = ({ location: { pathname } }) => {
               <div className='social-icon-container my-4'>
                 <ul className='df'>
                   <li>
-                    <a href='https://www.facebook.com/pulsdotcom/' target='_blank' rel="noreferrer">
+                    <a href='https://www.facebook.com/TechNPart/' target='_blank' rel="noreferrer">
                       <img style={{background:'white'}} src={facebookIcon} alt='facebookIcon' />
                     </a>
                   </li>
                   <li>
-                    <a href='https://twitter.com/pulscom' target='_blank' rel="noreferrer">
+                    <a href='https://twitter.com/TechNPart' target='_blank' rel="noreferrer">
                       <img style={{background:'white'}} src={twitterIcon} alt='twitterIcon' />
                     </a>
                   </li>
@@ -155,20 +155,20 @@ const Footer = ({ location: { pathname } }) => {
                   </li>
                   <li>
                     <a
-                      href='https://www.google.com/maps/place/Puls+Appliance+Repair+Dallas/@32.8056347,-97.4869899,9z/data=!3m1!4b1!4m5!3m4!1s0x0:0x323b911c1fe315b!8m2!3d32.806883!4d-96.9265378?hl=en'
+                      href='https://www.google.com/maps/place/TechNPart+Appliance+Repair+Dallas/@32.8056347,-97.4869899,9z/data=!3m1!4b1!4m5!3m4!1s0x0:0x323b911c1fe315b!8m2!3d32.806883!4d-96.9265378?hl=en'
                       target='_blank' rel="noreferrer"
                     >
                       <img style={{background:'white'}} src={googleIcon} alt='googleIcon' />
                     </a>
                   </li>
                   <li>
-                    <a href='https://www.instagram.com/pulscom/' target='_blank' rel="noreferrer">
+                    <a href='https://www.instagram.com/TechNPart/' target='_blank' rel="noreferrer">
                       <img src={instagramIcon} alt='instagramIcon' />
                     </a>
                   </li>
                 </ul>
               </div>
-              <p>support@techpart.com</p>
+              <p>support@TechNPart.com</p>
             </Col>
           </Row>
           <div className='my-4 download-app-container'>
@@ -176,15 +176,15 @@ const Footer = ({ location: { pathname } }) => {
               <img src={iosImage} alt='iosImage' />
             </a>
             <a
-              href='https://play.google.com/store/apps/details?id=com.puls.consumers'
+              href='https://play.google.com/store/apps/details?id=com.TechNPart.consumers'
               target='_blank' rel="noreferrer"
             >
               <img src={androidImage} alt='androidImage' />
             </a>
           </div>
           <div className='sb copy-right-container'>
-            <p>© Techpart Technologies Inc 2021</p>
-            <p>Techpart Technologies Inc. is not in any way associated with techpart GmbH of Munchen</p>
+            <p>© TechNPart Technologies Inc 2021</p>
+            <p>TechNPart Technologies Inc. is not in any way associated with TechNPart GmbH of Munchen</p>
           </div>
         </div>
       )}
