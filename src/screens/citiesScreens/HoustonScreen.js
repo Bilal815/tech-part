@@ -39,7 +39,7 @@ const HoustonScreen = () => {
       </div>
       <CitiesAboutPulsRepairService city='Houston' />
       <div className='container-70 container-y-50'>
-        <h1 className='heading-1 center my-5'>The Puls Blog</h1>
+        <h1 className='heading-1 center my-5'>The TechNPart Blog</h1>
         <CitiesBlogCardContainer />
       </div>
       <CitiesCustomerReviewContainer city='Houston' />
