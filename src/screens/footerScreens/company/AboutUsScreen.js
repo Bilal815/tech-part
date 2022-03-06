@@ -50,7 +50,7 @@ const AboutUsScreen = () => {
       <Row>
         <Col sm={12} md={6} lg={6}>
           <div className='content-container'>
-            <h2 className='section-heading'>Who is Puls?</h2>
+            <h2 className='section-heading'>Who is TechNPart?</h2>
             <p className='section-description'>
               We are a team committed to empowering the best techs to do their best work, so every
               home runs smoothly.
@@ -136,14 +136,14 @@ const AboutUsScreen = () => {
             <div className='content-container'>
               <h1 className='section-heading'>Our technician</h1>
               <p className='section-description'>
-                Puls technicians are vetted, background-checked professionals who show up at the
+                TechNPart technicians are vetted, background-checked professionals who show up at the
                 click of a button to deliver peace of mind when you need it most.
               </p>
               <p className='section-description'>
                 We individually review each applicant to ensure quality results and professional
                 service. Most of all, we look for technicians who understand the importance of
-                treating your home as if it is their own.import BeatPulsBlogCardsSlider from
-                './../../../components/globalComponents/BeatPulsBlogCardsSlider';
+                treating your home as if it is their own.import {/BeatPulsBlogCardsSlider from
+                './../../../components/globalComponents/BeatPulsBlogCardsSlider';/}
               </p>
             </div>
           </Col>
