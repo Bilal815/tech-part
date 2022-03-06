@@ -42,7 +42,7 @@ const HandymanServicesScreen = ({ services }) => {
         btnTitle={services.length > 0? 'Book now' : undefined} 
         btnLink={services.length > 0?'/book-a-service/service/handyman-services/'+service.id: undefined}
         title='Easy to book'
-        description={` Easily customize and book any Puls service online and receive a quote in seconds./
+        description={` Easily customize and book any TechNPart service online and receive a quote in seconds./
                 Just tell us when and where to come and we'll do the rest, leaving you more time to
                 focus on what’s most important.`}
         image='https://d7gh5vrfihrl.cloudfront.net/website/banners/double-phone-light.png'
