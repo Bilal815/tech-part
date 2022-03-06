@@ -18,14 +18,14 @@ const PricingContainer = () => {
   const [pricingPlans, setPricingPlans] = useState([
     {
       id: 1,
-      title: 'Puls Essential',
+      title: 'TechNPart Essential',
       badge: '',
       removedPrice: 99,
       currentPrice: 79,
       planOffers: [
         {
           title: '20%',
-          detail: 'Discount on Puls services',
+          detail: 'Discount on TechNPart services',
         },
         {
           title: '6 Month',
@@ -41,7 +41,7 @@ const PricingContainer = () => {
         },
         {
           title: blueTick,
-          detail: 'Seamless scheduling on the Puls App',
+          detail: 'Seamless scheduling on the TechNPart App',
         },
         {
           title: blueTick,
@@ -66,7 +66,7 @@ const PricingContainer = () => {
         },
         {
           title: '20%',
-          detail: 'Discount on Puls services',
+          detail: 'Discount on TechNPart services',
         },
         {
           title: '12 Month',
@@ -82,7 +82,7 @@ const PricingContainer = () => {
         },
         {
           title: blueTick,
-          detail: 'Seamless scheduling on the Puls App',
+          detail: 'Seamless scheduling on the TechNPart App',
         },
         {
           title: blueTick,
@@ -104,7 +104,7 @@ const PricingContainer = () => {
       planOffers: [
         {
           title: '25%',
-          detail: 'Discount on Puls services',
+          detail: 'Discount on TechNPart services',
         },
         {
           title: '12 Month',
@@ -128,7 +128,7 @@ const PricingContainer = () => {
         },
         {
           title: blueTick,
-          detail: 'Seamless scheduling on the Puls App',
+          detail: 'Seamless scheduling on the TechNPart App',
         },
         {
           title: blueTick,
@@ -202,7 +202,7 @@ const PricingContainer = () => {
     <div className='pricingContainer'>
       <div className='headings'>
         <h1>
-          Save more with <span className='blue'>puls+</span> membership program
+          Save more with <span className='blue'>TechNPart+</span> membership program
         </h1>
         <h4>Get discounted & fixed-rates, extended guarantees and pay once your service is done</h4>
       </div>
@@ -216,7 +216,7 @@ const PricingContainer = () => {
       </Row>
       <div className='container-60 center pricing-button-container'>
         <a href='/zip-code'>
-          Add Puls+ {selectedCardTitle}
+          Add TechNPart+ {selectedCardTitle}
         </a>
         <div className='terms-condition'>
           <span>Terms and conditions </span>&nbsp;|&nbsp;
