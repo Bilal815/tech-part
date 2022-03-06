@@ -11,7 +11,7 @@ import CitiesCustomerReviewContainer from '../../components/globalComponents/Cit
 const WashingtonDCScreen = () => {
   ScrollToTop();
   const breadcrumbList = [
-    { link: '/', label: 'Puls.com', color: '#a1abb0' },
+    { link: '/', label: 'TechNPart.com', color: '#a1abb0' },
     { link: '/cities/dc', label: 'DC', color: '#017aff' },
   ];
   return (
