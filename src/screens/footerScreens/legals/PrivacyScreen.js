@@ -9,10 +9,10 @@ const PrivacyScreen = () => {
 
   return (
     <div className='privacyScreen'>
-      <ReactHelmetHeader title='Puls | Puls privacy policy' />
-      <h1 style={{textAlign:'left'}}>Puls privacy policy</h1>
+      <ReactHelmetHeader title='TechNPart | TechNPart privacy policy' />
+      <h1 style={{textAlign:'left'}}>TechNPart privacy policy</h1>
       <p className='firstParagraph'>
-        This Privacy Policy sets out Puls policy with respect to information, including in
+        This Privacy Policy sets out TechNPart policy with respect to information, including in
         particular information which identifies you personally (known as 'personally identifiable
         information' in the USA or 'personal data' in the European Union, which together we refer to
         as "Personal Data") and other information that is collected from visitors and users of the
@@ -29,7 +29,7 @@ const PrivacyScreen = () => {
         to this policy, please do not use any of the Services. If you have any queries, please email
         us at
       </p>
-      <a href='mailto:email@example.com'>support@puls.com</a>
+      <a href='mailto:support@TechNPart.com'>support@TechNPart.com</a>
     </div>
   );
 };
