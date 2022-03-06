@@ -30,7 +30,7 @@ const TechForm = (props) => {
           "how_much_work_do_you_want_",
           "confirm_your_closest_city_area",
           // "do_you_have_a_valid_business_license_to_perform_services_in_your_state_and_county_",
-          "how_did_you_hear_about_puls",
+          "how_did_you_hear_about_TechNPart",
           "which_appliances_can_you_repair",
         ]
       ));
@@ -47,7 +47,7 @@ const TechForm = (props) => {
   const [confirmYourClosestCityArea, _confirmYourClosestCityArea] = useState("Please Select");
   const [employmentHistory, _employmentHistory] = useState("");
   const [doYouHaveAValidBusinessLicenseToPerformServicesInYourStateAndCounty, _doYouHaveAValidBusinessLicenseToPerformServicesInYourStateAndCounty] = useState("Please Select");
-  const [howDidYouHearAboutPuls,_howDidYouHearAboutPuls] = useState("Please Select");
+  const [howDidYouHearAboutTechNPart,_howDidYouHearAboutTechNPart] = useState("Please Select");
   const [whichAppliancesCanYouRepair, _whichAppliancesCanYouRepair] = useState([]);
 
   // document.getElementById("techform").elements
@@ -101,7 +101,7 @@ const TechForm = (props) => {
         break;
       
       case "how_much_work_do_you_want_":
-        _howDidYouHearAboutPuls(value);
+        _howDidYouHearAboutTechNPart(value);
         break;
         
       case "confirm_your_closest_city_area":
@@ -112,8 +112,8 @@ const TechForm = (props) => {
         _doYouHaveAValidBusinessLicenseToPerformServicesInYourStateAndCounty(value);
         break;
         
-      case "how_did_you_hear_about_puls":
-        _howDidYouHearAboutPuls(value);
+      case "how_did_you_hear_about_TechNPart":
+        _howDidYouHearAboutTechNPart(value);
         break
         
       case "which_appliances_can_you_repair":
@@ -137,7 +137,7 @@ const TechForm = (props) => {
       (name === "how_much_work_do_you_want_" && value === "Please Select") ||
       (name === "confirm_your_closest_city_area" && value === "Please Select") ||
       // (name === "do_you_have_a_valid_business_license_to_perform_services_in_your_state_and_county_" && value === "Please Select") ||
-      (name === "how_did_you_hear_about_puls" && value === "Please Select") ||
+      (name === "how_did_you_hear_about_TechNPart" && value === "Please Select") ||
       (name === "which_appliances_can_you_repair" && checkList.size === 0)
     ){
       input.classList.add(...["invalid","error"]);
@@ -174,7 +174,7 @@ const TechForm = (props) => {
         "transportation": doYouHaveReliableTransportation,
         "city": confirmYourClosestCityArea,
         "from_when_you_join": predictedDaysToFirstJob,
-        "how_you_know_us": howDidYouHearAboutPuls,
+        "how_you_know_us": howDidYouHearAboutTechNPart,
         "job_type": howMuchWorkDoYouWant,
         "service_id": service_id,
         "appliance_id": whichAppliancesCanYouRepair
@@ -1750,21 +1750,21 @@ const TechForm = (props) => {
                                           data-reactid=".hbspt-forms-0.1:$11"
                                         >
                                           <div
-                                            className="hs_how_did_you_hear_about_puls hs-how_did_you_hear_about_puls hs-fieldtype-select field hs-form-field"
-                                            data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls"
+                                            className="hs_how_did_you_hear_about_TechNPart hs-how_did_you_hear_about_TechNPart hs-fieldtype-select field hs-form-field"
+                                            data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart"
                                           >
                                             <label
-                                              id="label-how_did_you_hear_about_puls-231289c5-9fb4-4ebe-83b1-d027a68ed6be_8588"
-                                              placeholder="Enter your How did you hear about Puls?"
-                                              htmlFor="how_did_you_hear_about_puls-231289c5-9fb4-4ebe-83b1-d027a68ed6be_8588"
-                                              data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.0"
+                                              id="label-how_did_you_hear_about_TechNPart-231289c5-9fb4-4ebe-83b1-d027a68ed6be_8588"
+                                              placeholder="Enter your How did you hear about TechNPart?"
+                                              htmlFor="how_did_you_hear_about_TechNPart-231289c5-9fb4-4ebe-83b1-d027a68ed6be_8588"
+                                              data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.0"
                                             >
-                                              <span data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.0.0">
-                                                How did you hear about Puls?
+                                              <span data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.0.0">
+                                                How did you hear about TechNPart?
                                               </span>
                                               <span
                                                 className="hs-form-required"
-                                                data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.0.1"
+                                                data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.0.1"
                                               >
                                                 *
                                               </span>
@@ -1772,115 +1772,115 @@ const TechForm = (props) => {
                                             <legend
                                               className="hs-field-desc"
                                               style={{ display: "none" }}
-                                              data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.1"
+                                              data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.1"
                                             />
                                             <div
                                               className="input"
-                                              data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls"
+                                              data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart"
                                             >
                                               <select
-                                                id="how_did_you_hear_about_puls-231289c5-9fb4-4ebe-83b1-d027a68ed6be_8588"
+                                                id="how_did_you_hear_about_TechNPart-231289c5-9fb4-4ebe-83b1-d027a68ed6be_8588"
                                                 required
                                                 className="hs-input is-placeholder"
-                                                name="how_did_you_hear_about_puls"
-                                                data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0"
+                                                name="how_did_you_hear_about_TechNPart"
+                                                data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0"
                                                 defaultValue={"Please Select"}
                                                 onChange={(e)=>{_inputHandler(e)}}
                                               >
                                                 <option
                                                   value="Please Select"
                                                   disabled
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.0"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.0"
                                                 >
                                                   Please Select
                                                 </option>
                                                 <option
                                                   value="Craigslist"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Craigslist"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Craigslist"
                                                 >
                                                   Craigslist
                                                 </option>
                                                 <option
                                                   value="Indeed"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Indeed"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Indeed"
                                                 >
                                                   Indeed
                                                 </option>
                                                 <option
                                                   value="Friend (Referral)"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Friend (Referral)"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Friend (Referral)"
                                                 >
                                                   Friend (Referral)
                                                 </option>
                                                 <option
                                                   value="Google"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Google"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Google"
                                                 >
                                                   Google
                                                 </option>
                                                 <option
                                                   value="Facebook"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Facebook"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Facebook"
                                                 >
                                                   Facebook
                                                 </option>
                                                 <option
                                                   value="Instagram"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Instagram"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Instagram"
                                                 >
                                                   Instagram
                                                 </option>
                                                 <option
                                                   value="App Jobs"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$App Jobs"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$App Jobs"
                                                 >
                                                   Appjobs
                                                 </option>
                                                 <option
-                                                  value="Puls.com"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Puls=1com"
+                                                  value="TechNPart.com"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$TechNPart=1com"
                                                 >
-                                                  Puls website
+                                                  TechNPart website
                                                 </option>
                                                 <option
                                                   value="Monster"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Monster"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Monster"
                                                 >
                                                   Monster
                                                 </option>
                                                 <option
                                                   value="Zip Recruiter"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Zip Recruiter"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Zip Recruiter"
                                                 >
                                                   Zip Recruiter
                                                 </option>
                                                 <option
                                                   value="Linkedin"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Linkedin"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Linkedin"
                                                 >
                                                   Linkedin
                                                 </option>
                                                 <option
                                                   value="Upward"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Upward"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Upward"
                                                 >
                                                   Upward
                                                 </option>
                                                 <option
                                                   value="House of Gigs"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$House of Gigs"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$House of Gigs"
                                                 >
                                                   House of Gigs
                                                 </option>
                                                 <option
                                                   value="Other"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Other"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Other"
                                                 >
                                                   Other
                                                 </option>
                                               </select>
                                               <ul
-                                                name={"error-how_did_you_hear_about_puls"}
+                                                name={"error-how_did_you_hear_about_TechNPart"}
                                                 className="no-list hs-error-msgs inputs-list"
                                                 style={{ display: "none" }}
                                                 role="alert"
@@ -1999,7 +1999,7 @@ const TechForm = (props) => {
                           >
                             <div className="social-links social-links--center social-links--grey">
                               <a
-                                href="https://www.facebook.com/pulsdotcom/"
+                                href="https://www.facebook.com/TechNPart/"
                                 id="social-links__icon_dnd_area-module-7"
                                 className="social-links__icon"
                                 style={{
@@ -2030,7 +2030,7 @@ const TechForm = (props) => {
                                 </span>
                               </a>
                               <a
-                                href="https://www.instagram.com/pulscom/"
+                                href="https://www.instagram.com/TechNPart/"
                                 id="social-links__icon_dnd_area-module-7"
                                 className="social-links__icon"
                                 style={{
@@ -2061,7 +2061,7 @@ const TechForm = (props) => {
                                 </span>
                               </a>
                               <a
-                                href="https://twitter.com/pulscom?s=20"
+                                href="https://twitter.com/TechNPart?s=20"
                                 id="social-links__icon_dnd_area-module-7"
                                 className="social-links__icon"
                                 style={{
@@ -2092,7 +2092,7 @@ const TechForm = (props) => {
                                 </span>
                               </a>
                               <a
-                                href="mailto:recruit@puls.com"
+                                href="mailto:recruit@TechNPart.com"
                                 id="social-links__icon_dnd_area-module-7"
                                 className="social-links__icon"
                                 style={{
