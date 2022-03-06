@@ -20,7 +20,7 @@ const CitiesAboutPulsRepairService = ({
   return (
     <div className='citiesAboutPulsRepairService'>
       <div className='container-75 container-y-75'>
-        <h1 className='heading-1 my-5 center'>About Puls {city} repair services</h1>
+        <h1 className='heading-1 my-5 center'>About TechNPart {city} repair services</h1>
         <Row>
           <Col sm={12} md={12} lg={6}>
             <div className='content-wrapper'>
@@ -32,7 +32,7 @@ const CitiesAboutPulsRepairService = ({
                 Airport in Tempe, there’s no time to waste when your important devices break down.
               </p>
               <p>
-                If you’re stuck with a malfunctioning device, there’s no need to panic - Puls has
+                If you’re stuck with a malfunctioning device, there’s no need to panic - TechNPart has
                 your back. We offer convenient repair services throughout the greater Phoenix area
                 and will be at your home when it suits your schedule best - even as soon same-day.
               </p>
@@ -42,7 +42,7 @@ const CitiesAboutPulsRepairService = ({
             <div className='image-wrapper'>
               <img
                 src='https://s3.amazonaws.com/static.puls.com/website/SEO/Ring%20Security%202.JPG'
-                alt='about-puls'
+                alt='about-TechNPart'
               />
             </div>
           </Col>
