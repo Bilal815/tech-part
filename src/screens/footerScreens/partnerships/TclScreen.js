@@ -30,7 +30,7 @@ const TclScreen = () => {
                 <br /> TCL customers!
               </h2>
               <p>
-                Set up your TV with Puls, an official TCL <br /> partner, and enjoy exclusive
+                Set up your TV with TechNPart, an official TCL <br /> partner, and enjoy exclusive
                 savings.
               </p>
               <LinkButton link='' name='Radeem now' />
