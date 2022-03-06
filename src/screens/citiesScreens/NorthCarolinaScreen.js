@@ -11,7 +11,7 @@ import CitiesCustomerReviewContainer from '../../components/globalComponents/Cit
 const NorthCarolinaScreen = () => {
   ScrollToTop();
   const breadcrumbList = [
-    { link: '/', label: 'Puls.com', color: '#a1abb0' },
+    { link: '/', label: 'TechNPart.com', color: '#a1abb0' },
     { link: '/cities/nc', label: 'North Carolina', color: '#017aff' },
   ];
   return (
