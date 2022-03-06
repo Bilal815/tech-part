@@ -10,13 +10,13 @@ const TopTechnicianYelpCardsSlider = ({ title }) => {
     {
       imageUrl: `https://d7gh5vrfihrl.cloudfront.net/website/technicians/roshan.jpg`,
       name: `Roshan`,
-      quote: `Techpart was quick, affordable, and extremely convenient! Roshan was my tech and he was great. Would 100% use Techpart again!`,
+      quote: `TechNPart was quick, affordable, and extremely convenient! Roshan was my tech and he was great. Would 100% use TechNPart again!`,
       reviewer: `Adrienne | Los Angeles, CA`,
     },
     {
       imageUrl: `https://d7gh5vrfihrl.cloudfront.net/website/technicians/kevin.jpg`,
       name: `Kevin`,
-      quote: `This is one of the best services around. Kevin, my tech, was punctual, courteous and efficient. Will definitely use Techpart again.`,
+      quote: `This is one of the best services around. Kevin, my tech, was punctual, courteous and efficient. Will definitely use TechNPart again.`,
       reviewer: `Donnie | Colton, CA`,
     },
     {
@@ -38,7 +38,7 @@ const TopTechnicianYelpCardsSlider = ({ title }) => {
               <p>
                 <b>{name}</b>{' '}
               </p>
-              <p>Techpart technician</p>
+              <p>TechNPart technician</p>
             </div>
           </div>
           <div className='yelp-image'>
