@@ -32,7 +32,7 @@ const HomeScreen = () => {
         <div className='container-75 blue pl-1'>
           Home owner?
           <span className='ml-3'>
-            Get complete peace of mind with <b className='blue'>techpart</b>
+            Get complete peace of mind with <b className='blue'>TechNPart</b>
             <span className='arrow'>
               <svg xmlns='http://www.w3.org/2000/svg' width='12' height='22' viewBox='0 0 12 22'>
                 <path
