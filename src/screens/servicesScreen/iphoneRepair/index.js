@@ -30,7 +30,7 @@ const IphoneRepairScreen = ({ services }) => {
     },
     {
       title: `Confirm a time and location`,
-      description: `Puls technicians meet you same day, wherever you may be`,
+      description: `TechNPart technicians meet you same day, wherever you may be`,
     },
     {
       title: `Get on with your day`,
@@ -106,7 +106,7 @@ const IphoneRepairScreen = ({ services }) => {
       </MainLandingSection>
       <div className='container-75'>
         <div className='why-puls'>
-          <h3 className='gray-center-section-heading'>Why Puls</h3>
+          <h3 className='gray-center-section-heading'>Why TechNPart</h3>
           <Row>
             <Col sm={12} md={4}>
               <div className='point-container'>
@@ -158,7 +158,7 @@ const IphoneRepairScreen = ({ services }) => {
           <OnHoverZoomLearnMoreCardSection learnMoreInfo={learnMoreInfo} />
         </div>
         <div className='beat-puls-blog'>
-          <h1 className='gray-center-section-heading'>The beat - the Puls blog</h1>
+          <h1 className='gray-center-section-heading'>The beat - the TechNPart blog</h1>
           <OnHoverZoomReadMoreCardSection readMoreInfo={readMoreInfo} />
         </div>
       </div>
