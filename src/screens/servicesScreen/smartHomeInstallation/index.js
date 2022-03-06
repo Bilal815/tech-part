@@ -131,7 +131,7 @@ const SmartHomeInstallationScreen = ({ services }) => {
           <BackgroundPulsImageSection backgroundPulsImageOptions={backgroundPulsImageOptions} />
         </div>
         <div className='why-should-use-puls'>
-          <BulletPoints bulletPoints={bulletPoints} heading='Why should you use Puls?' />
+          <BulletPoints bulletPoints={bulletPoints} heading='Why should you use TechNPart?' />
         </div>
         <div className='supported-brands'>
           <h1 className='center-section-heading'>Supported brands</h1>
