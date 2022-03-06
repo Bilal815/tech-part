@@ -123,7 +123,7 @@ const SimplisafeScreen = () => {
         <div className='get-to-know-simplisafe'>
           <h1 className='simplisafe-section-heading mb-2'>Get to know SimpliSafe</h1>
           <p className='sub-heading'>
-            Puls is an official SimpliSafe partner, offering white-glove setup support. Contact us
+            TechNPart is an official SimpliSafe partner, offering white-glove setup support. Contact us
             for services and in-home demo for all your smart home products
           </p>
           <SupportedDevicesTable supportedDevicesInfo={supportedDevicesInfo} />
@@ -141,7 +141,7 @@ const SimplisafeScreen = () => {
           <OnHoverZoomLearnMoreCardSection learnMoreInfo={learnMoreInfo} />
         </div>
         <div className='beat-puls-blog'>
-          <h1 className='simplisafe-section-heading'>The beat - the Puls blog</h1>
+          <h1 className='simplisafe-section-heading'>The beat - the TechNPart blog</h1>
           <OnHoverZoomReadMoreCardSection readMoreInfo={readMoreInfo} />
         </div>
         <div className='locations-section'>
