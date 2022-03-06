@@ -54,10 +54,10 @@ const PulsPlusTermsScreen = () => {
     <div className='pulsPlusTermsScreen'>
       <div className='container-40'>
         <h1 className='heading-1 mb-5'>
-          Puls<sup>+</sup> Terms and Conditions
+          TechNPart<sup>+</sup> Terms and Conditions
         </h1>
         <h1 className='heading-2 mb-3'>
-          Puls<sup>+</sup> Membership Coverage
+          TechNPart<sup>+</sup> Membership Coverage
         </h1>
         <p>
           Members pay a one-time fee for an annual membership that begins on the date of purchase
@@ -68,13 +68,13 @@ const PulsPlusTermsScreen = () => {
           be combined with other offers and discounts unless stated otherwise.
         </p>
         <p>
-          Puls+ Membership holders are eligible for discounts on certain Services, as well as other
+          TechNPart+ Membership holders are eligible for discounts on certain Services, as well as other
           benefits. Actual benefits may change from time to time so you are encouraged to
           periodically review the most up-to-date premium features and benefits by visiting{' '}
-          <Link to='/members'>puls.com/membership</Link>.
+          <Link to='/members'>TechNPart.com/membership</Link>.
         </p>
         <p>
-          Puls+ Members will abide by Puls’ general{' '}
+          TechNPart+ Members will abide by TechNPart’ general{' '}
           <Link to='/terms-and-conditions'>terms and conditions</Link> .
         </p>
         <h1 className='heading-2 mt-5 mb-3'>Auto-Renewal</h1>
@@ -85,7 +85,7 @@ const PulsPlusTermsScreen = () => {
         </p>
 
         <h1 className='heading-2 mt-5 mb-3'>
-          Puls<sup>+</sup> Membership Cancellation Policy
+          TechNPart<sup>+</sup> Membership Cancellation Policy
         </h1>
         <p>
           You may cancel your Puls+ Membership at any time. You will not receive a refund or credit
@@ -95,10 +95,10 @@ const PulsPlusTermsScreen = () => {
         </p>
 
         <h1 className='heading-2 mt-5 mb-3'>
-          Puls<sup>+</sup> Membership Discount
+          TechNPart<sup>+</sup> Membership Discount
         </h1>
         <p>
-          Puls+ members are eligible for a 20% discount on labor for the following services.
+          TechNPart+ members are eligible for a 20% discount on labor for the following services.
           Additional parts costs will be charged at full price. The 20% member discount may not be
           combined with other offers or discounts unless stated otherwise.
         </p>
@@ -157,7 +157,7 @@ const PulsPlusTermsScreen = () => {
       </div>
       <div className='container-40'>
         <p>
-          Please note services may vary by market. Visit puls.com to see what new services are being
+          Please note services may vary by market. Visit TechNPart.com to see what new services are being
           added to your area each quarter.
         </p>
       </div>
