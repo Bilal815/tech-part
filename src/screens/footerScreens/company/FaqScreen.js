@@ -43,7 +43,7 @@ const FaqScreen = () => {
       <h1>Got questions? We're here to help</h1>
       <p>
         Use the sections below to find answers to frequently asked questions. You’re also welcome to
-        email us at <a href='mailto:support@puls.com'>support@puls.com</a>
+        email us at <a href='mailto:support@TechNPart.com'>support@TechNPart.com</a>
       </p>
       <div className='container-y-100 faq'>
         <Collapse expandIconPosition='right'>
