@@ -9,7 +9,7 @@ const TermsAndConditionsScreen = () => {
   ScrollToTop();
   return (
     <div className='termsAndConditionsScreen'>
-      <ReactHelmetHeader title='Terms & Conditions | Puls' />
+      <ReactHelmetHeader title='Terms & Conditions | TechNPart' />
       <div className='center'>
         <h1>Terms and conditions</h1>
         <p>Last modified on June 06, 2021</p>
@@ -18,16 +18,16 @@ const TermsAndConditionsScreen = () => {
       <p>
         These Terms and conditions of Use ("Terms") govern the access or use by you, an individual,
         of content, products, applications, websites, and services (the "Services") made available
-        by Puls Technologies, Inc., a Delaware Corporation and its subsidiaries and affiliates
-        (collectively, "Puls Technologies, Inc."). In these Terms, the words "including" and
+        by TechNPart Technologies, Inc., a Delaware Corporation and its subsidiaries and affiliates
+        (collectively, "TechNPart Technologies, Inc."). In these Terms, the words "including" and
         "include" shall be read and inferred to mean "including, but not limited to."
       </p>
       <p>PLEASE READ THESE TERMS CAREFULLY BEFORE ACCESSING OR USING ANY OF THE SERVICES. </p>
       <p>
-        These terms establish a contractual relationship between you and Puls Technologies, Inc.,
+        These terms establish a contractual relationship between you and TechNPart Technologies, Inc.,
         and your use and access of the Services constitutes your agreement to be bound by these
         Terms. If you do not agree to these Terms, you may not access or use the Services. These
-        Terms expressly supersede any prior agreements or arrangements with you. Puls Technologies,
+        Terms expressly supersede any prior agreements or arrangements with you. TechNPart Technologies,
         Inc. may immediately terminate these Terms or any Services with respect to you, or generally
         cease offering or deny access to the Services or any portion thereof, at any time for any
         reason, notwithstanding the provisions of these Terms.
@@ -41,9 +41,9 @@ const TermsAndConditionsScreen = () => {
         between Supplemental terms and these Terms, then the Supplemental terms shall prevail.
       </p>
       <p>
-        Puls Technologies, Inc. may amend the Terms related to the Services from time to time in
-        Puls Technologies, Inc.’s sole discretion. Amendments to the Terms will be effective upon
-        Puls Technologies, Inc.'s posting of such updated Terms at this location or the amended
+        TechNPart Technologies, Inc. may amend the Terms related to the Services from time to time in
+        TechNPart Technologies, Inc.’s sole discretion. Amendments to the Terms will be effective upon
+        TechNPart Technologies, Inc.'s posting of such updated Terms at this location or the amended
         policies or supplemental terms on the applicable Service. It is your responsibility to
         determine if the Terms have been amended prior to each use of the Services, and your
         continued access or use of the Services after such posting constitutes your consent to be
@@ -51,20 +51,20 @@ const TermsAndConditionsScreen = () => {
       </p>
       <p>
         Our collection and use of personal information in connection with the Services is as
-        provided in Puls Technologies, Inc.'s Privacy Policy located at <Link to='/'>puls.com</Link>
+        provided in TechNPart Technologies, Inc.'s Privacy Policy located at <Link to='/'>TechNPart.com</Link>
         .
       </p>
       <p>
         Any unpaid invoices can result in collections including liens and judgements, you hereby
-        certify Puls Technologies Inc can assess a $30 late fee per appointment upon completion of
+        certify TechNPart Technologies Inc can assess a $30 late fee per appointment upon completion of
         service if invoice is not paid within 30 days.
       </p>
       <p>
-        Puls Technologies, Inc. is not liable for personal injury or death resulting from negligence
+        TechNPart Technologies, Inc. is not liable for personal injury or death resulting from negligence
         resulting from a repair.
       </p>
       <p>
-        Puls Technologies, Inc. does not cover damage from floods, earthquakes, tornados, or any
+        TechNPart Technologies, Inc. does not cover damage from floods, earthquakes, tornados, or any
         other acts of nature.
       </p>
       <p>
@@ -427,14 +427,14 @@ const TermsAndConditionsScreen = () => {
       possibility of the following damages, and unless expressly forbidden by applicable law related
       to the services, will Puls Technologies, Inc. be liable to you for any indirect, incidental,
       special, exemplary, punitive, or consequential damages, including but not limited to lost
-      profits, lost data, personal injury, or property damage. Puls Technologies, Inc. shall not be
+      profits, lost data, personal injury, or property damage. TechNPart Technologies, Inc. shall not be
       liable for any damages, liability or losses incurred by you arising out of: (i) your use of or
       reliance on the services or your inability to access or use the services; or (ii) any
-      transaction or relationship between you and any third party professional, even if Puls
-      Technologies, Inc. has been advised of the possibility of such damages. Puls Technologies,
-      Inc. shall not be liable for delay or failure in performance resulting from causes beyond Puls
+      transaction or relationship between you and any third party professional, even if TechNPart
+      Technologies, Inc. has been advised of the possibility of such damages. TechNPart Technologies,
+      Inc. shall not be liable for delay or failure in performance resulting from causes beyond TechNPart
       Technologies, Inc.'s reasonable control. Notwithstanding anything in these terms to the
-      contrary, in no event shall Puls Technologies, Inc. total liability to you in connection with
+      contrary, in no event shall TechNPart Technologies, Inc. total liability to you in connection with
       the services for all damages, losses and causes of action exceed seven hundred and fifty U.S.
       Dollars (US $750).
       <p>
@@ -448,7 +448,7 @@ const TermsAndConditionsScreen = () => {
       </p>
       <p>
         D. In spite of extreme care by the Third Party Professional some damages may occur during
-        the Service call and/or repair process. Puls Technologies Inc is not liable for such damages
+        the Service call and/or repair process. TechNPart Technologies Inc is not liable for such damages
         like flooding/leaks/water damage/electrical or plumbing lines from plumbing, gas or drainage
         work including blockages.
       </p>
@@ -462,17 +462,17 @@ const TermsAndConditionsScreen = () => {
         that needs to be ordered from a manufacturer
       </p>
       <p>
-        In respect of all claims the Third Party Professional and Puls Technologies Inc shall not be
+        In respect of all claims the Third Party Professional and TechNPart Technologies Inc shall not be
         liable to compensate the Customer for any delay in either replacing or repairing the
         workmanship/parts or in properly assessing the Customer’s claim.
       </p>
       <h1>8. INDEMNITY</h1>
       <p>
-        You agree to indemnify and hold Puls Technologies, Inc. and its members, shareholders,
+        You agree to indemnify and hold TechNPart Technologies, Inc. and its members, shareholders,
         owners, officers, directors, employees and agents, harmless from any and all claims,
         demands, losses, liabilities, and expenses (including attorneys' fees), arising out of or in
         connection with: (i) your use of the Services; (ii) your breach or violation of any of these
-        Terms; (iii) Puls Technologies, Inc.'s use of your User Submitted Content; or (iv) your
+        Terms; (iii) TechNPart Technologies, Inc.'s use of your User Submitted Content; or (iv) your
         violation of the rights of any third party, including Third Party Professionals.
       </p>
       <h1>9. DISPUTE RESOLUTION</h1>
@@ -481,13 +481,13 @@ const TermsAndConditionsScreen = () => {
         You agree that any dispute, claim or controversy arising out of or relating to these Terms,
         including but not limited to a dispute, claim or controversy relating to the breach,
         termination, enforcement, interpretation or validity thereof or the use of the Services
-        (collectively, "Disputes") will be settled by binding arbitration between you and Puls
+        (collectively, "Disputes") will be settled by binding arbitration between you and TechNPart
         Technologies, Inc.. Notwithstanding the preceding, each party retains the right to bring an
         individual action in small claims court and the right to seek injunctive or other equitable
         relief in a court of competent jurisdiction to prevent the actual or threatened
         infringement, misappropriation or violation of a party’s intellectual property rights,
         including but not necessarily limited to a party's copyrights, trademarks, trade secrets, or
-        patents. By using the Services you acknowledge and agree that you and Puls Technologies,
+        patents. By using the Services you acknowledge and agree that you and TechNPart Technologies,
         Inc. are each waiving the right to a trial by jury or to participate as a plaintiff or class
         in any purported class action or other representative proceeding. Further, unless agreed to
         in writing by all parties to be bound, the arbitrator may not consolidate more than one
@@ -609,46 +609,46 @@ const TermsAndConditionsScreen = () => {
       </p>
       <h3>D. HOW DO I EARN & USE PULS CREDITS AS A REFERRER/INVITER?</h3>
       <p>
-        Once a referrer/invitee successfully booked and paid for any Puls service via your referral
-        link, we will credit your Puls account with the allotted credits. We will not credit your
+        Once a referrer/invitee successfully booked and paid for any TechNPart service via your referral
+        link, we will credit your TechNPart account with the allotted credits. We will not credit your
         account in the case the appointment is (1) canceled for any reason (2) not created (3) if
-        the user is not eligible to receive the Puls referral discount.
+        the user is not eligible to receive the TechNPart referral discount.
       </p>
       <p>
-        As a referrer/inviter you will be able to see how much Puls credits you have in your “Puls
-        Wallet” via the Puls consumer app.
+        As a referrer/inviter you will be able to see how much TechNPart credits you have in your “TechNPart
+        Wallet” via the TechNPart consumer app.
       </p>
       <p>
         You will be able to use your credits when booking your next service. We will automatically
         apply any and all credits to your service, upon booking.
       </p>
-      <h1>12. Puls Technologies, Inc. KIIS FM Promo Code Terms and Conditions</h1>
+      <h1>12. TechNPart Technologies, Inc. KIIS FM Promo Code Terms and Conditions</h1>
       <p>
         Offer valid through September 1, 2016. Promo Code may only be redeemed online at
-        CellSavers.com or Puls.com.
+        CellSavers.com or TechNPart.com.
       </p>
       <p>
         Cannot be combined with any other offers, discounts, promotions, coupons, or Promo Codes.
-        Promo Code only applicable to full price of service as listed on Puls Technologies, Inc.'s
+        Promo Code only applicable to full price of service as listed on TechNPart Technologies, Inc.'s
         websites.
       </p>
       <p>Promo Code valid only for iPhone and iPad devices.</p>
       <p>
         Promo Code must be entered upon check out/booking, and cannot be applied after order is
-        submitted. Puls Technologies, Inc. makes no guarantees as to arrival time of any repair
+        submitted. TechNPart Technologies, Inc. makes no guarantees as to arrival time of any repair
         technician.
       </p>
       <p>No rain checks are available, and cannot be applied to past purchases.</p>
       <p>
-        Other restrictions may apply at Puls Technologies, Inc.'s sole discretion. Puls
+        Other restrictions may apply at TechNPart Technologies, Inc.'s sole discretion. TechNPart
         Technologies, Inc. reserves the right, without further notice, to end or modify the terms
         and conditions for use of the Promo Code, or to suspend or cancel the Promo Code promotion
         in whole or in part.
       </p>
       <p>Void where prohibited by law.</p>
       <p>
-        Promo Code only applies to Southern California Residents requesting service from Puls
-        Technologies, Inc. in Southern California. Puls Technologies, Inc. does not guarantee
+        Promo Code only applies to Southern California Residents requesting service from TechNPart
+        Technologies, Inc. in Southern California. TechNPart Technologies, Inc. does not guarantee
         service in all areas of Southern California.
       </p>
       <p>You must be 18 years or older to redeem the Promo Code.</p>
@@ -657,14 +657,14 @@ const TermsAndConditionsScreen = () => {
         cannot be sold or otherwise bartered.
       </p>
       <p>
-        Puls Technologies, Inc. reserves the right to refuse service to anyone as long as it does
+        TechNPart Technologies, Inc. reserves the right to refuse service to anyone as long as it does
         not violate of Federal or California law.
       </p>
       <p>
-        Payment for the service must be via credit card only, as set forth in the Puls Technologies,
+        Payment for the service must be via credit card only, as set forth in the TechNPart Technologies,
         Inc. general terms and conditions.
       </p>
-      <p>Puls Technologies, Inc.</p>
+      <p>TechNPart Technologies, Inc.</p>
     </div>
   );
 };
