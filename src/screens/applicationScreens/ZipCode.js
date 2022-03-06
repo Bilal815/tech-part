@@ -50,7 +50,7 @@ const ZipCode = (props) => {
         <div className="content-container">
           <div className="chance-box-wrapper">
             <div>
-              <p className="medium-font">Find a tech part technician in your area</p>
+              <p className="medium-font">Find a TechNPart technician in your area</p>
             </div>
           </div>
           <div className="zip-code-wrapper">
