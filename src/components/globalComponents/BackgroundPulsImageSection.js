@@ -13,7 +13,7 @@ const BackgroundPulsImageSection = ({ heading, subHeading, backgroundPulsImageOp
         {heading && <h1 className='center-bold-heading'>{heading}</h1>}
         {subHeading && (
           <h4>
-            Join <span className='blue'>puls+</span> and your on-time service is always guaranteed
+            Join <span className='blue'>TechNPart+</span> and your on-time service is always guaranteed
           </h4>
         )}
       </div>
