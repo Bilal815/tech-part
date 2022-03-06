@@ -13,7 +13,7 @@ import CitiesCustomerReviewContainer from '../../components/globalComponents/Cit
 const LosAngelesScreen = () => {
   ScrollToTop();
   const breadcrumbList = [
-    { link: '/', label: 'Puls.com', color: '#a1abb0' },
+    { link: '/', label: 'TechNPart.com', color: '#a1abb0' },
     { link: '/cities/ca', label: 'California', color: '#a1abb0' },
     { link: '/cities/ca/los-angeles', label: 'Los Angeles', color: '#017aff' },
   ];
@@ -39,7 +39,7 @@ const LosAngelesScreen = () => {
       </div>
       <CitiesAboutPulsRepairService city='Los Angeles' />
       <div className='container-70 container-y-50'>
-        <h1 className='heading-1 center my-5'>The Puls Blog</h1>
+        <h1 className='heading-1 center my-5'>The TechNPart Blog</h1>
         <CitiesBlogCardContainer />
       </div>
       <CitiesCustomerReviewContainer city='Los Angeles' />
