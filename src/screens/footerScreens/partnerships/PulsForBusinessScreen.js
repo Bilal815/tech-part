@@ -54,23 +54,23 @@ const PulsForBusinessScreen = () => {
           <Link to='/privacy' className='privacy'>
             Privacy
           </Link>
-          <span className='copy-right'>© Puls Technologies Inc 2021</span>
+          <span className='copy-right'>© TechNPart Technologies Inc 2022</span>
         </div>
 
         <p className='notice'>
-          Puls Technologies Inc. is not in any way associated with Puls GmbH of Munchen
+          Puls Technologies Inc. is not in any way associated with TechNPart GmbH of Munchen
         </p>
       </footer>
     );
   };
 
   return (
-    <div className='pulsForBusinessScreen'>
+    <div className='TechNPartForBusinessScreen'>
       <MainLandingSection
         color='white'
         backgroundImage='https://d7gh5vrfihrl.cloudfront.net/website/banners/business-banner.jpg'
-        title='Puls for business'
-        description='Companies and schools of all, sizes rely on Puls for device, repair and TV mounting'
+        title='TechNPart for business'
+        description='Companies and schools of all, sizes rely on TechNPart for device, repair and TV mounting'
         btnTitle='Repair my Device'
         btnLink='/'
       >
@@ -82,7 +82,7 @@ const PulsForBusinessScreen = () => {
       </MainLandingSection>
       <HowItWorks
         howItWorksPoints={howItWorksPoints}
-        title='How can Puls enhance productivity, at your organization?'
+        title='How can TechNPart enhance productivity, at your organization?'
       />
       <div className='container-75'>
         <BulletPoints bulletPoints={bulletPoints} color='blue' />
@@ -92,7 +92,7 @@ const PulsForBusinessScreen = () => {
         <div className='trusted-technicians'>
           <h3 className='section-heading'>Trusted technicians, nationwide</h3>
           <p>We select the best - only 10% meet our screening criteria</p>
-          <TopTechnicianNeighborhoodCardsSection screen='pulsForBusiness' />
+          <TopTechnicianNeighborhoodCardsSection screen='TechNPartForBusiness' />
         </div>
       </div>
       <GetStarted2
