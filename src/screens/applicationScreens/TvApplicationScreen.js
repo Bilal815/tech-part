@@ -39,7 +39,7 @@ const TvApplicationScreen = () => {
   const [confirmYourClosestCityArea, _confirmYourClosestCityArea] = useState("Please Select");
   const [employmentHistory, _employmentHistory] = useState("Please Select");
   const [doYouHaveAValidBusinessLicenseToPerformServicesInYourStateAndCounty, _doYouHaveAValidBusinessLicenseToPerformServicesInYourStateAndCounty] = useState("Please Select");
-  const [howDidYouHearAboutPuls,_howDidYouHearAboutPuls] = useState("Please Select");
+  const [howDidYouHearAboutTechNPart,_howDidYouHearAboutTechNPart] = useState("Please Select");
 
   const _inputHandler = (e) => {
     let name = e.target.name;
@@ -77,7 +77,7 @@ const TvApplicationScreen = () => {
         break;
       
       case "how_much_work_do_you_want_":
-        _howDidYouHearAboutPuls(value);
+        _howDidYouHearAboutTechNPart(value);
         break;
         
       case "confirm_your_closest_city_area":
