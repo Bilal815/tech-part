@@ -56,7 +56,7 @@ const HisenseScreen = () => {
         color='white'
         backgroundImage='https://d7gh5vrfihrl.cloudfront.net/website/banners/hisense.png'
         title='Professional installation and, setup for your new Hisense Laser TV'
-        description='Expert Puls technicians are on the job so you can,
+        description='Expert TechNPart technicians are on the job so you can, \
         sit back and enjoy your new Hisense Laser TV.'
         btnTitle='Book Now'
         btnLink='/'
@@ -69,7 +69,7 @@ const HisenseScreen = () => {
       <div className='container-75'>
         <BulletPoints bulletPoints={bulletPoints} color='blue' />
         <div className='what-puls-help'>
-          <h2 className='section-heading'>What else can Puls help you with?</h2>
+          <h2 className='section-heading'>What else can TechNPart help you with?</h2>
           <OnHoverZoomLearnMoreCardSection learnMoreInfo={learnMoreInfo} />
         </div>
       </div>
