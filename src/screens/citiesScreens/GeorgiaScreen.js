@@ -11,7 +11,7 @@ import CitiesCustomerReviewContainer from '../../components/globalComponents/Cit
 const GeorgiaScreen = () => {
   ScrollToTop();
   const breadcrumbList = [
-    { link: '/', label: 'Puls.com', color: '#a1abb0' },
+    { link: '/', label: 'TechNPart.com', color: '#a1abb0' },
     { link: '/cities/ga', label: 'Georgia', color: '#017aff' },
   ];
   return (
