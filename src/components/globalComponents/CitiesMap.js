@@ -14,7 +14,7 @@ const CitiesMap = ({ mapImageRight, mapImageLeft, city, imageUrl }) => {
             style={{ backgroundImage: `url(${imageUrl})`, marginLeft: 'auto' }}
           ></div>
           <div className='description-card' style={{ right: 'auto', left: '20px' }}>
-            <h1 className='heading-1 mb-4'>Puls {city}</h1>
+            <h1 className='heading-1 mb-4'>TechNPart {city}</h1>
             <div className='star-container'>
               <AiFillStar />
               <AiFillStar />
@@ -46,7 +46,7 @@ const CitiesMap = ({ mapImageRight, mapImageLeft, city, imageUrl }) => {
             style={{ backgroundImage: `url(${imageUrl})`, marginRight: 'auto' }}
           ></div>
           <div className='description-card' style={{ left: 'auto', right: '20px' }}>
-            <h1 className='heading-1 mb-4'>Puls {city}</h1>
+            <h1 className='heading-1 mb-4'>TechNPart {city}</h1>
             <div className='star-container'>
               <AiFillStar />
               <AiFillStar />
