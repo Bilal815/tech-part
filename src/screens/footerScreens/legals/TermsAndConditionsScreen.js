@@ -359,18 +359,18 @@ const TermsAndConditionsScreen = () => {
         guarantee claim, liability for performing the guarantee repair services will rest solely
         with the Third Party Professional that performed the repair service. By using the Services,
         you are authorizing the Third Party Professional to perform repair work on your cellular
-        phone or tablet device. You understand that neither Puls Technologies, Inc. nor the Third
+        phone or tablet device. You understand that neither TechNPart Technologies, Inc. nor the Third
         Party Professionals are an Authorized Service Provider (ASP) of any cellular phone or tablet
-        manufacturer, including but not limited to Apple Inc., and that neither Puls Technologies,
+        manufacturer, including but not limited to Apple Inc., and that neither TechNPart Technologies,
         Inc. nor the Third Party Professional are in any way affiliated with the cellular phone or
         tablet manufacturer, including but not limited to Apple Inc. Further, by using the Services
-        you agree to release, indemnify, and hold Puls Technologies, Inc. harmless from liability
+        you agree to release, indemnify, and hold TechNPart Technologies, Inc. harmless from liability
         for any claims or damages of any kind or description that may arise from any cellular phone
         or tablet device repair work performed on your device unless it is caused by the gross
         negligence of the Third Party Professional.
       </p>
       <p>
-        By utilizing the Services you understand that Puls Technologies, Inc. has no liability for
+        By utilizing the Services you understand that TechNPart Technologies, Inc. has no liability for
         any data loss, which may occur as a result of work done on your device. You also understand
         that you have the option to, and are responsible for backing up your device before allowing
         the Third Party Professional to perform repair work on your device.
@@ -378,35 +378,35 @@ const TermsAndConditionsScreen = () => {
       <p>
         By utilizing the Services you understand that any repairs or technical assistance rendered
         by the Third Party Professional may void manufacturer guarantees for the device repaired,
-        and that Puls Technologies, Inc. will not assume any liability or guarantee in the event
-        that the manufacturer guarantees are voided. Puls Technologies, Inc. and the Third Party
+        and that TechNPart Technologies, Inc. will not assume any liability or guarantee in the event
+        that the manufacturer guarantees are voided. TechNPart Technologies, Inc. and the Third Party
         Professionals have no liability whatsoever for indirect or consequential damages resulting
         from a repair or repair attempt, including any lost or damaged data, software, or lost
         profits or revenue of the customer.
       </p>
       <p>
-        Puls Technologies, Inc. will guarantee to you that from the date the repair Services are
+        TechNPart Technologies, Inc. will guarantee to you that from the date the repair Services are
         provided to you and for a period of 90 days following such date, so long as you remain the
         owner (“Guarantee Period”), each part and accessory provided to you as a component of the
         repair performed by the Third Party Professional under these Terms will be materially free
-        of manufacturing defects. Puls Technologies, Inc.’s sole obligation, and your sole remedy,
-        under this guarantee is limited to, at Puls Technologies, Inc.’s sole discretion, repair or
+        of manufacturing defects. TechNPart Technologies, Inc.’s sole obligation, and your sole remedy,
+        under this guarantee is limited to, at TechNPart Technologies, Inc.’s sole discretion, repair or
         replacement of the defective part or accessory provided as a component of the repair. This
         guarantee under these Terms is non-transferable.
       </p>
       <p>
-        PLEASE NOTE that Puls Technologies, Inc.’s obligations under the guarantee contained in
+        PLEASE NOTE that TechNPart Technologies, Inc.’s obligations under the guarantee contained in
         these Terms are conditioned on your prompt notification to both the Third Party Professional
-        AND Puls Technologies, Inc. of any guarantee claim and complying with Puls Technologies,
+        AND TechNPart Technologies, Inc. of any guarantee claim and complying with TechNPart Technologies,
         Inc.’s then-current guarantee procedures provided to you.
       </p>
       <h1>6. DISCLAIMERS</h1>
       <h3>EXCEPT AS SPECIFICALLY SET FORTH ELSEWHERE IN THESE TERMS:</h3>
       <p>
-        A. The services are provided "as is" and "as available." Puls Technologies, Inc. disclaims
+        A. The services are provided "as is" and "as available." TechNPart Technologies, Inc. disclaims
         all representations and guarantees, statutory, express or implied, unless they are expressly
         set out in these terms, including the implied guarantees of merchantability, fitness for a
-        particular purpose and non-infringement. In addition, Puls Technologies, Inc. makes no
+        particular purpose and non-infringement. In addition, TechNPart Technologies, Inc. makes no
         representation, or guarantee regarding the reliability, timeliness, quality, suitability, or
         availability of the services or any goods or services obtained through the use of the
         services, or that the services will be uninterrupted or error-free.
@@ -423,9 +423,9 @@ const TermsAndConditionsScreen = () => {
       </p>
       <h1>7. LIMITATION OF LIABILITY</h1>
       <h3>EXCEPT AS SPECIFICALLY SET FORTH ELSEWHERE IN THESE TERMS:</h3>
-      <p></p> A. Under no circumstances, even if Puls Technologies, Inc. has been advised of the
+      <p></p> A. Under no circumstances, even if TechNPart Technologies, Inc. has been advised of the
       possibility of the following damages, and unless expressly forbidden by applicable law related
-      to the services, will Puls Technologies, Inc. be liable to you for any indirect, incidental,
+      to the services, will TechNPart Technologies, Inc. be liable to you for any indirect, incidental,
       special, exemplary, punitive, or consequential damages, including but not limited to lost
       profits, lost data, personal injury, or property damage. TechNPart Technologies, Inc. shall not be
       liable for any damages, liability or losses incurred by you arising out of: (i) your use of or
@@ -517,11 +517,11 @@ const TermsAndConditionsScreen = () => {
       </p>
       <h3>D. ARBITRATION LOCATION AND PROCEDURE</h3>
       <p>
-        Unless you and Puls Technologies, Inc. otherwise mutually agree in writing, (a) These Terms
+        Unless you and TechNPart Technologies, Inc. otherwise mutually agree in writing, (a) These Terms
         shall be governed by and construed in accordance with the laws of the State of Delaware,
         excluding its conflicts of law rules, and (b) the exclusive jurisdiction of the arbitration
         will be in the State of Delaware. If your claim does not exceed $12,500, then the
-        arbitration will be conducted solely on the basis of documents you and Puls Technologies,
+        arbitration will be conducted solely on the basis of documents you and TechNPart Technologies,
         Inc. submit to the arbitrator, unless you request a hearing or the arbitrator determines
         that a hearing is necessary. If your claim exceeds $12,500, your right to a hearing will be
         solely determined by the AAA Rules. The arbitrator will have the discretion to direct a
@@ -548,23 +548,23 @@ const TermsAndConditionsScreen = () => {
       <h3>G. CHANGES TO DISPUTE RESOLTION SECTION</h3>
       <p>
         Notwithstanding any other provisions of these Terms regarding the modification of these
-        Terms, if Puls Technologies, Inc. changes this Dispute Resolution terms of this Section
+        Terms, if TechNPart Technologies, Inc. changes this Dispute Resolution terms of this Section
         after the date you first accepted these Terms (or accepted any subsequent changes to these
-        Terms), you may reject any such change by providing Puls Technologies, Inc. written notice
-        of such rejection by mail or hand delivery to: Puls Technologies, Inc., ATTN: Disputes
+        Terms), you may reject any such change by providing TechNPart Technologies, Inc. written notice
+        of such rejection by mail or hand delivery to: TechNPart Technologies, Inc., ATTN: Disputes
         Resolution Department, 849 East Stanley Blvd, #203 Livermore CA 94550-4008 or by email from
-        the email address associated with your Account to: ADR-Dept@puls.com, within 30 days of the
+        the email address associated with your Account to: ADR-Dept@TechNPart.com, within 30 days of the
         date such change became effective. In order to be effective, the notice must include your
         full name and clearly indicate your intent to reject changes to this "Dispute Resolution"
         section. By rejecting changes, you are agreeing that you will arbitrate any Dispute between
-        you and Puls Technologies, Inc. in accordance with the provisions of this Section 9 as of
+        you and TechNPart Technologies, Inc. in accordance with the provisions of this Section 9 as of
         the date you first accepted these Terms (or accepted any subsequent changes to these Terms).
       </p>
       <h1>11. Invite a friend program</h1>
       <p>
         Participating in our invite a friend program (either by referring your friends or by using
         your referral credits) can be a great way to introduce friends and family to our on-demand
-        service platform and help you earn Puls service credits along the way.
+        service platform and help you earn TechNPart service credits along the way.
       </p>
       <p>
         By accepting and sharing your referral link or by booking via any referral link, you are
@@ -572,13 +572,13 @@ const TermsAndConditionsScreen = () => {
       </p>
       <h3>A. WHO IS ELIGIBLE TO BE A REFERRER/INVITER?</h3>
       <p>
-        Anyone can be a referrer/inviter who (a) previously booked any Puls service or signed up via
-        our Puls consumer app (b) has an existing Puls account
+        Anyone can be a referrer/inviter who (a) previously booked any TechNPart service or signed up via
+        our TechNPart consumer app (b) has an existing TechNPart account
       </p>
       <h3>B. WHO IS ELIGIBLE TO BE A REFEREE/INVITEE?</h3>
       <p>
-        Any of your friends and family who (a) has never booked any Puls service in the past (b)
-        does not have any Puls account by signing up via our Puls consumer app or by booking any
+        Any of your friends and family who (a) has never booked any TechNPart service in the past (b)
+        does not have any TechNPart account by signing up via our TechNPart consumer app or by booking any
         service (c) has used a referral link/discount in the past to create an appointment (d) is
         the actual referrer/inviter
       </p>
@@ -599,15 +599,15 @@ const TermsAndConditionsScreen = () => {
       </p>
       <p>
         Once the referee/invitee clicks on your link they will be recognized as coming from your
-        designated link, and be able to book any Puls home repair or maintenance service. After we
+        designated link, and be able to book any TechNPart home repair or maintenance service. After we
         validate that they are an eligible recipient of the referral discount (upon email
         validation) we will apply the referral discount to their service.
       </p>
       <p>
-        Once their service is fully completed (i.e. Done or Paid) you will be credited to your “Puls
+        Once their service is fully completed (i.e. Done or Paid) you will be credited to your “TechNPart
         Wallet” for successfully referring a friend
       </p>
-      <h3>D. HOW DO I EARN & USE PULS CREDITS AS A REFERRER/INVITER?</h3>
+      <h3>D. HOW DO I EARN & USE TechNPart CREDITS AS A REFERRER/INVITER?</h3>
       <p>
         Once a referrer/invitee successfully booked and paid for any TechNPart service via your referral
         link, we will credit your TechNPart account with the allotted credits. We will not credit your
