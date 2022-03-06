@@ -13,7 +13,7 @@ import CitiesCustomerReviewContainer from '../../components/globalComponents/Cit
 const HoustonScreen = () => {
   ScrollToTop();
   const breadcrumbList = [
-    { link: '/', label: 'Puls.com', color: '#a1abb0' },
+    { link: '/', label: 'TechNPart.com', color: '#a1abb0' },
     { link: '/cities/tx', label: 'Texas', color: '#a1abb0' },
     { link: '/cities/tx/houston', label: 'Houston', color: '#017aff' },
   ];
