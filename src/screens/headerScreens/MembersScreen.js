@@ -74,7 +74,7 @@ const MembersScreen = () => {
       description: `We will prioritize your repair & assign the best available tech`,
     },
     {
-      title: `Personal Puls Concierge`,
+      title: `Personal TechNPart Concierge`,
       description: `Questions? Need advice? You have a direct line to our expert support team`,
     },
     {
@@ -94,13 +94,13 @@ const MembersScreen = () => {
       description: `Access to the highest-rated and best-trained technicians`,
     },
     {
-      title: `Access to Puls DIY platform`,
+      title: `Access to TechNPart DIY platform`,
       description: `Learn useful home improvement tips from our expert guides`,
     },
     { title: `Preventative Home check-up`, description: `2 Annual Home check-up Visits` },
     {
       title: `First Look at New Services`,
-      description: `Puls+ members receive exclusive access to our newest services`,
+      description: `TechNPart+ members receive exclusive access to our newest services`,
     },
   ];
 
@@ -116,7 +116,7 @@ const MembersScreen = () => {
       <MainLandingSection
         backgroundImage='https://d7gh5vrfihrl.cloudfront.net/website/banners/new-membership-desktop.png'
         title='Protect your, home with'
-        blueTitle='puls+'
+        blueTitle='TechNPart+'
         boldDescription='Get complete peace of mind & receive'
         points={[
           'Flat-rate service fees',
@@ -130,14 +130,14 @@ const MembersScreen = () => {
       <div className='container-75'>
         <div className='services-calls center'>
           <p className='mt-5 mb-3'>
-            See why 50,000+ service calls <br /> have been made with Puls
+            See why 50,000+ service calls <br /> have been made with TechNPart
           </p>
           <BsArrowDown className='arrow-down' size={30} />
         </div>
         <div className='introducing-puls'>
           <div className='my-5 center'>
             <h1 className='center-bold-heading'>
-              Introducing <span className='blue'>puls+</span>
+              Introducing <span className='blue'>TechNPart+</span>
             </h1>
             <h4>
               Solutions to <b>all</b> your home maintenance needs
@@ -172,7 +172,7 @@ const MembersScreen = () => {
         <div className='explore-puls'>
           <div className='my-5 center'>
             <h1 className='center-bold-heading'>
-              Explore My <span className='blue'>puls+</span>
+              Explore My <span className='blue'>TechNPart+</span>
             </h1>
             <h4>
               Solutions to <b>all</b> your home maintenance needs
@@ -184,7 +184,7 @@ const MembersScreen = () => {
           <img src='https://d7gh5vrfihrl.cloudfront.net/website/membership/big-plus.svg' />
           <div className='content-center center'>
             <h1 className='center-bold-heading'>
-              <span className='blue'>puls</span> Membership Benefits
+              <span className='blue'>TechNPart</span> Membership Benefits
             </h1>
             <h4>Get access to exclusive discounts and services</h4>
           </div>
@@ -204,17 +204,17 @@ const MembersScreen = () => {
       <div className='container-60 center treat-yourself-section'>
         <h1 className='center-bold-heading'>Treat your home. Treat yourself. Reliably.</h1>
         <WiderImageContentCard cardData={cardData} />
-        <a href='https://puls.com/create-sale/membership' target='_blank'>
-          Join Puls+
+        <a href='https://TechNPart.com/create-sale/membership' target='_blank'>
+          Join TechNPart+
         </a>
       </div>
       <div className='container-75 mt-5'>
         <div className='content-center center'>
           <h1 className='center-bold-heading'>
-            Best of <span className='blue'>puls+</span> 2020
+            Best of <span className='blue'>TechNPart+</span> 2020
           </h1>
           <h4>
-            Here's a look at what <span className='blue'>puls+</span> members enjoyed most this past
+            Here's a look at what <span className='blue'>TechNPart+</span> members enjoyed most this past
             year
           </h4>
         </div>
