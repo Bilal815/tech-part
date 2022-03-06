@@ -35,7 +35,7 @@ const CitiesCustomerReviewContainer = ({ city }) => {
       name: 'Brent K.',
       src: 'https://s3.amazonaws.com/static.puls.com/website/SEO/male%20customer.jpeg',
       message:
-        'After months of dealing with unreliable contractors and service industries, I was amazed by Puls organization, ease of booking, constant communication and professional installer.',
+        'After months of dealing with unreliable contractors and service industries, I was amazed by TechNPart organization, ease of booking, constant communication and professional installer.',
       rate: 1,
     },
     {
@@ -43,7 +43,7 @@ const CitiesCustomerReviewContainer = ({ city }) => {
       name: 'Jon P.',
       src: 'https://s3.amazonaws.com/static.puls.com/website/SEO/male%20customer%203.jpeg',
       message:
-        'First time using Puls and they were professional, timely, and honest on our appliance repair. Very reasonable cost. Like a trustworthy mechanic, I will use them again.',
+        'First time using TechNPart and they were professional, timely, and honest on our appliance repair. Very reasonable cost. Like a trustworthy mechanic, I will use them again.',
       rate: 2,
     },
   ]);
