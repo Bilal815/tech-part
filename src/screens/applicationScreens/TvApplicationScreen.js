@@ -23,7 +23,7 @@ const TvApplicationScreen = () => {
           "how_much_work_do_you_want_",
           "confirm_your_closest_city_area",
           "do_you_have_a_valid_business_license_to_perform_services_in_your_state_and_county_",
-          "how_did_you_hear_about_puls",
+          "how_did_you_hear_about_TechNPart",
         ]
       ));
   const [firstName, _firstName] = useState("");
@@ -1600,12 +1600,12 @@ const TvApplicationScreen = () => {
                                           >
                                             <label
                                               id="label-how_did_you_hear_about_puls-231289c5-9fb4-4ebe-83b1-d027a68ed6be_8588"
-                                              placeholder="Enter your How did you hear about Puls?"
+                                              placeholder="Enter your How did you hear about TechNPart?"
                                               htmlFor="how_did_you_hear_about_puls-231289c5-9fb4-4ebe-83b1-d027a68ed6be_8588"
                                               data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.0"
                                             >
                                               <span data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.0.0">
-                                                How did you hear about Puls?
+                                                How did you hear about TechNPart?
                                               </span>
                                               <span
                                                 className="hs-form-required"
@@ -1682,10 +1682,10 @@ const TvApplicationScreen = () => {
                                                   Appjobs
                                                 </option>
                                                 <option
-                                                  value="Puls.com"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Puls=1com"
+                                                  value="TechNPart.com"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:TechNPart=1com"
                                                 >
-                                                  Puls website
+                                                  TechNPart website
                                                 </option>
                                                 <option
                                                   value="Monster"
