@@ -88,8 +88,8 @@ const TvApplicationScreen = () => {
         _doYouHaveAValidBusinessLicenseToPerformServicesInYourStateAndCounty(value);
         break;
         
-      case "how_did_you_hear_about_puls":
-        _howDidYouHearAboutPuls(value);
+      case "how_did_you_hear_about_TechNPart":
+        _howDidYouHearAboutTechNPart(value);
         break;
 
       default:
@@ -104,7 +104,7 @@ const TvApplicationScreen = () => {
       (name === "how_much_work_do_you_want_" && value === "Please Select") ||
       (name === "confirm_your_closest_city_area" && value === "Please Select") ||
       (name === "do_you_have_a_valid_business_license_to_perform_services_in_your_state_and_county_" && value === "Please Select") ||
-      (name === "how_did_you_hear_about_puls" && value === "Please Select")
+      (name === "how_did_you_hear_about_TechNPart" && value === "Please Select")
     ){
       input.classList.add(...["invalid","error"]);
       errorblock.style.display = "block";
@@ -1595,21 +1595,21 @@ const TvApplicationScreen = () => {
                                           data-reactid=".hbspt-forms-0.1:$11"
                                         >
                                           <div
-                                            className="hs_how_did_you_hear_about_puls hs-how_did_you_hear_about_puls hs-fieldtype-select field hs-form-field"
-                                            data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls"
+                                            className="hs_how_did_you_hear_about_TechNPart hs-how_did_you_hear_about_puls hs-fieldtype-select field hs-form-field"
+                                            data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart"
                                           >
                                             <label
                                               id="label-how_did_you_hear_about_puls-231289c5-9fb4-4ebe-83b1-d027a68ed6be_8588"
                                               placeholder="Enter your How did you hear about TechNPart?"
-                                              htmlFor="how_did_you_hear_about_puls-231289c5-9fb4-4ebe-83b1-d027a68ed6be_8588"
-                                              data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.0"
+                                              htmlFor="how_did_you_hear_about_TechNPart-231289c5-9fb4-4ebe-83b1-d027a68ed6be_8588"
+                                              data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.0"
                                             >
-                                              <span data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.0.0">
+                                              <span data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.0.0">
                                                 How did you hear about TechNPart?
                                               </span>
                                               <span
                                                 className="hs-form-required"
-                                                data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.0.1"
+                                                data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.0.1"
                                               >
                                                 *
                                               </span>
@@ -1617,115 +1617,115 @@ const TvApplicationScreen = () => {
                                             <legend
                                               className="hs-field-desc"
                                               style={{ display: "none" }}
-                                              data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.1"
+                                              data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.1"
                                             />
                                             <div
                                               className="input"
-                                              data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls"
+                                              data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart"
                                             >
                                               <select
-                                                id="how_did_you_hear_about_puls-231289c5-9fb4-4ebe-83b1-d027a68ed6be_8588"
+                                                id="how_did_you_hear_about_TechNPart-231289c5-9fb4-4ebe-83b1-d027a68ed6be_8588"
                                                 required
                                                 className="hs-input is-placeholder"
-                                                name="how_did_you_hear_about_puls"
-                                                data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0"
+                                                name="how_did_you_hear_about_TechNPart"
+                                                data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0"
                                                 defaultValue={"Please Select"}
                                                 onChange={(e)=>{_inputHandler(e)}}
                                               >
                                                 <option
                                                   value="Please Select"
                                                   disabled
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.0"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.0"
                                                 >
                                                   Please Select
                                                 </option>
                                                 <option
                                                   value="Craigslist"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Craigslist"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Craigslist"
                                                 >
                                                   Craigslist
                                                 </option>
                                                 <option
                                                   value="Indeed"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Indeed"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Indeed"
                                                 >
                                                   Indeed
                                                 </option>
                                                 <option
                                                   value="Friend (Referral)"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Friend (Referral)"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Friend (Referral)"
                                                 >
                                                   Friend (Referral)
                                                 </option>
                                                 <option
                                                   value="Google"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Google"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Google"
                                                 >
                                                   Google
                                                 </option>
                                                 <option
                                                   value="Facebook"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Facebook"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Facebook"
                                                 >
                                                   Facebook
                                                 </option>
                                                 <option
                                                   value="Instagram"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Instagram"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Instagram"
                                                 >
                                                   Instagram
                                                 </option>
                                                 <option
                                                   value="App Jobs"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$App Jobs"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$App Jobs"
                                                 >
                                                   Appjobs
                                                 </option>
                                                 <option
                                                   value="TechNPart.com"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:TechNPart=1com"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:TechNPart=1com"
                                                 >
                                                   TechNPart website
                                                 </option>
                                                 <option
                                                   value="Monster"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Monster"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Monster"
                                                 >
                                                   Monster
                                                 </option>
                                                 <option
                                                   value="Zip Recruiter"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Zip Recruiter"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Zip Recruiter"
                                                 >
                                                   Zip Recruiter
                                                 </option>
                                                 <option
                                                   value="Linkedin"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Linkedin"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Linkedin"
                                                 >
                                                   Linkedin
                                                 </option>
                                                 <option
                                                   value="Upward"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Upward"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Upward"
                                                 >
                                                   Upward
                                                 </option>
                                                 <option
                                                   value="House of Gigs"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$House of Gigs"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$House of Gigs"
                                                 >
                                                   House of Gigs
                                                 </option>
                                                 <option
                                                   value="Other"
-                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_puls.$how_did_you_hear_about_puls.0.1:$Other"
+                                                  data-reactid=".hbspt-forms-0.1:$11.1:$how_did_you_hear_about_TechNPart.$how_did_you_hear_about_TechNPart.0.1:$Other"
                                                 >
                                                   Other
                                                 </option>
                                               </select>
                                               <ul
-                                                name={"error-how_did_you_hear_about_puls"}
+                                                name={"error-how_did_you_hear_about_TechNPart"}
                                                 className="no-list hs-error-msgs inputs-list"
                                                 style={{ display: "none" }}
                                                 role="alert"
@@ -1769,7 +1769,7 @@ const TvApplicationScreen = () => {
                                         <input
                                           name="hs_context"
                                           type="hidden"
-                                          defaultValue='{"rumScriptExecuteTime":562.5,"rumServiceResponseTime":1029.5,"rumFormRenderTime":3.700000047683716,"rumTotalRenderTime":1037.4000000953674,"rumTotalRequestTime":464.59999990463257,"lang":"en","disableCookieSubmission":true,"embedAtTimestamp":"1631607674329","formDefinitionUpdatedAt":"1622670755506","pageUrl":"https://info.puls.com/application-tv?hsLang=en","pageTitle":"Tell us your Your Qualifications","source":"FormsNext-static-5.365","timestamp":1631607674334,"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36","referrer":"https://lp.puls.com/join-as-a-tech","originalEmbedContext":{"portalId":"4039866","formId":"231289c5-9fb4-4ebe-83b1-d027a68ed6be","formInstanceId":"8588","pageId":"37039400146","region":"na1","pageName":"Tell us your Your Qualifications","redirectUrl":"https://lp.puls.com/thank-you-tv","target":"#hs_form_target_dnd_area-module-5","contentType":"landing-page","formsBaseUrl":"/_hcms/forms/","formData":{"cssClass":"hs-form stacked hs-custom-form"},"hutk":"6ea5ae2eeeb8dc2591bddb025b83e3fe"},"canonicalUrl":"https://info.puls.com/application-tv","pageId":"37039400146","pageName":"Tell us your Your Qualifications","redirectUrl":"https://lp.puls.com/thank-you-tv","formInstanceId":"8588","urlParams":{"hsLang":"en"},"formTarget":"#hs_form_target_dnd_area-module-5","correlationId":"f83254e3-7d36-463b-9af1-e52ae425f8cf","contentType":"landing-page","hutk":"6ea5ae2eeeb8dc2591bddb025b83e3fe","useRecaptchaEnterprise":true,"isHostedOnHubspot":true}'
+                                          defaultValue='{"rumScriptExecuteTime":562.5,"rumServiceResponseTime":1029.5,"rumFormRenderTime":3.700000047683716,"rumTotalRenderTime":1037.4000000953674,"rumTotalRequestTime":464.59999990463257,"lang":"en","disableCookieSubmission":true,"embedAtTimestamp":"1631607674329","formDefinitionUpdatedAt":"1622670755506","pageUrl":"https://info.TechNPart.com/application-tv?hsLang=en","pageTitle":"Tell us your Your Qualifications","source":"FormsNext-static-5.365","timestamp":1631607674334,"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36","referrer":"https://lp.TechNPart.com/join-as-a-tech","originalEmbedContext":{"portalId":"4039866","formId":"231289c5-9fb4-4ebe-83b1-d027a68ed6be","formInstanceId":"8588","pageId":"37039400146","region":"na1","pageName":"Tell us your Your Qualifications","redirectUrl":"https://lp.TechNPart.com/thank-you-tv","target":"#hs_form_target_dnd_area-module-5","contentType":"landing-page","formsBaseUrl":"/_hcms/forms/","formData":{"cssClass":"hs-form stacked hs-custom-form"},"hutk":"6ea5ae2eeeb8dc2591bddb025b83e3fe"},"canonicalUrl":"https://info.TechNPart.com/application-tv","pageId":"37039400146","pageName":"Tell us your Your Qualifications","redirectUrl":"https://lp.TechNPart.com/thank-you-tv","formInstanceId":"8588","urlParams":{"hsLang":"en"},"formTarget":"#hs_form_target_dnd_area-module-5","correlationId":"f83254e3-7d36-463b-9af1-e52ae425f8cf","contentType":"landing-page","hutk":"6ea5ae2eeeb8dc2591bddb025b83e3fe","useRecaptchaEnterprise":true,"isHostedOnHubspot":true}'
                                           data-reactid=".hbspt-forms-0.7"
                                         />
                                         <iframe
@@ -1856,7 +1856,7 @@ const TvApplicationScreen = () => {
                           >
                             <div className="social-links social-links--center social-links--grey">
                               <a
-                                href="https://www.facebook.com/pulsdotcom/"
+                                href="https://www.facebook.com/TechNPart/"
                                 id="social-links__icon_dnd_area-module-7"
                                 className="social-links__icon"
                                 style={{
@@ -1887,7 +1887,7 @@ const TvApplicationScreen = () => {
                                 </span>
                               </a>
                               <a
-                                href="https://www.instagram.com/pulscom/"
+                                href="https://www.instagram.com/TechNPart/"
                                 id="social-links__icon_dnd_area-module-7"
                                 className="social-links__icon"
                                 style={{
@@ -1918,7 +1918,7 @@ const TvApplicationScreen = () => {
                                 </span>
                               </a>
                               <a
-                                href="https://twitter.com/pulscom?s=20"
+                                href="https://twitter.com/TechNPart?s=20"
                                 id="social-links__icon_dnd_area-module-7"
                                 className="social-links__icon"
                                 style={{
@@ -1949,7 +1949,7 @@ const TvApplicationScreen = () => {
                                 </span>
                               </a>
                               <a
-                                href="mailto:recruit@puls.com"
+                                href="mailto:recruit@TechNPart.com"
                                 id="social-links__icon_dnd_area-module-7"
                                 className="social-links__icon"
                                 style={{
