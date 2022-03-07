@@ -103,6 +103,8 @@ import GuaranteeScreen from './screens/footerScreens/legals/GuaranteeScreen';
 import GarageDoorService from './screens/applicationScreens/GarageDoorSevice';
 import PricingScreenOld from './screens/headerScreens/PricingScreenOld';
 
+import CheckoutScreen from './screens/checkout/CheckoutScreen';
+
 const App = () => {
   // setting default headers and base URL
   // const userLogin = useSelector((state) => state.userLogin);
@@ -171,6 +173,7 @@ const App = () => {
           services.map(()=>{
             return (
                 <> */}
+
                   <Route exact path='/services/tv-mounting' component={()=><TvMountingScreen services={services} />} /> 
                   <Route exact path='/services/home-appliances' component={()=><HomeAppliancesScreen services={services} />} />
                   <Route exact path='/services/handyman-services' component={()=><HandymanServicesScreen services={services} />} />
@@ -203,6 +206,10 @@ const App = () => {
             })
           : <Route exact path={['/services/*','/book-a-service/service/*']} render={()=><div style={{height:"30vh"}}></div>} />
         } */}
+
+        {/* checkout screen */}
+        <Route exact path='/checkout' component={CheckoutScreen} />
+        
         {/* Cities section routes  */}
         <Route exact path='/cities/az' component={ArizonaScreen} />
         <Route exact path='/cities/az/phoenix' component={PhoenixScreen} />
