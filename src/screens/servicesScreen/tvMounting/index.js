@@ -104,16 +104,17 @@ const TvMountingScreen = ({ services }) => {
           <a
             target='_blank'
             href='https://www.bbb.org/us/ca/san-francisco/profile/electronics-and-technology/puls-technologies-inc-1116-879293/#sealclick'
+            rel="noreferrer"
           >
             <img
               src='https://d7gh5vrfihrl.cloudfront.net/website/badges/bbb-small.png'
-              alt='image'
+              alt='badge'
             />
           </a>
           <img
             className='ml-2'
             src='https://d7gh5vrfihrl.cloudfront.net/website/banners/facebook-rating-blue.svg'
-            alt='image'
+            alt='banner'
           />
         </div>
       </MainLandingSection>

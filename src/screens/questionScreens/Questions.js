@@ -1,92 +1,44 @@
 import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
 import { ScrollToTop } from "../../utilities/index";
-import axios from "axios";
-import Loader from "../../components/loader/Loader";
 
-const TvQuestions = (props) => {
+const ServiceQuestions = (props) => {
   ScrollToTop();
 
-  const [questions, _questions] = useState([]);
-  const [nextQ, _nextQ] = useState("");
+  const { data } = useSelector(rootState => rootState.servicesQnA);
+  const [options, setOptions] = useState([]);
+  const [currQues, setCurrQues] = useState(undefined);
+  const [nextQues, setNextQues] = useState(undefined);
+  const [questions, setQuestions] = useState({});
  
   useEffect(() => {
     const p = require("../../styles/screens/questionScreens/tvQuestions/index.css");
-    let { question } = props.match.params
-    updateQuestion(question);
-  }, []);
+    let { question, service_id, service_name, service_option } = props.match.params;
+    setQuestions(data[service_id][service_option]);
+    setCurrQues(question.toString().toUpperCase());
+  }, [props.match.params]);
   
-  const updateQuestion = (question) => {
-    switch (question) {
-      case "q1":
-        _nextQ("q2");
-        _questions([
-          {
-            title: "Fixed",
-            price: "39",
-            prevPrice: "78",
-            discount: "50",
-            rightIcon:
-              "https://puls.com/create-appointment/images/tv-mounting/brackets/bracket_fixed.svg",
-          },
-          {
-            title: "Tilting",
-            price: "31",
-            prevPrice: "62",
-            discount: "50",
-            rightIcon:
-              "https://puls.com/create-appointment/images/tv-mounting/brackets/bracket_fixed.svg",
-          },
-          {
-            title: "Fixed",
-            price: "39",
-            prevPrice: "78",
-            discount: "50",
-            rightIcon:
-              "https://puls.com/create-appointment/images/tv-mounting/brackets/bracket_fixed.svg",
-          },
-          {
-            title: "Full motion",
-            price: "44",
-            prevPrice: "88",
-            discount: "50",
-            rightIcon:
-              "https://puls.com/create-appointment/images/tv-mounting/brackets/bracket_fixed.svg",
-          },
-          {
-            title: "None - I already have a bracket",
-            price: "",
-            prevPrice: "",
-            discount: "",
-            rightIcon: "",
-          },
-        ])
-        break;
-      case "q2":
-        _nextQ("q3");
-        _questions([
-          {
-            title: "On The Wall",
-          },
-          {
-            title: "Above a fireplace",
-          },
-        ])
-        break;  
-    
-      default:
-        break;
+  useEffect(() => {
+    if (Object.keys(questions).length && currQues) {
+      const quesTxt = Object.keys(questions[currQues]).at(0);
+      console.log({
+        options: questions[currQues][quesTxt]
+      })
+      setOptions(Object.values(questions[currQues][quesTxt]).map(option => ({
+        title: option.value,
+        price: option.price?.after,
+        prevPrice: option.price?.before,
+        discount: option.price?.discount,
+      })))
+      setNextQues(questions[currQues].jump);
     }
-  };
+  }, [currQues, questions])
 
   const _handleNextQuestion = () => {
-    let url = props.match.url
-    url = url.substring(0,url.length-2) + nextQ
-    props.history.push(url)
-    updateQuestion(nextQ)
+    setCurrQues(nextQues);
   }
 
   const BoxListQuestionComponent = (props) => {
-  
     return (
       <div className="question-comp-wrapper">
         {props.questions.map((question, key) => (
@@ -112,7 +64,7 @@ const TvQuestions = (props) => {
                     )}
                     {question.discount ? (
                       <span className="discount-icon-badge">
-                        <img src="https://puls.com/create-appointment/static/media/discount-icon-blue.a6312632.svg" />
+                        <img src="https://puls.com/create-appointment/static/media/discount-icon-blue.a6312632.svg" alt="" />
                         <span>{question.discount}% off</span>
                       </span>
                     ) : (
@@ -120,7 +72,7 @@ const TvQuestions = (props) => {
                     )}
                   </label>
                   {question.rightIcon ? (
-                    <img className="img-single" src={question.rightIcon} />
+                    <img className="img-single" src={question.rightIcon} alt="" />
                   ) : (
                     ""
                   )}
@@ -134,8 +86,6 @@ const TvQuestions = (props) => {
   };
 
   const CartBox = (props) => {
-
-    
     return (
       <div>
         <div className="my-cart-desktop">
@@ -188,6 +138,10 @@ const TvQuestions = (props) => {
     );
   };
 
+  if (!Object.keys(questions).length || !currQues) {
+    return 'Loading...';
+  }
+
   return (
     <div className="app-container2">
       <div className="content-container">
@@ -198,7 +152,7 @@ const TvQuestions = (props) => {
         </div>
         <BoxListQuestionComponent
           {...props}
-          questions={questions}
+          questions={options}
           nextQuestion={_handleNextQuestion}
         />
         <CartBox
@@ -208,4 +162,4 @@ const TvQuestions = (props) => {
     </div>
   );
 };
-export default TvQuestions;
+export default ServiceQuestions;

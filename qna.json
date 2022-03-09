@@ -1,0 +1,5547 @@
+{
+    "1": {
+        "Up to 31\"": {
+            "Q1": {
+                "Select Bracket Type": {
+                    "option1": {
+                        "value": "Fixed",
+                        "price": {
+                            "before": 78,
+                            "after": 39,
+                            "discount": 50,
+                            "currency": "$"
+                        },
+                        "jump": "Q3"
+                    },
+                    "option2": {
+                        "value": "Tilting",
+                        "price": {
+                            "before": 62,
+                            "after": 31,
+                            "discount": 50,
+                            "currency": "$"
+                        },
+                        "jump": "Q3"
+                    },
+                    "option3": {
+                        "value": "Full Motion",
+                        "price": {
+                            "before": 88,
+                            "after": 44,
+                            "discount": 50,
+                            "currency": "$"
+                        },
+                        "jump": "Q3"
+                    },
+                    "option4": {
+                        "value": "None-I already have a bracket"
+                    }
+                }
+            },
+            "Q2": {
+                "Great! What type of bracket do you have": {
+                    "option1": {
+                        "value": "Fixed"
+                    },
+                    "option2": {
+                        "value": "Tilting"
+                    },
+                    "option3": {
+                        "value": "Full motion"
+                    },
+                    "option4": {
+                        "value": "I don't know"
+                    }
+                }
+            },
+            "Q3": {
+                "Do you have a spot in mind for the TV?": {
+                    "option1": {
+                        "value": "On the wall"
+                    },
+                    "option2": {
+                        "value": "Above a fireplace"
+                    }
+                }
+            },
+            "Q4": {
+                "Select your wall type": {
+                    "option1": {
+                        "value": "Drywall or wood"
+                    },
+                    "option2": {
+                        "value": "Brick",
+                        "price": {
+                            "amount": 39,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "Concrete",
+                        "price": {
+                            "amount": 39,
+                            "currency": "$"
+                        }
+                    },
+                    "option4": {
+                        "value": "Other",
+                        "price": {
+                            "amount": 39,
+                            "currency": "$"
+                        },
+                        "popup": {
+                            "heading": "What type of wall do you have?",
+                            "value": "textbox"
+                        }
+                    }
+                }
+            },
+            "Q5": {
+                "Need anything else": {
+                    "section1": {
+                        "heading": "The most popular",
+                        "option1": {
+                            "value": "In-wall cord concealment with power",
+                            "price": {
+                                "amount": 164,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "External cord concealment",
+                            "price": {
+                                "amount": 76,
+                                "currency": "$"
+                            }
+                        },
+                        "option3": {
+                            "value": "Install sound-bar",
+                            "price": {
+                                "amount": 87,
+                                "currency": "$"
+                            }
+                        },
+                        "option4": {
+                            "value": "Install wall shelf",
+                            "price": {
+                                "amount": 54,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "section2": {
+                        "heading": "Extra Installation",
+                        "option1": {
+                            "value": "Install surround system - up to 3 speakers",
+                            "price": {
+                                "amount": 65,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "Install surround system - more than 3 speakers",
+                            "price": {
+                                "amount": 109,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "section3": {
+                        "heading": "Cables",
+                        "option1": {
+                            "value": "HDMI Cable 6 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "HDMI Cable 10 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option3": {
+                            "value": "HDMI Cable 15 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option4": {
+                            "value": "Power Extenstion Cable 10 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option5": {
+                            "value": "Power Extenstion Cable 15 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option6": {
+                            "value": "Power Extenstion Cable 25 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "section4": {
+                        "heading": "Connect Devices",
+                        "option1": {
+                            "value": "Connect Apple TV",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "Connect Roku",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "option3": {
+                            "value": "Connect Xbox",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "option4": {
+                            "value": "Connect DVD/Blue-Ray Player",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "option5": {
+                            "value": "Connect Cable/sattelite box",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "optional": true
+                }
+            },
+            "price": {
+                "amount": 76,
+                "currency": "$"
+            }
+        },
+        "32\" - 60\"": {
+            "Q1": {
+                "Select Bracket Type": {
+                    "option1": {
+                        "value": "Fixed",
+                        "price": {
+                            "before": 84,
+                            "after": 42,
+                            "discount": 50,
+                            "currency": "$"
+                        },
+                        "jump": "Q3"
+                    },
+                    "option2": {
+                        "value": "Tilting",
+                        "price": {
+                            "before": 86,
+                            "after": 43,
+                            "discount": 50,
+                            "currency": "$"
+                        },
+                        "jump": "Q3"
+                    },
+                    "option3": {
+                        "value": "Full Motion",
+                        "price": {
+                            "before": 108,
+                            "after": 54,
+                            "discount": 50,
+                            "currency": "$"
+                        },
+                        "jump": "Q3"
+                    },
+                    "option4": {
+                        "value": "None-I already have a bracket"
+                    }
+                }
+            },
+            "Q2": {
+                "Great! What type of bracket do you have": {
+                    "option1": {
+                        "value": "Fixed"
+                    },
+                    "option2": {
+                        "value": "Tilting"
+                    },
+                    "option3": {
+                        "value": "Full motion"
+                    },
+                    "option4": {
+                        "value": "I don't know"
+                    }
+                }
+            },
+            "Q3": {
+                "Do you have a spot in mind for the TV?": {
+                    "option1": {
+                        "value": "On the wall"
+                    },
+                    "option2": {
+                        "value": "Above a fireplace"
+                    }
+                }
+            },
+            "Q4": {
+                "Select your wall type": {
+                    "option1": {
+                        "value": "Drywall or wood"
+                    },
+                    "option2": {
+                        "value": "Brick",
+                        "price": {
+                            "amount": 39,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "Concrete",
+                        "price": {
+                            "amount": 39,
+                            "currency": "$"
+                        }
+                    },
+                    "option4": {
+                        "value": "Other",
+                        "price": {
+                            "amount": 39,
+                            "currency": "$"
+                        },
+                        "popup": {
+                            "heading": "What type of wall do you have?",
+                            "value": "textbox"
+                        }
+                    }
+                }
+            },
+            "Q5": {
+                "Need anything else": {
+                    "section1": {
+                        "heading": "The most popular",
+                        "option1": {
+                            "value": "In-wall cord concealment with power",
+                            "price": {
+                                "amount": 164,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "External cord concealment",
+                            "price": {
+                                "amount": 76,
+                                "currency": "$"
+                            }
+                        },
+                        "option3": {
+                            "value": "Install sound-bar",
+                            "price": {
+                                "amount": 87,
+                                "currency": "$"
+                            }
+                        },
+                        "option4": {
+                            "value": "Install wall shelf",
+                            "price": {
+                                "amount": 54,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "section2": {
+                        "heading": "Extra Installation",
+                        "option1": {
+                            "value": "Install surround system - up to 3 speakers",
+                            "price": {
+                                "amount": 65,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "Install surround system - more than 3 speakers",
+                            "price": {
+                                "amount": 109,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "section3": {
+                        "heading": "Cables",
+                        "option1": {
+                            "value": "HDMI Cable 6 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "HDMI Cable 10 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option3": {
+                            "value": "HDMI Cable 15 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option4": {
+                            "value": "Power Extenstion Cable 10 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option5": {
+                            "value": "Power Extenstion Cable 15 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option6": {
+                            "value": "Power Extenstion Cable 25 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "section4": {
+                        "heading": "Connect Devices",
+                        "option1": {
+                            "value": "Connect Apple TV",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "Connect Roku",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "option3": {
+                            "value": "Connect Xbox",
+                            "price": {
+                                "amount": 17,
+                                "currency": "$"
+                            }
+                        },
+                        "option4": {
+                            "value": "Connect DVD/Blue-Ray Player",
+                            "price": {
+                                "amount": 17,
+                                "currency": "$"
+                            }
+                        },
+                        "option5": {
+                            "value": "Connect Cable/sattelite box",
+                            "price": {
+                                "amount": 17,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "optional": true
+                }
+            },
+            "price": {
+                "amount": 109,
+                "currency": "$"
+            }
+        },
+        "61\" - 80\"": {
+            "Q1": {
+                "Select Bracket Type": {
+                    "option1": {
+                        "value": "Fixed",
+                        "price": {
+                            "before": 108,
+                            "after": 54,
+                            "discount": 50,
+                            "currency": "$"
+                        },
+                        "jump": "Q3"
+                    },
+                    "option2": {
+                        "value": "Tilting",
+                        "price": {
+                            "before": 122,
+                            "after": 61,
+                            "discount": 50,
+                            "currency": "$"
+                        },
+                        "jump": "Q3"
+                    },
+                    "option3": {
+                        "value": "Full Motion",
+                        "price": {
+                            "before": 152,
+                            "after": 76,
+                            "discount": 50,
+                            "currency": "$"
+                        },
+                        "jump": "Q3"
+                    },
+                    "option4": {
+                        "value": "None-I already have a bracket"
+                    }
+                }
+            },
+            "Q2": {
+                "Great! What type of bracket do you have": {
+                    "option1": {
+                        "value": "Fixed"
+                    },
+                    "option2": {
+                        "value": "Tilting"
+                    },
+                    "option3": {
+                        "value": "Full motion"
+                    },
+                    "option4": {
+                        "value": "I don't know"
+                    }
+                }
+            },
+            "Q3": {
+                "Do you have a spot in mind for the TV?": {
+                    "option1": {
+                        "value": "On the wall"
+                    },
+                    "option2": {
+                        "value": "Above a fireplace"
+                    }
+                }
+            },
+            "Q4": {
+                "Select your wall type": {
+                    "option1": {
+                        "value": "Drywall or wood"
+                    },
+                    "option2": {
+                        "value": "Brick",
+                        "price": {
+                            "amount": 39,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "Concrete",
+                        "price": {
+                            "amount": 39,
+                            "currency": "$"
+                        }
+                    },
+                    "option4": {
+                        "value": "Other",
+                        "price": {
+                            "amount": 39,
+                            "currency": "$"
+                        },
+                        "popup": {
+                            "heading": "What type of wall do you have?",
+                            "value": "textbox"
+                        }
+                    }
+                }
+            },
+            "Q5": {
+                "Need anything else": {
+                    "section1": {
+                        "heading": "The most popular",
+                        "option1": {
+                            "value": "In-wall cord concealment with power",
+                            "price": {
+                                "amount": 175,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "External cord concealment",
+                            "price": {
+                                "amount": 76,
+                                "currency": "$"
+                            }
+                        },
+                        "option3": {
+                            "value": "Install sound-bar",
+                            "price": {
+                                "amount": 87,
+                                "currency": "$"
+                            }
+                        },
+                        "option4": {
+                            "value": "Install wall shelf",
+                            "price": {
+                                "amount": 54,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "section2": {
+                        "heading": "Extra Installation",
+                        "option1": {
+                            "value": "Install surround system - up to 3 speakers",
+                            "price": {
+                                "amount": 65,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "Install surround system - more than 3 speakers",
+                            "price": {
+                                "amount": 109,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "section3": {
+                        "heading": "Cables",
+                        "option1": {
+                            "value": "HDMI Cable 6 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "HDMI Cable 10 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option3": {
+                            "value": "HDMI Cable 15 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option4": {
+                            "value": "Power Extenstion Cable 10 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option5": {
+                            "value": "Power Extenstion Cable 15 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option6": {
+                            "value": "Power Extenstion Cable 25 ft",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "section4": {
+                        "heading": "Connect Devices",
+                        "option1": {
+                            "value": "Connect Apple TV",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "Connect Roku",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "option3": {
+                            "value": "Connect Xbox",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "option4": {
+                            "value": "Connect DVD/Blue-Ray Player",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "option5": {
+                            "value": "Connect Cable/sattelite box",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "optional": true
+                }
+            },
+            "price": {
+                "amount": 164,
+                "currency": "$"
+            }
+        },
+        "Over 81\"": {
+            "Q1": {
+                "Select Bracket Type": {
+                    "option1": {
+                        "value": "Fixed",
+                        "price": {
+                            "before": 166,
+                            "after": 83,
+                            "discount": 50,
+                            "currency": "$"
+                        },
+                        "jump": "Q3"
+                    },
+                    "option2": {
+                        "value": "Tilting",
+                        "price": {
+                            "before": 154,
+                            "after": 77,
+                            "discount": 50,
+                            "currency": "$"
+                        },
+                        "jump": "Q3"
+                    },
+                    "option3": {
+                        "value": "Full Motion",
+                        "price": {
+                            "before": 210,
+                            "after": 105,
+                            "discount": 50,
+                            "currency": "$"
+                        },
+                        "jump": "Q3"
+                    },
+                    "option4": {
+                        "value": "None-I already have a bracket"
+                    }
+                }
+            },
+            "Q2": {
+                "Great! What type of bracket do you have": {
+                    "option1": {
+                        "value": "Fixed"
+                    },
+                    "option2": {
+                        "value": "Tilting"
+                    },
+                    "option3": {
+                        "value": "Full motion"
+                    },
+                    "option4": {
+                        "value": "I don't know"
+                    }
+                }
+            },
+            "Q3": {
+                "Do you have a spot in mind for the TV?": {
+                    "option1": {
+                        "value": "On the wall"
+                    },
+                    "option2": {
+                        "value": "Above a fireplace"
+                    }
+                }
+            },
+            "Q4": {
+                "Select your wall type": {
+                    "option1": {
+                        "value": "Drywall or wood"
+                    },
+                    "option2": {
+                        "value": "Brick",
+                        "price": {
+                            "amount": 39,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "Concrete",
+                        "price": {
+                            "amount": 39,
+                            "currency": "$"
+                        }
+                    },
+                    "option4": {
+                        "value": "Other",
+                        "price": {
+                            "amount": 39,
+                            "currency": "$"
+                        },
+                        "popup": {
+                            "heading": "What type of wall do you have?",
+                            "value": "textbox"
+                        }
+                    }
+                }
+            },
+            "Q5": {
+                "Need anything else": {
+                    "section1": {
+                        "heading": "The most popular",
+                        "option1": {
+                            "value": "In-wall cord concealment with power",
+                            "price": {
+                                "amount": 175,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "External cord concealment",
+                            "price": {
+                                "amount": 76,
+                                "currency": "$"
+                            }
+                        },
+                        "option3": {
+                            "value": "Install sound-bar",
+                            "price": {
+                                "amount": 87,
+                                "currency": "$"
+                            }
+                        },
+                        "option4": {
+                            "value": "Install wall shelf",
+                            "price": {
+                                "amount": 54,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "section2": {
+                        "heading": "Extra Installation",
+                        "option1": {
+                            "value": "Install surround system - up to 3 speakers",
+                            "price": {
+                                "amount": 65,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "Install surround system - more than 3 speakers",
+                            "price": {
+                                "amount": 109,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "section3": {
+                        "heading": "Cables",
+                        "option1": {
+                            "value": "HDMI Cable 6 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "HDMI Cable 10 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option3": {
+                            "value": "HDMI Cable 15 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option4": {
+                            "value": "Power Extenstion Cable 10 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option5": {
+                            "value": "Power Extenstion Cable 15 ft",
+                            "price": {
+                                "amount": 28,
+                                "currency": "$"
+                            }
+                        },
+                        "option6": {
+                            "value": "Power Extenstion Cable 25 ft",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "section4": {
+                        "heading": "Connect Devices",
+                        "option1": {
+                            "value": "Connect Apple TV",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "option2": {
+                            "value": "Connect Roku",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "option3": {
+                            "value": "Connect Xbox",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "option4": {
+                            "value": "Connect DVD/Blue-Ray Player",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "option5": {
+                            "value": "Connect Cable/sattelite box",
+                            "price": {
+                                "amount": 22,
+                                "currency": "$"
+                            }
+                        },
+                        "checkbox": true
+                    },
+                    "optional": true
+                }
+            },
+            "price": {
+                "amount": 197,
+                "currency": "$"
+            }
+        }
+    },
+    "2": {
+        "Refrigerator": {
+            "Q1": {
+                "Is your fridge built-in?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    }
+                }
+            },
+            "Q2": {
+                "What's the brand of the refrigerator?": {
+                    "option1": {
+                        "value": "Samsung"
+                    },
+                    "option2": {
+                        "value": "LG"
+                    },
+                    "option3": {
+                        "value": "Whirlpool"
+                    },
+                    "option4": {
+                        "value": "General Electric"
+                    },
+                    "option5": {
+                        "value": "Maytag"
+                    },
+                    "option6": {
+                        "value": "Frigidaire"
+                    },
+                    "option7": {
+                        "value": "Admiral"
+                    },
+                    "option8": {
+                        "value": "Aficionado"
+                    },
+                    "option9": {
+                        "value": "Amana"
+                    },
+                    "option10": {
+                        "value": "Americana"
+                    },
+                    "option11": {
+                        "value": "Apollo"
+                    },
+                    "option12": {
+                        "value": "Bosch"
+                    },
+                    "option13": {
+                        "value": "Broan"
+                    },
+                    "option14": {
+                        "value": "Chambers"
+                    },
+                    "option15": {
+                        "value": "Caloric"
+                    },
+                    "option16": {
+                        "value": "Comfort Aire"
+                    },
+                    "option17": {
+                        "value": "Crosley"
+                    },
+                    "option18": {
+                        "value": "Dandby"
+                    },
+                    "option19": {
+                        "value": "Dyson"
+                    },
+                    "option20": {
+                        "value": "Electrolux"
+                    },
+                    "option21": {
+                        "value": "Emerson"
+                    },
+                    "option22": {
+                        "value": "Estate"
+                    },
+                    "option23": {
+                        "value": "Fisher-Paykel"
+                    },
+                    "option24": {
+                        "value": "Galaxy"
+                    },
+                    "option25": {
+                        "value": "Gallery"
+                    },
+                    "option26": {
+                        "value": "Gibson"
+                    },
+                    "option27": {
+                        "value": "Gladiator"
+                    },
+                    "option28": {
+                        "value": "Goldstar"
+                    },
+                    "option29": {
+                        "value": "HEC"
+                    },
+                    "option30": {
+                        "value": "Haier"
+                    },
+                    "option31": {
+                        "value": "Holiday"
+                    },
+                    "option32": {
+                        "value": "Hotpoint"
+                    },
+                    "option33": {
+                        "value": "Ikea"
+                    },
+                    "option34": {
+                        "value": "Imperial"
+                    },
+                    "option35": {
+                        "value": "Inglis"
+                    },
+                    "option36": {
+                        "value": "Insinkerator"
+                    },
+                    "option37": {
+                        "value": "Jenn Air"
+                    },
+                    "option38": {
+                        "value": "Kelvinator"
+                    },
+                    "option39": {
+                        "value": "Kenmore"
+                    },
+                    "option40": {
+                        "value": "Kirkland"
+                    },
+                    "option41": {
+                        "value": "KitchenAid"
+                    },
+                    "option42": {
+                        "value": "Liberty"
+                    },
+                    "option43": {
+                        "value": "Magic Chef"
+                    },
+                    "option44": {
+                        "value": "Modern Maid"
+                    },
+                    "option45": {
+                        "value": "Monogram"
+                    },
+                    "option46": {
+                        "value": "Montgomery Wards"
+                    },
+                    "option47": {
+                        "value": "Norge"
+                    },
+                    "option48": {
+                        "value": "Panasonic"
+                    },
+                    "option49": {
+                        "value": "Profile"
+                    },
+                    "option50": {
+                        "value": "Roper"
+                    },
+                    "option51": {
+                        "value": "Sanyo"
+                    },
+                    "option52": {
+                        "value": "Sears"
+                    },
+                    "option53": {
+                        "value": "Sharp"
+                    },
+                    "option54": {
+                        "value": "Signature"
+                    },
+                    "option55": {
+                        "value": "Speed Queen"
+                    },
+                    "option56": {
+                        "value": "Tappan"
+                    },
+                    "option57": {
+                        "value": "Vinotemp"
+                    },
+                    "option58": {
+                        "value": "WCI"
+                    },
+                    "option59": {
+                        "value": "WC Woods"
+                    },
+                    "option60": {
+                        "value": "White Westinghouse"
+                    },
+                    "option61": {
+                        "value": "Zoneline"
+                    },
+                    "option62": {
+                        "value": "Other / Don't Know"
+                    }
+                }
+            },
+            "Q3": {
+                "Select the issue": {
+                    "option1": {
+                        "value": "Not Cooling"
+                    },
+                    "option2": {
+                        "value": "Ice maker not working"
+                    },
+                    "option3": {
+                        "value": "Leaking"
+                    },
+                    "option4": {
+                        "value": "Noisy"
+                    },
+                    "option5": {
+                        "value": "Not Cooling"
+                    },
+                    "option6": {
+                        "value": "Other"
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q4": {
+                "Describe the issue in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Dryer": {
+            "Q1": {
+                "Is your dryer gas or electric?": {
+                    "option1": {
+                        "value": "Electric"
+                    },
+                    "option2": {
+                        "value": "Gas"
+                    },
+                    "option3": {
+                        "value": "Not Sure"
+                    }
+                }
+            },
+            "Q2": {
+                "How are your dryer and washer placed?": {
+                    "option1": {
+                        "value": "Stacked"
+                    },
+                    "option2": {
+                        "value": "Side-by-side"
+                    }
+                }
+            },
+            "Q3": {
+                "What's the brand of the dryer?": {
+                    "option1": {
+                        "value": "Samsung"
+                    },
+                    "option2": {
+                        "value": "LG"
+                    },
+                    "option3": {
+                        "value": "Whirlpool"
+                    },
+                    "option4": {
+                        "value": "General Electric"
+                    },
+                    "option5": {
+                        "value": "Maytag"
+                    },
+                    "option6": {
+                        "value": "Frigidaire"
+                    },
+                    "option7": {
+                        "value": "Admiral"
+                    },
+                    "option8": {
+                        "value": "Aficionado"
+                    },
+                    "option9": {
+                        "value": "Amana"
+                    },
+                    "option10": {
+                        "value": "Americana"
+                    },
+                    "option11": {
+                        "value": "Apollo"
+                    },
+                    "option12": {
+                        "value": "Bosch"
+                    },
+                    "option13": {
+                        "value": "Broan"
+                    },
+                    "option14": {
+                        "value": "Chambers"
+                    },
+                    "option15": {
+                        "value": "Caloric"
+                    },
+                    "option16": {
+                        "value": "Comfort Aire"
+                    },
+                    "option17": {
+                        "value": "Crosley"
+                    },
+                    "option18": {
+                        "value": "Dandby"
+                    },
+                    "option19": {
+                        "value": "Dyson"
+                    },
+                    "option20": {
+                        "value": "Electrolux"
+                    },
+                    "option21": {
+                        "value": "Emerson"
+                    },
+                    "option22": {
+                        "value": "Estate"
+                    },
+                    "option23": {
+                        "value": "Fisher-Paykel"
+                    },
+                    "option24": {
+                        "value": "Galaxy"
+                    },
+                    "option25": {
+                        "value": "Gallery"
+                    },
+                    "option26": {
+                        "value": "Gibson"
+                    },
+                    "option27": {
+                        "value": "Gladiator"
+                    },
+                    "option28": {
+                        "value": "Goldstar"
+                    },
+                    "option29": {
+                        "value": "HEC"
+                    },
+                    "option30": {
+                        "value": "Haier"
+                    },
+                    "option31": {
+                        "value": "Holiday"
+                    },
+                    "option32": {
+                        "value": "Hotpoint"
+                    },
+                    "option33": {
+                        "value": "Ikea"
+                    },
+                    "option34": {
+                        "value": "Imperial"
+                    },
+                    "option35": {
+                        "value": "Inglis"
+                    },
+                    "option36": {
+                        "value": "Insinkerator"
+                    },
+                    "option37": {
+                        "value": "Jenn Air"
+                    },
+                    "option38": {
+                        "value": "Kelvinator"
+                    },
+                    "option39": {
+                        "value": "Kenmore"
+                    },
+                    "option40": {
+                        "value": "Kirkland"
+                    },
+                    "option41": {
+                        "value": "KitchenAid"
+                    },
+                    "option42": {
+                        "value": "Liberty"
+                    },
+                    "option43": {
+                        "value": "Magic Chef"
+                    },
+                    "option44": {
+                        "value": "Modern Maid"
+                    },
+                    "option45": {
+                        "value": "Monogram"
+                    },
+                    "option46": {
+                        "value": "Montgomery Wards"
+                    },
+                    "option47": {
+                        "value": "Norge"
+                    },
+                    "option48": {
+                        "value": "Panasonic"
+                    },
+                    "option49": {
+                        "value": "Profile"
+                    },
+                    "option50": {
+                        "value": "Roper"
+                    },
+                    "option51": {
+                        "value": "Sanyo"
+                    },
+                    "option52": {
+                        "value": "Sears"
+                    },
+                    "option53": {
+                        "value": "Sharp"
+                    },
+                    "option54": {
+                        "value": "Signature"
+                    },
+                    "option55": {
+                        "value": "Speed Queen"
+                    },
+                    "option56": {
+                        "value": "Tappan"
+                    },
+                    "option57": {
+                        "value": "Vinotemp"
+                    },
+                    "option58": {
+                        "value": "WCI"
+                    },
+                    "option59": {
+                        "value": "WC Woods"
+                    },
+                    "option60": {
+                        "value": "White Westinghouse"
+                    },
+                    "option61": {
+                        "value": "Zoneline"
+                    },
+                    "option62": {
+                        "value": "Other / Don't Know"
+                    }
+                }
+            },
+            "Q4": {
+                "Select the issue": {
+                    "option1": {
+                        "value": "Not heating"
+                    },
+                    "option2": {
+                        "value": "Burning smell"
+                    },
+                    "option3": {
+                        "value": "Drum issue"
+                    },
+                    "option4": {
+                        "value": "No power"
+                    },
+                    "option5": {
+                        "value": "Other"
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q5": {
+                "Describe the issue in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Oven": {
+            "Q1": {
+                "What's the brand of the oven?": {
+                    "option1": {
+                        "value": "Samsung"
+                    },
+                    "option2": {
+                        "value": "LG"
+                    },
+                    "option3": {
+                        "value": "Whirlpool"
+                    },
+                    "option4": {
+                        "value": "General Electric"
+                    },
+                    "option5": {
+                        "value": "Maytag"
+                    },
+                    "option6": {
+                        "value": "Frigidaire"
+                    },
+                    "option7": {
+                        "value": "Admiral"
+                    },
+                    "option8": {
+                        "value": "Aficionado"
+                    },
+                    "option9": {
+                        "value": "Amana"
+                    },
+                    "option10": {
+                        "value": "Americana"
+                    },
+                    "option11": {
+                        "value": "Apollo"
+                    },
+                    "option12": {
+                        "value": "Bosch"
+                    },
+                    "option13": {
+                        "value": "Broan"
+                    },
+                    "option14": {
+                        "value": "Chambers"
+                    },
+                    "option15": {
+                        "value": "Caloric"
+                    },
+                    "option16": {
+                        "value": "Comfort Aire"
+                    },
+                    "option17": {
+                        "value": "Crosley"
+                    },
+                    "option18": {
+                        "value": "Dandby"
+                    },
+                    "option19": {
+                        "value": "Dyson"
+                    },
+                    "option20": {
+                        "value": "Electrolux"
+                    },
+                    "option21": {
+                        "value": "Emerson"
+                    },
+                    "option22": {
+                        "value": "Estate"
+                    },
+                    "option23": {
+                        "value": "Fisher-Paykel"
+                    },
+                    "option24": {
+                        "value": "Galaxy"
+                    },
+                    "option25": {
+                        "value": "Gallery"
+                    },
+                    "option26": {
+                        "value": "Gibson"
+                    },
+                    "option27": {
+                        "value": "Gladiator"
+                    },
+                    "option28": {
+                        "value": "Goldstar"
+                    },
+                    "option29": {
+                        "value": "HEC"
+                    },
+                    "option30": {
+                        "value": "Haier"
+                    },
+                    "option31": {
+                        "value": "Holiday"
+                    },
+                    "option32": {
+                        "value": "Hotpoint"
+                    },
+                    "option33": {
+                        "value": "Ikea"
+                    },
+                    "option34": {
+                        "value": "Imperial"
+                    },
+                    "option35": {
+                        "value": "Inglis"
+                    },
+                    "option36": {
+                        "value": "Insinkerator"
+                    },
+                    "option37": {
+                        "value": "Jenn Air"
+                    },
+                    "option38": {
+                        "value": "Kelvinator"
+                    },
+                    "option39": {
+                        "value": "Kenmore"
+                    },
+                    "option40": {
+                        "value": "Kirkland"
+                    },
+                    "option41": {
+                        "value": "KitchenAid"
+                    },
+                    "option42": {
+                        "value": "Liberty"
+                    },
+                    "option43": {
+                        "value": "Magic Chef"
+                    },
+                    "option44": {
+                        "value": "Modern Maid"
+                    },
+                    "option45": {
+                        "value": "Monogram"
+                    },
+                    "option46": {
+                        "value": "Montgomery Wards"
+                    },
+                    "option47": {
+                        "value": "Norge"
+                    },
+                    "option48": {
+                        "value": "Panasonic"
+                    },
+                    "option49": {
+                        "value": "Profile"
+                    },
+                    "option50": {
+                        "value": "Roper"
+                    },
+                    "option51": {
+                        "value": "Sanyo"
+                    },
+                    "option52": {
+                        "value": "Sears"
+                    },
+                    "option53": {
+                        "value": "Sharp"
+                    },
+                    "option54": {
+                        "value": "Signature"
+                    },
+                    "option55": {
+                        "value": "Speed Queen"
+                    },
+                    "option56": {
+                        "value": "Tappan"
+                    },
+                    "option57": {
+                        "value": "Vinotemp"
+                    },
+                    "option58": {
+                        "value": "WCI"
+                    },
+                    "option59": {
+                        "value": "WC Woods"
+                    },
+                    "option60": {
+                        "value": "White Westinghouse"
+                    },
+                    "option61": {
+                        "value": "Zoneline"
+                    },
+                    "option62": {
+                        "value": "Other / Don't Know"
+                    }
+                }
+            },
+            "Q2": {
+                "Describe the issue in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Washer": {
+            "Q1": {
+                "How are your dryer and washer placed?": {
+                    "option1": {
+                        "value": "Stacked"
+                    },
+                    "option2": {
+                        "value": "Side-by-side"
+                    }
+                }
+            },
+            "Q2": {
+                "What's the brand of the washer?": {
+                    "option1": {
+                        "value": "Samsung"
+                    },
+                    "option2": {
+                        "value": "LG"
+                    },
+                    "option3": {
+                        "value": "Whirlpool"
+                    },
+                    "option4": {
+                        "value": "General Electric"
+                    },
+                    "option5": {
+                        "value": "Maytag"
+                    },
+                    "option6": {
+                        "value": "Frigidaire"
+                    },
+                    "option7": {
+                        "value": "Admiral"
+                    },
+                    "option8": {
+                        "value": "Aficionado"
+                    },
+                    "option9": {
+                        "value": "Amana"
+                    },
+                    "option10": {
+                        "value": "Americana"
+                    },
+                    "option11": {
+                        "value": "Apollo"
+                    },
+                    "option12": {
+                        "value": "Bosch"
+                    },
+                    "option13": {
+                        "value": "Broan"
+                    },
+                    "option14": {
+                        "value": "Chambers"
+                    },
+                    "option15": {
+                        "value": "Caloric"
+                    },
+                    "option16": {
+                        "value": "Comfort Aire"
+                    },
+                    "option17": {
+                        "value": "Crosley"
+                    },
+                    "option18": {
+                        "value": "Dandby"
+                    },
+                    "option19": {
+                        "value": "Dyson"
+                    },
+                    "option20": {
+                        "value": "Electrolux"
+                    },
+                    "option21": {
+                        "value": "Emerson"
+                    },
+                    "option22": {
+                        "value": "Estate"
+                    },
+                    "option23": {
+                        "value": "Fisher-Paykel"
+                    },
+                    "option24": {
+                        "value": "Galaxy"
+                    },
+                    "option25": {
+                        "value": "Gallery"
+                    },
+                    "option26": {
+                        "value": "Gibson"
+                    },
+                    "option27": {
+                        "value": "Gladiator"
+                    },
+                    "option28": {
+                        "value": "Goldstar"
+                    },
+                    "option29": {
+                        "value": "HEC"
+                    },
+                    "option30": {
+                        "value": "Haier"
+                    },
+                    "option31": {
+                        "value": "Holiday"
+                    },
+                    "option32": {
+                        "value": "Hotpoint"
+                    },
+                    "option33": {
+                        "value": "Ikea"
+                    },
+                    "option34": {
+                        "value": "Imperial"
+                    },
+                    "option35": {
+                        "value": "Inglis"
+                    },
+                    "option36": {
+                        "value": "Insinkerator"
+                    },
+                    "option37": {
+                        "value": "Jenn Air"
+                    },
+                    "option38": {
+                        "value": "Kelvinator"
+                    },
+                    "option39": {
+                        "value": "Kenmore"
+                    },
+                    "option40": {
+                        "value": "Kirkland"
+                    },
+                    "option41": {
+                        "value": "KitchenAid"
+                    },
+                    "option42": {
+                        "value": "Liberty"
+                    },
+                    "option43": {
+                        "value": "Magic Chef"
+                    },
+                    "option44": {
+                        "value": "Modern Maid"
+                    },
+                    "option45": {
+                        "value": "Monogram"
+                    },
+                    "option46": {
+                        "value": "Montgomery Wards"
+                    },
+                    "option47": {
+                        "value": "Norge"
+                    },
+                    "option48": {
+                        "value": "Panasonic"
+                    },
+                    "option49": {
+                        "value": "Profile"
+                    },
+                    "option50": {
+                        "value": "Roper"
+                    },
+                    "option51": {
+                        "value": "Sanyo"
+                    },
+                    "option52": {
+                        "value": "Sears"
+                    },
+                    "option53": {
+                        "value": "Sharp"
+                    },
+                    "option54": {
+                        "value": "Signature"
+                    },
+                    "option55": {
+                        "value": "Speed Queen"
+                    },
+                    "option56": {
+                        "value": "Tappan"
+                    },
+                    "option57": {
+                        "value": "Vinotemp"
+                    },
+                    "option58": {
+                        "value": "WCI"
+                    },
+                    "option59": {
+                        "value": "WC Woods"
+                    },
+                    "option60": {
+                        "value": "White Westinghouse"
+                    },
+                    "option61": {
+                        "value": "Zoneline"
+                    },
+                    "option62": {
+                        "value": "Other / Don't Know"
+                    }
+                }
+            },
+            "Q3": {
+                "Select the issue": {
+                    "option1": {
+                        "value": "Leaking"
+                    },
+                    "option2": {
+                        "value": "Odor"
+                    },
+                    "option3": {
+                        "value": "No power"
+                    },
+                    "option4": {
+                        "value": "Not draining"
+                    },
+                    "option5": {
+                        "value": "Drum issue"
+                    },
+                    "option6": {
+                        "value": "Other"
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q4": {
+                "Please describe the issue in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Dishwasher": {
+            "Q1": {
+                "What's the brand of the dishwasher?": {
+                    "option1": {
+                        "value": "Samsung"
+                    },
+                    "option2": {
+                        "value": "LG"
+                    },
+                    "option3": {
+                        "value": "Whirlpool"
+                    },
+                    "option4": {
+                        "value": "General Electric"
+                    },
+                    "option5": {
+                        "value": "Maytag"
+                    },
+                    "option6": {
+                        "value": "Frigidaire"
+                    },
+                    "option7": {
+                        "value": "Admiral"
+                    },
+                    "option8": {
+                        "value": "Aficionado"
+                    },
+                    "option9": {
+                        "value": "Amana"
+                    },
+                    "option10": {
+                        "value": "Americana"
+                    },
+                    "option11": {
+                        "value": "Apollo"
+                    },
+                    "option12": {
+                        "value": "Bosch"
+                    },
+                    "option13": {
+                        "value": "Broan"
+                    },
+                    "option14": {
+                        "value": "Chambers"
+                    },
+                    "option15": {
+                        "value": "Caloric"
+                    },
+                    "option16": {
+                        "value": "Comfort Aire"
+                    },
+                    "option17": {
+                        "value": "Crosley"
+                    },
+                    "option18": {
+                        "value": "Dandby"
+                    },
+                    "option19": {
+                        "value": "Dyson"
+                    },
+                    "option20": {
+                        "value": "Electrolux"
+                    },
+                    "option21": {
+                        "value": "Emerson"
+                    },
+                    "option22": {
+                        "value": "Estate"
+                    },
+                    "option23": {
+                        "value": "Fisher-Paykel"
+                    },
+                    "option24": {
+                        "value": "Galaxy"
+                    },
+                    "option25": {
+                        "value": "Gallery"
+                    },
+                    "option26": {
+                        "value": "Gibson"
+                    },
+                    "option27": {
+                        "value": "Gladiator"
+                    },
+                    "option28": {
+                        "value": "Goldstar"
+                    },
+                    "option29": {
+                        "value": "HEC"
+                    },
+                    "option30": {
+                        "value": "Haier"
+                    },
+                    "option31": {
+                        "value": "Holiday"
+                    },
+                    "option32": {
+                        "value": "Hotpoint"
+                    },
+                    "option33": {
+                        "value": "Ikea"
+                    },
+                    "option34": {
+                        "value": "Imperial"
+                    },
+                    "option35": {
+                        "value": "Inglis"
+                    },
+                    "option36": {
+                        "value": "Insinkerator"
+                    },
+                    "option37": {
+                        "value": "Jenn Air"
+                    },
+                    "option38": {
+                        "value": "Kelvinator"
+                    },
+                    "option39": {
+                        "value": "Kenmore"
+                    },
+                    "option40": {
+                        "value": "Kirkland"
+                    },
+                    "option41": {
+                        "value": "KitchenAid"
+                    },
+                    "option42": {
+                        "value": "Liberty"
+                    },
+                    "option43": {
+                        "value": "Magic Chef"
+                    },
+                    "option44": {
+                        "value": "Modern Maid"
+                    },
+                    "option45": {
+                        "value": "Monogram"
+                    },
+                    "option46": {
+                        "value": "Montgomery Wards"
+                    },
+                    "option47": {
+                        "value": "Norge"
+                    },
+                    "option48": {
+                        "value": "Panasonic"
+                    },
+                    "option49": {
+                        "value": "Profile"
+                    },
+                    "option50": {
+                        "value": "Roper"
+                    },
+                    "option51": {
+                        "value": "Sanyo"
+                    },
+                    "option52": {
+                        "value": "Sears"
+                    },
+                    "option53": {
+                        "value": "Sharp"
+                    },
+                    "option54": {
+                        "value": "Signature"
+                    },
+                    "option55": {
+                        "value": "Speed Queen"
+                    },
+                    "option56": {
+                        "value": "Tappan"
+                    },
+                    "option57": {
+                        "value": "Vinotemp"
+                    },
+                    "option58": {
+                        "value": "WCI"
+                    },
+                    "option59": {
+                        "value": "WC Woods"
+                    },
+                    "option60": {
+                        "value": "White Westinghouse"
+                    },
+                    "option61": {
+                        "value": "Zoneline"
+                    },
+                    "option62": {
+                        "value": "Other / Don't Know"
+                    }
+                }
+            },
+            "Q2": {
+                "Select the issue": {
+                    "option1": {
+                        "value": "Leaking"
+                    },
+                    "option2": {
+                        "value": "Not draining"
+                    },
+                    "option3": {
+                        "value": "Odor"
+                    },
+                    "option4": {
+                        "value": "Noisy"
+                    },
+                    "option5": {
+                        "value": "Other"
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q3": {
+                "Please describe the issue in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Cooktop": {
+            "Q1": {
+                "What's the brand of the cooktop?": {
+                    "option1": {
+                        "value": "Samsung"
+                    },
+                    "option2": {
+                        "value": "LG"
+                    },
+                    "option3": {
+                        "value": "Whirlpool"
+                    },
+                    "option4": {
+                        "value": "General Electric"
+                    },
+                    "option5": {
+                        "value": "Maytag"
+                    },
+                    "option6": {
+                        "value": "Frigidaire"
+                    },
+                    "option7": {
+                        "value": "Admiral"
+                    },
+                    "option8": {
+                        "value": "Aficionado"
+                    },
+                    "option9": {
+                        "value": "Amana"
+                    },
+                    "option10": {
+                        "value": "Americana"
+                    },
+                    "option11": {
+                        "value": "Apollo"
+                    },
+                    "option12": {
+                        "value": "Bosch"
+                    },
+                    "option13": {
+                        "value": "Broan"
+                    },
+                    "option14": {
+                        "value": "Chambers"
+                    },
+                    "option15": {
+                        "value": "Caloric"
+                    },
+                    "option16": {
+                        "value": "Comfort Aire"
+                    },
+                    "option17": {
+                        "value": "Crosley"
+                    },
+                    "option18": {
+                        "value": "Dandby"
+                    },
+                    "option19": {
+                        "value": "Dyson"
+                    },
+                    "option20": {
+                        "value": "Electrolux"
+                    },
+                    "option21": {
+                        "value": "Emerson"
+                    },
+                    "option22": {
+                        "value": "Estate"
+                    },
+                    "option23": {
+                        "value": "Fisher-Paykel"
+                    },
+                    "option24": {
+                        "value": "Galaxy"
+                    },
+                    "option25": {
+                        "value": "Gallery"
+                    },
+                    "option26": {
+                        "value": "Gibson"
+                    },
+                    "option27": {
+                        "value": "Gladiator"
+                    },
+                    "option28": {
+                        "value": "Goldstar"
+                    },
+                    "option29": {
+                        "value": "HEC"
+                    },
+                    "option30": {
+                        "value": "Haier"
+                    },
+                    "option31": {
+                        "value": "Holiday"
+                    },
+                    "option32": {
+                        "value": "Hotpoint"
+                    },
+                    "option33": {
+                        "value": "Ikea"
+                    },
+                    "option34": {
+                        "value": "Imperial"
+                    },
+                    "option35": {
+                        "value": "Inglis"
+                    },
+                    "option36": {
+                        "value": "Insinkerator"
+                    },
+                    "option37": {
+                        "value": "Jenn Air"
+                    },
+                    "option38": {
+                        "value": "Kelvinator"
+                    },
+                    "option39": {
+                        "value": "Kenmore"
+                    },
+                    "option40": {
+                        "value": "Kirkland"
+                    },
+                    "option41": {
+                        "value": "KitchenAid"
+                    },
+                    "option42": {
+                        "value": "Liberty"
+                    },
+                    "option43": {
+                        "value": "Magic Chef"
+                    },
+                    "option44": {
+                        "value": "Modern Maid"
+                    },
+                    "option45": {
+                        "value": "Monogram"
+                    },
+                    "option46": {
+                        "value": "Montgomery Wards"
+                    },
+                    "option47": {
+                        "value": "Norge"
+                    },
+                    "option48": {
+                        "value": "Panasonic"
+                    },
+                    "option49": {
+                        "value": "Profile"
+                    },
+                    "option50": {
+                        "value": "Roper"
+                    },
+                    "option51": {
+                        "value": "Sanyo"
+                    },
+                    "option52": {
+                        "value": "Sears"
+                    },
+                    "option53": {
+                        "value": "Sharp"
+                    },
+                    "option54": {
+                        "value": "Signature"
+                    },
+                    "option55": {
+                        "value": "Speed Queen"
+                    },
+                    "option56": {
+                        "value": "Tappan"
+                    },
+                    "option57": {
+                        "value": "Vinotemp"
+                    },
+                    "option58": {
+                        "value": "WCI"
+                    },
+                    "option59": {
+                        "value": "WC Woods"
+                    },
+                    "option60": {
+                        "value": "White Westinghouse"
+                    },
+                    "option61": {
+                        "value": "Zoneline"
+                    },
+                    "option62": {
+                        "value": "Other / Don't Know"
+                    }
+                }
+            },
+            "Q2": {
+                "Please describe the issue in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Freezer": {
+            "Q1": {
+                "What's the brand of the freezer?": {
+                    "option1": {
+                        "value": "Samsung"
+                    },
+                    "option2": {
+                        "value": "LG"
+                    },
+                    "option3": {
+                        "value": "Whirlpool"
+                    },
+                    "option4": {
+                        "value": "General Electric"
+                    },
+                    "option5": {
+                        "value": "Maytag"
+                    },
+                    "option6": {
+                        "value": "Frigidaire"
+                    },
+                    "option7": {
+                        "value": "Admiral"
+                    },
+                    "option8": {
+                        "value": "Aficionado"
+                    },
+                    "option9": {
+                        "value": "Amana"
+                    },
+                    "option10": {
+                        "value": "Americana"
+                    },
+                    "option11": {
+                        "value": "Apollo"
+                    },
+                    "option12": {
+                        "value": "Bosch"
+                    },
+                    "option13": {
+                        "value": "Broan"
+                    },
+                    "option14": {
+                        "value": "Chambers"
+                    },
+                    "option15": {
+                        "value": "Caloric"
+                    },
+                    "option16": {
+                        "value": "Comfort Aire"
+                    },
+                    "option17": {
+                        "value": "Crosley"
+                    },
+                    "option18": {
+                        "value": "Dandby"
+                    },
+                    "option19": {
+                        "value": "Dyson"
+                    },
+                    "option20": {
+                        "value": "Electrolux"
+                    },
+                    "option21": {
+                        "value": "Emerson"
+                    },
+                    "option22": {
+                        "value": "Estate"
+                    },
+                    "option23": {
+                        "value": "Fisher-Paykel"
+                    },
+                    "option24": {
+                        "value": "Galaxy"
+                    },
+                    "option25": {
+                        "value": "Gallery"
+                    },
+                    "option26": {
+                        "value": "Gibson"
+                    },
+                    "option27": {
+                        "value": "Gladiator"
+                    },
+                    "option28": {
+                        "value": "Goldstar"
+                    },
+                    "option29": {
+                        "value": "HEC"
+                    },
+                    "option30": {
+                        "value": "Haier"
+                    },
+                    "option31": {
+                        "value": "Holiday"
+                    },
+                    "option32": {
+                        "value": "Hotpoint"
+                    },
+                    "option33": {
+                        "value": "Ikea"
+                    },
+                    "option34": {
+                        "value": "Imperial"
+                    },
+                    "option35": {
+                        "value": "Inglis"
+                    },
+                    "option36": {
+                        "value": "Insinkerator"
+                    },
+                    "option37": {
+                        "value": "Jenn Air"
+                    },
+                    "option38": {
+                        "value": "Kelvinator"
+                    },
+                    "option39": {
+                        "value": "Kenmore"
+                    },
+                    "option40": {
+                        "value": "Kirkland"
+                    },
+                    "option41": {
+                        "value": "KitchenAid"
+                    },
+                    "option42": {
+                        "value": "Liberty"
+                    },
+                    "option43": {
+                        "value": "Magic Chef"
+                    },
+                    "option44": {
+                        "value": "Modern Maid"
+                    },
+                    "option45": {
+                        "value": "Monogram"
+                    },
+                    "option46": {
+                        "value": "Montgomery Wards"
+                    },
+                    "option47": {
+                        "value": "Norge"
+                    },
+                    "option48": {
+                        "value": "Panasonic"
+                    },
+                    "option49": {
+                        "value": "Profile"
+                    },
+                    "option50": {
+                        "value": "Roper"
+                    },
+                    "option51": {
+                        "value": "Sanyo"
+                    },
+                    "option52": {
+                        "value": "Sears"
+                    },
+                    "option53": {
+                        "value": "Sharp"
+                    },
+                    "option54": {
+                        "value": "Signature"
+                    },
+                    "option55": {
+                        "value": "Speed Queen"
+                    },
+                    "option56": {
+                        "value": "Tappan"
+                    },
+                    "option57": {
+                        "value": "Vinotemp"
+                    },
+                    "option58": {
+                        "value": "WCI"
+                    },
+                    "option59": {
+                        "value": "WC Woods"
+                    },
+                    "option60": {
+                        "value": "White Westinghouse"
+                    },
+                    "option61": {
+                        "value": "Zoneline"
+                    },
+                    "option62": {
+                        "value": "Other / Don't Know"
+                    }
+                }
+            },
+            "Q2": {
+                "Please describe the issue in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Microwave": {
+            "Q1": {
+                "What's the brand of the microwave?": {
+                    "option1": {
+                        "value": "Samsung"
+                    },
+                    "option2": {
+                        "value": "LG"
+                    },
+                    "option3": {
+                        "value": "Whirlpool"
+                    },
+                    "option4": {
+                        "value": "General Electric"
+                    },
+                    "option5": {
+                        "value": "Maytag"
+                    },
+                    "option6": {
+                        "value": "Frigidaire"
+                    },
+                    "option7": {
+                        "value": "Admiral"
+                    },
+                    "option8": {
+                        "value": "Aficionado"
+                    },
+                    "option9": {
+                        "value": "Amana"
+                    },
+                    "option10": {
+                        "value": "Americana"
+                    },
+                    "option11": {
+                        "value": "Apollo"
+                    },
+                    "option12": {
+                        "value": "Bosch"
+                    },
+                    "option13": {
+                        "value": "Broan"
+                    },
+                    "option14": {
+                        "value": "Chambers"
+                    },
+                    "option15": {
+                        "value": "Caloric"
+                    },
+                    "option16": {
+                        "value": "Comfort Aire"
+                    },
+                    "option17": {
+                        "value": "Crosley"
+                    },
+                    "option18": {
+                        "value": "Dandby"
+                    },
+                    "option19": {
+                        "value": "Dyson"
+                    },
+                    "option20": {
+                        "value": "Electrolux"
+                    },
+                    "option21": {
+                        "value": "Emerson"
+                    },
+                    "option22": {
+                        "value": "Estate"
+                    },
+                    "option23": {
+                        "value": "Fisher-Paykel"
+                    },
+                    "option24": {
+                        "value": "Galaxy"
+                    },
+                    "option25": {
+                        "value": "Gallery"
+                    },
+                    "option26": {
+                        "value": "Gibson"
+                    },
+                    "option27": {
+                        "value": "Gladiator"
+                    },
+                    "option28": {
+                        "value": "Goldstar"
+                    },
+                    "option29": {
+                        "value": "HEC"
+                    },
+                    "option30": {
+                        "value": "Haier"
+                    },
+                    "option31": {
+                        "value": "Holiday"
+                    },
+                    "option32": {
+                        "value": "Hotpoint"
+                    },
+                    "option33": {
+                        "value": "Ikea"
+                    },
+                    "option34": {
+                        "value": "Imperial"
+                    },
+                    "option35": {
+                        "value": "Inglis"
+                    },
+                    "option36": {
+                        "value": "Insinkerator"
+                    },
+                    "option37": {
+                        "value": "Jenn Air"
+                    },
+                    "option38": {
+                        "value": "Kelvinator"
+                    },
+                    "option39": {
+                        "value": "Kenmore"
+                    },
+                    "option40": {
+                        "value": "Kirkland"
+                    },
+                    "option41": {
+                        "value": "KitchenAid"
+                    },
+                    "option42": {
+                        "value": "Liberty"
+                    },
+                    "option43": {
+                        "value": "Magic Chef"
+                    },
+                    "option44": {
+                        "value": "Modern Maid"
+                    },
+                    "option45": {
+                        "value": "Monogram"
+                    },
+                    "option46": {
+                        "value": "Montgomery Wards"
+                    },
+                    "option47": {
+                        "value": "Norge"
+                    },
+                    "option48": {
+                        "value": "Panasonic"
+                    },
+                    "option49": {
+                        "value": "Profile"
+                    },
+                    "option50": {
+                        "value": "Roper"
+                    },
+                    "option51": {
+                        "value": "Sanyo"
+                    },
+                    "option52": {
+                        "value": "Sears"
+                    },
+                    "option53": {
+                        "value": "Sharp"
+                    },
+                    "option54": {
+                        "value": "Signature"
+                    },
+                    "option55": {
+                        "value": "Speed Queen"
+                    },
+                    "option56": {
+                        "value": "Tappan"
+                    },
+                    "option57": {
+                        "value": "Vinotemp"
+                    },
+                    "option58": {
+                        "value": "WCI"
+                    },
+                    "option59": {
+                        "value": "WC Woods"
+                    },
+                    "option60": {
+                        "value": "White Westinghouse"
+                    },
+                    "option61": {
+                        "value": "Zoneline"
+                    },
+                    "option62": {
+                        "value": "Other / Don't Know"
+                    }
+                }
+            },
+            "Q2": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Washer dryer combo": {
+            "Q1": {
+                "What's the brand of the washer dryer?": {
+                    "option1": {
+                        "value": "Samsung"
+                    },
+                    "option2": {
+                        "value": "LG"
+                    },
+                    "option3": {
+                        "value": "Whirlpool"
+                    },
+                    "option4": {
+                        "value": "General Electric"
+                    },
+                    "option5": {
+                        "value": "Maytag"
+                    },
+                    "option6": {
+                        "value": "Frigidaire"
+                    },
+                    "option7": {
+                        "value": "Admiral"
+                    },
+                    "option8": {
+                        "value": "Aficionado"
+                    },
+                    "option9": {
+                        "value": "Amana"
+                    },
+                    "option10": {
+                        "value": "Americana"
+                    },
+                    "option11": {
+                        "value": "Apollo"
+                    },
+                    "option12": {
+                        "value": "Bosch"
+                    },
+                    "option13": {
+                        "value": "Broan"
+                    },
+                    "option14": {
+                        "value": "Chambers"
+                    },
+                    "option15": {
+                        "value": "Caloric"
+                    },
+                    "option16": {
+                        "value": "Comfort Aire"
+                    },
+                    "option17": {
+                        "value": "Crosley"
+                    },
+                    "option18": {
+                        "value": "Dandby"
+                    },
+                    "option19": {
+                        "value": "Dyson"
+                    },
+                    "option20": {
+                        "value": "Electrolux"
+                    },
+                    "option21": {
+                        "value": "Emerson"
+                    },
+                    "option22": {
+                        "value": "Estate"
+                    },
+                    "option23": {
+                        "value": "Fisher-Paykel"
+                    },
+                    "option24": {
+                        "value": "Galaxy"
+                    },
+                    "option25": {
+                        "value": "Gallery"
+                    },
+                    "option26": {
+                        "value": "Gibson"
+                    },
+                    "option27": {
+                        "value": "Gladiator"
+                    },
+                    "option28": {
+                        "value": "Goldstar"
+                    },
+                    "option29": {
+                        "value": "HEC"
+                    },
+                    "option30": {
+                        "value": "Haier"
+                    },
+                    "option31": {
+                        "value": "Holiday"
+                    },
+                    "option32": {
+                        "value": "Hotpoint"
+                    },
+                    "option33": {
+                        "value": "Ikea"
+                    },
+                    "option34": {
+                        "value": "Imperial"
+                    },
+                    "option35": {
+                        "value": "Inglis"
+                    },
+                    "option36": {
+                        "value": "Insinkerator"
+                    },
+                    "option37": {
+                        "value": "Jenn Air"
+                    },
+                    "option38": {
+                        "value": "Kelvinator"
+                    },
+                    "option39": {
+                        "value": "Kenmore"
+                    },
+                    "option40": {
+                        "value": "Kirkland"
+                    },
+                    "option41": {
+                        "value": "KitchenAid"
+                    },
+                    "option42": {
+                        "value": "Liberty"
+                    },
+                    "option43": {
+                        "value": "Magic Chef"
+                    },
+                    "option44": {
+                        "value": "Modern Maid"
+                    },
+                    "option45": {
+                        "value": "Monogram"
+                    },
+                    "option46": {
+                        "value": "Montgomery Wards"
+                    },
+                    "option47": {
+                        "value": "Norge"
+                    },
+                    "option48": {
+                        "value": "Panasonic"
+                    },
+                    "option49": {
+                        "value": "Profile"
+                    },
+                    "option50": {
+                        "value": "Roper"
+                    },
+                    "option51": {
+                        "value": "Sanyo"
+                    },
+                    "option52": {
+                        "value": "Sears"
+                    },
+                    "option53": {
+                        "value": "Sharp"
+                    },
+                    "option54": {
+                        "value": "Signature"
+                    },
+                    "option55": {
+                        "value": "Speed Queen"
+                    },
+                    "option56": {
+                        "value": "Tappan"
+                    },
+                    "option57": {
+                        "value": "Vinotemp"
+                    },
+                    "option58": {
+                        "value": "WCI"
+                    },
+                    "option59": {
+                        "value": "WC Woods"
+                    },
+                    "option60": {
+                        "value": "White Westinghouse"
+                    },
+                    "option61": {
+                        "value": "Zoneline"
+                    },
+                    "option62": {
+                        "value": "Other / Don't Know"
+                    }
+                }
+            },
+            "Q2": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        }
+    },
+    "3": {
+        "General handyman hours": {
+            "Q1": {
+                "How many hours of service do you need?": {
+                    "option1": {
+                        "value": "2-hour service",
+                        "price": {
+                            "amount": 233,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "3-hour service",
+                        "price": {
+                            "amount": 332,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "4-hour service",
+                        "price": {
+                            "amount": 421,
+                            "currency": "$"
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Furniture assembly": {
+            "Q1": {
+                "How many pieces of furniture will be assembled?": {
+                    "option1": {
+                        "value": "Small furniture",
+                        "price": {
+                            "installation amount": 138,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 69,
+                                "currency": "$"
+                            }
+                        }
+                    },
+                    "option2": {
+                        "value": "Medium furniture",
+                        "price": {
+                            "installation amount": 138,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 104,
+                                "currency": "$"
+                            }
+                        }
+                    },
+                    "option3": {
+                        "value": "Large furniture",
+                        "price": {
+                            "installation amount": 138,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 138,
+                                "currency": "$"
+                            }
+                        }
+                    },
+                    "option4": {
+                        "value": "Extra-Large furniture",
+                        "price": {
+                            "installation amount": 207,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 207,
+                                "currency": "$"
+                            }
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Wall hanging": {
+            "Q1": {
+                "How many items need hanging?": {
+                    "option1": {
+                        "value": "Small items",
+                        "price": {
+                            "installation amount": 152,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 38,
+                                "currency": "$"
+                            }
+                        }
+                    },
+                    "option2": {
+                        "value": "Large items",
+                        "price": {
+                            "installation amount": 152,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 76,
+                                "currency": "$"
+                            }
+                        }
+                    },
+                    "option3": {
+                        "value": "Mirrors and heavy objects",
+                        "price": {
+                            "installation amount": 152,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 76,
+                                "currency": "$"
+                            }
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "What kind of wall types will we be hanging items on?": {
+                    "option1": {
+                        "value": "Drywall or wood"
+                    },
+                    "option2": {
+                        "value": "Brick"
+                    },
+                    "option3": {
+                        "value": "Concrete"
+                    },
+                    "option4": {
+                        "value": "Paneling"
+                    },
+                    "option5": {
+                        "value": "Other"
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q3": {
+                "What’s the height of your ceiling?": {
+                    "option1": {
+                        "value": "Standard ceiling (8-12 ft)"
+                    },
+                    "option2": {
+                        "value": "Higher ceiling (12.1 ft or higher)"
+                    }
+                }
+            },
+            "Q4": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Interior painting": {
+            "Would you like us to provide the paint?": {
+                "option1": {
+                    "value": "Yes"
+                },
+                "option2": {
+                    "value": "No, I already have it"
+                }
+            },
+            "Q1": {
+                "How many rooms are you painting?": {
+                    "option1": {
+                        "value": "Just the touch ups",
+                        "price": {
+                            "amount": 219,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "1 room",
+                        "price": {
+                            "amount": 439,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "2 rooms",
+                        "price": {
+                            "amount": 879,
+                            "currency": "$"
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Appliance install": {
+            "What type of appliance do you need to install/replace?": {
+                "Cooktop installation": {
+                    "Q1": {
+                        "Is this a first-time installation or replacement?": {
+                            "option1": {
+                                "value": "Replacement"
+                            },
+                            "option2": {
+                                "value": "First-time"
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "What is the fuel source for the cooktop?": {
+                            "option1": {
+                                "value": "Electric-hard wire",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            },
+                            "option2": {
+                                "value": "Electric-plug",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            },
+                            "option3": {
+                                "value": "Natural gas",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            },
+                            "option4": {
+                                "value": "Propane gas",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            }
+                        }
+                    },
+                    "Q3": {
+                        "Is wiring or gas available at the installation location?": {
+                            "option1": {
+                                "value": "Existing source"
+                            },
+                            "option2": {
+                                "value": "New source"
+                            }
+                        }
+                    },
+                    "Q4": {
+                        "Please describe the job in detail?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                },
+                "Dishwasher replacement": {
+                    "Q1": {
+                        "Please describe the job in detail?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    },
+                    "price": {
+                        "amount": 207,
+                        "currency": "$"
+                    }
+                },
+                "Dryer installation / replacement": {
+                    "Q1": {
+                        "Is this a first-time installation or replacement?": {
+                            "option1": {
+                                "value": "Replacement",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            },
+                            "option2": {
+                                "value": "First-time",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Please describe the job in detail?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                },
+                "Garbage disposal installation": {
+                    "Q1": {
+                        "What type of installation?": {
+                            "option1": {
+                                "value": "Replacement",
+                                "price": {
+                                    "amount": 176,
+                                    "currency": "$"
+                                }
+                            },
+                            "option2": {
+                                "value": "First-time installation",
+                                "price": {
+                                    "amount": 176,
+                                    "currency": "$"
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Please describe the job in detail?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                },
+                "Over-the-range microwave oven installation": {
+                    "Q1": {
+                        "What type of installation?": {
+                            "option1": {
+                                "value": "Replacement",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            },
+                            "option2": {
+                                "value": "First-time installation",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Please describe the job in detail?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                },
+                "Refrigerator installation": {
+                    "Q1": {
+                        "Does your new refrigerator have ice and water in the door?": {
+                            "option1": {
+                                "value": "Yes",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            },
+                            "option2": {
+                                "value": "No",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Please describe the job in detail?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                },
+                "Stove replacement": {
+                    "Q1": {
+                        "Is your stove gas or electric?": {
+                            "option1": {
+                                "value": "Gas",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            },
+                            "option2": {
+                                "value": "Electric",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Please describe the job in detail?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                },
+                "Wall oven replacement": {
+                    "Q1": {
+                        "Is the wall oven Gas or Electric?": {
+                            "option1": {
+                                "value": "Gas",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            },
+                            "option2": {
+                                "value": "Electric",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Is this a single or double oven unit?": {
+                            "option1": {
+                                "value": "Single"
+                            },
+                            "option2": {
+                                "value": "Double"
+                            }
+                        }
+                    },
+                    "Q3": {
+                        "Please describe the job in detail?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                },
+                "Washing machine installation / replacement": {
+                    "Q1": {
+                        "Is this a first-time installation or replacement?": {
+                            "option1": {
+                                "value": "Replacement",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            },
+                            "option2": {
+                                "value": "First-time",
+                                "price": {
+                                    "amount": 207,
+                                    "currency": "$"
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Please describe the job in detail?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "Drywall repair": {
+            "Q1": {
+                "How many areas of drywall are damaged?": {
+                    "option1": {
+                        "value": "Number of minor areas",
+                        "price": {
+                            "amount": 174,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 87,
+                                "currency": "$"
+                            }
+                        }
+                    },
+                    "option2": {
+                        "value": "Number of major areas",
+                        "price": {
+                            "amount": 174,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 131,
+                                "currency": "$"
+                            }
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "Does the work involve working on the ceiling?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No",
+                        "jump": "Q4"
+                    }
+                }
+            },
+            "Q3": {
+                "What's the height of your ceiling?": {
+                    "option1": {
+                        "value": "Standard ceiling (8-12 ft)"
+                    },
+                    "option2": {
+                        "value": "Higher ceiling (12.1 ft or higher)"
+                    }
+                }
+            },
+            "Q4": {
+                "Will the technician need to repaint the wall?": {
+                    "option1": {
+                        "value": "Yes",
+                        "price": {
+                            "amount": 87,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "No"
+                    }
+                }
+            },
+            "Q5": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Fan install": {
+            "Q1": {
+                "How many fans will be installed?": {
+                    "option1": {
+                        "value": "Ceiling fans",
+                        "price": {
+                            "amount": 194,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 193,
+                                "currency": "$"
+                            }
+                        }
+                    },
+                    "option2": {
+                        "value": "Bathroom fans",
+                        "price": {
+                            "amount": 194,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 193,
+                                "currency": "$"
+                            }
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "How high is your ceiling?": {
+                    "option1": {
+                        "value": "Under 10 ft."
+                    },
+                    "option2": {
+                        "value": "10 to 14 ft."
+                    },
+                    "option3": {
+                        "value": "Above 14 ft."
+                    }
+                }
+            },
+            "Q3": {
+                "Will the handyman need a ladder?": {
+                    "option1": {
+                        "value": "No"
+                    },
+                    "option2": {
+                        "value": "Yes-step ladder"
+                    },
+                    "option3": {
+                        "value": "Yes-extension ladder"
+                    }
+                }
+            },
+            "Q4": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Window treatments": {
+            "Q1": {
+                "Tell us about the job": {
+                    "option1": {
+                        "value": "Blinds",
+                        "price": {
+                            "amount": 154,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 77,
+                                "currency": "$"
+                            }
+                        }
+                    },
+                    "option2": {
+                        "value": "Curtains",
+                        "price": {
+                            "amount": 154,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 77,
+                                "currency": "$"
+                            }
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "Is this a first-time installation or replacement?": {
+                    "option1": {
+                        "value": "Replacement"
+                    },
+                    "option2": {
+                        "value": "First-time"
+                    }
+                }
+            },
+            "Q3": {
+                "Will the handyman need a ladder?": {
+                    "option1": {
+                        "value": "No"
+                    },
+                    "option2": {
+                        "value": "Yes-step ladder"
+                    },
+                    "option3": {
+                        "value": "Yes-extension ladder"
+                    }
+                }
+            },
+            "Q4": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Power washing": {
+            "Q1": {
+                "What size is the area you need washed?": {
+                    "option1": {
+                        "value": "Less than 2000 sq ft",
+                        "price": {
+                            "amount": 426,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "2001-4000 sq ft",
+                        "price": {
+                            "amount": 710,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "More than 4000 sq ft",
+                        "price": {
+                            "amount": 1135,
+                            "currency": "$"
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "What do you need power washed?": {
+                    "option1": {
+                        "value": "Building exterior"
+                    },
+                    "option2": {
+                        "value": "Decking"
+                    },
+                    "option3": {
+                        "value": "Driveway"
+                    }
+                }
+            },
+            "Q3": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Light install": {
+            "Q1": {
+                "Tell us about the job": {
+                    "option1": {
+                        "value": "Light Fixture Replacement",
+                        "price": {
+                            "amount": 167,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 42,
+                                "currency": "$"
+                            }
+                        }
+                    },
+                    "option2": {
+                        "value": "Exterior Light Fixture Replacement",
+                        "price": {
+                            "amount": 167,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 42,
+                                "currency": "$"
+                            }
+                        }
+                    },
+                    "option3": {
+                        "value": "Chandelier Replacement",
+                        "price": {
+                            "amount": 167,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 84,
+                                "currency": "$"
+                            }
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "How high is your ceiling?": {
+                    "option1": {
+                        "value": "Under 10 ft."
+                    },
+                    "option2": {
+                        "value": "10 to 14 ft."
+                    },
+                    "option3": {
+                        "value": "Above 14 ft."
+                    }
+                }
+            },
+            "Q3": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Electrical services": {
+            "Q1": {
+                "Tell us about the job": {
+                    "option1": {
+                        "value": "Light switch replacement",
+                        "price": {
+                            "amount": 167,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 84,
+                                "currency": "$"
+                            }
+                        }
+                    },
+                    "option2": {
+                        "value": "Outlet replacement",
+                        "price": {
+                            "amount": 167,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 84,
+                                "currency": "$"
+                            }
+                        }
+                    },
+                    "option3": {
+                        "value": "Change or Replace Existing Light Fixtures",
+                        "price": {
+                            "amount": 167,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 84,
+                                "currency": "$"
+                            }
+                        }
+                    },
+                    "option4": {
+                        "value": "Device Installation (existing wiring only)",
+                        "price": {
+                            "amount": 167,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional amount": 84,
+                                "currency": "$"
+                            }
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Gutter cleaning": {
+            "Q1": {
+                "How big is your home?": {
+                    "option1": {
+                        "value": "0-1,000 sq ft",
+                        "price": {
+                            "amount": 167,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "1,001-2,000 sq ft",
+                        "price": {
+                            "amount": 209,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "2,001-3,000 sq ft",
+                        "price": {
+                            "amount": 251,
+                            "currency": "$"
+                        }
+                    },
+                    "option4": {
+                        "value": "3,001-4,000 sq ft",
+                        "price": {
+                            "amount": 293,
+                            "currency": "$"
+                        }
+                    },
+                    "option5": {
+                        "value": "4,001-5,000 sq ft",
+                        "price": {
+                            "amount": 334,
+                            "currency": "$"
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "How many floors is your home?": {
+                    "option1": {
+                        "value": "1 story"
+                    },
+                    "option2": {
+                        "value": "2 story"
+                    },
+                    "option3": {
+                        "value": "3 story"
+                    }
+                }
+            },
+            "Q3": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        }
+    },
+    "4": {
+        "Commercial - Disinfectant Spray": {
+            "Q1": {
+                "How big is your home?": {
+                    "option1": {
+                        "value": "0-1,000 sq ft",
+                        "price": {
+                            "amount": 167,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "1,001-2,000 sq ft",
+                        "price": {
+                            "amount": 209,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "2,001-3,000 sq ft",
+                        "price": {
+                            "amount": 251,
+                            "currency": "$"
+                        }
+                    },
+                    "option4": {
+                        "value": "3,001-4,000 sq ft",
+                        "price": {
+                            "amount": 293,
+                            "currency": "$"
+                        }
+                    },
+                    "option5": {
+                        "value": "4,001-5,000 sq ft",
+                        "price": {
+                            "amount": 334,
+                            "currency": "$"
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Residential - Disinfectant Cleaning": {
+            "What type of clean you need?": {
+                "Deep cleaning": {
+                    "Q1": {
+                        "How big is your home?": {
+                            "option1": {
+                                "value": "0-1,000 sq ft",
+                                "price": {
+                                    "amount": 167,
+                                    "currency": "$"
+                                }
+                            },
+                            "option2": {
+                                "value": "1,001-2,000 sq ft",
+                                "price": {
+                                    "amount": 209,
+                                    "currency": "$"
+                                }
+                            },
+                            "option3": {
+                                "value": "2,001-3,000 sq ft",
+                                "price": {
+                                    "amount": 251,
+                                    "currency": "$"
+                                }
+                            },
+                            "option4": {
+                                "value": "3,001-4,000 sq ft",
+                                "price": {
+                                    "amount": 293,
+                                    "currency": "$"
+                                }
+                            },
+                            "option5": {
+                                "value": "4,001-5,000 sq ft",
+                                "price": {
+                                    "amount": 334,
+                                    "currency": "$"
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Please describe the job in detail": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                },
+                "General cleaning": {
+                    "Q1": {
+                        "How big is your home?": {
+                            "option1": {
+                                "value": "0-1,000 sq ft",
+                                "price": {
+                                    "amount": 167,
+                                    "currency": "$"
+                                }
+                            },
+                            "option2": {
+                                "value": "1,001-2,000 sq ft",
+                                "price": {
+                                    "amount": 209,
+                                    "currency": "$"
+                                }
+                            },
+                            "option3": {
+                                "value": "2,001-3,000 sq ft",
+                                "price": {
+                                    "amount": 251,
+                                    "currency": "$"
+                                }
+                            },
+                            "option4": {
+                                "value": "3,001-4,000 sq ft",
+                                "price": {
+                                    "amount": 293,
+                                    "currency": "$"
+                                }
+                            },
+                            "option5": {
+                                "value": "4,001-5,000 sq ft",
+                                "price": {
+                                    "amount": 334,
+                                    "currency": "$"
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Please describe the job in detail": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "5": {
+        "XS Max": {
+            "Q1": {
+                "What can we fix for you?": {
+                    "option1": {
+                        "value": "LCD install",
+                        "price": {
+                            "amount": 349.99,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "Battery",
+                        "price": {
+                            "amount": 109.99,
+                            "currency": "$"
+                        }
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q2": {
+                "Select your device color": {
+                    "option1": {
+                        "value": "Silver"
+                    },
+                    "option2": {
+                        "value": "Space Gray"
+                    },
+                    "option3": {
+                        "value": "Gold"
+                    }
+                }
+            },
+            "Q3": {
+                "Something else you want to add": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "XR": {
+            "Q1": {
+                "What can we fix for you?": {
+                    "option1": {
+                        "value": "LCD install",
+                        "price": {
+                            "amount": 279,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "Battery",
+                        "price": {
+                            "amount": 99.99,
+                            "currency": "$"
+                        }
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q2": {
+                "Select your device color": {
+                    "option1": {
+                        "value": "Black"
+                    },
+                    "option2": {
+                        "value": "White"
+                    },
+                    "option3": {
+                        "value": "Blue"
+                    },
+                    "option4": {
+                        "value": "Yellow"
+                    },
+                    "option5": {
+                        "value": "Coral"
+                    },
+                    "option6": {
+                        "value": "Red"
+                    }
+                }
+            },
+            "Q3": {
+                "Something else you want to add": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "XS": {
+            "Q1": {
+                "What can we fix for you?": {
+                    "option1": {
+                        "value": "LCD install",
+                        "price": {
+                            "amount": 279,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "Battery",
+                        "price": {
+                            "amount": 99.99,
+                            "currency": "$"
+                        }
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q2": {
+                "Select your device color": {
+                    "option1": {
+                        "value": "Silver"
+                    },
+                    "option2": {
+                        "value": "Space Gray"
+                    },
+                    "option3": {
+                        "value": "Gold"
+                    }
+                }
+            },
+            "Q3": {
+                "Something else you want to add": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "X": {
+            "Q1": {
+                "What can we fix for you?": {
+                    "option1": {
+                        "value": "LCD install",
+                        "price": {
+                            "amount": 279,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "Battery",
+                        "price": {
+                            "amount": 99.99,
+                            "currency": "$"
+                        }
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q2": {
+                "Select your device color": {
+                    "option1": {
+                        "value": "Space Gray"
+                    },
+                    "option2": {
+                        "value": "Silver"
+                    }
+                }
+            },
+            "Q3": {
+                "Something else you want to add": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "8 Plus": {
+            "Q1": {
+                "What can we fix for you?": {
+                    "option1": {
+                        "value": "LCD install",
+                        "price": {
+                            "amount": 109,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "Battery",
+                        "price": {
+                            "amount": 89.99,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "Charging Port",
+                        "price": {
+                            "amount": 79.99,
+                            "currency": "$"
+                        }
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q2": {
+                "Select your device color": {
+                    "option1": {
+                        "value": "Gold"
+                    },
+                    "option2": {
+                        "value": "Silver"
+                    },
+                    "option3": {
+                        "value": "Space Gray"
+                    },
+                    "option4": {
+                        "value": "Red"
+                    }
+                }
+            },
+            "Q3": {
+                "Something else you want to add": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "8": {
+            "Q1": {
+                "What can we fix for you?": {
+                    "option1": {
+                        "value": "LCD install",
+                        "price": {
+                            "amount": 99,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "Battery",
+                        "price": {
+                            "amount": 89.99,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "Charging Port",
+                        "price": {
+                            "amount": 79.99,
+                            "currency": "$"
+                        }
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q2": {
+                "Select your device color": {
+                    "option1": {
+                        "value": "Gold"
+                    },
+                    "option2": {
+                        "value": "Silver"
+                    },
+                    "option3": {
+                        "value": "Space Gray"
+                    },
+                    "option4": {
+                        "value": "Red"
+                    }
+                }
+            },
+            "Q3": {
+                "Something else you want to add": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "7 Plus": {
+            "Q1": {
+                "What can we fix for you?": {
+                    "option1": {
+                        "value": "LCD install",
+                        "price": {
+                            "amount": 109,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "Battery",
+                        "price": {
+                            "amount": 89,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "Charging Port",
+                        "price": {
+                            "amount": 69,
+                            "currency": "$"
+                        }
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q2": {
+                "Select your device color": {
+                    "option1": {
+                        "value": "Jet Black"
+                    },
+                    "option2": {
+                        "value": "Black"
+                    },
+                    "option3": {
+                        "value": "Gold"
+                    },
+                    "option4": {
+                        "value": "Silver"
+                    },
+                    "option5": {
+                        "value": "Rose Gold"
+                    },
+                    "option6": {
+                        "value": "Red"
+                    }
+                }
+            },
+            "Q3": {
+                "Something else you want to add": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "7": {
+            "Q1": {
+                "What can we fix for you?": {
+                    "option1": {
+                        "value": "LCD install",
+                        "price": {
+                            "amount": 99,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "Battery",
+                        "price": {
+                            "amount": 79,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "Charging Port",
+                        "price": {
+                            "amount": 69,
+                            "currency": "$"
+                        }
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q2": {
+                "Select your device color": {
+                    "option1": {
+                        "value": "Jet Black"
+                    },
+                    "option2": {
+                        "value": "Black"
+                    },
+                    "option3": {
+                        "value": "Gold"
+                    },
+                    "option4": {
+                        "value": "Silver"
+                    },
+                    "option5": {
+                        "value": "Rose Gold"
+                    },
+                    "option6": {
+                        "value": "Red"
+                    }
+                }
+            },
+            "Q3": {
+                "Something else you want to add": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "6s Plus": {
+            "Q1": {
+                "What can we fix for you?": {
+                    "option1": {
+                        "value": "LCD install",
+                        "price": {
+                            "amount": 89,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "Battery",
+                        "price": {
+                            "amount": 89,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "Charging Port",
+                        "price": {
+                            "amount": 79,
+                            "currency": "$"
+                        }
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q2": {
+                "Select your device color": {
+                    "option1": {
+                        "value": "Space Gray"
+                    },
+                    "option2": {
+                        "value": "Gold"
+                    },
+                    "option3": {
+                        "value": "Silver"
+                    },
+                    "option4": {
+                        "value": "Rose Gold"
+                    }
+                }
+            },
+            "Q3": {
+                "Something else you want to add": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "6s": {
+            "Q1": {
+                "What can we fix for you?": {
+                    "option1": {
+                        "value": "LCD install",
+                        "price": {
+                            "amount": 79,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "Battery",
+                        "price": {
+                            "amount": 79,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "Charging Port",
+                        "price": {
+                            "amount": 79,
+                            "currency": "$"
+                        }
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q2": {
+                "Select your device color": {
+                    "option1": {
+                        "value": "Space Gray"
+                    },
+                    "option2": {
+                        "value": "Gold"
+                    },
+                    "option3": {
+                        "value": "Silver"
+                    },
+                    "option4": {
+                        "value": "Rose Gold"
+                    }
+                }
+            },
+            "Q3": {
+                "Something else you want to add": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "6 Plus": {
+            "Q1": {
+                "What can we fix for you?": {
+                    "option1": {
+                        "value": "LCD install",
+                        "price": {
+                            "amount": 89,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "Battery",
+                        "price": {
+                            "amount": 89,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "Charging Port",
+                        "price": {
+                            "amount": 79,
+                            "currency": "$"
+                        }
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q2": {
+                "Select your device color": {
+                    "option1": {
+                        "value": "Space Gray"
+                    },
+                    "option2": {
+                        "value": "Gold"
+                    },
+                    "option3": {
+                        "value": "Silver"
+                    }
+                }
+            },
+            "Q3": {
+                "Something else you want to add": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "6": {
+            "Q1": {
+                "What can we fix for you?": {
+                    "option1": {
+                        "value": "LCD install",
+                        "price": {
+                            "amount": 79,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "Battery",
+                        "price": {
+                            "amount": 79,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "Charging Port",
+                        "price": {
+                            "amount": 79,
+                            "currency": "$"
+                        }
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q2": {
+                "Select your device color": {
+                    "option1": {
+                        "value": "Space Gray"
+                    },
+                    "option2": {
+                        "value": "Gold"
+                    },
+                    "option3": {
+                        "value": "Silver"
+                    }
+                }
+            },
+            "Q3": {
+                "Something else you want to add": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        }
+    },
+    "6": {
+        "Smart security camera": {
+            "Q1": {
+                "How many devices do you need?": {
+                    "option1": {
+                        "value": "Smart wireless security camera",
+                        "price": {
+                            "installation": 129,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional devices": 49,
+                                "currency": "$"
+                            }
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "Please insert the make/model of the device": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            },
+            "Q3": {
+                "Where would you like the device installed?": {
+                    "option1": {
+                        "value": "Indoors"
+                    },
+                    "option2": {
+                        "value": "Outdoors"
+                    },
+                    "checkbox": true
+                }
+            },
+            "Q4": {
+                "Is there a power source nearby?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    },
+                    "option3": {
+                        "value": "Not sure"
+                    }
+                }
+            },
+            "Q5": {
+                "Do you have a stable and reliable WiFi connection that will reach to where the device will be installed?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    },
+                    "option3": {
+                        "value": "Not sure"
+                    }
+                }
+            },
+            "Q6": {
+                "If you device requires an app, do you have it downloaded and set up on your phone?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    }
+                }
+            },
+            "Q7": {
+                "Anything else?": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "video door bell": {
+            "Q1": {
+                "How many devices do you need installed?": {
+                    "option1": {
+                        "value": "Smart video doorbell",
+                        "price": {
+                            "installation": 99,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional devices": 49,
+                                "currency": "$"
+                            }
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "What is the brand/model of your smart video doorbell?": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            },
+            "Q3": {
+                "Does your home already have a doorbell?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    }
+                }
+            },
+            "Q4": {
+                "Is your smart home doorbell battery powered?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    },
+                    "option3": {
+                        "value": "Not sure"
+                    }
+                }
+            },
+            "Q5": {
+                "Do you have a stable and reliable WiFi connection that will reach to where the device will be installed?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    },
+                    "option3": {
+                        "value": "Not sure"
+                    }
+                }
+            },
+            "Q6": {
+                "If you device requires an app, do you have it downloaded and set up on your phone?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    }
+                }
+            },
+            "Q7": {
+                "Anything else?": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Thermostat": {
+            "Q1": {
+                "How many devices do you need installed?": {
+                    "option1": {
+                        "value": "Smart thermostat",
+                        "price": {
+                            "installation": 99,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional devices": 49,
+                                "currency": "$"
+                            }
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "What is the brand/model of your smart thermostat?": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            },
+            "Q3": {
+                "Do you need a C-wire installed to complete your thermostat installation?": {
+                    "option1": {
+                        "value": "Yes",
+                        "price": {
+                            "amouint": 119,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "No"
+                    },
+                    "option3": {
+                        "value": "Not sure"
+                    }
+                }
+            },
+            "Q4": {
+                "Do you have a stable and reliable WiFi connection that will reach to where the device will be installed?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    },
+                    "option3": {
+                        "value": "Not sure"
+                    }
+                }
+            },
+            "Q5": {
+                "If you device requires an app, do you have it downloaded and set up on your phone?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    }
+                }
+            },
+            "Q6": {
+                "Anything else?": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Smart hub or speaker": {
+            "Q1": {
+                "How many devices do you need installed?": {
+                    "option1": {
+                        "value": "Smart hub or speaker",
+                        "price": {
+                            "installation": 99,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional devices": 49,
+                                "currency": "$"
+                            }
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "What is the brand/model of smart speaker?": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            },
+            "Q3": {
+                "Do you need to connect this device to other devices in your home?": {
+                    "option1": {
+                        "value": "Yes, between 1-4 devices",
+                        "price": {
+                            "amouint": 49,
+                            "currency": "$"
+                        }
+                    },
+                    "option2": {
+                        "value": "Yes, between 5-10 devices",
+                        "price": {
+                            "amouint": 79,
+                            "currency": "$"
+                        }
+                    },
+                    "option3": {
+                        "value": "No, I don't need to connect to any devices"
+                    }
+                }
+            },
+            "Q4": {
+                "Do you have a stable and reliable WiFi connection that will reach to where the device will be installed?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    },
+                    "option3": {
+                        "value": "Not sure"
+                    }
+                }
+            },
+            "Q5": {
+                "If you device requires an app, do you have it downloaded and set up on your phone?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    }
+                }
+            },
+            "Q6": {
+                "Anything else?": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Smart door lock": {
+            "Q1": {
+                "How many devices do you need installed?": {
+                    "option1": {
+                        "value": "Smart door lock",
+                        "price": {
+                            "installation": 99,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional devices": 49,
+                                "currency": "$"
+                            }
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "What is the brand/model of your smart lock?": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            },
+            "Q3": {
+                "Do you have a stable and reliable WiFi connection that will reach to where the device will be installed?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    },
+                    "option3": {
+                        "value": "Not sure"
+                    }
+                }
+            },
+            "Q4": {
+                "If you device requires an app, do you have it downloaded and set up on your phone?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    }
+                }
+            },
+            "Q5": {
+                "Anything else?": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Smart garage": {
+            "Q1": {
+                "How many devices do you need installed?": {
+                    "option1": {
+                        "value": "Smart garage openenr",
+                        "price": {
+                            "installation": 99,
+                            "currency": "$"
+                        },
+                        "counter": {
+                            "price": {
+                                "additional devices": 49,
+                                "currency": "$"
+                            }
+                        }
+                    }
+                }
+            },
+            "Q2": {
+                "Which smart garage controller device will be installed?": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            },
+            "Q3": {
+                "Is there a functioning garage door opener at the installation area?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    }
+                }
+            },
+            "Q4": {
+                "Does the install location have access to a close-by outlet required to power the controller?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    }
+                }
+            },
+            "Q5": {
+                "Do you have a stable and reliable WiFi connection that will reach to where the device will be installed?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    },
+                    "option3": {
+                        "value": "Not sure"
+                    }
+                }
+            },
+            "Q6": {
+                "If you device requires an app, do you have it downloaded and set up on your phone?": {
+                    "option1": {
+                        "value": "Yes"
+                    },
+                    "option2": {
+                        "value": "No"
+                    }
+                }
+            },
+            "Q7": {
+                "Anything else?": {
+                    "option1": {
+                        "value": "textbox"
+                    }
+                }
+            }
+        },
+        "Home theater": {
+            "Select the device you need installed": {
+                "Soundbar": {
+                    "Q1": {
+                        "How many devices do you need installed?": {
+                            "option1": {
+                                "value": "Soundbar",
+                                "price": {
+                                    "installation": 99,
+                                    "currency": "$"
+                                },
+                                "counter": {
+                                    "price": {
+                                        "additional devices": 49,
+                                        "currency": "$"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Which brand/model of devices will be setup and connected to your TV?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    },
+                    "Q3": {
+                        "Will this be a new installation or replacing an existing system?": {
+                            "option1": {
+                                "value": "Installation"
+                            },
+                            "option2": {
+                                "value": "Replacement"
+                            }
+                        }
+                    },
+                    "Q4": {
+                        "Anything else?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                },
+                "Speaker & Subwoofer": {
+                    "Q1": {
+                        "How many devices do you need installed?": {
+                            "option1": {
+                                "value": "Speaker & Subwoofer",
+                                "price": {
+                                    "installation": 129,
+                                    "currency": "$"
+                                },
+                                "counter": {
+                                    "price": {
+                                        "additional devices": 49,
+                                        "currency": "$"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Which brand/model of devices will be setup and connected to your TV?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    },
+                    "Q3": {
+                        "Will this be a new installation or replacing an existing system?": {
+                            "option1": {
+                                "value": "Installation"
+                            },
+                            "option2": {
+                                "value": "Replacement"
+                            }
+                        }
+                    },
+                    "Q4": {
+                        "Anything else?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                },
+                "Video streaming device": {
+                    "Q1": {
+                        "How many devices do you need installed?": {
+                            "option1": {
+                                "value": "Video streaming device",
+                                "price": {
+                                    "installation": 79,
+                                    "currency": "$"
+                                },
+                                "counter": {
+                                    "price": {
+                                        "additional devices": 49,
+                                        "currency": "$"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Which brand/model of devices will be setup and connected to your TV?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    },
+                    "Q3": {
+                        "Will this be a new installation or replacing an existing system?": {
+                            "option1": {
+                                "value": "Installation"
+                            },
+                            "option2": {
+                                "value": "Replacement"
+                            }
+                        }
+                    },
+                    "Q4": {
+                        "Anything else?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                },
+                "Blu-ray/DVD player": {
+                    "Q1": {
+                        "How many devices do you need installed?": {
+                            "option1": {
+                                "value": "Blu-ray/DVD player",
+                                "price": {
+                                    "installation": 79,
+                                    "currency": "$"
+                                },
+                                "counter": {
+                                    "price": {
+                                        "additional devices": 49,
+                                        "currency": "$"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Which brand/model of devices will be setup and connected to your TV?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    },
+                    "Q3": {
+                        "Will this be a new installation or replacing an existing system?": {
+                            "option1": {
+                                "value": "Installation"
+                            },
+                            "option2": {
+                                "value": "Replacement"
+                            }
+                        }
+                    },
+                    "Q4": {
+                        "Anything else?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                },
+                "Gaming System": {
+                    "Q1": {
+                        "How many devices do you need installed?": {
+                            "option1": {
+                                "value": "Gaming System",
+                                "price": {
+                                    "installation": 79,
+                                    "currency": "$"
+                                },
+                                "counter": {
+                                    "price": {
+                                        "additional devices": 49,
+                                        "currency": "$"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Which brand/model of devices will be setup and connected to your TV?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    },
+                    "Q3": {
+                        "Will this be a new installation or replacing an existing system?": {
+                            "option1": {
+                                "value": "Installation"
+                            },
+                            "option2": {
+                                "value": "Replacement"
+                            }
+                        }
+                    },
+                    "Q4": {
+                        "Anything else?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                },
+                "Universal remote": {
+                    "Q1": {
+                        "How many devices do you need installed?": {
+                            "option1": {
+                                "value": "Universal remote",
+                                "price": {
+                                    "installation": 79,
+                                    "currency": "$"
+                                },
+                                "counter": {
+                                    "price": {
+                                        "additional devices": 49,
+                                        "currency": "$"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Which brand/model of devices will be setup and connected to your TV?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    },
+                    "Q3": {
+                        "Will this be a new installation or replacing an existing system?": {
+                            "option1": {
+                                "value": "Installation"
+                            },
+                            "option2": {
+                                "value": "Replacement"
+                            }
+                        }
+                    },
+                    "Q4": {
+                        "Anything else?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                },
+                "Other smart home device": {
+                    "Q1": {
+                        "How many devices do you need installed?": {
+                            "option1": {
+                                "value": "Other smart home device",
+                                "price": {
+                                    "installation": 99,
+                                    "currency": "$"
+                                },
+                                "counter": {
+                                    "price": {
+                                        "additional devices": 49,
+                                        "currency": "$"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Which brand/model of devices will be setup and connected to your TV?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    },
+                    "Q3": {
+                        "Will this be a new installation or replacing an existing system?": {
+                            "option1": {
+                                "value": "Installation"
+                            },
+                            "option2": {
+                                "value": "Replacement"
+                            }
+                        }
+                    },
+                    "Q4": {
+                        "Anything else?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "WiFi connection": {
+            "Select what service needs to be done": {
+                "WiFi Connection Setup": {
+                    "Q1": {
+                        "How many devices do you need installed?": {
+                            "option1": {
+                                "value": "WiFi connection setup",
+                                "price": {
+                                    "connection setup": 129,
+                                    "currency": "$"
+                                },
+                                "counter": {
+                                    "price": {
+                                        "additional devices": 49,
+                                        "currency": "$"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "Which devices need to be setup?": {
+                            "option1": {
+                                "value": "Modern"
+                            },
+                            "option2": {
+                                "value": "Router"
+                            },
+                            "option3": {
+                                "value": "Extender(s)"
+                            },
+                            "checkbox": true
+                        }
+                    },
+                    "Q3": {
+                        "What is the brand/model of your router?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    },
+                    "Q4": {
+                        "Please indicate your internet provider here": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    },
+                    "Q5": {
+                        "Anything else to add?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                },
+                "Signal Extension Setup": {
+                    "Q1": {
+                        "How many devices do you need installed?": {
+                            "option1": {
+                                "value": "Signal extension setup",
+                                "price": {
+                                    "connection setup": 109,
+                                    "currency": "$"
+                                },
+                                "counter": {
+                                    "price": {
+                                        "additional devices": 49,
+                                        "currency": "$"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "Q2": {
+                        "What is the brand/model of your router?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    },
+                    "Q3": {
+                        "Anything else to add?": {
+                            "option1": {
+                                "value": "textbox"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "7": {
+        "Q1": {
+            "How big is your home?": {
+                "option1": {
+                    "value": "0-1,000 sq ft",
+                    "price": {
+                        "amount": 167,
+                        "currency": "$"
+                    }
+                },
+                "option2": {
+                    "value": "1,001-2,000 sq ft",
+                    "price": {
+                        "amount": 209,
+                        "currency": "$"
+                    }
+                },
+                "option3": {
+                    "value": "2,001-3,000 sq ft",
+                    "price": {
+                        "amount": 251,
+                        "currency": "$"
+                    }
+                },
+                "option4": {
+                    "value": "3,001-4,000 sq ft",
+                    "price": {
+                        "amount": 293,
+                        "currency": "$"
+                    }
+                },
+                "option5": {
+                    "value": "4,001-5,000 sq ft",
+                    "price": {
+                        "amount": 334,
+                        "currency": "$"
+                    }
+                }
+            }
+        },
+        "Q2": {
+            "Please describe the job in detail": {
+                "option1": {
+                    "value": "textbox"
+                }
+            }
+        }
+    },
+    "8": {
+        "Bathroom": {
+            "Q1": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox",
+                        "price": {
+                            "amount": 89,
+                            "currency": "$"
+                        }
+                    }
+                }
+            }
+        },
+        "Drains": {
+            "Q1": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox",
+                        "price": {
+                            "amount": 89,
+                            "currency": "$"
+                        }
+                    }
+                }
+            }
+        },
+        "General plumbing hours": {
+            "Q1": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox",
+                        "price": {
+                            "amount": 89,
+                            "currency": "$"
+                        }
+                    }
+                }
+            }
+        },
+        "Kitchen": {
+            "Q1": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox",
+                        "price": {
+                            "amount": 89,
+                            "currency": "$"
+                        }
+                    }
+                }
+            }
+        },
+        "Laundry": {
+            "Q1": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox",
+                        "price": {
+                            "amount": 89,
+                            "currency": "$"
+                        }
+                    }
+                }
+            }
+        },
+        "Water heater": {
+            "Q1": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox",
+                        "price": {
+                            "amount": 89,
+                            "currency": "$"
+                        }
+                    }
+                }
+            }
+        },
+        "Water or gas line": {
+            "Q1": {
+                "Please describe the job in detail": {
+                    "option1": {
+                        "value": "textbox",
+                        "price": {
+                            "amount": 89,
+                            "currency": "$"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

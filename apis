@@ -1,0 +1,17 @@
+"Q1": {
+        "How many devices do you need?": {
+          "option1": {
+            "value": "Smart wireless security camera",
+            "price": {
+              "installation": 129,
+              "currency": "$"
+            },
+            "counter":{
+                "price":{
+                    "additional devices":49,
+                    "currency":"$"
+                }
+            }
+          }
+        }
+      }
