@@ -196,7 +196,7 @@ const PricingContainer = () => {
   }
 
   // const [selectedCardTitle, setSelectedCardTitle] = useState(pricingPlans[1].title);
-  const [selectedCardTitle, setSelectedCardTitle] = useState(pricingPlans[1].title);
+  const [selectedCardTitle, setSelectedCardTitle] = useState();
 
   return (
     <div className='pricingContainer'>

@@ -45,6 +45,7 @@ const CheckoutScreen = () => {
   }
 
   const onSubmit = (e) =>{
+    e.preventDefault();
     axios({
       method: "POST",
       data: {
