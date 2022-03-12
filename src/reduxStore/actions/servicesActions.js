@@ -9,7 +9,7 @@ export const fetchServicesQnA = () => async(dispatch) => {
   dispatch({
     type: FETCH_SERVICES_QNA_REQUEST,
   })
-  const baseURL = "http://127.0.0.1:8000/api/checkout-qna";
+  const baseURL = "http://localhost:8000/api/checkout-qna";
   try {
     const { data } = await axios.get(baseURL);
     dispatch({

@@ -136,15 +136,13 @@ const App = () => {
     })
   }, []);
 
-  useEffect(() => {
-    dispatch(fetchServicesQnA());
-    // TODO: make services dynamic
-  }, [dispatch])
+  // useEffect(() => {
+  //   dispatch(fetchServicesQnA());
+  //   // TODO: make services dynamic
+  // }, [dispatch])
 
   const getServicesFromServer = () => {
-    // return("");
     axios.post('/api/services', {}).then(res => {
-      // console.log('services api response:', res.data.response.detail);
       _services([...res.data.response.detail]);
     }).catch(res => {
       console.log('services api catch:', res);

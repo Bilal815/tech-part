@@ -8,34 +8,51 @@ const ServiceQuestions = (props) => {
   const { data } = useSelector(rootState => rootState.servicesQnA);
   const [options, setOptions] = useState([]);
   const [currQues, setCurrQues] = useState(undefined);
-  const [nextQues, setNextQues] = useState(undefined);
   const [questions, setQuestions] = useState({});
- 
+
   useEffect(() => {
+    async function fetchQnA(service_id, service_option) {
+      const baseURL = `http://localhost:8000/api/checkout-qna/${service_id}/${service_option}`;
+
+      try {
+        const response = await fetch(baseURL);
+        const data = (await response.json());
+
+        setQuestions(data.response);
+      } catch(error) {
+        console.log(error.message)
+      }
+    }
+
     const p = require("../../styles/screens/questionScreens/tvQuestions/index.css");
-    let { question, service_id, service_name, service_option } = props.match.params;
-    setQuestions(data[service_id][service_option]);
+    let { question, service_id, service_option } = props.match.params;
     setCurrQues(question.toString().toUpperCase());
-  }, [props.match.params]);
+
+    fetchQnA(service_id, service_option);
+  }, [data, props.match.params]);
   
   useEffect(() => {
-    if (Object.keys(questions).length && currQues) {
-      const quesTxt = Object.keys(questions[currQues]).at(0);
-      console.log({
-        options: questions[currQues][quesTxt]
-      })
-      setOptions(Object.values(questions[currQues][quesTxt]).map(option => ({
-        title: option.value,
-        price: option.price?.after,
-        prevPrice: option.price?.before,
-        discount: option.price?.discount,
-      })))
-      setNextQues(questions[currQues].jump);
+    // TODO: handle sections
+
+    if (Object.keys(questions ?? {}).length && currQues) {
+      const _question = questions[currQues];
+      if (_question.options) {
+        setOptions(() => _question.options.map(option => ({
+          title: option.value,
+          price: option.price?.after,
+          prevPrice: option.price?.before,
+          discount: option.price?.discount,
+          jump: option.jump
+        })));
+      }
     }
   }, [currQues, questions])
 
-  const _handleNextQuestion = () => {
-    setCurrQues(nextQues);
+  const _handleNextQuestion = (nextQues) => {
+    if (nextQues) {
+      setCurrQues(nextQues);
+    }
+    // TODO: handle if there is no next ques specified
   }
 
   const BoxListQuestionComponent = (props) => {
@@ -46,7 +63,7 @@ const ServiceQuestions = (props) => {
             <div className="single-answer-component-wrapper">
               <div className="fade-on-mount normal-elemnt-active">
                 <button
-                  onClick={()=>props.nextQuestion()}
+                  onClick={()=>props.nextQuestion(question.jump)}
                   className="answer-content with-image">
                   <label>
                     {question.title}
@@ -138,16 +155,18 @@ const ServiceQuestions = (props) => {
     );
   };
 
-  if (!Object.keys(questions).length || !currQues) {
+  if (!Object.keys(questions ?? {}).length || !currQues) {
     return 'Loading...';
   }
+
+  const questionTxt = questions[currQues].question;
 
   return (
     <div className="app-container2">
       <div className="content-container">
         <div className="chance-box-wrapper">
           <div>
-            <p className="medium-font">Select Bracket Type</p>
+            <p className="medium-font">{questionTxt}</p>
           </div>
         </div>
         <BoxListQuestionComponent

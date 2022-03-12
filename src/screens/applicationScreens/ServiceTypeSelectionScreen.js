@@ -48,7 +48,7 @@ const ServiceOptionsScreen = (props) => {
                               servicePrice: option.regular_price,
                               service_id: service_id,
                               slug: service_name,
-                              service_option: option.name
+                              service_option: option.id
                             })}}
                         >
                           <label> {option.name} </label>
