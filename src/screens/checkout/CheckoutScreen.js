@@ -1,7 +1,11 @@
 import React,{useState} from 'react';
 import {Form, Button, Row, Col} from 'react-bootstrap';
 import axios from 'axios';
+import AsyncSelect from 'react-select/async';
 import { useDebouncedCallback } from 'use-debounce';
+import {useHistory} from 'react-router-dom';
+import {toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const CheckoutScreen = () => {
 
@@ -15,33 +19,46 @@ const CheckoutScreen = () => {
   const [addressSuggestion, setaddressSuggestion] = useState([]);
   const [showDiv , setshowDiv] = useState(false);
   
-  const fetchAddressSuggestion = useDebouncedCallback( (value) => {
+  let history = useHistory();
+  toast.configure();
 
-    axios({
-      method:"GET",
-      url:`/api/location/${value}`
-    })
-    .then(response => {
-      if(response.data.status === 200){
-        setaddressSuggestion(response.data.response.detail)
-      }
-      else{
-        setaddressSuggestion([])
-      }
-    })   
-    .catch(
-      (error) => {console.log(error);
-        setaddressSuggestion([])
-      }
-      )  
-  },
-  1000
-  )
+  const loadOptions = async(input, callback) => {
 
-  const handleAddressChange = (e) =>{
-    const value = e.target.value;
+    const response = await fetch(`http://localhost:8000/api/location/${input}`);
+    const json = await response.json();
+
+    callback(json.response.detail.map(i => ({
+      label: i.address, value: i.id[0]
+    })))
+
+  }
+
+  // const fetchAddressSuggestion = useDebouncedCallback( (value) => {
+
+  //   axios({
+  //     method:"GET",
+  //     url:`/api/location/${value}`
+  //   })
+  //   .then(response => {
+  //     if(response.data.status === 200){
+  //       setaddressSuggestion(response.data.response.detail)
+  //     }
+  //     else{
+  //       setaddressSuggestion([])
+  //     }
+  //   })   
+  //   .catch(
+  //     (error) => {console.log(error);
+  //       setaddressSuggestion([])
+  //     }
+  //     )  
+  // },
+  // 1000
+  // )
+
+  const handleAddressChange = (value) =>{
     setaddress(value);
-    fetchAddressSuggestion(value)
+    console.log(address)
   }
 
   const onSubmit = (e) =>{
@@ -61,10 +78,15 @@ const CheckoutScreen = () => {
     })
     .then(data => {
       if(data.status === 200){
-      alert(data.data.response.message);
+        toast.success(data.data.response.message);
+        history.push("/");
       }})   
-    .catch(console.log)
+    .catch( err => {
+      toast.error(err.response.data.message);
+      console.log(err);
+    })
   };
+
   return (
       <div style={{'marginTop': '150px'}}>
         <div className='container-65'>
@@ -123,7 +145,7 @@ const CheckoutScreen = () => {
              type="email" 
              placeholder="Enter email" />
           </Form.Group>
-
+{/* 
           <Form.Group className="mb-3" controlId="formBasicAddress">
             <Form.Label>Address</Form.Label>
             <Form.Control 
@@ -148,8 +170,18 @@ const CheckoutScreen = () => {
           {addressSuggestion.map( a => (
             <option>{a.address} {a.city} {a.country}</option>
           ))}
-          </Form.Control>}
+          </Form.Control>} */}
           
+
+          <AsyncSelect 
+            name='address' 
+            value={address}
+            loadOptions={loadOptions}
+            onChange = {handleAddressChange}
+           placeholder="Select Address"
+           defaultOptions={true}
+        />
+
           <br/>
 
           <Form.Group className="mb-3" controlId="formBasicphone">
