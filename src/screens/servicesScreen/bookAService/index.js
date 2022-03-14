@@ -19,32 +19,32 @@ const BookAServiceScreen = (props) => {
 
   const nineServiceCardInfo = [
     {
-      serviceLink: `/book-a-service/service/home-appliances`,
+      serviceLink: `/book-a-service/service/home-appliances/2`,
       serviceTitle: `Home Appliances Repair`,
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/apr.svg`,
     },
     {
-      serviceLink: `/book-a-service/service/TV-Mounting/`,
+      serviceLink: `/book-a-service/service/tv-mounting/1`,
       serviceTitle: `TV Mounting`,
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/tvi.svg`,
     },
     {
-      serviceLink: `/book-a-service/service/handyman-services/`,
+      serviceLink: `/book-a-service/service/handyman-services/3`,
       serviceTitle: `Handyman Services`,
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/hdm.svg`,
     },
     {
-      serviceLink: `/book-a-service/service/disinfection-services/`,
+      serviceLink: `/book-a-service/service/disinfection-services/4`,
       serviceTitle: `Disinfection Services`,
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/disinfection/icon.svg`,
     },
     {
-      serviceLink: `/book-a-service/service/disinfection-services/`,
+      serviceLink: `/book-a-service/service/disinfection-services/5`,
       serviceTitle: `iPhone Repair`,
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/mdr.svg`,
     },
     {
-      serviceLink: `/book-a-service/service/disinfection-services/`,
+      serviceLink: `/book-a-service/service/disinfection-services/7`,
       serviceTitle: `Smart Home Installation`,
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/sh.svg`,
     },
@@ -54,7 +54,7 @@ const BookAServiceScreen = (props) => {
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/plumbing.svg`,
     },
     {
-      serviceLink: `/book-a-service/service/disinfection-services/`,
+      serviceLink: `/book-a-service/service/disinfection-services/6`,
       serviceTitle: `Garage Door`,
       serviceImage: `https://d7gh5vrfihrl.cloudfront.net/website/membership/services/garage.svg`,
     },
@@ -123,7 +123,7 @@ const BookAServiceScreen = (props) => {
     },
   ];
   const NineServiceCard = ({ service }) => (
-    <Link
+    <Link 
       to={"/book-a-service/service/"+service.slug+"/"+service.id} 
       className='nineServiceCard'
     >

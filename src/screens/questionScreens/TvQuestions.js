@@ -13,7 +13,7 @@ const TvQuestions = (props) => {
     const p = require("../../styles/screens/questionScreens/tvQuestions/index.css");
     let { question } = props.match.params
     updateQuestion(question);
-  }, []);
+  }, []);  
   
   const updateQuestion = (question) => {
     switch (question) {
@@ -84,6 +84,19 @@ const TvQuestions = (props) => {
     props.history.push(url)
     updateQuestion(nextQ)
   }
+
+  // const [tvSizes, _tvSizes] = useState([]);
+  // const [loading, _loading] = useState(true);
+  // const { service_id } = props.match.params;
+
+  // const getTvSize = () => {
+  //   axios.post('/api/service-appliances', {service_id:service_id}).then(res => {
+  //     _tvSizes(res.data.response.detail.appliances);
+  //     _loading(false);
+  //   }).catch(res => {
+  //     console.log('service-appliances api catch:', res);
+  //   });
+  // }
 
   const BoxListQuestionComponent = (props) => {
   
