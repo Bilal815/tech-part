@@ -18,7 +18,7 @@ const ServiceQuestions = (props) => {
         const response = await fetch(baseURL);
         const data = (await response.json());
 
-        setQuestions(data.response);
+        setQuestions(data);
       } catch(error) {
         console.log(error.message)
       }
