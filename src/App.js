@@ -117,8 +117,8 @@ const App = () => {
 
   const token = '';
   axios.defaults.withCredentials = true;
-  // axios.defaults.baseURL = "http://localhost:8000";
-  axios.defaults.baseURL = "http://217.160.170.83:8000";
+  axios.defaults.baseURL = "http://localhost:8000";
+  // axios.defaults.baseURL = "http://217.160.170.83:8000";
   //axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
   //axios.defaults.headers.post['Content-Type'] = 'application/json';

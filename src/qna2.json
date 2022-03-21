@@ -258,99 +258,104 @@
     },
     "2": {
       "Q1": {
-        "Select Bracket Type": {
-          "option1": {
-            "value": "Fixed",
-            "price": {
-              "before": 84,
-              "after": 42,
-              "discount": 50,
-              "currency": "$"
+        "question":"Select Bracket Type",
+        "options":[
+            {
+              "value": "Fixed",
+              "price": {
+                "before": 84,
+                "after": 42,
+                "discount": 50,
+                "currency": "$"
+              },
+              "jump": "Q3"
             },
-            "jump": "Q3"
-          },
-          "option2": {
-            "value": "Tilting",
-            "price": {
-              "before": 86,
-              "after": 43,
-              "discount": 50,
-              "currency": "$"
+            {
+              "value": "Tilting",
+              "price": {
+                "before": 86,
+                "after": 43,
+                "discount": 50,
+                "currency": "$"
+              },
+              "jump": "Q3"
             },
-            "jump": "Q3"
-          },
-          "option3": {
-            "value": "Full Motion",
-            "price": {
-              "before": 108,
-              "after": 54,
-              "discount": 50,
-              "currency": "$"
+            {
+              "value": "Full Motion",
+              "price": {
+                "before": 108,
+                "after": 54,
+                "discount": 50,
+                "currency": "$"
+              },
+              "jump": "Q3"
             },
-            "jump": "Q3"
-          },
-          "option4": {
-            "value": "None-I already have a bracket"
-          }
-        }
-      },
+            {
+              "value": "None-I already have a bracket"
+            }
+        ]
+        },
       "Q2": {
-        "Great! What type of bracket do you have": {
-          "option1": {
-            "value": "Fixed"
-          },
-          "option2": {
-            "value": "Tilting"
-          },
-          "option3": {
-            "value": "Full motion"
-          },
-          "option4": {
-            "value": "I don't know"
-          }
-        }
-      },
-      "Q3": {
-        "Do you have a spot in mind for the TV?": {
-          "option1": {
-            "value": "On the wall"
-          },
-          "option2": {
-            "value": "Above a fireplace"
-          }
-        }
-      },
-      "Q4": {
-        "Select your wall type": {
-          "option1": {
-            "value": "Drywall or wood"
-          },
-          "option2": {
-            "value": "Brick",
-            "price": {
-              "amount": 39,
-              "currency": "$"
-            }
-          },
-          "option3": {
-            "value": "Concrete",
-            "price": {
-              "amount": 39,
-              "currency": "$"
-            }
-          },
-          "option4": {
-            "value": "Other",
-            "price": {
-              "amount": 39,
-              "currency": "$"
+        "question": "Great! What type of bracket do you have",
+        "options":[
+            {
+              "value": "Fixed"
             },
-            "popup": {
-              "heading": "What type of wall do you have?",
-              "value": "textbox"
+            {
+              "value": "Tilting"
+            },
+            {
+              "value": "Full motion"
+            },
+            {
+              "value": "I don't know"
             }
-          }
-        }
+        ]
+        },
+      "Q3": {
+        "question":"Do you have a spot in mind for the TV?",
+        "options":[
+            {
+              "value": "On the wall"
+            },
+            {
+              "value": "Above a fireplace"
+            }
+            
+        ]
+        },
+      "Q4": {
+        "question":"Select your wall type",
+        "options":[
+            {
+              "value": "Drywall or wood"
+            },
+            {
+              "value": "Brick",
+              "price": {
+                "amount": 39,
+                "currency": "$"
+              }
+            },
+            {
+              "value": "Concrete",
+              "price": {
+                "amount": 39,
+                "currency": "$"
+              }
+            },
+            {
+              "value": "Other",
+              "price": {
+                "amount": 39,
+                "currency": "$"
+              },
+              "popup": {
+                "heading": "What type of wall do you have?",
+                "value": "textbox"
+              }
+            }
+        ]
       },
       "Q5": {
         "Need anything else": {
@@ -499,99 +504,103 @@
     },
     "3": {
       "Q1": {
-        "Select Bracket Type": {
-          "option1": {
-            "value": "Fixed",
-            "price": {
-              "before": 108,
-              "after": 54,
-              "discount": 50,
-              "currency": "$"
+        "question":"Select Bracket Type",
+        "options":[
+            {
+              "value": "Fixed",
+              "price": {
+                "before": 108,
+                "after": 54,
+                "discount": 50,
+                "currency": "$"
+              },
+              "jump": "Q3"
             },
-            "jump": "Q3"
-          },
-          "option2": {
-            "value": "Tilting",
-            "price": {
-              "before": 122,
-              "after": 61,
-              "discount": 50,
-              "currency": "$"
+            {
+              "value": "Tilting",
+              "price": {
+                "before": 122,
+                "after": 61,
+                "discount": 50,
+                "currency": "$"
+              },
+              "jump": "Q3"
             },
-            "jump": "Q3"
-          },
-          "option3": {
-            "value": "Full Motion",
-            "price": {
-              "before": 152,
-              "after": 76,
-              "discount": 50,
-              "currency": "$"
+            {
+              "value": "Full Motion",
+              "price": {
+                "before": 152,
+                "after": 76,
+                "discount": 50,
+                "currency": "$"
+              },
+              "jump": "Q3"
             },
-            "jump": "Q3"
-          },
-          "option4": {
-            "value": "None-I already have a bracket"
-          }
-        }
+            {
+              "value": "None-I already have a bracket"
+            }
+        ]
       },
       "Q2": {
-        "Great! What type of bracket do you have": {
-          "option1": {
-            "value": "Fixed"
-          },
-          "option2": {
-            "value": "Tilting"
-          },
-          "option3": {
-            "value": "Full motion"
-          },
-          "option4": {
-            "value": "I don't know"
-          }
-        }
+        "question":"Great! What type of bracket do you have",
+        "options":[
+            {
+              "value": "Fixed"
+            },
+            {
+              "value": "Tilting"
+            },
+            {
+              "value": "Full motion"
+            },
+            {
+              "value": "I don't know"
+            }
+        ]
       },
       "Q3": {
-        "Do you have a spot in mind for the TV?": {
-          "option1": {
-            "value": "On the wall"
-          },
-          "option2": {
-            "value": "Above a fireplace"
-          }
-        }
+        "question":"Do you have a spot in mind for the TV?",
+        "options":[
+            {
+              "value": "On the wall"
+            },
+            {
+              "value": "Above a fireplace"
+            }
+        ]
       },
       "Q4": {
-        "Select your wall type": {
-          "option1": {
-            "value": "Drywall or wood"
-          },
-          "option2": {
-            "value": "Brick",
-            "price": {
-              "amount": 39,
-              "currency": "$"
-            }
-          },
-          "option3": {
-            "value": "Concrete",
-            "price": {
-              "amount": 39,
-              "currency": "$"
-            }
-          },
-          "option4": {
-            "value": "Other",
-            "price": {
-              "amount": 39,
-              "currency": "$"
+        "question":"Select your wall type",
+        "options":[
+            {
+              "value": "Drywall or wood"
             },
-            "popup": {
-              "heading": "What type of wall do you have?",
-              "value": "textbox"
+            {
+              "value": "Brick",
+              "price": {
+                "amount": 39,
+                "currency": "$"
+              }
+            },
+            {
+              "value": "Concrete",
+              "price": {
+                "amount": 39,
+                "currency": "$"
+              }
+            },
+            {
+              "value": "Other",
+              "price": {
+                "amount": 39,
+                "currency": "$"
+              },
+              "popup": {
+                "heading": "What type of wall do you have?",
+                "value": "textbox"
+              }
             }
-          }
-        }
+        ]
       },
       "Q5": {
         "Need anything else": {
@@ -740,99 +749,103 @@
     },
     "4": {
       "Q1": {
-        "Select Bracket Type": {
-          "option1": {
-            "value": "Fixed",
-            "price": {
-              "before": 166,
-              "after": 83,
-              "discount": 50,
-              "currency": "$"
+        "question":"Select Bracket Type",
+        "options":[
+            {
+              "value": "Fixed",
+              "price": {
+                "before": 166,
+                "after": 83,
+                "discount": 50,
+                "currency": "$"
+              },
+              "jump": "Q3"
             },
-            "jump": "Q3"
-          },
-          "option2": {
-            "value": "Tilting",
-            "price": {
-              "before": 154,
-              "after": 77,
-              "discount": 50,
-              "currency": "$"
+            {
+              "value": "Tilting",
+              "price": {
+                "before": 154,
+                "after": 77,
+                "discount": 50,
+                "currency": "$"
+              },
+              "jump": "Q3" 
             },
-            "jump": "Q3"
-          },
-          "option3": {
-            "value": "Full Motion",
-            "price": {
-              "before": 210,
-              "after": 105,
-              "discount": 50,
-              "currency": "$"
+            {
+              "value": "Full Motion",
+              "price": {
+                "before": 210,
+                "after": 105,
+                "discount": 50,
+                "currency": "$"
+              },
+              "jump": "Q3"
             },
-            "jump": "Q3"
-          },
-          "option4": {
-            "value": "None-I already have a bracket"
-          }
-        }
+            {
+              "value": "None-I already have a bracket"
+            }
+        ]
       },
       "Q2": {
-        "Great! What type of bracket do you have": {
-          "option1": {
-            "value": "Fixed"
-          },
-          "option2": {
-            "value": "Tilting"
-          },
-          "option3": {
-            "value": "Full motion"
-          },
-          "option4": {
-            "value": "I don't know"
-          }
-        }
+        "question":"Great! What type of bracket do you have",
+        "options":[
+            {
+              "value": "Fixed"
+            },
+            {
+              "value": "Tilting"
+            },
+            {
+              "value": "Full motion"
+            },
+            {
+              "value": "I don't know"
+            }
+        ]
       },
       "Q3": {
-        "Do you have a spot in mind for the TV?": {
-          "option1": {
-            "value": "On the wall"
-          },
-          "option2": {
-            "value": "Above a fireplace"
-          }
-        }
+        "question":"Do you have a spot in mind for the TV?",
+        "options":[
+            {
+              "value": "On the wall"
+            },
+            {
+              "value": "Above a fireplace"
+            }
+        ]
       },
       "Q4": {
-        "Select your wall type": {
-          "option1": {
-            "value": "Drywall or wood"
-          },
-          "option2": {
-            "value": "Brick",
-            "price": {
-              "amount": 39,
-              "currency": "$"
-            }
-          },
-          "option3": {
-            "value": "Concrete",
-            "price": {
-              "amount": 39,
-              "currency": "$"
-            }
-          },
-          "option4": {
-            "value": "Other",
-            "price": {
-              "amount": 39,
-              "currency": "$"
+        "question":"Select your wall type",
+        "options":[
+            {
+              "value": "Drywall or wood"
             },
-            "popup": {
-              "heading": "What type of wall do you have?",
-              "value": "textbox"
+            {
+              "value": "Brick",
+              "price": {
+                "amount": 39,
+                "currency": "$"
+              }
+            },
+            {
+              "value": "Concrete",
+              "price": {
+                "amount": 39,
+                "currency": "$"
+              }
+            },
+            {
+              "value": "Other",
+              "price": {
+                "amount": 39,
+                "currency": "$"
+              },
+              "popup": {
+                "heading": "What type of wall do you have?",
+                "value": "textbox"
+              }
             }
-          }
-        }
+        ]
       },
       "Q5": {
         "Need anything else": {
