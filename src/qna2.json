@@ -35,7 +35,8 @@
             "jump": "Q3"
           },
           {
-            "value": "None-I already have a bracket"
+            "value": "None-I already have a bracket",
+            "jump":"Q2"
           }
         ]
       },
@@ -43,16 +44,20 @@
         "question": "Great! What type of bracket do you have",
         "options": [
           {
-            "value": "Fixed"
+            "value": "Fixed",
+            "jump":"Q3"
           },
           {
-            "value": "Tilting"
+            "value": "Tilting",
+            "jump":"Q3"
           },
           {
-            "value": "Full motion"
+            "value": "Full motion",
+            "jump":"Q3"
           },
           {
-            "value": "I don't know"
+            "value": "I don't know",
+            "jump":"Q3"
           }
         ]
       },
@@ -60,10 +65,12 @@
         "question": "Do you have a spot in mind for the TV?",
         "options": [
           {
-            "value": "On the wall"
+            "value": "On the wall",
+            "jump":"Q4"
           },
           {
-            "value": "Above a fireplace"
+            "value": "Above a fireplace",
+            "jump":"Q4"
           }
         ]
       },
@@ -291,7 +298,8 @@
               "jump": "Q3"
             },
             {
-              "value": "None-I already have a bracket"
+              "value": "None-I already have a bracket",
+              "jump":"Q2"
             }
         ]
         },
@@ -299,16 +307,20 @@
         "question": "Great! What type of bracket do you have",
         "options":[
             {
-              "value": "Fixed"
+              "value": "Fixed",
+              "jump":"Q3"
             },
             {
-              "value": "Tilting"
+              "value": "Tilting",
+              "jump":"Q3"
             },
             {
-              "value": "Full motion"
+              "value": "Full motion",
+              "jump":"Q3"
             },
             {
-              "value": "I don't know"
+              "value": "I don't know",
+              "jump":"Q3"
             }
         ]
         },
@@ -316,10 +328,12 @@
         "question":"Do you have a spot in mind for the TV?",
         "options":[
             {
-              "value": "On the wall"
+              "value": "On the wall",
+              "jump":"Q4"
             },
             {
-              "value": "Above a fireplace"
+              "value": "Above a fireplace",
+              "jump":"Q4"
             }
             
         ]
@@ -328,21 +342,24 @@
         "question":"Select your wall type",
         "options":[
             {
-              "value": "Drywall or wood"
+              "value": "Drywall or wood",
+              "jump":"Q5"
             },
             {
               "value": "Brick",
               "price": {
                 "amount": 39,
                 "currency": "$"
-              }
+              },
+              "jump":"Q5"
             },
             {
               "value": "Concrete",
               "price": {
                 "amount": 39,
                 "currency": "$"
-              }
+              },
+              "jump":"Q5"
             },
             {
               "value": "Other",
@@ -353,149 +370,161 @@
               "popup": {
                 "heading": "What type of wall do you have?",
                 "value": "textbox"
-              }
+              },
+              "jump":"Q5"
             }
         ]
       },
       "Q5": {
-        "Need anything else": {
-          "section1": {
-            "heading": "The most popular",
-            "option1": {
-              "value": "In-wall cord concealment with power",
-              "price": {
-                "amount": 164,
-                "currency": "$"
-              }
+        "question":"Need anything else",
+        "sections":[
+            {
+                "heading": "The most popular",
+                "options":[
+                    {
+                        "value": "In-wall cord concealment with power",
+                        "price": {
+                          "amount": 164,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "External cord concealment",
+                        "price": {
+                          "amount": 76,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Install sound-bar",
+                        "price": {
+                          "amount": 87,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Install wall shelf",
+                        "price": {
+                          "amount": 54,
+                          "currency": "$"
+                        }
+                    }
+                ],
+                "checkbox": true 
+               
             },
-            "option2": {
-              "value": "External cord concealment",
-              "price": {
-                "amount": 76,
-                "currency": "$"
-              }
+            {
+                "heading": "Extra Installation",
+                "options":[
+                    {
+                        "value": "Install surround system - up to 3 speakers",
+                        "price": {
+                          "amount": 65,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Install surround system - more than 3 speakers",
+                        "price": {
+                          "amount": 109,
+                          "currency": "$"
+                        }
+                    }
+                ],
+                "checkbox": true
             },
-            "option3": {
-              "value": "Install sound-bar",
-              "price": {
-                "amount": 87,
-                "currency": "$"
-              }
+            {
+                "heading": "Cables",
+                "options":[
+                    {
+                        "value": "HDMI Cable 6 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "HDMI Cable 10 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "HDMI Cable 15 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Power Extenstion Cable 10 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Power Extenstion Cable 15 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Power Extenstion Cable 25 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    }
+                ],
+                "checkbox": true
             },
-            "option4": {
-              "value": "Install wall shelf",
-              "price": {
-                "amount": 54,
-                "currency": "$"
-              }
-            },
-            "checkbox": true
-          },
-          "section2": {
-            "heading": "Extra Installation",
-            "option1": {
-              "value": "Install surround system - up to 3 speakers",
-              "price": {
-                "amount": 65,
-                "currency": "$"
-              }
-            },
-            "option2": {
-              "value": "Install surround system - more than 3 speakers",
-              "price": {
-                "amount": 109,
-                "currency": "$"
-              }
-            },
-            "checkbox": true
-          },
-          "section3": {
-            "heading": "Cables",
-            "option1": {
-              "value": "HDMI Cable 6 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "option2": {
-              "value": "HDMI Cable 10 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "option3": {
-              "value": "HDMI Cable 15 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "option4": {
-              "value": "Power Extenstion Cable 10 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "option5": {
-              "value": "Power Extenstion Cable 15 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "option6": {
-              "value": "Power Extenstion Cable 25 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "checkbox": true
-          },
-          "section4": {
-            "heading": "Connect Devices",
-            "option1": {
-              "value": "Connect Apple TV",
-              "price": {
-                "amount": 22,
-                "currency": "$"
-              }
-            },
-            "option2": {
-              "value": "Connect Roku",
-              "price": {
-                "amount": 22,
-                "currency": "$"
-              }
-            },
-            "option3": {
-              "value": "Connect Xbox",
-              "price": {
-                "amount": 17,
-                "currency": "$"
-              }
-            },
-            "option4": {
-              "value": "Connect DVD/Blue-Ray Player",
-              "price": {
-                "amount": 17,
-                "currency": "$"
-              }
-            },
-            "option5": {
-              "value": "Connect Cable/sattelite box",
-              "price": {
-                "amount": 17,
-                "currency": "$"
-              }
-            },
-            "checkbox": true
-          },
-          "optional": true
-        }
+            {
+                "heading": "Connect Devices",
+                "options":[
+                    {
+                        "value": "Connect Apple TV",
+                        "price": {
+                          "amount": 22,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Connect Roku",
+                        "price": {
+                          "amount": 22,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Connect Xbox",
+                        "price": {
+                          "amount": 17,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Connect DVD/Blue-Ray Player",
+                        "price": {
+                          "amount": 17,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Connect Cable/sattelite box",
+                        "price": {
+                          "amount": 17,
+                          "currency": "$"
+                        }
+                    }
+                ],
+                "checkbox": true
+            }
+        ],
+        "optional": true
+          
       },
       "price": {
         "amount": 109,
@@ -537,7 +566,8 @@
               "jump": "Q3"
             },
             {
-              "value": "None-I already have a bracket"
+              "value": "None-I already have a bracket",
+              "jump":"Q2"
             }
         ]
       },
@@ -545,16 +575,20 @@
         "question":"Great! What type of bracket do you have",
         "options":[
             {
-              "value": "Fixed"
+              "value": "Fixed",
+              "jump":"Q3"
             },
             {
-              "value": "Tilting"
+              "value": "Tilting",
+              "jump":"Q3"
             },
             {
-              "value": "Full motion"
+              "value": "Full motion",
+              "jump":"Q3"
             },
             {
-              "value": "I don't know"
+              "value": "I don't know",
+              "jump":"Q3"
             }
         ]
       },
@@ -562,10 +596,12 @@
         "question":"Do you have a spot in mind for the TV?",
         "options":[
             {
-              "value": "On the wall"
+              "value": "On the wall",
+              "jump":"Q4"
             },
             {
-              "value": "Above a fireplace"
+              "value": "Above a fireplace",
+              "jump":"Q4"
             }
         ]
       },
@@ -573,21 +609,24 @@
         "question":"Select your wall type",
         "options":[
             {
-              "value": "Drywall or wood"
+              "value": "Drywall or wood",
+              "jump":"Q5"
             },
             {
               "value": "Brick",
               "price": {
                 "amount": 39,
                 "currency": "$"
-              }
+              },
+              "jump":"Q5"
             },
             {
               "value": "Concrete",
               "price": {
                 "amount": 39,
                 "currency": "$"
-              }
+              },
+              "jump":"Q5"
             },
             {
               "value": "Other",
@@ -598,150 +637,160 @@
               "popup": {
                 "heading": "What type of wall do you have?",
                 "value": "textbox"
-              }
+              },
+              "jump":"Q5"
             }
         ]
       },
       "Q5": {
-        "Need anything else": {
-          "section1": {
-            "heading": "The most popular",
-            "option1": {
-              "value": "In-wall cord concealment with power",
-              "price": {
-                "amount": 175,
-                "currency": "$"
-              }
+        "question":"Need anything else",
+        "sections":[
+            {
+                "heading": "The most popular",
+                "options":[
+                    {
+                        "value": "In-wall cord concealment with power",
+                        "price": {
+                          "amount": 175,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "External cord concealment",
+                        "price": {
+                          "amount": 76,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Install sound-bar",
+                        "price": {
+                          "amount": 87,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Install wall shelf",
+                        "price": {
+                          "amount": 54,
+                          "currency": "$"
+                        }
+                    }
+                ],
+                "checkbox": true
             },
-            "option2": {
-              "value": "External cord concealment",
-              "price": {
-                "amount": 76,
-                "currency": "$"
-              }
+            {
+                "heading": "Extra Installation",
+                "options":[
+                    {
+                        "value": "Install surround system - up to 3 speakers",
+                        "price": {
+                          "amount": 65,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Install surround system - more than 3 speakers",
+                        "price": {
+                          "amount": 109,
+                          "currency": "$"
+                        }
+                    }
+                ],
+                "checkbox": true
             },
-            "option3": {
-              "value": "Install sound-bar",
-              "price": {
-                "amount": 87,
-                "currency": "$"
-              }
+            {
+                "heading": "Cables",
+                "options":[
+                    {
+                        "value": "HDMI Cable 6 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "HDMI Cable 10 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "HDMI Cable 15 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Power Extenstion Cable 10 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Power Extenstion Cable 15 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Power Extenstion Cable 25 ft",
+                        "price": {
+                          "amount": 22,
+                          "currency": "$"
+                        }
+                    }
+                ],
+                "checkbox": true
             },
-            "option4": {
-              "value": "Install wall shelf",
-              "price": {
-                "amount": 54,
-                "currency": "$"
-              }
-            },
-            "checkbox": true
-          },
-          "section2": {
-            "heading": "Extra Installation",
-            "option1": {
-              "value": "Install surround system - up to 3 speakers",
-              "price": {
-                "amount": 65,
-                "currency": "$"
-              }
-            },
-            "option2": {
-              "value": "Install surround system - more than 3 speakers",
-              "price": {
-                "amount": 109,
-                "currency": "$"
-              }
-            },
-            "checkbox": true
-          },
-          "section3": {
-            "heading": "Cables",
-            "option1": {
-              "value": "HDMI Cable 6 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "option2": {
-              "value": "HDMI Cable 10 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "option3": {
-              "value": "HDMI Cable 15 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "option4": {
-              "value": "Power Extenstion Cable 10 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "option5": {
-              "value": "Power Extenstion Cable 15 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "option6": {
-              "value": "Power Extenstion Cable 25 ft",
-              "price": {
-                "amount": 22,
-                "currency": "$"
-              }
-            },
-            "checkbox": true
-          },
-          "section4": {
-            "heading": "Connect Devices",
-            "option1": {
-              "value": "Connect Apple TV",
-              "price": {
-                "amount": 22,
-                "currency": "$"
-              }
-            },
-            "option2": {
-              "value": "Connect Roku",
-              "price": {
-                "amount": 22,
-                "currency": "$"
-              }
-            },
-            "option3": {
-              "value": "Connect Xbox",
-              "price": {
-                "amount": 22,
-                "currency": "$"
-              }
-            },
-            "option4": {
-              "value": "Connect DVD/Blue-Ray Player",
-              "price": {
-                "amount": 22,
-                "currency": "$"
-              }
-            },
-            "option5": {
-              "value": "Connect Cable/sattelite box",
-              "price": {
-                "amount": 22,
-                "currency": "$"
-              }
-            },
-            "checkbox": true
-          },
+            {
+                "heading": "Connect Devices",
+                "options":[
+                    {
+                        "value": "Connect Apple TV",
+                        "price": {
+                          "amount": 22,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Connect Roku",
+                        "price": {
+                          "amount": 22,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Connect Xbox",
+                        "price": {
+                          "amount": 22,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Connect DVD/Blue-Ray Player",
+                        "price": {
+                          "amount": 22,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Connect Cable/sattelite box",
+                        "price": {
+                          "amount": 22,
+                          "currency": "$"
+                        }
+                    }
+                ],
+                "checkbox": true
+            }
+        ],
           "optional": true
-        }
-      },
+        },
       "price": {
         "amount": 164,
         "currency": "$"
@@ -782,7 +831,8 @@
               "jump": "Q3"
             },
             {
-              "value": "None-I already have a bracket"
+              "value": "None-I already have a bracket",
+              "jump":"Q2"
             }
         ]
       },
@@ -790,16 +840,20 @@
         "question":"Great! What type of bracket do you have",
         "options":[
             {
-              "value": "Fixed"
+              "value": "Fixed",
+              "jump":"Q3"
             },
             {
-              "value": "Tilting"
+              "value": "Tilting",
+              "jump":"Q3"
             },
             {
-              "value": "Full motion"
+              "value": "Full motion",
+              "jump":"Q3"
             },
             {
-              "value": "I don't know"
+              "value": "I don't know",
+              "jump":"Q3"
             }
         ]
       },
@@ -807,10 +861,12 @@
         "question":"Do you have a spot in mind for the TV?",
         "options":[
             {
-              "value": "On the wall"
+              "value": "On the wall",
+              "jump":"Q4"
             },
             {
-              "value": "Above a fireplace"
+              "value": "Above a fireplace",
+              "jump":"Q4"
             }
         ]
       },
@@ -818,21 +874,24 @@
         "question":"Select your wall type",
         "options":[
             {
-              "value": "Drywall or wood"
+              "value": "Drywall or wood",
+              "jump":"Q5"
             },
             {
               "value": "Brick",
               "price": {
                 "amount": 39,
                 "currency": "$"
-              }
+              },
+              "jump":"Q5"
             },
             {
               "value": "Concrete",
               "price": {
                 "amount": 39,
                 "currency": "$"
-              }
+              },
+              "jump":"Q5"
             },
             {
               "value": "Other",
@@ -843,150 +902,160 @@
               "popup": {
                 "heading": "What type of wall do you have?",
                 "value": "textbox"
-              }
+              },
+              "jump":"Q5"
             }
         ]
       },
       "Q5": {
-        "Need anything else": {
-          "section1": {
-            "heading": "The most popular",
-            "option1": {
-              "value": "In-wall cord concealment with power",
-              "price": {
-                "amount": 175,
-                "currency": "$"
-              }
+        "question":"Need anything else",
+        "sections":[
+            {
+                "heading": "The most popular",
+                "options":[
+                    {
+                        "value": "In-wall cord concealment with power",
+                        "price": {
+                          "amount": 175,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "External cord concealment",
+                        "price": {
+                          "amount": 76,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Install sound-bar",
+                        "price": {
+                          "amount": 87,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Install wall shelf",
+                        "price": {
+                          "amount": 54,
+                          "currency": "$"
+                        }
+                    }
+                ],
+                "checkbox": true
             },
-            "option2": {
-              "value": "External cord concealment",
-              "price": {
-                "amount": 76,
-                "currency": "$"
-              }
+            {
+                "heading": "Extra Installation",
+                "options":[
+                    {
+                        "value": "Install surround system - up to 3 speakers",
+                        "price": {
+                          "amount": 65,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Install surround system - more than 3 speakers",
+                        "price": {
+                          "amount": 109,
+                          "currency": "$"
+                        }
+                    }
+                ],
+                "checkbox": true
             },
-            "option3": {
-              "value": "Install sound-bar",
-              "price": {
-                "amount": 87,
-                "currency": "$"
-              }
+            {
+                "heading": "Cables",
+                "options":[
+                    {
+                        "value": "HDMI Cable 6 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "HDMI Cable 10 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "HDMI Cable 15 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Power Extenstion Cable 10 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Power Extenstion Cable 15 ft",
+                        "price": {
+                          "amount": 28,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Power Extenstion Cable 25 ft",
+                        "price": {
+                          "amount": 22,
+                          "currency": "$"
+                        }
+                    }
+                ],
+                "checkbox": true
             },
-            "option4": {
-              "value": "Install wall shelf",
-              "price": {
-                "amount": 54,
-                "currency": "$"
-              }
-            },
-            "checkbox": true
-          },
-          "section2": {
-            "heading": "Extra Installation",
-            "option1": {
-              "value": "Install surround system - up to 3 speakers",
-              "price": {
-                "amount": 65,
-                "currency": "$"
-              }
-            },
-            "option2": {
-              "value": "Install surround system - more than 3 speakers",
-              "price": {
-                "amount": 109,
-                "currency": "$"
-              }
-            },
-            "checkbox": true
-          },
-          "section3": {
-            "heading": "Cables",
-            "option1": {
-              "value": "HDMI Cable 6 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "option2": {
-              "value": "HDMI Cable 10 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "option3": {
-              "value": "HDMI Cable 15 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "option4": {
-              "value": "Power Extenstion Cable 10 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "option5": {
-              "value": "Power Extenstion Cable 15 ft",
-              "price": {
-                "amount": 28,
-                "currency": "$"
-              }
-            },
-            "option6": {
-              "value": "Power Extenstion Cable 25 ft",
-              "price": {
-                "amount": 22,
-                "currency": "$"
-              }
-            },
-            "checkbox": true
-          },
-          "section4": {
-            "heading": "Connect Devices",
-            "option1": {
-              "value": "Connect Apple TV",
-              "price": {
-                "amount": 22,
-                "currency": "$"
-              }
-            },
-            "option2": {
-              "value": "Connect Roku",
-              "price": {
-                "amount": 22,
-                "currency": "$"
-              }
-            },
-            "option3": {
-              "value": "Connect Xbox",
-              "price": {
-                "amount": 22,
-                "currency": "$"
-              }
-            },
-            "option4": {
-              "value": "Connect DVD/Blue-Ray Player",
-              "price": {
-                "amount": 22,
-                "currency": "$"
-              }
-            },
-            "option5": {
-              "value": "Connect Cable/sattelite box",
-              "price": {
-                "amount": 22,
-                "currency": "$"
-              }
-            },
-            "checkbox": true
-          },
-          "optional": true
-        }
-      },
+            {
+                "heading": "Connect Devices",
+                "options":[
+                    {
+                        "value": "Connect Apple TV",
+                        "price": {
+                          "amount": 22,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Connect Roku",
+                        "price": {
+                          "amount": 22,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Connect Xbox",
+                        "price": {
+                          "amount": 22,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Connect DVD/Blue-Ray Player",
+                        "price": {
+                          "amount": 22,
+                          "currency": "$"
+                        }
+                    },
+                    {
+                        "value": "Connect Cable/sattelite box",
+                        "price": {
+                          "amount": 22,
+                          "currency": "$"
+                        }
+                    }
+                ],
+                "checkbox": true
+            }
+        ],
+        "optional": true
+    },
       "price": {
         "amount": 197,
         "currency": "$"
@@ -3857,154 +3926,156 @@
     }
   },
   "4": {
-    "Commercial - Disinfectant Spray": {
-      "Q1": {
-        "How big is your home?": {
-          "option1": {
-            "value": "0-1,000 sq ft",
-            "price": {
-              "amount": 167,
-              "currency": "$"
-            }
-          },
-          "option2": {
-            "value": "1,001-2,000 sq ft",
-            "price": {
-              "amount": 209,
-              "currency": "$"
-            }
-          },
-          "option3": {
-            "value": "2,001-3,000 sq ft",
-            "price": {
-              "amount": 251,
-              "currency": "$"
-            }
-          },
-          "option4": {
-            "value": "3,001-4,000 sq ft",
-            "price": {
-              "amount": 293,
-              "currency": "$"
-            }
-          },
-          "option5": {
-            "value": "4,001-5,000 sq ft",
-            "price": {
-              "amount": 334,
-              "currency": "$"
-            }
-          }
-        }
-      },
-      "Q2": {
-        "Please describe the job in detail": {
-          "option1": {
-            "value": "textbox"
-          }
-        }
-      }
-    },
-    "Residential - Disinfectant Cleaning": {
-      "What type of clean you need?": {
-        "Deep cleaning": {
-          "Q1": {
-            "How big is your home?": {
-              "option1": {
-                "value": "0-1,000 sq ft",
-                "price": {
-                  "amount": 167,
-                  "currency": "$"
-                }
+      "1": {
+        "Q1": {
+          "question":"How big is your home?",
+          "options":[
+              {
+                  "value": "0-1,000 sq ft",
+                  "price": {
+                    "amount": 167,
+                    "currency": "$"
+                  }
               },
-              "option2": {
-                "value": "1,001-2,000 sq ft",
-                "price": {
-                  "amount": 209,
-                  "currency": "$"
-                }
+              {
+                  "value": "1,001-2,000 sq ft",
+                  "price": {
+                    "amount": 209,
+                    "currency": "$"
+                  }
               },
-              "option3": {
-                "value": "2,001-3,000 sq ft",
-                "price": {
-                  "amount": 251,
-                  "currency": "$"
-                }
+              {
+                  "value": "2,001-3,000 sq ft",
+                  "price": {
+                    "amount": 251,
+                    "currency": "$"
+                  }
               },
-              "option4": {
-                "value": "3,001-4,000 sq ft",
-                "price": {
-                  "amount": 293,
-                  "currency": "$"
-                }
+              {
+                  "value": "3,001-4,000 sq ft",
+                  "price": {
+                    "amount": 293,
+                    "currency": "$"
+                  }
               },
-              "option5": {
-                "value": "4,001-5,000 sq ft",
-                "price": {
-                  "amount": 334,
-                  "currency": "$"
-                }
+              {
+                  "value": "4,001-5,000 sq ft",
+                  "price": {
+                    "amount": 334,
+                    "currency": "$"
+                  }
               }
-            }
+          ]
           },
-          "Q2": {
-            "Please describe the job in detail": {
-              "option1": {
-                "value": "textbox"
+        "Q2": {
+          "question":"Please describe the job in detail",
+          "options":[
+              {
+                  "value": "textbox"
               }
-            }
+          ]
           }
         },
-        "General cleaning": {
+      "2": {
           "Q1": {
-            "How big is your home?": {
-              "option1": {
-                "value": "0-1,000 sq ft",
-                "price": {
-                  "amount": 167,
-                  "currency": "$"
-                }
+          "question":"How big is your home?",
+          "options":[
+              {
+                  "value": "0-1,000 sq ft",
+                  "price": {
+                      "amount": 167,
+                      "currency": "$"
+                  }
               },
-              "option2": {
-                "value": "1,001-2,000 sq ft",
-                "price": {
-                  "amount": 209,
-                  "currency": "$"
-                }
+              {
+                  "value": "1,001-2,000 sq ft",
+                  "price": {
+                      "amount": 209,
+                      "currency": "$"
+                  }
               },
-              "option3": {
-                "value": "2,001-3,000 sq ft",
-                "price": {
-                  "amount": 251,
-                  "currency": "$"
-                }
+              {
+                  "value": "2,001-3,000 sq ft",
+                  "price": {
+                      "amount": 251,
+                      "currency": "$"
+                  }
               },
-              "option4": {
-                "value": "3,001-4,000 sq ft",
-                "price": {
-                  "amount": 293,
-                  "currency": "$"
-                }
+              {
+                  "value": "3,001-4,000 sq ft",
+                  "price": {
+                      "amount": 293,
+                      "currency": "$"
+                  }
               },
-              "option5": {
-                "value": "4,001-5,000 sq ft",
-                "price": {
-                  "amount": 334,
-                  "currency": "$"
-                }
+              {
+                  "value": "4,001-5,000 sq ft",
+                  "price": {
+                      "amount": 334,
+                      "currency": "$"
+                  }
               }
-            }
+          ]
           },
           "Q2": {
-            "Please describe the job in detail": {
-              "option1": {
-                "value": "textbox"
+          "question":"Please describe the job in detail",
+          "options":[
+              {
+                  "value": "textbox"
               }
-            }
+          ]
           }
-        }
+      },
+      "3": {
+          "Q1": {
+          "question":"How big is your home?",
+          "options":[
+              {
+                  "value": "0-1,000 sq ft",
+                  "price": {
+                      "amount": 167,
+                      "currency": "$"
+                  }
+              },
+              {
+                  "value": "1,001-2,000 sq ft",
+                  "price": {
+                      "amount": 209,
+                      "currency": "$"
+                  }
+              },
+              {
+                  "value": "2,001-3,000 sq ft",
+                  "price": {
+                      "amount": 251,
+                      "currency": "$"
+                  }
+              },
+              {
+                  "value": "3,001-4,000 sq ft",
+                  "price": {
+                      "amount": 293,
+                      "currency": "$"
+                  }
+              },
+              {
+                  "value": "4,001-5,000 sq ft",
+                  "price": {
+                      "amount": 334,
+                      "currency": "$"
+                  }
+              }
+          ]
+          },
+          "Q2": {
+          "question":"Please describe the job in detail",
+          "options":[
+              {
+                  "value": "textbox"
+              }
+          ]
+          }
       }
-    }
   },
   "5": {
     "XS Max": {

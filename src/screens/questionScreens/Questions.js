@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import { ScrollToTop } from "../../utilities/index";
+import {history, useHistory} from 'react-router-dom';
 
 const ServiceQuestions = (props) => {
+  const history = useHistory();
   ScrollToTop();
 
   const { data } = useSelector(rootState => rootState.servicesQnA);
@@ -25,9 +27,9 @@ const ServiceQuestions = (props) => {
     }
 
     const p = require("../../styles/screens/questionScreens/tvQuestions/index.css");
-    let { question, service_id, service_option } = props.match.params;
-    setCurrQues(question.toString().toUpperCase());
-
+    let {service_id, service_option } = props.match.params;
+    // setCurrQues(question.toString().toUpperCase());
+    setCurrQues('Q1');
     fetchQnA(service_id, service_option);
   }, [data, props.match.params]);
   
@@ -43,7 +45,7 @@ const ServiceQuestions = (props) => {
           prevPrice: option.price?.before,
           discount: option.price?.discount,
           jump: option.jump
-        })));
+      })));
       }
     }
   }, [currQues, questions])
@@ -51,8 +53,10 @@ const ServiceQuestions = (props) => {
   const _handleNextQuestion = (nextQues) => {
     if (nextQues) {
       setCurrQues(nextQues);
+      return 
     }
     // TODO: handle if there is no next ques specified
+    history.push('/checkout');
   }
 
   const BoxListQuestionComponent = (props) => {

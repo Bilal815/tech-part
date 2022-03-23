@@ -29,7 +29,7 @@ const ZipCode = (props) => {
       }
       axios.post('/api/zip-code/verify', body).then(res => {
         if(res.status === 200){
-          let url = `/book-a-service/service/${slug}/${service_id}/${service_option}/q1`
+          let url = `/book-a-service/service/${slug}/${service_id}/${service_option}/`
           props.history.push(url)
           // alert(res.data.response.message)
         }
