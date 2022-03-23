@@ -3,6 +3,8 @@ import { ScrollToTop } from '../../utilities/index';
 import axios from 'axios';
 import Loader from '../../components/loader/Loader';
 import { services } from "../../reduxStore/constants/servicesConstants";
+import { useDispatch } from "react-redux";
+import { selectServiceAppliance } from "../../reduxStore/actions/servicesActions";
 
 const ServiceOptionsScreen = (props) => {
   ScrollToTop();
@@ -16,6 +18,7 @@ const ServiceOptionsScreen = (props) => {
 
   const [serviceOptions, setServiceOptions] = useState([]);
   const [loading, _loading] = useState(true);
+  const dispatch = useDispatch();
 
   const getServiceOptions = () => {
     axios.post('/api/service-appliances', {service_id: service_id}).then(res => {
@@ -44,6 +47,8 @@ const ServiceOptionsScreen = (props) => {
                       <div className="fade-on-mount normal-elemnt-active">
                         <button className="answer-content" 
                           onClick={e => {
+                            dispatch(selectServiceAppliance(option));
+
                             props.history.push("/zip-code", { 
                               servicePrice: option.regular_price,
                               service_id: service_id,

@@ -14,7 +14,7 @@ import { servicesQuestionsReducer } from './servicesQuestionsReducer'
 export const rootReducer = combineReducers({
   userRegister: userRegisterReducer,
   userLogin: userLoginReducer,
-  servicesQnA: servicesQuestionsReducer
+  servicesQnA: servicesQuestionsReducer,
   //   userForgotPassword: userForgotPasswordReducer,
   //   userChangePassword: userChangePasswordReducer,
   //   countryList: countryListReducer,

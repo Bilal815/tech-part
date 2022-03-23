@@ -1,25 +1,34 @@
-import axios from 'axios';
-import {
-  FETCH_SERVICES_QNA_FAILURE,
-  FETCH_SERVICES_QNA_REQUEST,
-  FETCH_SERVICES_QNA_SUCCESS
-} from '../constants/servicesConstants';
+import { CLEAR_SELECTED_SERVICE_OPTIONS, DESELECT_SERVICE_OPTION, REMOVE_SELECTED_SERVICE_APPLIANCE, SELECT_SERVICE_APPLIANCE, SELECT_SERVICE_OPTION } from "../constants/servicesConstants"
 
-export const fetchServicesQnA = () => async(dispatch) => {
-  dispatch({
-    type: FETCH_SERVICES_QNA_REQUEST,
-  })
-  const baseURL = "http://localhost:8000/api/checkout-qna";
-  try {
-    const { data } = await axios.get(baseURL);
-    dispatch({
-      type: FETCH_SERVICES_QNA_SUCCESS,
-      payload: data
-    })
-  } catch (error) {
-    console.log(error.message);
-    dispatch({
-      type: FETCH_SERVICES_QNA_FAILURE,
-    })
+export const selectServiceOption = (serviceOption) => {
+  return {
+    type: SELECT_SERVICE_OPTION,
+    payload: {}
+  }
+}
+
+export const deselectServiceOption = (serviceOption) => {
+  return {
+    type: DESELECT_SERVICE_OPTION,
+    payload: {}
+  }
+}
+
+export const clearSelectedServiceOptions = () => {
+  return {
+    type: CLEAR_SELECTED_SERVICE_OPTIONS,
+  }
+}
+
+export const selectServiceAppliance = (serviceAppliance) => {
+  return {
+    type: SELECT_SERVICE_APPLIANCE,
+    payload: serviceAppliance
+  }
+}
+
+export const removeSelectedServiceAppliance = () => {
+  return {
+    type: REMOVE_SELECTED_SERVICE_APPLIANCE
   }
 }

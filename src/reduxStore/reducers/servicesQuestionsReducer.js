@@ -1,20 +1,46 @@
-import { FETCH_SERVICES_QNA_FAILURE, FETCH_SERVICES_QNA_REQUEST, FETCH_SERVICES_QNA_SUCCESS } from '../constants/servicesConstants'
+import {
+  SELECT_SERVICE_OPTION,
+  DESELECT_SERVICE_OPTION,
+  CLEAR_SELECTED_SERVICE_OPTIONS,
+  SELECT_SERVICE_APPLIANCE,
+  REMOVE_SELECTED_SERVICE_APPLIANCE
+} from '../constants/servicesConstants'
 
 const initialState = {
-  loading: false,
-  error: false,
-  data: null
+  serviceApplianceOptionsSelected: [],
+  selectedServiceAppliance: {}
 };
 
 export const servicesQuestionsReducer = (state = initialState, action) => {
-  if (action.type === FETCH_SERVICES_QNA_REQUEST) {
-    return { ...state, loading: true };
+  if (action.type === SELECT_SERVICE_OPTION) {
+    return {
+      ...state,
+      serviceApplianceOptionsSelected: [...state.serviceApplianceOptionsSelected, action.payload]
+    }
   }
-  if (action.type === FETCH_SERVICES_QNA_SUCCESS) {
-    return { ...state, loading: false, error: false, data: action.payload };
+  if (action.type === DESELECT_SERVICE_OPTION) {
+    return {
+      ...state,
+      serviceApplianceOptionsSelected: state.serviceApplianceOptionsSelected.filter(option => option !== action.payload)
+    }
   }
-  if (action.type === FETCH_SERVICES_QNA_FAILURE) {
-    return { ...state, loading: false, error: true };
+  if (action.type === CLEAR_SELECTED_SERVICE_OPTIONS) {
+    return {
+      ...state,
+      serviceApplianceOptionsSelected: []
+    }
+  }
+  if (action.type === SELECT_SERVICE_APPLIANCE) {
+    return {
+      ...state,
+      selectedServiceAppliance: {}
+    }
+  }
+  if (action.type === REMOVE_SELECTED_SERVICE_APPLIANCE) {
+    return {
+      ...state,
+      selectedServiceAppliance: {}
+    }
   }
   return state;
 }
