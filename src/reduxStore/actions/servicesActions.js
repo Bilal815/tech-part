@@ -3,14 +3,14 @@ import { CLEAR_SELECTED_SERVICE_OPTIONS, DESELECT_SERVICE_OPTION, REMOVE_SELECTE
 export const selectServiceOption = (serviceOption) => {
   return {
     type: SELECT_SERVICE_OPTION,
-    payload: {}
+    payload: serviceOption
   }
 }
 
 export const deselectServiceOption = (serviceOption) => {
   return {
     type: DESELECT_SERVICE_OPTION,
-    payload: {}
+    payload: serviceOption
   }
 }
 
@@ -20,11 +20,15 @@ export const clearSelectedServiceOptions = () => {
   }
 }
 
-export const selectServiceAppliance = (serviceAppliance) => {
-  return {
-    type: SELECT_SERVICE_APPLIANCE,
-    payload: serviceAppliance
-  }
+export const selectServiceAppliance = (serviceAppliance) => (dispatch) => {
+  dispatch(
+    {
+      type: SELECT_SERVICE_APPLIANCE,
+      payload: serviceAppliance
+    }
+  ) 
+  dispatch(clearSelectedServiceOptions())
+  
 }
 
 export const removeSelectedServiceAppliance = () => {

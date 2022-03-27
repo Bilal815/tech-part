@@ -116,8 +116,8 @@ const App = () => {
 
   const token = '';
   axios.defaults.withCredentials = true;
-  // axios.defaults.baseURL = "http://localhost:8000";
-  axios.defaults.baseURL = "http://217.160.170.83:8000";
+  axios.defaults.baseURL = "http://localhost:8000";
+  //axios.defaults.baseURL = "http://217.160.170.83:8000";
   axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*'
   //axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
   //axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
@@ -192,7 +192,7 @@ const App = () => {
         <Route exact path='/book-a-service/service/plumbing-services/:service_id' component={Plumbing} />
         <Route exact path='/book-a-service/service/garage-door-repair/:service_id' component={GarageDoorService} /> */}
 
-        <Route exact path='/book-a-service/service/:service_name/:service_id/:service_option/' component={ServiceQuestions} />
+        <Route exact path='/book-a-service/service/:service_name/:service_id/:service_option/:question' component={ServiceQuestions} />
 
         {/* <Route exact path='/book-a-service/service/tv-mounting/:service_id/:question' component={TvQuestions} />
         <Route exact path='/book-a-service/service/home-appliances/:service_id/:question' component={TvQuestions} />

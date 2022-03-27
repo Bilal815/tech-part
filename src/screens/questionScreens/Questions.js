@@ -39,8 +39,8 @@ const ServiceQuestions = (props) => {
     }
 
     const p = require("../../styles/screens/questionScreens/tvQuestions/index.css");
-    let { service_id, service_option,  } = props.match.params;
-    setCurrQues('Q1');
+    let { service_id, service_option, question } = props.match.params;
+    setCurrQues(question??'Q1');
     fetchQnA(service_id, service_option);
   }, [data, props.match.params]);
   
@@ -51,7 +51,7 @@ const ServiceQuestions = (props) => {
       if (_question.options) {
         setOptions(() => _question.options.map(option => ({
           title: option.value,
-          price: option.price?.after,
+          price: option.price?.after ?? option.price?.amount,
           prevPrice: option.price?.before,
           discount: option.price?.discount,
           jump: option.jump
@@ -84,7 +84,9 @@ const ServiceQuestions = (props) => {
 
   const _handleNextQuestion = (nextQues) => {
     if (nextQues) {
-      setCurrQues(nextQues);
+      // setCurrQues(nextQues);
+      let { service_id, service_option, service_name} = props.match.params;
+      history.push(`/book-a-service/service/${service_name}/${service_id}/${service_option}/${nextQues}`)
       return 
     }
     // DONE: handle if there is no next ques specified
@@ -108,6 +110,7 @@ const ServiceQuestions = (props) => {
         </div>
         <BoxListQuestionComponent
           {...props}
+          questionNo = {currQues}
           questions={options}
           nextQuestion={_handleNextQuestion}
         />
@@ -122,6 +125,8 @@ export default ServiceQuestions;
 
 const BoxListQuestionComponent = (props) => {
   const dispatch = useDispatch();
+  const {questionNo} = props
+  console.log(questionNo);
   return (
     <div className="question-comp-wrapper">
       {props.questions.map((question, key) => (
@@ -130,7 +135,7 @@ const BoxListQuestionComponent = (props) => {
             <div className="fade-on-mount normal-elemnt-active">
               <button
                 onClick={() => {
-                  dispatch(selectServiceOption(question));
+                  dispatch(selectServiceOption({[questionNo]: question}));
                   props.nextQuestion(question.jump);
                 }}
                 className="answer-content with-image">
@@ -182,6 +187,10 @@ const CartBox = (props) => {
     selectedServiceAppliance,
     serviceApplianceOptionsSelected
   })
+  const estimated = Object.values(serviceApplianceOptionsSelected).reduce((sum, option) => {
+    if (option?.price) sum += option.price;
+    return sum;
+  }, 0)
 
   return (
     <div>
@@ -202,23 +211,27 @@ const CartBox = (props) => {
                   <b>{}</b>
                 </h3>
                 <div className="services-aggregation-details">
-                  <div className="aggregate-service">
-                    <span className="service-name">TV Mounting </span>
+                  {Object.values(serviceApplianceOptionsSelected).map(a => {
+                     console.log(a)
+                     if(!a.price)
+                     {
+                       return null
+                     }
+                    return (  
+                    <div className="aggregate-service">
+                    <span className="service-name">{a.title}</span>
                     <span className="service-price">
-                      <b>$76</b>
+                      <b>${a.price}</b>
                     </span>
                   </div>
-                  <div className="aggregate-service">
-                    <span className="service-name">Fixed Bracket </span>
-                    <span className="service-price">
-                      <b>$39</b>
-                    </span>
-                  </div>
+                  )
+                  })}
+                
                 </div>
               </div>
               <div className="subtotal-container">
                 <span>Estimated</span>
-                <span className="my-cart-small-text-bold"> $115</span>
+                <span className="my-cart-small-text-bold"> ${estimated}</span>
               </div>
               <div className="disclaimer-container">
                 <p>
