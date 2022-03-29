@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 
 import { userLoginReducer, userRegisterReducer } from './userReducers';
+import { servicesQuestionsReducer } from './servicesQuestionsReducer'
 
 // import {
 //   allListsReducer,
@@ -13,6 +14,7 @@ import { userLoginReducer, userRegisterReducer } from './userReducers';
 export const rootReducer = combineReducers({
   userRegister: userRegisterReducer,
   userLogin: userLoginReducer,
+  servicesQnA: servicesQuestionsReducer,
   //   userForgotPassword: userForgotPasswordReducer,
   //   userChangePassword: userChangePasswordReducer,
   //   countryList: countryListReducer,
